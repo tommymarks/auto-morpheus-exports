@@ -1,0 +1,23 @@
+resource "container-type" "df51c9e0-5d46-4ab6-83ca-5f354607e927" {
+  code = "df51c9e0-5d46-4ab6-83ca-5f354607e927"
+  name = "Auto Export 0928"
+  uuid = "376c445c-902f-4db9-a432-5570d029b5d2"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerMounts = [ { code = "template: 38c409bb-93f3-440c-a058-16773ec6640d" } ]
+  containerPorts = [
+    { uuid = "ccf31a2f-1573-4a92-a8c1-428b72a80b6d" },
+    { uuid = "e40a13a6-6d6c-4b3e-9bdd-cf3a881c259f" }
+  ]
+  containerVersion = "1.9"
+  entryPoint = ""
+  labels = [ "autoexport0928" ]
+  provisionType = { code = "amazon" }
+  scripts = [
+    { code = "7659fc2b-6ece-4737-b78e-65287632ba52" },
+    { code = "b8e8650a-2cc1-468d-8145-192789b5c8dc" },
+    { code = "96b6db44-0769-4c1f-aab1-c3c3f2ccf543" }
+  ]
+  shortName = "autoexport0928"
+  templates = [ { code = "38c409bb-93f3-440c-a058-16773ec6640d" } ]
+}
