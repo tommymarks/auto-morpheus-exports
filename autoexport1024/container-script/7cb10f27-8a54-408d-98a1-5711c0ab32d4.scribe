@@ -1,0 +1,11 @@
+resource "container-script" "7cb10f27-8a54-408d-98a1-5711c0ab32d4" {
+  code = "7cb10f27-8a54-408d-98a1-5711c0ab32d4"
+  name = "Nginx Stop"
+  uuid = "4e044a88-347b-4976-b48a-5ebb4b56d0cb"
+  dateCreated = "2023-03-14T22:24:28.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:06:38.000Z"
+  script = "service nginx stop"
+  scriptPhase = "stop"
+  sudoUser = true
+}
