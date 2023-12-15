@@ -1,0 +1,5 @@
+resource "task-set-task" "912adac8-8a2a-4355-94aa-97f48ba802ea" {
+  uuid = "912adac8-8a2a-4355-94aa-97f48ba802ea"
+  task = { name = "Auto Export 1215" }
+  taskPhase = "provision"
+}
