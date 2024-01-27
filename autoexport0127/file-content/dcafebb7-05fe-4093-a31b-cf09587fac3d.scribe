@@ -1,0 +1,9 @@
+resource "file-content" "dcafebb7-05fe-4093-a31b-cf09587fac3d" {
+  uuid = "dcafebb7-05fe-4093-a31b-cf09587fac3d"
+  content = <<EOFSCRIBE
+Hello
+World
+EOFSCRIBE
+  dateCreated = "2024-01-27T09:22:23.000Z"
+  lastUpdated = "2024-01-27T09:22:23.000Z"
+}
