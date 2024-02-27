@@ -1,0 +1,28 @@
+resource "option-type-form" "autoopen" {
+  code = "autoopen"
+  name = "Auto Form Openstack"
+  uuid = "edd61f4f-cdc2-40e2-b5aa-1ae453f316f8"
+  description = "safe to delete"
+  fieldGroups = [
+    {
+      code = "001b1f01-d0b5-4802-8e63-597d6ab9302d"
+      name = "Provision"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        { code = "bbb10a36-7037-4243-b8e6-8b20fa918417" },
+        { code = "f6de2868-a8de-4719-ac40-69da7d7f59be" },
+        { code = "2aea3e8f-a531-4ade-9eff-0cc10bbeb21f" },
+        { code = "8da867a0-27fa-4012-9a27-d9482f62d61e" },
+        { code = "55ce6854-c84a-4b55-a22f-979c68689abf" },
+        { code = "55e13f06-b53c-4c0c-a388-194917b493e1" },
+        { code = "544043ec-20cb-4424-b6fa-935c1a64ef56" },
+        { code = "acd9a802-6ff6-4a64-a751-50600984df2e" },
+        { code = "f0735295-4a1a-49fe-8ebf-c4f1f11ff477" },
+        { code = "28a0e284-e66c-4ac6-bab6-45d53fd5d19f" },
+        { code = "efab6f88-c514-4bd4-967a-4b313b44d35d" }
+      ]
+    }
+  ]
+  labels = [ "auto", "exporttest" ]
+}
