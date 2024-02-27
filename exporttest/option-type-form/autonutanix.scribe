@@ -1,0 +1,26 @@
+resource "option-type-form" "autonutanix" {
+  code = "autonutanix"
+  name = "Auto Form Nutanix"
+  uuid = "86413873-3f35-4409-ad41-8575a3d11808"
+  description = "safe to delete"
+  fieldGroups = [
+    {
+      code = "257b3820-d529-4f20-aecf-22018d3ec5dd"
+      name = "Provision"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        { code = "b8363ce3-a79e-4e82-b0b6-2a846f58e8d3" },
+        { code = "c2acbc81-69a1-4f45-bf17-d7c3b6503564" },
+        { code = "f12dc166-991e-43bc-9a81-12e9cc57ecef" },
+        { code = "a82f45ca-42c7-4a43-85b4-c2fc29a23683" },
+        { code = "4a6914e0-8565-400b-bf1c-9448ce69437c" },
+        { code = "f2c3a924-13e6-4d77-a6c5-da6ff8aa3e3d" },
+        { code = "ba4f8b57-430b-4114-8126-46e720314f25" },
+        { code = "b4b3d6a5-adf7-431e-b330-8c8e7dbea7de" },
+        { code = "2624b29f-4b06-49af-94dd-d1afbae325b9" }
+      ]
+    }
+  ]
+  labels = [ "auto", "exporttest" ]
+}
