@@ -1,0 +1,28 @@
+resource "option-type-form" "autoamzn" {
+  code = "autoamzn"
+  name = "Auto Form Amazon"
+  uuid = "7b7f2656-f9a2-4bfc-9e74-7353fef6dcdc"
+  description = "safe to delete"
+  fieldGroups = [
+    {
+      code = "3fc722b9-bfe5-47e7-93f1-305e69e70a22"
+      name = "Provision"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        { code = "7acee764-cd53-4f92-b0b5-93de6425e075" },
+        { code = "8706c721-3df9-41b1-834d-3d8bd6249bc7" },
+        { code = "245a0f8c-e668-4d1a-b551-28e25f928faf" },
+        { code = "86c2405d-03b6-43e7-8ac3-579e9ed2f141" },
+        { code = "13f4d987-130c-425d-9784-e2e60da63721" },
+        { code = "44fc8045-f7bc-4dc9-9df5-1200a7fa35d3" },
+        { code = "1ff0b8b5-c6cf-4ea6-882c-2e1bcb0eba47" },
+        { code = "eb7a086a-15f5-40e1-a959-60e5761d36b0" },
+        { code = "ade79dce-8c93-41f4-95f8-3f7e3993b1bc" },
+        { code = "55147615-ae2a-4546-ad1d-c28618233510" },
+        { code = "0d483b64-4094-4fb0-912d-c48124604878" }
+      ]
+    }
+  ]
+  labels = [ "auto", "exporttest" ]
+}
