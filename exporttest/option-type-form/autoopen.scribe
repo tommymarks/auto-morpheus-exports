@@ -1,0 +1,290 @@
+resource "option-type-form" "autoopen" {
+  code = "autoopen"
+  name = "Auto Form Openstack"
+  uuid = "1e44d725-2676-413e-9eeb-1452d2b9e03d"
+  description = "safe to delete"
+  field-groups = [
+    {
+      code = "aed3b2bf-740e-4f44-95eb-21b0b2362073"
+      name = "Provision"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+          name = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+          uuid = "1f37f947-cbfd-4db4-a2ef-758b3895db33"
+          defaultValue = "33"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Group"
+          fieldName = "group"
+          formField = true
+          refCode = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+          required = true
+          type = "group"
+        },
+        {
+          code = "2c7a5533-fdd6-4fbc-8f4a-8eba251e6440"
+          name = "2c7a5533-fdd6-4fbc-8f4a-8eba251e6440"
+          uuid = "6402b444-504c-4b85-934c-8f7caa129eee"
+          defaultValue = "dev"
+          displayOrder = 1
+          fieldContext = "config.customOptions"
+          fieldLabel = "Environment"
+          fieldName = "environment"
+          formField = true
+          refCode = "2c7a5533-fdd6-4fbc-8f4a-8eba251e6440"
+          type = "environment"
+        },
+        {
+          code = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+          name = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+          uuid = "96791dca-aa5e-43ba-9469-5bf359573c68"
+          config = {
+            cloudType = "2"
+            filterResource = false
+            group = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            instanceTypeFieldCode = ""
+            instanceTypeFieldType = "field"
+          }
+          defaultValue = "40030"
+          displayOrder = 2
+          fieldContext = "config.customOptions"
+          fieldLabel = "Cloud"
+          fieldName = "cloud"
+          formField = true
+          refCode = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+          required = true
+          type = "cloud"
+        },
+        {
+          code = "d0dce833-f195-4d77-99cf-0bae16c66764"
+          name = "d0dce833-f195-4d77-99cf-0bae16c66764"
+          uuid = "ce246fc4-2c1a-4de8-a813-be917ecd39ed"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            instanceTypeCode = "ubuntu"
+            instanceTypeFieldCode = ""
+            instanceTypeFieldType = "value"
+          }
+          defaultValue = "2134288"
+          displayOrder = 3
+          fieldContext = "config.customOptions"
+          fieldLabel = "Layout"
+          fieldName = "layout"
+          formField = true
+          refCode = "d0dce833-f195-4d77-99cf-0bae16c66764"
+          type = "layout"
+        },
+        {
+          code = "7e40b453-627a-47be-8f1e-329b26cff0b3"
+          name = "7e40b453-627a-47be-8f1e-329b26cff0b3"
+          uuid = "8423878c-5cab-4e9d-9609-1e30f82d3387"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            defaultValue = <<EOFSCRIBE
+{
+ "id": 431134,
+ "code": "openstack.flavor.40030.704d2afdc146415b8ce6a73541b34643.70b87307-071d-4cab-ac98-c2dcebe339ca",
+ "maxMemory": 2147483648,
+ "maxCores": 1,
+ "coresPerSocket": 1,
+ "maxCoresPerSocket": 1
+}
+EOFSCRIBE
+            diskField = "a245e60f-c44e-4833-8f03-3c0f0f90e58f"
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            layoutField = "d0dce833-f195-4d77-99cf-0bae16c66764"
+            layoutFieldType = "field"
+            poolField = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+            poolFieldType = "field"
+            showPricing = true
+          }
+          displayOrder = 4
+          fieldContext = "config.customOptions"
+          fieldLabel = "Plan"
+          fieldName = "plan"
+          formField = true
+          refCode = "7e40b453-627a-47be-8f1e-329b26cff0b3"
+          type = "plan"
+        },
+        {
+          code = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+          name = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+          uuid = "591ea630-a6ba-4072-9960-dbdacb84db11"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            layoutField = "d0dce833-f195-4d77-99cf-0bae16c66764"
+            layoutFieldType = "field"
+            planField = "7e40b453-627a-47be-8f1e-329b26cff0b3"
+            planFieldType = "field"
+          }
+          defaultValue = "pool-245043"
+          displayOrder = 5
+          fieldContext = "config.customOptions"
+          fieldLabel = "Resource Pool"
+          fieldName = "resourcePool"
+          formField = true
+          refCode = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+          type = "resourcePool"
+        },
+        {
+          code = "a245e60f-c44e-4833-8f03-3c0f0f90e58f"
+          name = "a245e60f-c44e-4833-8f03-3c0f0f90e58f"
+          uuid = "9316cf2d-41f3-44e9-8b96-b4e0ba1f8b57"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            defaultValue = <<EOFSCRIBE
+[
+ {
+  "rootVolume": true,
+  "name": "root",
+  "size": 20,
+  "sizeBytes": 21474836480,
+  "minStorage": 0,
+  "displayOrder": 0,
+  "storageType": "4",
+  "datastoreId": 134919
+ },
+ {
+  "rootVolume": false,
+  "name": "data1",
+  "size": 15,
+  "sizeBytes": 16106127360,
+  "minStorage": 0,
+  "displayOrder": 1,
+  "datastoreId": 134919,
+  "storageType": 3
+ }
+]
+EOFSCRIBE
+            enableDatastoreSelection = true
+            enableDiskTypeSelection = true
+            enableStorageTypeSelection = true
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            layoutField = "d0dce833-f195-4d77-99cf-0bae16c66764"
+            layoutFieldType = "field"
+            planField = "7e40b453-627a-47be-8f1e-329b26cff0b3"
+            planFieldType = "field"
+            poolField = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+            poolFieldType = "field"
+          }
+          displayOrder = 6
+          fieldContext = "config.customOptions"
+          fieldLabel = "Disks"
+          fieldName = "disks"
+          formField = true
+          refCode = "a245e60f-c44e-4833-8f03-3c0f0f90e58f"
+          type = "diskManager"
+        },
+        {
+          code = "789ed4d4-7049-4020-a0c4-0f8f6b4dd309"
+          name = "789ed4d4-7049-4020-a0c4-0f8f6b4dd309"
+          uuid = "231642d7-a6b8-4e9f-9922-a347c25f1bf6"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            defaultValue = <<EOFSCRIBE
+[
+ {
+  "primaryInterface": true,
+  "displayOrder": 0,
+  "ipMode": "",
+  "ipAddress": "",
+  "networkInterfaceTypeId": "",
+  "network": {
+   "id": "network-360065"
+  }
+ }
+]
+EOFSCRIBE
+            enableIPModeSelection = true
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            groupFieldType = "field"
+            layoutField = "d0dce833-f195-4d77-99cf-0bae16c66764"
+            layoutFieldType = "field"
+            poolField = "beb9c6e0-cd88-4070-8fd7-a1918dfa1978"
+            poolFieldType = "field"
+            showNetworkTypeSelection = true
+          }
+          displayOrder = 7
+          fieldContext = "config.customOptions"
+          fieldLabel = "Networks"
+          fieldName = "networks"
+          formField = true
+          refCode = "789ed4d4-7049-4020-a0c4-0f8f6b4dd309"
+          type = "networkManager"
+        },
+        {
+          code = "e609ec8c-d0b8-4bfa-8b40-e54c0cd09803"
+          name = "e609ec8c-d0b8-4bfa-8b40-e54c0cd09803"
+          uuid = "6768f2a5-1dc1-47e4-911c-8355da05be3e"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            cloudFieldType = "field"
+            defaultValue = <<EOFSCRIBE
+[
+ {
+  "id": "364238"
+ }
+]
+EOFSCRIBE
+            resourcePoolField = ""
+          }
+          displayOrder = 8
+          fieldContext = "config.customOptions"
+          fieldLabel = "Security Groups"
+          fieldName = "securityGroups"
+          formField = true
+          refCode = "e609ec8c-d0b8-4bfa-8b40-e54c0cd09803"
+          type = "secGroup"
+        },
+        {
+          code = "8db0abc1-d708-4dfa-bbcb-d0933b7601e3"
+          name = "8db0abc1-d708-4dfa-bbcb-d0933b7601e3"
+          uuid = "367a2bc4-3979-4695-af41-a3675c63d5a4"
+          config = {
+            cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+            defaultValue = "[{\"name\":\"HTTP\",\"externalPort\":\"80\",\"loadBalanceProtocol\":\"HTTP\"},{\"name\":\"HTTPS\",\"externalPort\":\"443\",\"loadBalanceProtocol\":\"HTTPS\"}]"
+            groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+            layoutField = "d0dce833-f195-4d77-99cf-0bae16c66764"
+          }
+          displayOrder = 9
+          fieldContext = "config.customOptions"
+          fieldLabel = "Ports"
+          fieldName = "ports"
+          formField = true
+          refCode = "8db0abc1-d708-4dfa-bbcb-d0933b7601e3"
+          type = "ports"
+        },
+        {
+          code = "63f06247-d184-4816-b2b1-8a7f94c2d682"
+          name = "63f06247-d184-4816-b2b1-8a7f94c2d682"
+          uuid = "0fdc04a5-f4e2-4459-a280-ea52353990ac"
+          config = {
+            defaultValue = "[{\"name\":\"Flash\",\"value\":\"Bang\"},{\"name\":\"Ping\",\"value\":\"Pong\"}]"
+          }
+          displayOrder = 10
+          fieldContext = "config.customOptions"
+          fieldLabel = "Tags"
+          fieldName = "tags"
+          formField = true
+          refCode = "63f06247-d184-4816-b2b1-8a7f94c2d682"
+          type = "tag"
+        }
+      ]
+    }
+  ]
+  labels = [ "auto", "exporttest" ]
+}
