@@ -1,0 +1,529 @@
+resource "option-type-form" "autoinputs" {
+  code = "autoinputs"
+  name = "Auto Inputs"
+  uuid = "71ec864a-bc59-4c73-9123-f576e4234837"
+  config = {
+    enableVar = ""
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = ""
+  }
+  description = "don't delete"
+  labels = [ "auto", "exporttest", "keep" ]
+  options = [
+    {
+      code = "autocheck1"
+      name = "Auto Checkbox 1"
+      uuid = "348804af-08ca-4a86-a6bb-e73db9e83f68"
+      defaultValue = "on"
+      description = "don't delete"
+      displayOrder = 2
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Check 1"
+      fieldName = "autocheck1"
+      labels = [ "auto", "keep" ]
+      type = "checkbox"
+    },
+    {
+      code = "autohidden1"
+      name = "Auto Hidden 1"
+      uuid = "4b9c6255-101b-4b61-9575-9ad55a50567a"
+      defaultValue = "hidevalue1"
+      description = "don't delete"
+      displayOrder = 2
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldName = "autohidden1"
+      labels = [ "auto", "keep" ]
+      type = "hidden"
+    },
+    {
+      code = "autonum1"
+      name = "Auto Number 1"
+      uuid = "84f78aa8-1c0c-4944-9cae-948ca8e9a7c5"
+      defaultValue = "55"
+      description = "don't delete"
+      displayOrder = 3
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Number 1"
+      fieldName = "autonum1"
+      helpBlock = "enter a number"
+      labels = [ "auto", "keep" ]
+      required = true
+      type = "number"
+    },
+    {
+      code = "autopass1"
+      name = "Auto Password 1"
+      uuid = "2558c888-cf8a-43ca-be83-7c6b990befd1"
+      defaultValue = "supersecret55"
+      description = "don't delete"
+      displayOrder = 4
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Password 1"
+      fieldName = "autopass1"
+      helpBlock = "letters then numbers only"
+      labels = [ "auto", "keep" ]
+      required = true
+      type = "password"
+      verifyPattern = "[a-zA-Z]+\\d+"
+    },
+    {
+      code = "autoradio1"
+      name = "Auto Radio 1"
+      uuid = "43a03e1a-47dc-4589-9f0f-39cde9e5d641"
+      description = "don't delete"
+      displayOrder = 4
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Radio 1"
+      fieldName = "autoradio1"
+      helpBlock = "choose wisely"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Approved Colors" }
+      optionSource = "list"
+      required = true
+      type = "radio"
+    },
+    {
+      code = "autoselect1"
+      name = "Auto Select 1"
+      uuid = "dc9e7af1-3624-41db-bd73-4fb62c6f93cb"
+      defaultValue = "Blue"
+      description = "don't delete"
+      displayOrder = 1
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Select 1"
+      fieldName = "autoselect1"
+      helpBlock = "which one?"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors csv" }
+      optionSource = "list"
+      required = true
+      type = "select"
+    },
+    {
+      code = "autotext1"
+      name = "Auto Text 1"
+      uuid = "726cfa82-0deb-4d7b-bf77-8615f76a1caf"
+      defaultValue = "hellotext"
+      description = "don't delete"
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Text 1"
+      fieldName = "autotext1"
+      helpBlock = "no whitespace allowed"
+      labels = [ "auto", "keep" ]
+      required = true
+      verifyPattern = "\\w+"
+    },
+    {
+      code = "autotextarea1"
+      name = "Auto Textarea 1"
+      uuid = "b6592e05-5f3a-4602-a846-e5410bc594f6"
+      config = { rows = "3" }
+      defaultValue = "helloarea"
+      description = "don't delete"
+      displayOrder = 7
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Textarea 1"
+      fieldName = "autotextarea1"
+      helpBlock = <<EOFSCRIBE
+3 rows tall
+no whitespace
+EOFSCRIBE
+      labels = [ "auto", "keep" ]
+      required = true
+      type = "textarea"
+      verifyPattern = "\\w+"
+    },
+    {
+      code = "autotypeahead1"
+      name = "Auto Typeahead 1"
+      uuid = "e2c61ac0-d169-4364-ac61-367d34651cfd"
+      config = { _multiSelect = "" }
+      defaultValue = "Blue"
+      description = "don't delete"
+      displayOrder = 5
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Typeahead 1"
+      fieldName = "autotypeahead1"
+      helpBlock = "only pick 1"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors csv" }
+      optionSource = "list"
+      required = true
+      type = "typeahead"
+    },
+    {
+      code = "automulti1"
+      name = "Auto Typeahead Multi 1"
+      uuid = "ce1a8ac0-72af-408c-a6cd-f0b7257f3042"
+      config = { _multiSelect = "", multiSelect = "on" }
+      defaultValue = "Blue"
+      description = "don't delete"
+      displayOrder = 9
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Multiselect 1"
+      fieldName = "automulti1"
+      helpBlock = "pick many"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors csv" }
+      optionSource = "list"
+      required = true
+      type = "typeahead"
+    },
+    {
+      code = "autocheck2"
+      name = "Auto Checkbox 2"
+      uuid = "0b3b1cbb-9af9-46cb-b5e8-d6dba866ca55"
+      description = "don't delete"
+      displayOrder = 10
+      fieldContext = "config.customOptions"
+      fieldLabel = "Check 2"
+      fieldName = "autocheck2"
+      labels = [ "auto", "keep" ]
+      showOnEdit = false
+      type = "checkbox"
+    },
+    {
+      code = "autohidden2"
+      name = "Auto Hidden 2"
+      uuid = "d23b50b4-6944-47ac-b6a7-47a14fe6aa55"
+      defaultValue = "hidevalue2"
+      description = "don't delete"
+      displayOrder = 11
+      fieldContext = "config.customOptions"
+      fieldName = "autohidden2"
+      labels = [ "auto", "keep" ]
+      showOnEdit = false
+      type = "hidden"
+    },
+    {
+      code = "autonum2"
+      name = "Auto Number 2"
+      uuid = "8e65b31c-78bb-4f91-a5d3-c561603c9acb"
+      description = "don't delete"
+      displayOrder = 12
+      fieldContext = "config.customOptions"
+      fieldLabel = "Number 2"
+      fieldName = "autonum2"
+      labels = [ "auto", "keep" ]
+      placeHolder = "not required"
+      showOnEdit = false
+      type = "number"
+    },
+    {
+      code = "autopass2"
+      name = "Auto Password 2"
+      uuid = "63e60fd2-06d2-46a2-a4eb-20010014e6eb"
+      description = "don't delete"
+      displayOrder = 13
+      fieldContext = "config.customOptions"
+      fieldLabel = "Password 2"
+      fieldName = "autopass2"
+      labels = [ "auto", "keep" ]
+      placeHolder = "tell me your secret"
+      showOnEdit = false
+      type = "password"
+    },
+    {
+      code = "autoradio2"
+      name = "Auto Radio 2"
+      uuid = "ea4de9ca-e71b-41bf-a456-dc1575270cf1"
+      defaultValue = "Blue"
+      description = "don't delete"
+      displayOrder = 14
+      fieldContext = "config.customOptions"
+      fieldLabel = "Radio 2"
+      fieldName = "autoradio2"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Approved Colors" }
+      optionSource = "list"
+      showOnEdit = false
+      type = "radio"
+    },
+    {
+      code = "autoselect2"
+      name = "Auto Select 2"
+      uuid = "525f4c2d-b05f-4919-ac83-cf5e9e264048"
+      description = "don't delete"
+      displayOrder = 15
+      fieldContext = "config.customOptions"
+      fieldLabel = "Select 2"
+      fieldName = "autoselect2"
+      labels = [ "auto", "keep" ]
+      noBlank = true
+      optionList = { name = "Colors json" }
+      optionSource = "list"
+      showOnEdit = false
+      type = "select"
+    },
+    {
+      code = "autotext2"
+      name = "Auto Text 2"
+      uuid = "878f3fee-9d2c-4174-84f8-deedba3d7ff6"
+      description = "don't delete"
+      displayOrder = 16
+      fieldContext = "config.customOptions"
+      fieldLabel = "Text 2"
+      fieldName = "autotext2"
+      labels = [ "auto", "keep" ]
+      placeHolder = "not required"
+      showOnEdit = false
+    },
+    {
+      code = "autotextarea2"
+      name = "Auto Textarea 2"
+      uuid = "bda52da7-614e-4796-84dc-9cc1e69c61fc"
+      config = { rows = "6" }
+      description = "don't delete"
+      displayOrder = 17
+      fieldContext = "config.customOptions"
+      fieldLabel = "Textarea 2"
+      fieldName = "autotextarea2"
+      labels = [ "auto", "keep" ]
+      placeHolder = "6 rows tall"
+      showOnEdit = false
+      type = "textarea"
+    },
+    {
+      code = "autotypeahead2"
+      name = "Auto Typeahead 2"
+      uuid = "e8a959b1-041f-4327-a6fb-24d5bb5c1671"
+      config = { _multiSelect = "" }
+      description = "don't delete"
+      displayOrder = 6
+      fieldContext = "config.customOptions"
+      fieldLabel = "Typeahead 2"
+      fieldName = "autotypeahead2"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors json" }
+      optionSource = "list"
+      placeHolder = "start typing"
+      showOnEdit = false
+      type = "typeahead"
+    },
+    {
+      code = "automulti2"
+      name = "Auto Typeahead Multi 2"
+      uuid = "5f916463-a528-460e-9a92-1ca3f82c2716"
+      config = { _multiSelect = "", multiSelect = "on" }
+      description = "don't delete"
+      displayOrder = 19
+      fieldContext = "config.customOptions"
+      fieldLabel = "Multiselect 2"
+      fieldName = "automulti2"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors json" }
+      optionSource = "list"
+      placeHolder = "pick something"
+      showOnEdit = false
+      type = "typeahead"
+    },
+    {
+      code = "autorest1"
+      name = "Auto Rest 1"
+      uuid = "785e986b-f018-4ce6-a642-b279989ddcb3"
+      config = { _multiSelect = "", multiSelect = "on" }
+      defaultValue = "nesciunt quas odio"
+      description = "don't delete"
+      displayOrder = 20
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Rest 1"
+      fieldName = "autorest1"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "rest get initial" }
+      optionSource = "list"
+      required = true
+      type = "typeahead"
+    },
+    {
+      code = "autorest2"
+      name = "Auto Rest 2"
+      uuid = "998a0f15-2a80-43e2-884d-f28ec302e0bd"
+      description = "don't delete"
+      displayOrder = 21
+      fieldContext = "config.customOptions"
+      fieldLabel = "Rest 2"
+      fieldName = "autorest2"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "rest get initial" }
+      optionSource = "list"
+      required = true
+      showOnEdit = false
+      type = "select"
+    },
+    {
+      code = "aduser"
+      name = "Auto LDAP 1"
+      uuid = "496a0938-0d42-44f1-8607-020a5364c220"
+      config = { _multiSelect = "" }
+      description = "don't delete"
+      displayOrder = 22
+      displayValueOnDetails = true
+      editable = true
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldGetName = "aduser"
+      fieldLabel = "aduser"
+      fieldName = "aduser"
+      fieldSetName = "aduser"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "ActiveDirectory Users" }
+      optionSource = "list"
+      type = "typeahead"
+    },
+    {
+      code = "adlist"
+      name = "Auto LDAP 2"
+      uuid = "37554b35-8aa3-4e0e-aea2-d04fca34a929"
+      description = "don't delete"
+      displayOrder = 23
+      fieldContext = "config.customOptions"
+      fieldGetName = "adlist"
+      fieldLabel = "adlist"
+      fieldName = "adlist"
+      fieldSetName = "adlist"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "ActiveDirectory User List" }
+      optionSource = "list"
+      showOnEdit = false
+      type = "select"
+    },
+    {
+      code = "morphgroup"
+      name = "API Groups"
+      uuid = "4c77b644-904e-49e7-8d89-7ba3a7b17743"
+      fieldContext = "config.customOptions"
+      fieldGetName = "morphgroup"
+      fieldLabel = "Group"
+      fieldName = "morphgroup"
+      fieldSetName = "morphgroup"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "API Groups" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "morphenv"
+      name = "API Environments"
+      uuid = "eba9a335-95b3-485c-bf9d-279550a91ee7"
+      displayOrder = 25
+      fieldContext = "config.customOptions"
+      fieldGetName = "morphenv"
+      fieldLabel = "Environment"
+      fieldName = "morphenv"
+      fieldSetName = "morphenv"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "API Environments" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "hidecheck"
+      name = "Auto Hide Checkbox"
+      uuid = "80480cb2-9afd-404a-9b7e-30b4d5addb22"
+      defaultValue = "on"
+      description = "don't delete"
+      displayOrder = 26
+      fieldContext = "config.customOptions"
+      fieldLabel = "Hide Check"
+      fieldName = "hidecheck"
+      isHidden = true
+      labels = [ "auto", "keep" ]
+      type = "checkbox"
+    },
+    {
+      code = "hideselect"
+      name = "Auto Hide Select"
+      uuid = "cda35a57-35b3-422e-83e3-bbf06de701e2"
+      defaultValue = "Blue"
+      description = "don't delete"
+      displayOrder = 27
+      fieldContext = "config.customOptions"
+      fieldLabel = "Hide Select"
+      fieldName = "hideselect"
+      isHidden = true
+      labels = [ "auto", "keep" ]
+      optionList = { name = "Colors csv" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "hidetext"
+      name = "Auto Hide Text"
+      uuid = "e1e23bd9-bca1-4c63-8da1-59be76e548ea"
+      defaultValue = "hiddentext"
+      description = "don't delete"
+      displayOrder = 28
+      fieldContext = "config.customOptions"
+      fieldLabel = "Hide Text"
+      fieldName = "hidetext"
+      isHidden = true
+      labels = [ "auto", "keep" ]
+    },
+    {
+      code = "hidetextarea"
+      name = "Auto Hide Textarea"
+      uuid = "26cb852f-7415-4214-914c-15b6c52a2f35"
+      config = { rows = "1" }
+      defaultValue = "hiddentextarea"
+      description = "don't delete"
+      displayOrder = 29
+      fieldContext = "config.customOptions"
+      fieldLabel = "Hide Textarea"
+      fieldName = "hidetextarea"
+      isHidden = true
+      labels = [ "auto", "keep" ]
+      type = "textarea"
+    },
+    {
+      code = "autohidegroup"
+      name = "Auto Hide API"
+      uuid = "13be3332-75fd-4220-a725-b0039c2ffe28"
+      description = "don't delete"
+      displayOrder = 30
+      fieldContext = "config.customOptions"
+      fieldLabel = "Hide API"
+      fieldName = "autohidegroup"
+      isHidden = true
+      labels = [ "auto", "keep" ]
+      noBlank = true
+      optionList = { name = "API Groups" }
+      optionSource = "list"
+      type = "select"
+    }
+  ]
+}

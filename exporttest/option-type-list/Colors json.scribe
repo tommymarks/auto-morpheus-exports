@@ -1,0 +1,9 @@
+resource "option-type-list" "Colors json" {
+  name = "Colors json"
+  uuid = "f965a21b-6ae9-4d48-afc0-40792426ea0b"
+  description = "don't delete"
+  initialDataset = "[{\"name\":\"Red\",\"value\":\"Red\"},{\"name\":\"Orange\",\"value\":\"Orange\"},{\"name\":\"Yellow\",\"value\":\"Yellow\"},{\"name\":\"Blue\",\"value\":\"Blue\"},{\"name\":\"Green\",\"value\":\"Green\"},{\"name\":\"Purple\",\"value\":\"Purple\"},{\"name\":\"White\",\"value\":\"White\"},{\"name\":\"Black\",\"value\":\"Black\"}]"
+  labels = [ "auto", "keep" ]
+  type = "manual"
+  visibility = "public"
+}
