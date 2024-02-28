@@ -1,0 +1,23 @@
+resource "option-type-list" "ActiveDirectory User List" {
+  name = "ActiveDirectory User List"
+  uuid = "faaab955-b1e6-4d5b-a1db-461dbb2f56d1"
+  realTime = true
+  requestScript = "(&(objectClass=user)(cn=*))"
+  sourceUrl = "ldap://10.32.21.253:389/DC=test,DC=morpheusdata,DC=com"
+  translationScript = <<EOFSCRIBE
+for(var x=0;x < data.length ; x++) {
+    var row = data[x];
+    var a = {};
+      if(row.displayName != null) {
+      a['name'] = row.displayName;
+    } else {
+      a['name'] = row.sAMAccountName;
+    }
+
+    a['value'] = row.sAMAccountName;
+    results.push(a);
+}
+EOFSCRIBE
+  type = "ldap"
+  visibility = "public"
+}
