@@ -1,0 +1,586 @@
+resource "option-type-form" "autoform" {
+  code = "autoform"
+  name = "Auto Form"
+  uuid = "775fc627-1e64-43cd-8600-42b7a5933e0b"
+  config = {
+    enableVar = false
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = "static"
+  }
+  description = "Auto Test"
+  field-groups = [
+    {
+      code = "998cdbd0-6651-4ef4-887a-fa5bab15c4a8"
+      name = "Provisioning"
+      collapsible = false
+      defaultCollapsed = false
+      options = [
+        {
+          code = "325a1ee1-bc70-4d26-821a-e05309819b49"
+          name = "325a1ee1-bc70-4d26-821a-e05309819b49"
+          uuid = "bbf6d61a-4b02-4ada-b846-ee4589b992a3"
+          config = { addon = "", addonPosition = "right" }
+          defaultValue = "56092"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Group"
+          fieldName = "group"
+          formField = true
+          required = true
+          type = "group"
+        },
+        {
+          code = "14bd7946-b552-4535-a804-577b77f97c24"
+          name = "14bd7946-b552-4535-a804-577b77f97c24"
+          uuid = "1cf759fe-fbe8-428c-8ad8-927da62de9aa"
+          config = {
+            cloudType = "5"
+            filterResource = false
+            group = ""
+            groupFieldType = "field"
+            groupId = ""
+            instanceTypeCode = ""
+            instanceTypeFieldCode = ""
+            instanceTypeFieldType = "field"
+          }
+          displayOrder = 1
+          fieldContext = "config.customOptions"
+          fieldLabel = "Cloud"
+          fieldName = "cloud"
+          formField = true
+          required = true
+          type = "cloud"
+        },
+        {
+          code = "0907a788-433b-4fbd-b2c9-05dc52c8b85c"
+          name = "0907a788-433b-4fbd-b2c9-05dc52c8b85c"
+          uuid = "bed5e03a-a29b-4866-8d55-fdabb0a49c7c"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            layoutField = ""
+            layoutFieldType = "field"
+            layoutId = ""
+            planField = ""
+            planFieldType = "field"
+            planId = ""
+          }
+          displayOrder = 2
+          fieldContext = "config.customOptions"
+          fieldLabel = "Resource Pool"
+          fieldName = "resourcePool"
+          formField = true
+          type = "resourcePool"
+        },
+        {
+          code = "6e754478-1b71-4efe-a23e-934a60b0da52"
+          name = "6e754478-1b71-4efe-a23e-934a60b0da52"
+          uuid = "53bebf8f-c5f2-43bb-bb50-9b1a5c2bd908"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            planField = ""
+            planFieldType = "field"
+            planId = ""
+          }
+          displayOrder = 3
+          fieldContext = "config.customOptions"
+          fieldLabel = "Folder"
+          fieldName = "vmwFolder"
+          formField = true
+          type = "vmwFolders"
+        },
+        {
+          code = "a0772f8e-d4db-4862-843e-b88e91aa900d"
+          name = "a0772f8e-d4db-4862-843e-b88e91aa900d"
+          uuid = "5a2aa91a-a657-4db8-a174-d9089ced5ee6"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            instanceTypeCode = ""
+            instanceTypeFieldCode = ""
+            instanceTypeFieldType = "field"
+          }
+          displayOrder = 4
+          fieldContext = "config.customOptions"
+          fieldLabel = "Layout"
+          fieldName = "layout"
+          formField = true
+          required = true
+          type = "layout"
+        },
+        {
+          code = "11ac8d7e-c2b3-4b13-b559-74d238bf854a"
+          name = "11ac8d7e-c2b3-4b13-b559-74d238bf854a"
+          uuid = "7888e92b-9f57-4b87-b4b2-61c4f291f1d1"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            defaultValue = ""
+            diskField = ""
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            layoutField = ""
+            layoutFieldType = "field"
+            layoutId = ""
+            poolField = ""
+            poolFieldType = "field"
+            poolId = ""
+            showPricing = false
+          }
+          defaultValue = "vm-custom"
+          displayOrder = 5
+          fieldContext = "config.customOptions"
+          fieldLabel = "Plan"
+          fieldName = "plan"
+          formField = true
+          required = true
+          type = "plan"
+        },
+        {
+          code = "5e79d60a-2b87-4dfc-beec-88013b837414"
+          name = "5e79d60a-2b87-4dfc-beec-88013b837414"
+          uuid = "4adb736d-acca-40d7-b2aa-cb76ecb66811"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            defaultValue = ""
+            enableIPModeSelection = false
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            layoutField = ""
+            layoutFieldType = "field"
+            layoutId = ""
+            poolField = ""
+            poolFieldType = "field"
+            poolId = ""
+            showNetworkTypeSelection = false
+          }
+          displayOrder = 6
+          fieldContext = "config.customOptions"
+          fieldLabel = "Networks"
+          fieldName = "networks"
+          formField = true
+          type = "networkManager"
+        },
+        {
+          code = "9bdcde99-5fcc-4ac0-8a9d-2202671d6e75"
+          name = "9bdcde99-5fcc-4ac0-8a9d-2202671d6e75"
+          uuid = "63a1d49c-6baa-4626-aa47-d8e96978827b"
+          config = {
+            cloudField = ""
+            cloudFieldType = "field"
+            cloudId = ""
+            defaultValue = ""
+            enableDatastoreSelection = false
+            enableDiskTypeSelection = false
+            enableStorageTypeSelection = false
+            groupField = ""
+            groupFieldType = "field"
+            groupId = ""
+            layoutField = ""
+            layoutFieldType = "field"
+            layoutId = ""
+            planField = ""
+            planFieldType = "field"
+            planId = ""
+            poolField = ""
+            poolFieldType = "field"
+            poolId = ""
+          }
+          displayOrder = 7
+          fieldContext = "config.customOptions"
+          fieldLabel = "Disks"
+          fieldName = "disks"
+          formField = true
+          type = "diskManager"
+        },
+        {
+          code = "415ac437-9534-4544-9454-7ee413b27444"
+          name = "415ac437-9534-4544-9454-7ee413b27444"
+          uuid = "6e87afd7-495f-4423-802d-4ee65a415e79"
+          config = {
+            cloudField = ""
+            defaultValue = ""
+            groupField = ""
+            layoutField = ""
+          }
+          displayOrder = 8
+          fieldContext = "config.customOptions"
+          fieldLabel = "Ports"
+          fieldName = "ports"
+          formField = true
+          type = "ports"
+        },
+        {
+          code = "b63d8d92-776f-45da-b799-6e2975fa3445"
+          name = "b63d8d92-776f-45da-b799-6e2975fa3445"
+          uuid = "82811c65-3c5e-4016-bd91-174c10d6a536"
+          config = { defaultValue = "" }
+          displayOrder = 9
+          fieldContext = "config.customOptions"
+          fieldLabel = "Tags"
+          fieldName = "tags"
+          formField = true
+          type = "tag"
+        }
+      ]
+    },
+    {
+      code = "d60d7328-6563-45af-9371-30a3e21e4c40"
+      name = "Basic"
+      defaultCollapsed = false
+      description = "basic field types"
+      options = [
+        {
+          code = "4d9571e1-76ab-428b-ac83-ac061bae7a45"
+          name = "4d9571e1-76ab-428b-ac83-ac061bae7a45"
+          uuid = "a6173f9e-741d-428e-967b-177ece59ca57"
+          config = { addon = "", addonPosition = "right" }
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Text"
+          fieldName = "text"
+          formField = true
+          placeHolder = "text field"
+        },
+        {
+          code = "8664e863-6e77-4bbf-a16c-c95026c5f257"
+          name = "8664e863-6e77-4bbf-a16c-c95026c5f257"
+          uuid = "46e581e7-78d4-416f-9a40-919dfa1cf439"
+          defaultValue = "true"
+          displayOrder = 1
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Checkbox"
+          fieldName = "checkbox"
+          formField = true
+          type = "checkbox"
+        },
+        {
+          code = "339eb9db-d741-4c87-ab7d-3851a054a5d5"
+          name = "339eb9db-d741-4c87-ab7d-3851a054a5d5"
+          uuid = "f507a871-0345-4f4e-b8d5-7bd0d16151e1"
+          defaultValue = "hiddenValue"
+          displayOrder = 2
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Hidden"
+          fieldName = "hidden"
+          formField = true
+          type = "hidden"
+        },
+        {
+          code = "644a463d-325a-4704-ad7f-c825aa6c5ffd"
+          name = "644a463d-325a-4704-ad7f-c825aa6c5ffd"
+          uuid = "c380f522-840a-450b-97a9-8e3807b2e55f"
+          config = { step = 2 }
+          defaultValue = "42"
+          displayOrder = 3
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Number"
+          fieldName = "number"
+          formField = true
+          helpBlock = "40>number>50"
+          maxVal = 50
+          minVal = 40
+          type = "number"
+        },
+        {
+          code = "7ce9a5dd-6f3a-4567-9e30-7f667220197e"
+          name = "7ce9a5dd-6f3a-4567-9e30-7f667220197e"
+          uuid = "b6e03f61-84a4-48aa-94f8-d88937c7951d"
+          config = { canPeek = false }
+          defaultValue = "secret"
+          displayOrder = 4
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Password"
+          fieldName = "password"
+          formField = true
+          type = "password"
+        },
+        {
+          code = "3721c71a-93bd-493a-ab7c-f246bd2b62d1"
+          name = "3721c71a-93bd-493a-ab7c-f246bd2b62d1"
+          uuid = "a4bb3372-9267-467f-b155-333d526116cf"
+          defaultValue = "Blue"
+          displayOrder = 5
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Radio"
+          fieldName = "radio"
+          formField = true
+          optionList = { name = "Approved Colors" }
+          type = "radio"
+        },
+        {
+          code = "e7939b88-8155-4ae2-9f2e-81c52c3af3fe"
+          name = "e7939b88-8155-4ae2-9f2e-81c52c3af3fe"
+          uuid = "71bc8fce-a277-4d9e-ab09-c46c2ed64f13"
+          config = {
+            defaultValue = ""
+            multiSelect = false
+            sortable = false
+          }
+          defaultValue = "Green"
+          displayOrder = 6
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Select"
+          fieldName = "select"
+          formField = true
+          optionList = { name = "Approved Colors" }
+          type = "select"
+        },
+        {
+          code = "e6ca8061-55b4-4d30-acae-5e3aedbcaad8"
+          name = "e6ca8061-55b4-4d30-acae-5e3aedbcaad8"
+          uuid = "0f509f78-5883-4333-a481-886396608a54"
+          config = { rows = 2 }
+          displayOrder = 7
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Textarea"
+          fieldName = "textarea"
+          formField = true
+          type = "textarea"
+        }
+      ]
+    },
+    {
+      code = "c38adb0e-14fe-4556-a1fd-fadc3b11ffc7"
+      name = "Advanced"
+      description = "advanced field types"
+      options = [
+        {
+          code = "62c7a4bc-f9b6-42a5-8fcf-5523bfa4b8bb"
+          name = "62c7a4bc-f9b6-42a5-8fcf-5523bfa4b8bb"
+          uuid = "c4aac058-190f-4406-ab37-f3a22c903a8b"
+          config = {
+            addon = ""
+            addonPosition = "right"
+            display = ""
+            lockDisplay = false
+          }
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Byte Size"
+          fieldName = "byteSize"
+          formField = true
+          type = "byteSize"
+        },
+        {
+          code = "32de69b3-b102-423c-a6e8-69291db6fd10"
+          name = "32de69b3-b102-423c-a6e8-69291db6fd10"
+          uuid = "ff3e0003-2322-43df-8318-07397b960f7c"
+          config = { lang = "JSON", showLineNumbers = true }
+          displayOrder = 1
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Code"
+          fieldName = "code"
+          formField = true
+          type = "code-editor"
+        },
+        {
+          code = "15ee9fa5-2015-45b3-b1db-8c423be147a8"
+          name = "15ee9fa5-2015-45b3-b1db-8c423be147a8"
+          uuid = "054688f5-a8c5-4c4f-8d31-978ae8fc3848"
+          displayOrder = 2
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "File"
+          fieldName = "file"
+          formField = true
+          type = "fileContent"
+        },
+        {
+          code = "1f2d2ca5-6ee7-4bb1-870e-fb006b869b7b"
+          name = "1f2d2ca5-6ee7-4bb1-870e-fb006b869b7b"
+          uuid = "a09e2e8c-a1d0-47dc-8555-85273f9556e8"
+          config = { defaultValue = "" }
+          displayOrder = 3
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Icon"
+          fieldName = "icon"
+          formField = true
+          type = "logoSelector"
+        },
+        {
+          code = "e1db5c91-4608-42cc-b633-69ec9ffba090"
+          name = "e1db5c91-4608-42cc-b633-69ec9ffba090"
+          uuid = "7b709de8-4e81-494e-841e-b9c9a6b44bfe"
+          config = { asObject = false, defaultValue = "" }
+          displayOrder = 4
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Key Value"
+          fieldName = "keyVal"
+          formField = true
+          type = "keyValue"
+        },
+        {
+          code = "9039c26e-609b-4fa3-b41b-1a032d2df5ce"
+          name = "9039c26e-609b-4fa3-b41b-1a032d2df5ce"
+          uuid = "e0b29242-9b01-4700-8eb5-e8ceef9b74bf"
+          config = { separator = "|" }
+          displayOrder = 5
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Text Array"
+          fieldName = "textArray"
+          formField = true
+          type = "textArray"
+        },
+        {
+          code = "5fa4d127-7fb2-4fce-89fb-1faa418f5c64"
+          name = "5fa4d127-7fb2-4fce-89fb-1faa418f5c64"
+          uuid = "b1d8067f-aab2-41c3-a2e3-6112725dd866"
+          config = {
+            allowDuplicates = false
+            customData = ""
+            defaultValue = ""
+            multiSelect = false
+            sortable = false
+          }
+          displayOrder = 6
+          displayValueOnDetails = true
+          exportMeta = true
+          fieldContext = "config.customOptions"
+          fieldLabel = "Typeahead"
+          fieldName = "typeahead"
+          formField = true
+          optionList = { name = "Approved Colors" }
+          type = "typeahead"
+        }
+      ]
+    },
+    {
+      code = "db53a31b-1ae2-4f42-9d8e-25a9437a8d5b"
+      name = "Misc"
+      defaultCollapsed = false
+      description = "misc options"
+      options = [
+        {
+          code = "859760dc-caa9-41a9-9338-5fb4630c6bfc"
+          name = "859760dc-caa9-41a9-9338-5fb4630c6bfc"
+          uuid = "cf2cf17b-3682-4c49-bdf3-1788b39324b8"
+          config = { addon = "", addonPosition = "right" }
+          defaultValue = "CantEditThis"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Lock"
+          fieldName = "lock"
+          formField = true
+          isLocked = true
+        },
+        {
+          code = "83627079-1d6b-4327-b33d-d716bfc660ee"
+          name = "83627079-1d6b-4327-b33d-d716bfc660ee"
+          uuid = "8c2ef298-0132-4f92-9240-336e83f91164"
+          defaultValue = "CantSeeThis"
+          displayOrder = 1
+          fieldContext = "config.customOptions"
+          fieldLabel = "Hide"
+          fieldName = "hide"
+          formField = true
+          isHidden = true
+        },
+        {
+          code = "ce7f522b-2af1-4c41-ae0d-fef9265c6f35"
+          name = "ce7f522b-2af1-4c41-ae0d-fef9265c6f35"
+          uuid = "1ce5dc3c-78b0-4f88-8d54-9d1867b6c8fd"
+          displayOrder = 2
+          fieldContext = "config.customOptions"
+          fieldLabel = "Pattern"
+          fieldName = "pattern"
+          formField = true
+          placeHolder = "1Letter 1Number"
+          verifyPattern = "[a-zA-Z]\\d"
+        },
+        {
+          code = "6c3d6a64-0998-4734-8830-223fe89cfe14"
+          name = "6c3d6a64-0998-4734-8830-223fe89cfe14"
+          uuid = "e0f88819-8c6b-4b42-b4dd-c63f93cacef3"
+          dependsOnCode = "pattern"
+          displayOrder = 3
+          fieldContext = "config.customOptions"
+          fieldLabel = "Field1"
+          fieldName = "field1"
+          formField = true
+        },
+        {
+          code = "453c78ba-c5d0-41f1-8403-fe1d24838961"
+          name = "453c78ba-c5d0-41f1-8403-fe1d24838961"
+          uuid = "a4218727-3f2d-4e08-aefe-b4165f590af4"
+          displayOrder = 4
+          fieldContext = "config.customOptions"
+          fieldLabel = "Field2"
+          fieldName = "field2"
+          formField = true
+          visibleOnCode = "pattern"
+        },
+        {
+          code = "1731bb8d-8b5a-415d-b0bc-70a9672ecb2a"
+          name = "1731bb8d-8b5a-415d-b0bc-70a9672ecb2a"
+          uuid = "a821f1be-6306-460b-868f-db0cccb98c96"
+          displayOrder = 5
+          fieldContext = "config.customOptions"
+          fieldLabel = "Field3"
+          fieldName = "field3"
+          formField = true
+          requireOnCode = "pattern"
+        }
+      ]
+      visibleOnCode = "text"
+    }
+  ]
+  labels = [ "auto", "qa" ]
+  options = [
+    {
+      code = "name"
+      name = "Name"
+      uuid = "d2387e33-cd4b-4966-b0d3-a1e46c607414"
+      description = "Option type for catalog item"
+      exportMeta = true
+      fieldContext = "config.customOptions"
+      fieldLabel = "Name"
+      fieldName = "name"
+      labels = [ "auto", "export", "keep" ]
+      required = true
+    }
+  ]
+}
