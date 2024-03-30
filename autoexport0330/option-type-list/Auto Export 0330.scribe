@@ -1,0 +1,12 @@
+resource "option-type-list" "Auto Export 0330" {
+  name = "Auto Export 0330"
+  uuid = "fab4f68c-a14f-4e58-8bd3-4db395282327"
+  description = "auto export list"
+  initialDataset = <<EOFSCRIBE
+red,red
+green,green
+blue,blue
+EOFSCRIBE
+  labels = [ "autoexport0330" ]
+  type = "manual"
+}
