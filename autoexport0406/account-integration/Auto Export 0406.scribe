@@ -1,6 +1,6 @@
 resource "account-integration" "Auto Export 0406" {
   name = "Auto Export 0406"
-  uuid = "cdc14064-7985-416a-88b1-1f05c295ec27"
+  uuid = "42f4b9d5-4d89-496e-b821-b7cd104c81a6"
   config = {
     ansibleCommandBus = null
     ansibleGalaxyEnabled = null
