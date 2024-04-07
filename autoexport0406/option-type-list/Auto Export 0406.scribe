@@ -1,6 +1,6 @@
 resource "option-type-list" "Auto Export 0406" {
   name = "Auto Export 0406"
-  uuid = "92da3df9-ed76-4591-9ace-12e5bc55e858"
+  uuid = "bc7a6ff6-d0df-4f48-895d-a6e8f378e271"
   description = "auto export list"
   initialDataset = <<EOFSCRIBE
 red,red
