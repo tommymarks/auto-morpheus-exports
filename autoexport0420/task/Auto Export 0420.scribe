@@ -1,0 +1,17 @@
+resource "task" "Auto Export 0420" {
+  name = "Auto Export 0420"
+  uuid = "39b903a6-f117-4fd0-a1ab-00d0a74841ab"
+  dateCreated = "2024-04-20T12:46:13.000Z"
+  executeTarget = "resource"
+  labels = [ "autoexport0420" ]
+  lastUpdated = "2024-04-20T12:46:13.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Auto Export 0420" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansiblePlaybook" }, value = "nginx-1_9" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
