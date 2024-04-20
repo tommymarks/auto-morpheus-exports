@@ -1,0 +1,19 @@
+resource "container-template" "4e6cfad0-344e-440a-99ee-1e98590c492a" {
+  code = "4e6cfad0-344e-440a-99ee-1e98590c492a"
+  name = "Auto Export 0420"
+  uuid = "af0a6a8a-3515-4b2c-825c-b4bcedfe6a0b"
+  dateCreated = "2024-04-20T18:02:07.000Z"
+  fileName = "exportFile.txt"
+  fileOwner = "cloudinit"
+  filePath = "/var/tmp"
+  labels = [ "autoexport0420" ]
+  lastUpdated = "2024-04-20T18:02:07.000Z"
+  settingCategory = "auto"
+  settingName = "export"
+  template = <<EOFSCRIBE
+Export
+Import
+Test
+EOFSCRIBE
+  templatePhase = "postProvision"
+}
