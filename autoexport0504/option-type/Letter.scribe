@@ -1,0 +1,10 @@
+resource "option-type" "Letter" {
+  code = "Letter"
+  name = "Letter"
+  uuid = "3873d402-5b56-4c9e-bf9c-6650c9e01201"
+  defaultValue = "B"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Letter"
+  fieldName = "Letter"
+}
