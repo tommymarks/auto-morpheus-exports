@@ -1,0 +1,11 @@
+resource "container-type-mount" "template: e65fe9ff-040c-450b-b3a2-cd58361a4796" {
+  code = "template: e65fe9ff-040c-450b-b3a2-cd58361a4796"
+  name = "Auto Export 0511"
+  uuid = "3188a8ef-b8d0-491b-8ffe-fbb6bfe4eb2a"
+  containerPath = "/var/tmp"
+  hostPath = "/var/tmp"
+  mountType = "config"
+  shortName = "auto-export-0511"
+  template = { code = "e65fe9ff-040c-450b-b3a2-cd58361a4796" }
+  volumeName = "auto-export-0511"
+}
