@@ -1,5 +1,0 @@
-resource "task-set-task" "c2810cbc-8a04-455f-88e5-73ec0ac52c2f" {
-  uuid = "c2810cbc-8a04-455f-88e5-73ec0ac52c2f"
-  task = { name = "Auto Export 0515" }
-  taskPhase = "provision"
-}
