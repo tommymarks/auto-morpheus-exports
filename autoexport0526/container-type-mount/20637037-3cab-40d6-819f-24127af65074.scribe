@@ -1,0 +1,10 @@
+resource "container-type-mount" "20637037-3cab-40d6-819f-24127af65074" {
+  name = "data"
+  uuid = "20637037-3cab-40d6-819f-24127af65074"
+  canPersist = true
+  containerPath = "/var/www/html/"
+  deployable = true
+  hostPath = "/var/www/html/"
+  shortName = "data"
+  volumeName = "data"
+}
