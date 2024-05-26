@@ -1,0 +1,11 @@
+resource "container-script" "f92004e6-acec-4e79-87da-cd92742bb25f" {
+  code = "f92004e6-acec-4e79-87da-cd92742bb25f"
+  name = "Nginx Start"
+  uuid = "5652efd3-e630-42b8-bc1c-023fb02da18d"
+  dateCreated = "2023-03-19T19:56:53.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-19T19:56:53.000Z"
+  script = "service nginx start"
+  scriptPhase = "start"
+  sudoUser = true
+}
