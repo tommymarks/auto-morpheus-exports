@@ -1,0 +1,36 @@
+resource "container-type" "cf383ad7-5610-424e-8624-d60df39d1d39" {
+  code = "cf383ad7-5610-424e-8624-d60df39d1d39"
+  name = "Auto Export 0803"
+  uuid = "045b03f4-15d3-4f08-ad11-24d4819e1daa"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "102614f8-8520-4df4-9b81-f0a754b6da1d" } ]
+  containerMounts = [
+    { uuid = "436a1290-72b0-4490-b29b-17c442a131e6" },
+    { code = "template: 1984ec64-c69e-46e4-aed5-38344269164d" }
+  ]
+  containerPorts = [
+    { uuid = "dfe26ca1-5fb3-4c5b-a865-1bae79da6b4d" },
+    { uuid = "67023dbd-2e00-4adb-a655-21d0abae1c08" }
+  ]
+  containerVersion = "1.9"
+  entryPoint = ""
+  labels = [ "autoexport0803" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html/"
+  mountLogs = "/var/log/nginx"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  scripts = [
+    { code = "7659fc2b-6ece-4737-b78e-65287632ba52" },
+    { code = "b8e8650a-2cc1-468d-8145-192789b5c8dc" },
+    { code = "27fb50b3-64b9-445f-b007-b85f4bdcc826" }
+  ]
+  serverType = "vm"
+  shortName = "autoexport0803"
+  showServerLogs = true
+  statTypeCode = "vm"
+  templates = [ { code = "1984ec64-c69e-46e4-aed5-38344269164d" } ]
+  virtualImage = { code = "amazon.ec2.image.morpheus.ubuntu.18.04.20230131.amd64" }
+}
