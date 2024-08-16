@@ -1,0 +1,149 @@
+resource "catalog-item-type" "dd05211b-02ba-4d71-93fd-452894898b98" {
+  name = "Simple Instance"
+  uuid = "dd05211b-02ba-4d71-93fd-452894898b98"
+  category = "simple"
+  allowQuantity = true
+  config = {
+    name = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}"
+    backup = {
+      backupRepository = 1
+      createBackup = true
+      jobAction = "new"
+      jobRetentionCount = "3"
+      jobSchedule = 2
+      providerBackupType = 42
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Docker", id = 5 }
+    config = {
+      createUser = true
+      isEC2 = false
+      isVpcSelectable = true
+      poolProviderType = null
+      provisionServerId = null
+      resourcePoolId = "pool-223"
+    }
+    defaultExpandAdvanced = false
+    deployment = { id = 1, versionId = 4 }
+    displayNetworks = [ { ipMode = "Default" } ]
+    executionId = "9d3fd051-8310-4499-aa1c-3edb2fe1f6fb"
+    group = { name = "QA Docker", id = "6" }
+    hasNetworks = true
+    hasPreview = false
+    hideLock = true
+    hostName = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "524f1d9f-959b-4ad9-983e-802311c2bbff", id = 1332 }
+    loadBalancer = [
+      {
+        name = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 80
+        id = ""
+        internalPort = 80
+        loadBalancePort = null
+        loadBalanceProtocol = "http"
+        protocol = "http"
+        vipHostname = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}.localdomain"
+        vipName = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}-load-balancer"
+        vipPort = 80
+      },
+      {
+        name = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 443
+        id = ""
+        internalPort = 443
+        loadBalancePort = null
+        loadBalanceProtocol = "https"
+        protocol = "https"
+        vipHostname = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}.localdomain"
+        vipName = "$${userInitials}-$${cloudCode}-$${type}-simple-$${sequence}-load-balancer"
+        vipPort = 443
+      }
+    ]
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = { hasPool = false, id = "" }
+        primaryInterface = true
+      }
+    ]
+    plan = { code = "container-128", id = 101 }
+    ports = [
+      {
+        code = null
+        name = "Http"
+        externalPort = 80
+        id = 150
+        internalPort = 80
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTP"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      },
+      {
+        code = null
+        name = "Https"
+        externalPort = 443
+        id = 151
+        internalPort = 443
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTPS"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      }
+    ]
+    showScale = false
+    type = "nginxweb"
+    version = "latest"
+    volumes = [
+      {
+        name = "root"
+        maxStorage = 1073741824
+        readonlyName = false
+        rootVolume = true
+        size = 1
+        volumeCustomizable = false
+      }
+    ]
+    volumesDisplay = [
+      {
+        name = "root"
+        controller = null
+        datastore = ""
+        displayOrder = null
+        mountPoint = null
+        size = 1
+        storage = null
+      }
+    ]
+  }
+  content = <<EOFSCRIBE
+# Nginx Container
+This is a sample catalog item that provisions a single nginx docker container.
+Enjoy!
+EOFSCRIBE
+  contentFormatted = <<EOFSCRIBE
+<h1>Nginx Container</h1>
+<p>This is a sample catalog item that provisions a single nginx docker container.<br />
+Enjoy!</p>
+
+EOFSCRIBE
+  darkIconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/99/logo/nginx_original.svg"
+  dateCreated = "2023-03-19T21:41:40.000Z"
+  description = "don't delete"
+  featured = true
+  iconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/99/logo/nginx_original.svg"
+  labels = [ "auto", "qa", "simple" ]
+  lastUpdated = "2024-08-16T14:08:11.000Z"
+  maxQuantity = 3
+  refType = "InstanceType"
+}
