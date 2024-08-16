@@ -1,0 +1,17 @@
+resource "option-type" "autotext1" {
+  code = "autotext1"
+  name = "Auto Text 1"
+  uuid = "726cfa82-0deb-4d7b-bf77-8615f76a1caf"
+  defaultValue = "hellotext"
+  description = "don't delete"
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Text 1"
+  fieldName = "autotext1"
+  helpBlock = "no whitespace allowed"
+  labels = [ "auto", "keep" ]
+  required = true
+  verifyPattern = "\\w+"
+}

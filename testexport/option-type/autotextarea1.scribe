@@ -1,0 +1,23 @@
+resource "option-type" "autotextarea1" {
+  code = "autotextarea1"
+  name = "Auto Textarea 1"
+  uuid = "b6592e05-5f3a-4602-a846-e5410bc594f6"
+  config = { rows = "3" }
+  defaultValue = "helloarea"
+  description = "don't delete"
+  displayOrder = 7
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Textarea 1"
+  fieldName = "autotextarea1"
+  helpBlock = <<EOFSCRIBE
+3 rows tall
+no whitespace
+EOFSCRIBE
+  labels = [ "auto", "keep" ]
+  required = true
+  type = "textarea"
+  verifyPattern = "\\w+"
+}

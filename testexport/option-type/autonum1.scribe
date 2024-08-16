@@ -1,0 +1,18 @@
+resource "option-type" "autonum1" {
+  code = "autonum1"
+  name = "Auto Number 1"
+  uuid = "84f78aa8-1c0c-4944-9cae-948ca8e9a7c5"
+  defaultValue = "55"
+  description = "don't delete"
+  displayOrder = 3
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Number 1"
+  fieldName = "autonum1"
+  helpBlock = "enter a number"
+  labels = [ "auto", "keep" ]
+  required = true
+  type = "number"
+}

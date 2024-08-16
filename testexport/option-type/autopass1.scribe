@@ -1,0 +1,19 @@
+resource "option-type" "autopass1" {
+  code = "autopass1"
+  name = "Auto Password 1"
+  uuid = "2558c888-cf8a-43ca-be83-7c6b990befd1"
+  defaultValue = "supersecret55"
+  description = "don't delete"
+  displayOrder = 4
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Password 1"
+  fieldName = "autopass1"
+  helpBlock = "letters then numbers only"
+  labels = [ "auto", "keep" ]
+  required = true
+  type = "password"
+  verifyPattern = "[a-zA-Z]+\\d+"
+}

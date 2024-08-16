@@ -1,0 +1,20 @@
+resource "option-type" "autoselect1" {
+  code = "autoselect1"
+  name = "Auto Select 1"
+  uuid = "dc9e7af1-3624-41db-bd73-4fb62c6f93cb"
+  defaultValue = "Blue"
+  description = "don't delete"
+  displayOrder = 1
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Select 1"
+  fieldName = "autoselect1"
+  helpBlock = "which one?"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Colors csv" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

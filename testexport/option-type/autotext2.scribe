@@ -1,0 +1,13 @@
+resource "option-type" "autotext2" {
+  code = "autotext2"
+  name = "Auto Text 2"
+  uuid = "4b0a203b-a04c-4c1c-9aff-1a6921de9d88"
+  description = "don't delete"
+  displayOrder = 16
+  fieldContext = "config.customOptions"
+  fieldLabel = "Text 2"
+  fieldName = "autotext2"
+  labels = [ "auto", "keep" ]
+  placeHolder = "not required"
+  showOnEdit = false
+}

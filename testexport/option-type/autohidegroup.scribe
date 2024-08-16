@@ -1,0 +1,16 @@
+resource "option-type" "autohidegroup" {
+  code = "autohidegroup"
+  name = "Auto Hide API"
+  uuid = "13be3332-75fd-4220-a725-b0039c2ffe28"
+  description = "don't delete"
+  displayOrder = 30
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hide API"
+  fieldName = "autohidegroup"
+  isHidden = true
+  labels = [ "auto", "keep" ]
+  noBlank = true
+  optionList = { name = "API Groups" }
+  optionSource = "list"
+  type = "select"
+}
