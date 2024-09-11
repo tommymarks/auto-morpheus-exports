@@ -1,0 +1,10 @@
+resource "container-type-mount" "c0e5cb1d-5a5d-4e86-8beb-60354ff8bad7" {
+  name = "data"
+  uuid = "c0e5cb1d-5a5d-4e86-8beb-60354ff8bad7"
+  canPersist = true
+  containerPath = "/var/www/html/"
+  deployable = true
+  hostPath = "/var/www/html/"
+  shortName = "data"
+  volumeName = "data"
+}
