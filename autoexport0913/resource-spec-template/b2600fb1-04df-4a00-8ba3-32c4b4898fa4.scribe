@@ -1,0 +1,11 @@
+resource "resource-spec-template" "b2600fb1-04df-4a00-8ba3-32c4b4898fa4" {
+  name = "Auto Export 0913"
+  uuid = "b2600fb1-04df-4a00-8ba3-32c4b4898fa4"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2024-09-13T09:56:05.000Z"
+  labels = [ "autoexport0913" ]
+  lastUpdated = "2024-09-13T09:56:05.000Z"
+  template = { uuid = "d2478bb9-ad6b-449c-bec0-955242820066" }
+  templateType = "Helm Chart"
+  type = { code = "helm" }
+}
