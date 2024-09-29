@@ -1,0 +1,9 @@
+resource "file-content" "67a1e4b3-89f7-4542-a2a3-d7f05cbce598" {
+  uuid = "67a1e4b3-89f7-4542-a2a3-d7f05cbce598"
+  content = <<EOFSCRIBE
+Hello
+World
+EOFSCRIBE
+  dateCreated = "2024-09-29T00:58:51.000Z"
+  lastUpdated = "2024-09-29T00:58:51.000Z"
+}
