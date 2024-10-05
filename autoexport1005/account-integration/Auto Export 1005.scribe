@@ -1,6 +1,6 @@
 resource "account-integration" "Auto Export 1005" {
   name = "Auto Export 1005"
-  uuid = "f1a7ffa8-bb1c-418c-acbb-c58f4e85ee4b"
+  uuid = "e25a742a-88ec-436f-9e5f-9fbf8b5467da"
   config = {
     ansibleCommandBus = null
     ansibleGalaxyEnabled = null
