@@ -1,10 +1,10 @@
 resource "task" "Auto Export 1006" {
   name = "Auto Export 1006"
-  uuid = "67d24472-71b9-4719-aaa8-62c6c623cc48"
-  dateCreated = "2024-10-06T14:29:19.000Z"
+  uuid = "9091731e-25a4-4b3b-9185-3acb1d6b0462"
+  dateCreated = "2024-10-06T18:01:40.000Z"
   executeTarget = "resource"
   labels = [ "autoexport1006" ]
-  lastUpdated = "2024-10-06T14:29:19.000Z"
+  lastUpdated = "2024-10-06T18:01:40.000Z"
   options = [
     {
       optionType = { code = "ansibleGitId" }
