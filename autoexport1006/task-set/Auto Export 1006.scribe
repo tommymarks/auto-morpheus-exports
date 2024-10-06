@@ -1,9 +1,0 @@
-resource "task-set" "Auto Export 1006" {
-  name = "Auto Export 1006"
-  uuid = "26f51e1b-c5f6-4185-9794-a08d16c11ea0"
-  dateCreated = "2024-10-06T18:02:01.000Z"
-  description = "Automated ansible script"
-  labels = [ "autoexport1006" ]
-  lastUpdated = "2024-10-06T18:02:01.000Z"
-  taskSetTasks = [ { uuid = "ebf3e2d3-bb2f-4c1a-8401-5bef339d2753" } ]
-}
