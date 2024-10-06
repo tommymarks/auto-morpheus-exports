@@ -1,7 +1,7 @@
 resource "option-type" "auto1" {
   code = "auto1"
   name = "Auto Export 1006"
-  uuid = "605712a4-a441-4905-9baf-a08fe52883f8"
+  uuid = "99e1d2c7-5a2d-47f2-8bba-bbfed6a9b608"
   defaultValue = "green"
   description = "auto export input"
   displayValueOnDetails = true
