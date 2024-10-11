@@ -1,6 +1,0 @@
-resource "container-type-log" "f6d7ea5e-bbeb-4945-902b-f2bb83827e74" {
-  name = "logs"
-  uuid = "f6d7ea5e-bbeb-4945-902b-f2bb83827e74"
-  containerPath = "/var/log/nginx"
-  hostPath = "/var/log/nginx"
-}
