@@ -1,0 +1,18 @@
+resource "account-integration" "Auto Export 1011" {
+  name = "Auto Export 1011"
+  uuid = "b16089f9-398d-4c50-aa20-ebbfc84b2767"
+  config = {
+    ansibleCommandBus = null
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/groups_vars"
+    ansibleHostVars = "/hosts"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/roles"
+    ansibleVerbose = "on"
+    cacheEnabled = "on"
+    defaultBranch = ""
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "git@github.com:bertramdev/morpheus-ansible.git"
+  type = "ansible"
+}
