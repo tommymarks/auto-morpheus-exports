@@ -1,6 +1,6 @@
 resource "option-type-list" "Auto Export 1026" {
   name = "Auto Export 1026"
-  uuid = "d3312b6a-d818-4725-9c53-a8cd9af61d27"
+  uuid = "ae9d0040-d46b-468b-889d-f479cd8f577d"
   description = "auto export list"
   labels = [ "autoexport1026" ]
   type = "manual"
