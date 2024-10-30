@@ -10,5 +10,6 @@ resource "instance-type" "autoexport1030" {
   hasDeployment = true
   hasSettings = true
   labels = [ "autoexport1030" ]
+  layouts = [ { code = "fd9a7b23-4e33-49b7-80bc-4985aa43401b" } ]
   optionTypes = [ { code = "auto1" } ]
 }
