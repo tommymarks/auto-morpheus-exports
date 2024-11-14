@@ -1,0 +1,11 @@
+resource "container-script" "01036fac-8d0f-407e-85a3-63b5d5417291" {
+  code = "01036fac-8d0f-407e-85a3-63b5d5417291"
+  name = "Auto Export 1114"
+  uuid = "f6fd641f-676f-4b7e-a13b-bcaa61ef1ef8"
+  dateCreated = "2024-11-14T16:04:51.000Z"
+  labels = [ "autoexport1114" ]
+  lastUpdated = "2024-11-14T16:04:51.000Z"
+  script = "echo \"export import test\" | tee -a /var/tmp/exportScript.txt"
+  scriptPhase = "postProvision"
+  sudoUser = true
+}
