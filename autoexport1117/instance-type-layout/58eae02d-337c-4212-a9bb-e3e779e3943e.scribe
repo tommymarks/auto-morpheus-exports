@@ -1,0 +1,17 @@
+resource "instance-type-layout" "58eae02d-337c-4212-a9bb-e3e779e3943e" {
+  code = "58eae02d-337c-4212-a9bb-e3e779e3943e"
+  name = "Auto Export 1117"
+  uuid = "fe12f0c6-be5b-436b-bea2-46a64d31474b"
+  actions = [ { code = "generic-add-node" } ]
+  description = "auto export"
+  hasAutoScale = true
+  instanceType = { code = "autoexport1117" }
+  instanceVersion = "nginx"
+  labels = [ "autoexport1117" ]
+  memoryRequirement = 1073741824
+  optionTypes = [ { code = "Letter" } ]
+  provisionType = { code = "amazon" }
+  supportsConvertToManaged = true
+  taskSets = [ { name = "Auto Export 1117" } ]
+  workloads = [ { code = "58bbed00-e7b7-4b45-9e49-285018758b46" } ]
+}
