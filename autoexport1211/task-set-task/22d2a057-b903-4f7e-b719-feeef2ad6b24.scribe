@@ -1,0 +1,4 @@
+resource "task-set-task" "22d2a057-b903-4f7e-b719-feeef2ad6b24" {
+  uuid = "22d2a057-b903-4f7e-b719-feeef2ad6b24"
+  task = { name = "Installer Debian FIPS" }
+}
