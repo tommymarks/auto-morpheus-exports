@@ -1,0 +1,14 @@
+resource "option-type" "2ec898c7-f79e-42a7-a9aa-158816114d84" {
+  code = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+  name = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+  uuid = "53972b7c-9fa0-48b4-aa18-68152c7d95ca"
+  config = { addon = "", addonPosition = "" }
+  defaultValue = "28"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Group"
+  fieldName = "group"
+  formField = true
+  helpBlock = "group help"
+  refCode = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+  type = "group"
+}
