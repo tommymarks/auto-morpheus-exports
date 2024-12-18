@@ -1,0 +1,13 @@
+resource "compute-type-set" "b5b55382-b17c-48da-87d7-5c14630a7c5f-4eb5a434-3dbb-401b-a388-61996660d90f" {
+  code = "b5b55382-b17c-48da-87d7-5c14630a7c5f-4eb5a434-3dbb-401b-a388-61996660d90f"
+  name = "Amazon Custom SUSE 15-worker-4eb5a434-3dbb-401b-a388-61996660d90f-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "4eb5a434-3dbb-401b-a388-61996660d90f" }
+}
