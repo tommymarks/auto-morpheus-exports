@@ -1,0 +1,23 @@
+resource "container-type" "e2d8f9e6-95ef-4ef3-884a-80f982dcab68" {
+  code = "e2d8f9e6-95ef-4ef3-884a-80f982dcab68"
+  name = "Apache latest"
+  uuid = "c8177e82-4e69-4d0b-b9d6-a45af6e6add7"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "lvmSnapshot"
+  containerPorts = [
+    { uuid = "bb5f8611-a4fc-40eb-92f8-5d908b34f0e8" },
+    { uuid = "03a323d6-143d-4711-92fa-5c51ca95ee95" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "docker"
+  logs = [ { uuid = "40c9f450-ad64-4e6d-9a62-25aeff43eb84" } ]
+  mounts = [ { uuid = "ba783a7d-626c-4309-9250-21d957e4b905" } ]
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "httpd"
+  shortName = "apache"
+  statTypeCode = "container"
+}

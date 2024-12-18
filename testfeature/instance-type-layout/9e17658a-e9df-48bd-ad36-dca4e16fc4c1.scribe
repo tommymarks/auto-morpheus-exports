@@ -1,0 +1,14 @@
+resource "instance-type-layout" "9e17658a-e9df-48bd-ad36-dca4e16fc4c1" {
+  code = "9e17658a-e9df-48bd-ad36-dca4e16fc4c1"
+  name = "Apache Container"
+  uuid = "2310d42f-e6bb-4fb0-b6af-10e92aafc0a7"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single container with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "e2d8f9e6-95ef-4ef3-884a-80f982dcab68" } ]
+}
