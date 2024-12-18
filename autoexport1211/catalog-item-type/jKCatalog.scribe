@@ -1,0 +1,161 @@
+resource "catalog-item-type" "jKCatalog" {
+  code = "jKCatalog"
+  name = "JK Catalog Item"
+  uuid = "1e52c691-50cf-4efe-9463-6b2e76152ff0"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      backupJob = {
+        retentionCount = "3"
+        scheduleTypeId = 2
+        syntheticFullEnabled = false
+        syntheticFullSchedule = null
+      }
+      createBackup = true
+      jobAction = "new"
+      providerBackupType = 13
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA VMware", id = 2 }
+    config = {
+      createUser = false
+      hostId = 2
+      isEC2 = false
+      isVpcSelectable = true
+      nestedVirtualization = null
+      noAgent = false
+      poolProviderType = null
+      resourcePoolId = "<%=customOptions.resourcePool%>"
+      smbiosAssetTag = null
+      vmwareFolderId = "group-v80"
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    environment = "2"
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "vmware-ubuntu-18.04-single", id = 105 }
+    metadata = [ { name = "name", value = "<%=customOptions.plan.code%>" } ]
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = {
+          id = "<%= if(customOptions.Cluster == 'pool-6') {'network-86657'} else if(customOptions.Cluster == 'pool-5') {'network-86656'}%>"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = false
+        showNetworkPoolLabel = true
+      }
+    ]
+    plan = { code = "vm-2048", id = 242 }
+    ports = [
+      {
+        code = "ubuntu.22"
+        name = "SSH"
+        externalPort = 22
+        id = 9
+        internalPort = 22
+        loadBalance = false
+        loadBalancePort = null
+        loadBalanceProtocol = null
+        shortName = "ssh"
+        sortOrder = 1
+        visible = true
+      }
+    ]
+    showScale = false
+    storageControllers = [
+      {
+        name = "IDE 0"
+        category = "ide"
+        active = true
+        busNumber = "0"
+        displayOrder = 0
+        editable = false
+        id = 17
+        maxDevices = 2
+        removable = false
+        reservedUnitNumber = -1
+        typeId = 2
+        typeName = "IDE"
+        unitNumber = null
+      },
+      {
+        name = "SCSI 0"
+        category = "scsi"
+        active = true
+        busNumber = "0"
+        displayOrder = 1
+        editable = false
+        id = 16
+        maxDevices = 16
+        removable = false
+        reservedUnitNumber = 7
+        typeId = 4
+        typeName = "SCSI LSI Logic Parallel"
+        unitNumber = null
+      },
+      {
+        name = "IDE 1"
+        category = "ide"
+        active = true
+        busNumber = "1"
+        displayOrder = 2
+        editable = false
+        id = 18
+        maxDevices = 2
+        removable = false
+        reservedUnitNumber = -1
+        typeId = 2
+        typeName = "IDE"
+        unitNumber = null
+      }
+    ]
+    type = "ubuntu"
+    version = "18.04"
+    volumes = [
+      {
+        name = "root"
+        uuid = "d163faca-365c-4c7f-bc48-09c65a5885cd"
+        configurableIOPS = false
+        controllerId = 522709
+        controllerMountPoint = "522709:0:4:0"
+        datastoreId = 9
+        displayOrder = 0
+        externalId = "2000"
+        id = 1122259
+        internalId = "[ESXi-DC2-QA-LUN01] Morpheus Ubuntu 18.04 20240604/Morpheus Ubuntu 18.04 20240604.vmdk"
+        maxIOPS = null
+        maxStorage = 21474836480
+        minStorage = 5368709120
+        planResizable = true
+        readonlyName = false
+        resizeable = true
+        rootVolume = true
+        size = 20
+        storageType = 1
+        typeId = 1
+        uniqueId = null
+        unitNumber = "0"
+        vId = 95445
+        virtualImageId = 95445
+        volumeCustomizable = true
+      }
+    ]
+  }
+  content = "test"
+  contentFormatted = <<EOFSCRIBE
+<p>test</p>
+
+EOFSCRIBE
+  dateCreated = "2024-10-25T20:34:42.000Z"
+  form = { code = "provisionvmware" }
+  formConfig = "{\"optOut\":{\"e3fadbd7-5ad8-415c-9782-12883a431dd9\":false,\"2e0455dc-d8ae-4e7b-88ed-e2d4d0bc0f21\":false}}"
+  formType = "form"
+  iconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/242/logo/ubuntu_light_original.svg"
+  lastUpdated = "2024-10-25T20:34:42.000Z"
+  refType = "InstanceType"
+}
