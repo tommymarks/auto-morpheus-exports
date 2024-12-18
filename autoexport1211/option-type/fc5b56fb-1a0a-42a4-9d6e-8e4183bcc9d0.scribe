@@ -1,0 +1,13 @@
+resource "option-type" "fc5b56fb-1a0a-42a4-9d6e-8e4183bcc9d0" {
+  code = "fc5b56fb-1a0a-42a4-9d6e-8e4183bcc9d0"
+  name = "fc5b56fb-1a0a-42a4-9d6e-8e4183bcc9d0"
+  uuid = "35d50b94-df3b-4fdf-bc79-6a11f8fe1baa"
+  defaultValue = "dev"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Environment"
+  fieldName = "environment"
+  formField = true
+  refCode = "fc5b56fb-1a0a-42a4-9d6e-8e4183bcc9d0"
+  type = "environment"
+}
