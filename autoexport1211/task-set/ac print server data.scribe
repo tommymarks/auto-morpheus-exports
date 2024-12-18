@@ -1,0 +1,10 @@
+resource "task-set" "ac print server data" {
+  name = "ac print server data"
+  uuid = "46131f25-1c44-4b64-b28a-cd233f1dd3a1"
+  dateCreated = "2024-11-21T22:27:00.000Z"
+  lastUpdated = "2024-11-21T22:27:00.000Z"
+  taskSetTasks = [
+    { uuid = "7c418242-9a32-48df-9d41-7bc1d1fe251d" },
+    { uuid = "ddfff345-18fb-4756-b429-0e1d9a1604d1" }
+  ]
+}
