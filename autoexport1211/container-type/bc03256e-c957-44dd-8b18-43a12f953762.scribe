@@ -1,0 +1,16 @@
+resource "container-type" "bc03256e-c957-44dd-8b18-43a12f953762" {
+  code = "bc03256e-c957-44dd-8b18-43a12f953762"
+  name = "Amazon Debian 10"
+  uuid = "5e8ea22a-b2a8-49f7-b97d-4b96cc08a59a"
+  containerPorts = [ { uuid = "cdad9e69-a20e-438b-8904-14df9a823600" } ]
+  containerVersion = "Debian 10"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsdeb10"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "db1f4e68-2723-4e56-91ae-33e8ddece078" }
+}
