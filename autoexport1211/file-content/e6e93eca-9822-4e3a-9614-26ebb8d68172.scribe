@@ -1,0 +1,10 @@
+resource "file-content" "e6e93eca-9822-4e3a-9614-26ebb8d68172" {
+  uuid = "e6e93eca-9822-4e3a-9614-26ebb8d68172"
+  content = <<EOFSCRIBE
+pkill PackageKit
+yum update -y > /dev/null
+yum install -y -q net-tools
+EOFSCRIBE
+  dateCreated = "2023-10-27T16:10:39.000Z"
+  lastUpdated = "2023-12-13T20:47:30.000Z"
+}

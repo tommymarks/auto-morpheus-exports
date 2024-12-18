@@ -1,0 +1,14 @@
+resource "task-set" "InstallerOEL7" {
+  name = "InstallerOEL7"
+  uuid = "4b9bbc6f-b739-4b62-a1b1-f3f71b8db0bd"
+  dateCreated = "2023-10-27T16:17:34.000Z"
+  description = "Setup OEL 7 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:43:56.000Z"
+  taskSetTasks = [
+    { uuid = "043a5809-bf36-4852-a22b-af80e45a2bd6" },
+    { uuid = "7caab129-3992-46b6-b7a7-15a4f108a5d4" },
+    { uuid = "82eb1b39-f507-48d5-b482-734f5772210f" },
+    { uuid = "d936d3f2-a0d2-4644-8080-2935da16467f" }
+  ]
+}
