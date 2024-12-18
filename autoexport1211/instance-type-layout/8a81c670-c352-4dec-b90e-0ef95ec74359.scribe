@@ -1,0 +1,14 @@
+resource "instance-type-layout" "8a81c670-c352-4dec-b90e-0ef95ec74359" {
+  code = "8a81c670-c352-4dec-b90e-0ef95ec74359"
+  name = "Windows Server"
+  uuid = "5523a8bb-4367-4d95-aafd-e276c1e4bb44"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "win" }
+  instanceVersion = "2019"
+  labels = [ "auto", "qa" ]
+  memoryRequirement = 4294967296
+  provisionType = { code = "vmware" }
+  supportsConvertToManaged = true
+  workloads = [ { code = "60626d20-111f-4e41-9706-ebd498f9470e" } ]
+}
