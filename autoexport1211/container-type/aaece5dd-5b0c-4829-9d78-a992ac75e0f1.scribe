@@ -1,0 +1,16 @@
+resource "container-type" "aaece5dd-5b0c-4829-9d78-a992ac75e0f1" {
+  code = "aaece5dd-5b0c-4829-9d78-a992ac75e0f1"
+  name = "Amazon SLES 15"
+  uuid = "a7150bbe-e2f7-4d04-be7c-cb0aa5449e5f"
+  containerPorts = [ { uuid = "2471aaa4-78fa-4b92-a3a6-3f7a120c3d51" } ]
+  containerVersion = "SLES 15"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awssles15"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "2b1471d5-e73c-45e4-a456-0f62a1dea133" }
+}
