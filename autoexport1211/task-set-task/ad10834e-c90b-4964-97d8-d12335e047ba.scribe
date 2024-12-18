@@ -1,0 +1,5 @@
+resource "task-set-task" "ad10834e-c90b-4964-97d8-d12335e047ba" {
+  uuid = "ad10834e-c90b-4964-97d8-d12335e047ba"
+  task = { name = "Installer Reconfigure" }
+  taskOrder = 5
+}

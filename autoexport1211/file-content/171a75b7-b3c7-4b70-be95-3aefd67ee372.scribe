@@ -1,0 +1,12 @@
+resource "file-content" "171a75b7-b3c7-4b70-be95-3aefd67ee372" {
+  uuid = "171a75b7-b3c7-4b70-be95-3aefd67ee372"
+  content = <<EOFSCRIBE
+pkill PackageKit
+yum update -y -q > /dev/null &&
+yum install -y -q dracut-fips &&
+dracut -f &&
+/sbin/grubby --update-kernel=ALL --args="fips=1"
+EOFSCRIBE
+  dateCreated = "2023-10-26T20:11:42.000Z"
+  lastUpdated = "2023-12-13T20:46:49.000Z"
+}

@@ -1,0 +1,19 @@
+resource "task" "Installer Enable FIPS AL2" {
+  name = "Installer Enable FIPS AL2"
+  uuid = "e322b752-ded1-4af9-be3e-8d7d1b9bd992"
+  dateCreated = "2023-10-26T20:11:42.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-13T20:46:49.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "171a75b7-b3c7-4b70-be95-3aefd67ee372" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}

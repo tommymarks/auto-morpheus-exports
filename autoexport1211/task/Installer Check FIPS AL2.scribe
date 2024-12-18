@@ -1,0 +1,16 @@
+resource "task" "Installer Check FIPS AL2" {
+  name = "Installer Check FIPS AL2"
+  uuid = "6fa8be00-34f2-4023-95a9-4a086085eada"
+  dateCreated = "2023-11-15T19:29:57.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    {
+      content = { uuid = "b1ba968e-06f9-41b6-8037-b1c5e77d65fa" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

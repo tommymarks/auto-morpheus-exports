@@ -1,0 +1,16 @@
+resource "task-set" "InstallerAmazonLinux2FIPS" {
+  name = "InstallerAmazonLinux2FIPS"
+  uuid = "9761a750-9255-432a-ac68-679922c1b119"
+  dateCreated = "2023-10-26T20:14:16.000Z"
+  description = "Setup Amazon Linux 2 FIPS appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:41:24.000Z"
+  taskSetTasks = [
+    { uuid = "0a686b7a-14b6-4186-aee3-da02ca292fe6" },
+    { uuid = "8d14a90f-2071-40bd-ba51-167104b9e4da" },
+    { uuid = "ad10834e-c90b-4964-97d8-d12335e047ba" },
+    { uuid = "b84ca7cc-a87e-484c-bb6a-0690263ec469" },
+    { uuid = "bf1bb82c-3599-4fc5-a772-1d037311ca8b" },
+    { uuid = "daf4a9ea-2e45-47fa-9e43-e4307e715342" }
+  ]
+}

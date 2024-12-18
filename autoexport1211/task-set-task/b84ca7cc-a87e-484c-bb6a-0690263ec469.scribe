@@ -1,0 +1,5 @@
+resource "task-set-task" "b84ca7cc-a87e-484c-bb6a-0690263ec469" {
+  uuid = "b84ca7cc-a87e-484c-bb6a-0690263ec469"
+  task = { name = "Installer Check FIPS AL2" }
+  taskOrder = 3
+}
