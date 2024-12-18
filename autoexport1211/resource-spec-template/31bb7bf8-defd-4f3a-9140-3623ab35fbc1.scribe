@@ -1,0 +1,17 @@
+resource "resource-spec-template" "31bb7bf8-defd-4f3a-9140-3623ab35fbc1" {
+  name = "CF Redis"
+  uuid = "31bb7bf8-defd-4f3a-9140-3623ab35fbc1"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2023-07-07T16:04:12.000Z"
+  lastUpdated = "2023-07-07T16:04:12.000Z"
+  template = { uuid = "3663d676-5cc0-417b-a722-e85b7d4be485" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
