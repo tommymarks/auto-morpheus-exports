@@ -1,0 +1,14 @@
+resource "container-type" "d2521d0f-5a2d-4af7-b9cc-3cef4c6925c8" {
+  code = "d2521d0f-5a2d-4af7-b9cc-3cef4c6925c8"
+  name = "ac-osType-edit"
+  uuid = "5e1146c9-5f71-4b2b-8bdc-2b916322ca0c"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "vm"
+  osType = { code = "ac-osType-update" }
+  provisionType = { code = "vmware" }
+  serverType = "vm"
+  shortName = "ac-osType-edit"
+  showServerLogs = true
+  statTypeCode = "vm"
+}
