@@ -1,0 +1,11 @@
+resource "task-set" "Hello World Sleep Operational" {
+  name = "Hello World Sleep Operational"
+  uuid = "bea6b186-853b-447a-b8f6-1875a7225c01"
+  dateCreated = "2023-09-22T15:36:12.000Z"
+  lastUpdated = "2024-10-29T05:09:52.000Z"
+  taskSetTasks = [
+    { uuid = "20a9f8cd-1db9-44e5-9552-a72b481f46d6" },
+    { uuid = "9d3902df-aad9-4b77-93b4-e016bbc9cc34" }
+  ]
+  taskSetType = "operation"
+}
