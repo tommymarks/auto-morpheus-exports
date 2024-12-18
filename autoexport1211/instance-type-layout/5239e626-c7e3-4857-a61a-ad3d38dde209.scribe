@@ -1,0 +1,14 @@
+resource "instance-type-layout" "5239e626-c7e3-4857-a61a-ad3d38dde209" {
+  code = "5239e626-c7e3-4857-a61a-ad3d38dde209"
+  name = "OLVM Apache"
+  uuid = "5af3c7e4-648c-4660-a386-015ccb2133ed"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "olvm-provision-standard" }
+  workloads = [ { code = "03b74ce8-4e98-4ccd-8040-62604f4f5e16" } ]
+}
