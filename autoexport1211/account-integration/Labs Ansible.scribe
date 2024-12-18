@@ -1,0 +1,18 @@
+resource "account-integration" "Labs Ansible" {
+  name = "Labs Ansible"
+  uuid = "1a3da66e-e9a5-4f3c-8904-b082fc8a49e4"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/groups_vars"
+    ansibleHostVars = "/hosts"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/roles"
+    ansibleVerbose = null
+    cacheEnabled = "on"
+    defaultBranch = "master"
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "git@github.com:bertramdev/morpheus-ansible.git"
+  type = "ansible"
+}
