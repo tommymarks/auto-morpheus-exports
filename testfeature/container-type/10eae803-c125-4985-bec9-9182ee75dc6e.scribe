@@ -1,0 +1,23 @@
+resource "container-type" "10eae803-c125-4985-bec9-9182ee75dc6e" {
+  code = "10eae803-c125-4985-bec9-9182ee75dc6e"
+  name = "Tomcat 7"
+  uuid = "989d78a1-9970-45a6-97ee-cdb7a975efb3"
+  category = "tomcat"
+  backupType = "lvmSnapshot"
+  containerPorts = [ { uuid = "2d8bc10c-6064-4611-b20f-57a257bde348" } ]
+  containerVersion = "7"
+  entryPoint = "/opt/tomcat/bin/deploy-and-run.sh"
+  labels = [ "qa" ]
+  logTypeCode = "docker"
+  logs = [ { uuid = "3a04961f-e49f-4c6e-b20c-e778d3d7508d" } ]
+  mounts = [ { uuid = "0975a91f-a5cc-4c5b-912f-3219babde06e" } ]
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "fabric8/tomcat-7"
+  scripts = [
+    { code = "4e9e3d24-69d3-4854-b5b5-787bd56711db" },
+    { code = "717b773d-1098-41d9-a668-da3981d4e000" }
+  ]
+  shortName = "tomcat7"
+  statTypeCode = "container"
+}
