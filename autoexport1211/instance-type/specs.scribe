@@ -7,4 +7,8 @@ resource "instance-type" "specs" {
   description = "spec template tests"
   environmentPrefix = "SPEC"
   labels = [ "auto", "qa" ]
+  layouts = [
+    { code = "052e43b6-3d02-42de-b859-df245db59cd9" },
+    { code = "7791b18d-dbfe-4bf1-a135-545ae29fa483" }
+  ]
 }
