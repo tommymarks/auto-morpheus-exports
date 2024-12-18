@@ -1,0 +1,14 @@
+resource "instance-type-layout" "ffbab386-3674-49bc-90a5-6d15668d74fc" {
+  code = "ffbab386-3674-49bc-90a5-6d15668d74fc"
+  name = "OpenStack Apache"
+  uuid = "51f3f216-ea62-4d0c-b7b1-72e850e3618c"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "openstack" }
+  workloads = [ { code = "4a222c2f-ee90-4ab9-ba8e-03fe352c17bd" } ]
+}
