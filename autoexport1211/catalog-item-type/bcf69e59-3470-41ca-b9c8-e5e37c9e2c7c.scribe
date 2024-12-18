@@ -1,0 +1,73 @@
+resource "catalog-item-type" "bcf69e59-3470-41ca-b9c8-e5e37c9e2c7c" {
+  name = "Security Group Testing"
+  uuid = "bcf69e59-3470-41ca-b9c8-e5e37c9e2c7c"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      createBackup = true
+      jobAction = "new"
+      jobRetentionCount = "3"
+      jobSchedule = 2
+      providerBackupType = 11
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Amazon", id = 3 }
+    config = {
+      availabilityId = null
+      createUser = false
+      instanceProfile = null
+      isEC2 = "false"
+      isVpcSelectable = true
+      kmsKeyId = null
+      noAgent = false
+      poolProviderType = null
+      publicIpType = "subnet"
+      resourcePoolId = "pool-12284"
+      securityId = null
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    environment = "2"
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "ubuntu-amazon-22.04", id = 1118 }
+    networkInterfaces = [
+      {
+        network = {
+          id = "network-28"
+          idName = "labs_web_1a (subnet-72b9162b)"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { code = "amazon-t2.small", id = 622 }
+    securityGroups = [ { id = "sg-21dd8144" } ]
+    showScale = false
+    templateParameter = null
+    type = "ubuntu"
+    version = "18.04"
+    volumes = [
+      {
+        name = "root"
+        maxIOPS = null
+        maxStorage = 21474836480
+        readonlyName = false
+        rootVolume = true
+        size = 20
+        storageType = 23
+        vId = 32618
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2023-12-07T23:29:06.000Z"
+  form = { code = "securityGroup" }
+  formType = "form"
+  lastUpdated = "2023-12-07T23:29:06.000Z"
+  refType = "InstanceType"
+}
