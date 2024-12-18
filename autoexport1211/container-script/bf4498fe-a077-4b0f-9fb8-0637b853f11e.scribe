@@ -1,0 +1,11 @@
+resource "container-script" "bf4498fe-a077-4b0f-9fb8-0637b853f11e" {
+  code = "bf4498fe-a077-4b0f-9fb8-0637b853f11e"
+  name = "phase: provision error"
+  uuid = "df236ecf-a979-4db2-8e0a-c00f2b0c8319"
+  dateCreated = "2023-03-17T02:04:34.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:05:56.000Z"
+  script = "echo \"$(date) - provision error\" | tee -a /var/tmp/phase_script.txt"
+  scriptPhase = "start"
+  sudoUser = true
+}
