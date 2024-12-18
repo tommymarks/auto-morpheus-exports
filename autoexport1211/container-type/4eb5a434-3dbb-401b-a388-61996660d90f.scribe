@@ -1,0 +1,18 @@
+resource "container-type" "4eb5a434-3dbb-401b-a388-61996660d90f" {
+  code = "4eb5a434-3dbb-401b-a388-61996660d90f"
+  name = "Amazon SUSE 15"
+  uuid = "d9d5f627-db1e-42f2-a103-fc6a17fb8ebe"
+  containerPorts = [ { uuid = "ce5e95d1-11ae-4316-bc31-d9bb726222b9" } ]
+  containerVersion = "SUSE 15"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awssuse15"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "amazon.ec2.image.morpheus.opensuse.15.3-v1.opensuse.15.1.amd64"
+  }
+}

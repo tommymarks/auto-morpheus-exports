@@ -1,0 +1,13 @@
+resource "instance-type-layout" "1839eac0-dbf5-4375-a7f7-c33c02773485" {
+  code = "1839eac0-dbf5-4375-a7f7-c33c02773485"
+  name = "SUSE15"
+  uuid = "6a65cfa2-9b2f-4da7-9d33-e4ae57b7d99e"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSUSE15" } ]
+  workloads = [ { code = "4eb5a434-3dbb-401b-a388-61996660d90f" } ]
+}
