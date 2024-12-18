@@ -1,0 +1,13 @@
+resource "instance-type-layout" "189275e9-1b28-4090-a71f-53b3aa9177f5" {
+  code = "189275e9-1b28-4090-a71f-53b3aa9177f5"
+  name = "CentOS7 FIPS"
+  uuid = "cf62a85c-71dd-407d-94c6-0414871993b6"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "FIPS"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerCentOS7FIPS" } ]
+  workloads = [ { code = "amazon-centos-7.3" } ]
+}
