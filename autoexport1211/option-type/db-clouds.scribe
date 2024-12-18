@@ -1,0 +1,15 @@
+resource "option-type" "db-clouds" {
+  code = "db-clouds"
+  name = "db-clouds"
+  uuid = "6dcae9de-01c2-44a2-8b6f-fe27ee233e6f"
+  dependsOnCode = "db-groups"
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "db-plans"
+  fieldLabel = "db-clouds"
+  fieldName = "db-clouds"
+  fieldSetName = "db-plans"
+  optionList = { name = "API Clouds" }
+  optionSource = "list"
+  type = "select"
+}

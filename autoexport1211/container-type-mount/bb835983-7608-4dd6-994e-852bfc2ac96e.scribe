@@ -1,0 +1,10 @@
+resource "container-type-mount" "bb835983-7608-4dd6-994e-852bfc2ac96e" {
+  name = "data"
+  uuid = "bb835983-7608-4dd6-994e-852bfc2ac96e"
+  canPersist = true
+  containerPath = "/usr/share/misc"
+  deployable = true
+  hostPath = "/usr/share/misc"
+  shortName = "data"
+  volumeName = "data"
+}
