@@ -1,0 +1,19 @@
+resource "task" "Installer yum update" {
+  name = "Installer yum update"
+  uuid = "77b2bd38-adfc-4c99-8637-c6bb64120919"
+  dateCreated = "2023-10-09T22:24:08.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-13T20:44:52.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "6524a4ca-3eb9-48ef-ae5f-2852d053c8c0" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}

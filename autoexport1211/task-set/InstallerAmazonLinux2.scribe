@@ -1,0 +1,13 @@
+resource "task-set" "InstallerAmazonLinux2" {
+  name = "InstallerAmazonLinux2"
+  uuid = "e6fe9ab6-789d-4569-a4a9-2a6f8f85144f"
+  dateCreated = "2023-10-09T22:24:51.000Z"
+  description = "Setup Amazon Linux 2 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-07-03T14:24:44.000Z"
+  taskSetTasks = [
+    { uuid = "1e543202-6a6b-4544-aa39-5aef8082372b" },
+    { uuid = "a142ffd6-5d95-44ea-abc3-42521fcca2ae" },
+    { uuid = "f1c981f4-7030-46f3-9fd9-b9feb7d42201" }
+  ]
+}
