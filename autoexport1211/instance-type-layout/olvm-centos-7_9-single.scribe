@@ -1,0 +1,16 @@
+resource "instance-type-layout" "olvm-centos-7.9-single" {
+  code = "olvm-centos-7.9-single"
+  name = "CentOS 7.9 VM"
+  uuid = "464a196c-6077-4b7f-b4e5-ab3a65e8ee7d"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  enabled = false
+  hasAutoScale = true
+  instanceType = { code = "centos" }
+  instanceVersion = "7.9"
+  provisionType = { code = "olvm-provision-standard" }
+  serverType = "vm"
+  sortOrder = 20
+  supportsConvertToManaged = true
+  workloads = [ { code = "olvm-centos-7.9-set" } ]
+}
