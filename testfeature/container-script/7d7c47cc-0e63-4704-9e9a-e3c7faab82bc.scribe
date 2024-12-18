@@ -1,0 +1,11 @@
+resource "container-script" "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc" {
+  code = "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc"
+  name = "Apache Stop"
+  uuid = "8f1a3ce5-a5e0-4c5c-a0d9-27ed52b1ed50"
+  dateCreated = "2023-03-14T19:32:09.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:06:16.000Z"
+  script = "service apache2 stop"
+  scriptPhase = "stop"
+  sudoUser = true
+}
