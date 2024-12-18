@@ -1,0 +1,11 @@
+resource "option-type" "db-price_list" {
+  code = "db-price_list"
+  name = "db-price_list"
+  uuid = "fa71b6ac-8198-4596-a8fa-d93e234053c6"
+  fieldContext = "config.customOptions"
+  fieldLabel = "db-price_list"
+  fieldName = "db-price_list"
+  optionList = { name = "db-price_list" }
+  optionSource = "list"
+  type = "select"
+}
