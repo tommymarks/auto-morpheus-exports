@@ -1,0 +1,27 @@
+resource "option-type" "6728789a-0e18-4949-aa17-0e434f91ef7d" {
+  code = "6728789a-0e18-4949-aa17-0e434f91ef7d"
+  name = "6728789a-0e18-4949-aa17-0e434f91ef7d"
+  uuid = "6f8c7210-2f74-4e5d-8e54-ce0931b8bb12"
+  config = {
+    defaultValue = <<EOFSCRIBE
+[
+ {
+  "name": "Flash",
+  "value": "Bang"
+ },
+ {
+  "name": "Ping",
+  "value": "Pong"
+ }
+]
+
+EOFSCRIBE
+  }
+  displayOrder = 9
+  fieldContext = "config.customOptions"
+  fieldLabel = "Tags"
+  fieldName = "tags"
+  formField = true
+  refCode = "6728789a-0e18-4949-aa17-0e434f91ef7d"
+  type = "tag"
+}
