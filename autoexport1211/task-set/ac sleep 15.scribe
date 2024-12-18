@@ -1,0 +1,7 @@
+resource "task-set" "ac sleep 15" {
+  name = "ac sleep 15"
+  uuid = "9c1bb573-b051-4f0b-b52c-a80443a91f22"
+  dateCreated = "2024-08-26T21:11:37.000Z"
+  lastUpdated = "2024-08-26T21:11:37.000Z"
+  taskSetTasks = [ { uuid = "4e9a71dd-aa1f-46de-ad14-48412f9760d8" } ]
+}
