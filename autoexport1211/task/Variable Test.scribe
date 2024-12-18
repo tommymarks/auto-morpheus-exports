@@ -1,0 +1,15 @@
+resource "task" "Variable Test" {
+  name = "Variable Test"
+  uuid = "e5d7defc-eb40-49ec-8024-6920896548f3"
+  dateCreated = "2023-03-16T20:48:34.000Z"
+  executeTarget = "resource"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:08:56.000Z"
+  options = [
+    {
+      content = { uuid = "2c9bc624-0967-452a-bef2-18bfdc847961" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

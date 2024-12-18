@@ -1,0 +1,9 @@
+resource "task-set" "Variable Test" {
+  name = "Variable Test"
+  uuid = "f3ac0f3f-102b-4574-b846-3c34ff6a5fb1"
+  dateCreated = "2023-03-16T20:48:05.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:09:25.000Z"
+  taskSetTasks = [ { uuid = "65327c97-9093-416d-a96c-644d1b3721d6" } ]
+  visibility = "public"
+}
