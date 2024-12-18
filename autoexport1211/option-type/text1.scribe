@@ -1,0 +1,9 @@
+resource "option-type" "text1" {
+  code = "text1"
+  name = "ac-text1"
+  uuid = "efb18544-d1df-4c05-9b54-76f17dccbaed"
+  fieldContext = "config.customOptions"
+  fieldLabel = "text1"
+  fieldName = "text1"
+  required = true
+}
