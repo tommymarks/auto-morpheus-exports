@@ -1,0 +1,14 @@
+resource "instance-type-layout" "d9dec887-ec68-40df-abc5-b555ccfcb706" {
+  code = "d9dec887-ec68-40df-abc5-b555ccfcb706"
+  name = "AmazonLinux2 Supplemental"
+  uuid = "79a515e6-0f5b-4abf-aa7e-b9da3986585e"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalAmazonLinux2" } ]
+  workloads = [ { code = "amazonlinux-amazon-2" } ]
+}
