@@ -1,0 +1,17 @@
+resource "container-type" "936be387-899b-44f9-8ad4-af1abfb46c00" {
+  code = "936be387-899b-44f9-8ad4-af1abfb46c00"
+  name = "Amazon RHEL 9"
+  uuid = "10796a3d-f7a7-4bfc-8cdf-240e52a291ed"
+  checkTypeCode = "vmCheck"
+  containerPorts = [ { uuid = "d6d00c63-a129-4d98-9c90-f1fb49dd1491" } ]
+  containerVersion = "RHEL 9"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsrhel9"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "8768f058-8b0e-4438-80eb-3e645c8b050f" }
+}

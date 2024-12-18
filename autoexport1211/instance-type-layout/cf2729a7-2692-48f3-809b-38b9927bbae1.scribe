@@ -1,0 +1,12 @@
+resource "instance-type-layout" "cf2729a7-2692-48f3-809b-38b9927bbae1" {
+  code = "cf2729a7-2692-48f3-809b-38b9927bbae1"
+  name = "RHEL9"
+  uuid = "25fedff2-0b71-489f-8853-ce5dd9214666"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerRHEL9" } ]
+  workloads = [ { code = "936be387-899b-44f9-8ad4-af1abfb46c00" } ]
+}
