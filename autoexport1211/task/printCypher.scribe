@@ -1,0 +1,15 @@
+resource "task" "printCypher" {
+  code = "printCypher"
+  name = "printCypher"
+  uuid = "0f189fef-f954-4221-a83c-3b8840253fff"
+  dateCreated = "2023-03-20T19:45:57.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-03-20T19:52:19.000Z"
+  options = [
+    {
+      content = { uuid = "d54781f1-2d80-4b72-aac0-06c0a0f6ddd3" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

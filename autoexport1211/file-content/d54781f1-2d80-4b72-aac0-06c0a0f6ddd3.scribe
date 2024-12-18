@@ -1,0 +1,6 @@
+resource "file-content" "d54781f1-2d80-4b72-aac0-06c0a0f6ddd3" {
+  uuid = "d54781f1-2d80-4b72-aac0-06c0a0f6ddd3"
+  content = "echo \"<%=cypher.read('hello')%>\""
+  dateCreated = "2023-03-20T19:45:57.000Z"
+  lastUpdated = "2023-03-20T19:52:19.000Z"
+}
