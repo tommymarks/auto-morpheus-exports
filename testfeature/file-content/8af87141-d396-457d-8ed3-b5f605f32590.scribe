@@ -1,0 +1,9 @@
+resource "file-content" "8af87141-d396-457d-8ed3-b5f605f32590" {
+  uuid = "8af87141-d396-457d-8ed3-b5f605f32590"
+  content = <<EOFSCRIBE
+echo "$(date) - reconfigure" | tee -a /var/tmp/phase_task.txt
+echo whaddup
+EOFSCRIBE
+  dateCreated = "2023-07-14T03:18:35.000Z"
+  lastUpdated = "2023-07-20T21:58:19.000Z"
+}
