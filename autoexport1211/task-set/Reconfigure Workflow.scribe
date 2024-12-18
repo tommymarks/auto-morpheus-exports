@@ -1,0 +1,13 @@
+resource "task-set" "Reconfigure Workflow" {
+  name = "Reconfigure Workflow"
+  uuid = "81be03e0-892b-46a0-adf6-2bed31d82bf7"
+  dateCreated = "2024-03-29T13:23:41.000Z"
+  labels = [ "#187191646" ]
+  lastUpdated = "2024-03-29T13:24:10.000Z"
+  optionTypes = [
+    { code = "tryg_ecp_custom_vm_size" },
+    { code = "RAM_Count" },
+    { code = "Cpu_Count" }
+  ]
+  taskSetType = "operation"
+}

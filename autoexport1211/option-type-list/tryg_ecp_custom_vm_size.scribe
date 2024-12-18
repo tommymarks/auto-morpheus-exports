@@ -1,0 +1,6 @@
+resource "option-type-list" "tryg_ecp_custom_vm_size" {
+  name = "tryg_ecp_custom_vm_size"
+  uuid = "9d1fa9c6-dff1-4422-8497-d1a2504171f0"
+  initialDataset = "'Custom',6916"
+  type = "manual"
+}
