@@ -1,0 +1,6 @@
+resource "option-type-list" "ac true false" {
+  name = "ac true false"
+  uuid = "20531c5a-e254-4afb-85cf-2fb1e556c079"
+  initialDataset = "[{\"name\": \"true\", \"value\": \"1\"}, {\"name\": \"false\", \"value\": \"0\"}]"
+  type = "manual"
+}
