@@ -1,0 +1,14 @@
+resource "container-type" "5149106c-c6ac-4f9c-ad0a-8d01676f6d12" {
+  code = "5149106c-c6ac-4f9c-ad0a-8d01676f6d12"
+  name = "Redmine latest"
+  uuid = "a7705c7a-eb21-4639-94b2-204f5a62e4da"
+  containerPorts = [ { uuid = "bcf80dc8-f055-45bf-a612-8409f0e355c5" } ]
+  containerVersion = "latest"
+  logTypeCode = "docker"
+  mounts = [ { uuid = "59340e93-21e1-4d05-ac5a-4c12c568eb40" } ]
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "redmine"
+  shortName = "redmine"
+  statTypeCode = "container"
+}
