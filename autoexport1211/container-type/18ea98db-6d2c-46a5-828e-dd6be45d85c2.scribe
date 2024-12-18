@@ -1,0 +1,19 @@
+resource "container-type" "18ea98db-6d2c-46a5-828e-dd6be45d85c2" {
+  code = "18ea98db-6d2c-46a5-828e-dd6be45d85c2"
+  name = "Ubuntu Scale"
+  uuid = "31a752ce-8fda-4a80-ab67-8edc8b0db087"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [ { uuid = "98bc0eb9-1c60-4b12-872a-7ef487147dd6" } ]
+  containerVersion = "18.04"
+  entryPoint = ""
+  logTypeCode = "vm"
+  mountData = "/usr/share/misc"
+  mounts = [ { uuid = "33bdc4a1-624d-495c-8cbd-f90f10a05828" } ]
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntuscale"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "azure.image.morpheus.ubuntu.18.04" }
+}

@@ -1,0 +1,11 @@
+resource "instance-type" "ubuntuscale" {
+  code = "ubuntuscale"
+  name = "Ubuntu Scale"
+  uuid = "14cb9aa3-45e6-4af7-8d2d-767047cca6d3"
+  category = "utility"
+  deploymentService = "defaultDeployService"
+  environmentPrefix = "UBUNTU_SCALE"
+  hasAutoScale = true
+  hasDeployment = true
+  visibility = "public"
+}
