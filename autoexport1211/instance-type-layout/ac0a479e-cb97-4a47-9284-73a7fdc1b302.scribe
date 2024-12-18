@@ -1,0 +1,13 @@
+resource "instance-type-layout" "ac0a479e-cb97-4a47-9284-73a7fdc1b302" {
+  code = "ac0a479e-cb97-4a47-9284-73a7fdc1b302"
+  name = "Ubuntu20 Supplemental"
+  uuid = "2e01ccb8-bb3a-4e26-b2a5-0a42b1699597"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalDebian" } ]
+  workloads = [ { code = "9dc086f8-d8bb-46fa-aff8-6d988f856650" } ]
+}
