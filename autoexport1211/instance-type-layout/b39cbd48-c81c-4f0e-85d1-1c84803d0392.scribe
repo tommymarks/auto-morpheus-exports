@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b39cbd48-c81c-4f0e-85d1-1c84803d0392" {
+  code = "b39cbd48-c81c-4f0e-85d1-1c84803d0392"
+  name = "KVM Apache"
+  uuid = "726dfc50-8d08-470d-adf6-5d95e456e7f7"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "kvm" }
+  workloads = [ { code = "1476845f-2ce3-445e-be11-2391aef97351" } ]
+}
