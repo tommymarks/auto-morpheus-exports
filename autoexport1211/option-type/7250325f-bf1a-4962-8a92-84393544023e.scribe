@@ -1,0 +1,14 @@
+resource "option-type" "7250325f-bf1a-4962-8a92-84393544023e" {
+  code = "7250325f-bf1a-4962-8a92-84393544023e"
+  name = "7250325f-bf1a-4962-8a92-84393544023e"
+  uuid = "d15bebb5-d14e-4a46-9a9d-bde53a08ba86"
+  defaultValue = "qa"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Environment"
+  fieldName = "environment"
+  formField = true
+  helpBlock = "environment help"
+  refCode = "7250325f-bf1a-4962-8a92-84393544023e"
+  type = "environment"
+}
