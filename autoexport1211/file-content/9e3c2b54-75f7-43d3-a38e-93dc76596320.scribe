@@ -1,0 +1,10 @@
+resource "file-content" "9e3c2b54-75f7-43d3-a38e-93dc76596320" {
+  uuid = "9e3c2b54-75f7-43d3-a38e-93dc76596320"
+  content = <<EOFSCRIBE
+$age = Read-Host -Prompt "Enter your age"
+Write-Host "Hello World"
+Write-Host $age
+EOFSCRIBE
+  dateCreated = "2024-11-12T10:51:49.000Z"
+  lastUpdated = "2024-11-12T10:52:47.000Z"
+}
