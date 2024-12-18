@@ -1,0 +1,19 @@
+resource "task" "Installer SUSE15 Part 2" {
+  name = "Installer SUSE15 Part 2"
+  uuid = "a49bf5a3-0271-4aef-a548-2c4ebac0844b"
+  dateCreated = "2023-10-10T19:11:14.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-13T21:08:09.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "1f928e52-6883-478c-bca1-f5c1e5f46bea" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}

@@ -1,0 +1,5 @@
+resource "task-set-task" "6373ece1-f16e-44da-bc0b-dc5a48e8710b" {
+  uuid = "6373ece1-f16e-44da-bc0b-dc5a48e8710b"
+  task = { name = "Installer Suse 15 part 1" }
+  taskOrder = 1
+}

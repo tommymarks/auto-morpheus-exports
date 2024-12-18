@@ -1,0 +1,6 @@
+resource "file-content" "f0d10e79-2c3d-43e2-bc7f-aab458e40d70" {
+  uuid = "f0d10e79-2c3d-43e2-bc7f-aab458e40d70"
+  content = "zypper --non-interactive --quiet update"
+  dateCreated = "2024-05-15T15:56:02.000Z"
+  lastUpdated = "2024-06-10T18:40:06.000Z"
+}

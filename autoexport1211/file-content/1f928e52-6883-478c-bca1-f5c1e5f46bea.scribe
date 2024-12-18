@@ -1,0 +1,11 @@
+resource "file-content" "1f928e52-6883-478c-bca1-f5c1e5f46bea" {
+  uuid = "1f928e52-6883-478c-bca1-f5c1e5f46bea"
+  content = <<EOFSCRIBE
+zypper addrepo -G https://download.opensuse.org/repositories/openSUSE:Backports:SLE-15-SP2/standard/openSUSE:Backports:SLE-15-SP2.repo &&
+zypper refresh &&
+zypper install -y uuid-devel
+
+EOFSCRIBE
+  dateCreated = "2023-10-10T19:11:14.000Z"
+  lastUpdated = "2023-10-13T19:35:04.000Z"
+}
