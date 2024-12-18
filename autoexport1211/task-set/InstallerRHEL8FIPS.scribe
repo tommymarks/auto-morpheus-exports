@@ -1,0 +1,18 @@
+resource "task-set" "InstallerRHEL8FIPS" {
+  name = "InstallerRHEL8FIPS"
+  uuid = "23eaff26-b1c1-414b-834f-87cc6aeacda2"
+  dateCreated = "2023-11-20T20:30:05.000Z"
+  description = "Setup RHEL 8 FIPS appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "0f4cdf57-ca2c-4098-a8cd-53f87f4fd638" },
+    { uuid = "2d041017-8775-4c0e-bb8d-cc52ed946f2f" },
+    { uuid = "3a553e13-987a-4288-a6ff-1e39e0a2e818" },
+    { uuid = "3fc14be0-37b9-40f1-b024-3ff1aa43c9f5" },
+    { uuid = "7922be6d-a1ac-42b3-8b9b-fd6515ee7a5a" },
+    { uuid = "7adb2526-1a57-4185-9713-0d3f2ec04ed6" },
+    { uuid = "b6f9d71c-71f5-4b5a-8a4e-88856ddbc797" },
+    { uuid = "cd95d26c-2043-4f9b-84f9-e569c0fb7491" }
+  ]
+}

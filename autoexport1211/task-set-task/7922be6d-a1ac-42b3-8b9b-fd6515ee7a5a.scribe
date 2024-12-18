@@ -1,0 +1,5 @@
+resource "task-set-task" "7922be6d-a1ac-42b3-8b9b-fd6515ee7a5a" {
+  uuid = "7922be6d-a1ac-42b3-8b9b-fd6515ee7a5a"
+  task = { name = "Installer Check FIPS RHEL8" }
+  taskOrder = 4
+}

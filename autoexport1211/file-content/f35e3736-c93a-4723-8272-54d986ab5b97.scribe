@@ -1,0 +1,6 @@
+resource "file-content" "f35e3736-c93a-4723-8272-54d986ab5b97" {
+  uuid = "f35e3736-c93a-4723-8272-54d986ab5b97"
+  content = "fips-mode-setup --check"
+  dateCreated = "2023-11-20T20:32:49.000Z"
+  lastUpdated = "2023-11-20T20:32:49.000Z"
+}

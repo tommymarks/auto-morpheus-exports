@@ -1,0 +1,9 @@
+resource "file-content" "99a366f4-4182-459f-a8f4-43ee1e3a2ceb" {
+  uuid = "99a366f4-4182-459f-a8f4-43ee1e3a2ceb"
+  content = <<EOFSCRIBE
+fips-mode-setup --enable
+
+EOFSCRIBE
+  dateCreated = "2023-11-20T20:31:56.000Z"
+  lastUpdated = "2023-11-20T20:31:56.000Z"
+}
