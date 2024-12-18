@@ -1,0 +1,18 @@
+resource "task" "ac http" {
+  name = "ac http"
+  uuid = "50df0d85-22ec-4845-8d6b-5b6f0afac1cb"
+  dateCreated = "2024-08-22T14:47:27.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-08-22T14:48:55.000Z"
+  options = [
+    { optionType = { code = "webMethod" }, value = "GET" },
+    { optionType = { code = "webHeaders" }, value = "[]" },
+    { optionType = { code = "webUser" }, value = "guest" },
+    {
+      optionType = { code = "webUrl" }
+      value = "https://18.144.28.149"
+    },
+    { optionType = { code = "ignoreSSL" }, value = "on" }
+  ]
+  taskType = { code = "httpTask" }
+}
