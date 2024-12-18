@@ -1,0 +1,14 @@
+resource "option-type" "morph_cloudname" {
+  code = "morph_cloudname"
+  name = "db-morpheus_clouds_list"
+  uuid = "a42c6af5-4c54-4861-b14d-ecfca10b4439"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud Name"
+  fieldName = "morph_cloudname"
+  noBlank = true
+  optionList = { name = "API Clouds" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
