@@ -1,0 +1,65 @@
+resource "option-type" "d018c378-f7e9-40ac-9e98-4aa24af1a056" {
+  code = "d018c378-f7e9-40ac-9e98-4aa24af1a056"
+  name = "d018c378-f7e9-40ac-9e98-4aa24af1a056"
+  uuid = "cd8ab200-dda8-4a68-a98a-aeed3058a198"
+  config = {
+    addon = ""
+    addonPosition = "right"
+    cloudField = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+    cloudFieldType = "field"
+    cloudId = ""
+    defaultValue = <<EOFSCRIBE
+[
+ {
+  "id": 39,
+  "name": "os",
+  "controllerId": 112,
+  "controllerMountPoint": "112:0:4:0",
+  "resizeable": true,
+  "planResizable": true,
+  "rootVolume": true,
+  "unitNumber": "0",
+  "typeId": 43,
+  "configurableIOPS": false,
+  "datastoreId": "2",
+  "maxStorage": 2147483648,
+  "displayOrder": 0,
+  "maxIOPS": null,
+  "uuid": "03aed093-fec9-499e-8362-fd2ee40551d1",
+  "uniqueId": "vmware.morpheus.ubuntu.20.04.volume.0",
+  "externalId": null,
+  "internalId": null,
+  "size": 10,
+  "sizeBytes": 10737418240,
+  "storageType": 45
+ }
+]
+EOFSCRIBE
+    enableDatastoreSelection = true
+    enableDiskTypeSelection = true
+    enableStorageTypeSelection = true
+    groupField = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    groupFieldType = "field"
+    groupId = ""
+    imageField = ""
+    imageId = ""
+    layoutField = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+    layoutFieldType = "field"
+    layoutId = ""
+    planField = "2e0455dc-d8ae-4e7b-88ed-e2d4d0bc0f21"
+    planFieldType = "field"
+    planId = ""
+    poolField = "e3fadbd7-5ad8-415c-9782-12883a431dd9"
+    poolFieldType = "field"
+    poolId = ""
+    virtualImageFieldType = "field"
+  }
+  displayOrder = 6
+  fieldContext = "config.customOptions"
+  fieldLabel = "Volumes"
+  fieldName = "volumes"
+  formField = true
+  helpBlock = "disks help"
+  refCode = "d018c378-f7e9-40ac-9e98-4aa24af1a056"
+  type = "diskManager"
+}
