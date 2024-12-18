@@ -1,0 +1,22 @@
+resource "option-type" "d0dce833-f195-4d77-99cf-0bae16c66764" {
+  code = "d0dce833-f195-4d77-99cf-0bae16c66764"
+  name = "d0dce833-f195-4d77-99cf-0bae16c66764"
+  uuid = "ce246fc4-2c1a-4de8-a813-be917ecd39ed"
+  config = {
+    cloudField = "89e8cdc4-7d9d-4a15-8af4-0fd5e10c2f1a"
+    cloudFieldType = "field"
+    groupField = "abf7916d-7038-46ac-b0e6-9f500a43dbc6"
+    groupFieldType = "field"
+    instanceTypeCode = "ubuntu"
+    instanceTypeFieldCode = ""
+    instanceTypeFieldType = "value"
+  }
+  defaultValue = "2134288"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "Layout"
+  fieldName = "layout"
+  formField = true
+  refCode = "d0dce833-f195-4d77-99cf-0bae16c66764"
+  type = "layout"
+}
