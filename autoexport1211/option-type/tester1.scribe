@@ -1,0 +1,10 @@
+resource "option-type" "tester1" {
+  code = "tester1"
+  name = "tester1"
+  uuid = "e45f4052-4d66-48e0-92e3-f3b5aa7fefd1"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Tester1"
+  fieldName = "tester1"
+  required = true
+}
