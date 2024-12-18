@@ -1,5 +1,5 @@
 resource "container-type-set" "amazonlinux-amazon-2" {
   code = "amazonlinux-amazon-2"
-  uuid = "f81e0207-fcca-4801-a394-329bbeeeb713"
+  uuid = "429fd003-5fd1-435f-9db9-85b70ee64608"
   workloadType = { code = "amazonlinux-amazon-2" }
 }
