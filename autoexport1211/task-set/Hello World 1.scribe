@@ -1,0 +1,8 @@
+resource "task-set" "Hello World 1" {
+  name = "Hello World 1"
+  uuid = "88025174-47d0-4ddb-8f38-07978b79ddc8"
+  dateCreated = "2024-02-13T18:28:24.000Z"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [ { uuid = "672bb6c0-a374-4c92-9689-4f4660409e9b" } ]
+  taskSetType = "operation"
+}
