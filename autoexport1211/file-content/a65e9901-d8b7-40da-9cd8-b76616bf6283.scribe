@@ -1,0 +1,6 @@
+resource "file-content" "a65e9901-d8b7-40da-9cd8-b76616bf6283" {
+  uuid = "a65e9901-d8b7-40da-9cd8-b76616bf6283"
+  content = "ping -c 1 <%=customOptions.ip%> > /dev/null 2>&1"
+  dateCreated = "2024-08-26T16:41:01.000Z"
+  lastUpdated = "2024-08-26T16:41:01.000Z"
+}
