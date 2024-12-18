@@ -1,0 +1,14 @@
+resource "container-script" "717b773d-1098-41d9-a668-da3981d4e000" {
+  code = "717b773d-1098-41d9-a668-da3981d4e000"
+  name = "tomcat reconfigure size script"
+  uuid = "77b1d80c-ab55-48e7-bdea-be35fe850eda"
+  dateCreated = "2023-03-16T17:06:03.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:06:23.000Z"
+  script = <<EOFSCRIBE
+chmod 775 -R <%=container.hostMountPoint%>/config ; sudo chown -R root.morpheus-node <%=container.hostMountPoint%>/config
+echo -ne "-server -Xms<%=(int)(container.memory * 0.74d / 1024l / 1024l)%>m -Xmx<%=(int)(container.memory * 0.74d / 1024l / 1024l)%>m -XX:MaxPermSize=<%=(int)(container.memory * 0.16d / 1024l / 1024l)%>m <%=deployOptions.catalinaOpts ?: ''%>" > <%=container.hostMountPoint%>/config/startup.txt
+EOFSCRIBE
+  scriptPhase = "reconfigure"
+  sudoUser = true
+}

@@ -1,0 +1,13 @@
+resource "instance-type" "tomcatweb" {
+  code = "tomcatweb"
+  name = "Tomcat"
+  uuid = "7101cbb1-0575-4a6e-9f8f-f2988a6622da"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "A web server for running Java Servlet based applications. Easily deploy java based war files and scale horizontally."
+  environmentPrefix = "TOMCAT"
+  hasAutoScale = true
+  hasDeployment = true
+  labels = [ "qa" ]
+  visibility = "public"
+}
