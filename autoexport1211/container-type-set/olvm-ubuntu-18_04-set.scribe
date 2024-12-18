@@ -1,0 +1,6 @@
+resource "container-type-set" "olvm-ubuntu-18.04-set" {
+  code = "olvm-ubuntu-18.04-set"
+  uuid = "8936d058-e1e8-4219-8d49-45fbfea54c06"
+  dynamicCount = true
+  workloadType = { code = "olvm-ubuntu-18.04" }
+}
