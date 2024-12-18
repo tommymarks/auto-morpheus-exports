@@ -1,0 +1,21 @@
+resource "task" "A PS 6" {
+  name = "A PS 6"
+  uuid = "04783a32-744a-479e-bd7c-ecc2ac974dd5"
+  continueOnError = true
+  dateCreated = "2024-04-29T23:15:15.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2024-05-08T15:32:25.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "52.53.204.225" },
+    { optionType = { code = "port" }, value = "5985" },
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "6.0"
+    },
+    {
+      content = { uuid = "cc1e0698-b45f-4b67-a372-1b45d6ae5ef5" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

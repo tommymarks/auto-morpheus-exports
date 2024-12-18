@@ -1,0 +1,21 @@
+resource "task" "A PS 5" {
+  name = "A PS 5"
+  uuid = "a1c125e7-a36a-4a9e-b77a-8253e801dfd0"
+  continueOnError = true
+  dateCreated = "2024-04-29T23:14:51.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2024-05-08T15:32:39.000Z"
+  options = [
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "5.0"
+    },
+    { optionType = { code = "host" }, value = "52.53.204.225" },
+    { optionType = { code = "port" }, value = "5985" },
+    {
+      content = { uuid = "6bc0d086-fecf-4900-a46f-5d89e417cbc9" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

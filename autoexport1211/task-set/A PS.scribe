@@ -1,0 +1,11 @@
+resource "task-set" "A PS" {
+  name = "A PS"
+  uuid = "939bb465-728b-4228-95b4-a9699aee9f4b"
+  dateCreated = "2024-04-29T23:29:27.000Z"
+  lastUpdated = "2024-04-29T23:29:27.000Z"
+  taskSetTasks = [
+    { uuid = "0dafd3fb-57f5-4355-9e93-ea133270a0bc" },
+    { uuid = "1800566d-b0e4-4f46-8433-dd3ca6d80e0e" },
+    { uuid = "4db331eb-03a1-4ccf-8aae-e8acf98ad3e6" }
+  ]
+}

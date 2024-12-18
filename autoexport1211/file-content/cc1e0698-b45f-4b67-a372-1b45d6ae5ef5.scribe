@@ -1,0 +1,6 @@
+resource "file-content" "cc1e0698-b45f-4b67-a372-1b45d6ae5ef5" {
+  uuid = "cc1e0698-b45f-4b67-a372-1b45d6ae5ef5"
+  content = "Get-Host"
+  dateCreated = "2024-04-29T23:15:15.000Z"
+  lastUpdated = "2024-04-29T23:15:15.000Z"
+}

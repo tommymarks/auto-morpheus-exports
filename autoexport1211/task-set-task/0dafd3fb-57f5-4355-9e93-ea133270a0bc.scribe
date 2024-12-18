@@ -1,0 +1,5 @@
+resource "task-set-task" "0dafd3fb-57f5-4355-9e93-ea133270a0bc" {
+  uuid = "0dafd3fb-57f5-4355-9e93-ea133270a0bc"
+  task = { name = "A PS 5" }
+  taskPhase = "provision"
+}

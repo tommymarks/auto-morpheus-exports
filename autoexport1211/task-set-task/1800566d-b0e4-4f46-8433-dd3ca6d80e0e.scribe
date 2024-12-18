@@ -1,0 +1,6 @@
+resource "task-set-task" "1800566d-b0e4-4f46-8433-dd3ca6d80e0e" {
+  uuid = "1800566d-b0e4-4f46-8433-dd3ca6d80e0e"
+  task = { name = "A PS 6" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
