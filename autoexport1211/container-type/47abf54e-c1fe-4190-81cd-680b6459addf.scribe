@@ -1,0 +1,17 @@
+resource "container-type" "47abf54e-c1fe-4190-81cd-680b6459addf" {
+  code = "47abf54e-c1fe-4190-81cd-680b6459addf"
+  name = "Amazon SUSE 15 FIPS"
+  uuid = "46e90633-e82b-4f64-a957-e4c5ab0f7cd6"
+  containerPorts = [ { uuid = "d325531d-e276-44b5-bafc-5809132bf308" } ]
+  containerVersion = "SUSE 15 FIPS"
+  entryPoint = ""
+  labels = [ "installer" ]
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "suseFips"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "cbfc935d-3a11-4db1-b591-7d0667dc5a4c" }
+}

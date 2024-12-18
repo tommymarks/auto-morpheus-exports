@@ -1,0 +1,13 @@
+resource "instance-type-layout" "c95207dc-dc37-4e87-859b-fe49467fc432" {
+  code = "c95207dc-dc37-4e87-859b-fe49467fc432"
+  name = "SUSE 15 FIPS"
+  uuid = "dc82d96c-e7c3-48e7-b318-cbaad528523a"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "FIPS"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSUSE15FIPS" } ]
+  workloads = [ { code = "47abf54e-c1fe-4190-81cd-680b6459addf" } ]
+}
