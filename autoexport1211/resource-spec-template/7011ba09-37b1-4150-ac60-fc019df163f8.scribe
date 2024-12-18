@@ -1,0 +1,10 @@
+resource "resource-spec-template" "7011ba09-37b1-4150-ac60-fc019df163f8" {
+  name = "Nginx w/ Statefulset"
+  uuid = "7011ba09-37b1-4150-ac60-fc019df163f8"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2024-03-05T20:12:36.000Z"
+  lastUpdated = "2024-03-05T20:12:36.000Z"
+  template = { uuid = "906bf937-94e9-4941-8412-03b8f656c79c" }
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
