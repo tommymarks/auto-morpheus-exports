@@ -1,0 +1,24 @@
+resource "file-content" "6e48b1f4-78b9-4b9d-865a-e552dee7d23a" {
+  uuid = "6e48b1f4-78b9-4b9d-865a-e552dee7d23a"
+  content = <<EOFSCRIBE
+variable "access_key" {}
+variable "secret_key" {}
+
+provider "aws" {
+region = "us-west-1"
+access_key = var.access_key
+secret_key = var.secret_key
+}
+
+variable "encryption" {
+description = "Enable encryption"
+type = bool
+}
+
+output "output-encryption" {
+value = var.encryption
+}
+EOFSCRIBE
+  dateCreated = "2024-03-01T20:41:07.000Z"
+  lastUpdated = "2024-03-01T20:41:07.000Z"
+}

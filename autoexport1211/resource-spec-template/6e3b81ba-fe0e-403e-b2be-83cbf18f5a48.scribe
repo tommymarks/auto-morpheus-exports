@@ -1,0 +1,10 @@
+resource "resource-spec-template" "6e3b81ba-fe0e-403e-b2be-83cbf18f5a48" {
+  name = "AWS Bool"
+  uuid = "6e3b81ba-fe0e-403e-b2be-83cbf18f5a48"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2024-03-01T20:41:07.000Z"
+  lastUpdated = "2024-03-01T20:41:07.000Z"
+  template = { uuid = "6e48b1f4-78b9-4b9d-865a-e552dee7d23a" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
