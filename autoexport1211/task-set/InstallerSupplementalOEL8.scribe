@@ -1,0 +1,13 @@
+resource "task-set" "InstallerSupplementalOEL8" {
+  name = "InstallerSupplementalOEL8"
+  uuid = "9e82b8b6-9c97-480c-9e1f-0dc956ae0758"
+  dateCreated = "2023-11-14T23:03:42.000Z"
+  description = "Setup OEL 8 appliance via supplemental installer"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "39cdfa79-d313-4995-8d71-f923190f51ab" },
+    { uuid = "ac751a07-1ff0-4cdd-940f-73fca6276172" },
+    { uuid = "d1582d05-eeda-432f-8d9d-d8c2a4d4b184" }
+  ]
+}
