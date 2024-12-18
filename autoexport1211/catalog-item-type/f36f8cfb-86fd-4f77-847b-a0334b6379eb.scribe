@@ -1,0 +1,78 @@
+resource "catalog-item-type" "f36f8cfb-86fd-4f77-847b-a0334b6379eb" {
+  name = "mvm backup test"
+  uuid = "f36f8cfb-86fd-4f77-847b-a0334b6379eb"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      backupJob = {
+        retentionCount = "3"
+        scheduleTypeId = 2
+        syntheticFullEnabled = true
+        syntheticFullSchedule = 9
+      }
+      createBackup = true
+      jobAction = "new"
+      providerBackupType = 14
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA MorpheusVM", id = 2843 }
+    config = {
+      attachVirtIODrivers = false
+      createUser = true
+      expose = 8080
+      imageId = 105510
+      isEC2 = false
+      isVpcSelectable = true
+      kvmHostId = null
+      nestedVirtualization = false
+      noAgent = false
+      poolProviderType = "mvm"
+      qemuArgs = null
+      resourcePoolId = "pool-27940"
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "mvm-1.0-single", id = 4011 }
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = {
+          hasPool = false
+          id = "network-54754"
+          idName = "Compute VLAN 43"
+          pool = { name = "H5 - VLAN43 - QA", id = 3251 }
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = false
+        showNetworkPoolLabel = true
+      }
+    ]
+    plan = { code = "kvm-vm-1024", id = 173 }
+    showScale = false
+    type = "mvm"
+    version = "1.0"
+    volumes = [
+      {
+        name = "root"
+        datastoreId = 14125
+        maxIOPS = null
+        maxStorage = 10737418240
+        minStorage = 10737418240
+        readonlyName = false
+        rootVolume = true
+        size = 10
+        storageType = 1
+        vId = 105510
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2024-09-26T19:47:21.000Z"
+  lastUpdated = "2024-09-26T19:47:21.000Z"
+  refType = "InstanceType"
+}
