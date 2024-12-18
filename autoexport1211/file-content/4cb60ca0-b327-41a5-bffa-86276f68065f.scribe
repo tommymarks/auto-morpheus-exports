@@ -1,0 +1,13 @@
+resource "file-content" "4cb60ca0-b327-41a5-bffa-86276f68065f" {
+  uuid = "4cb60ca0-b327-41a5-bffa-86276f68065f"
+  content = <<EOFSCRIBE
+com.morpheus.task.Task.withNewSession {
+	com.morpheus.task.Task.get(408l).taskOptions?.each { to ->
+     println " option: ${to.optionType.code} - ${to.value}"
+    }
+}
+return null
+EOFSCRIBE
+  dateCreated = "2023-07-20T02:37:52.000Z"
+  lastUpdated = "2023-07-20T02:39:13.000Z"
+}
