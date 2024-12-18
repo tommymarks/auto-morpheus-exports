@@ -1,0 +1,26 @@
+resource "option-type" "8bdd8792-5240-4d53-b250-3a1d19c63d97" {
+  code = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+  name = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+  uuid = "9b1269a2-ce34-4f6c-b218-4d73d5f4dcc3"
+  config = {
+    addon = ""
+    addonPosition = ""
+    cloudType = ""
+    filterResource = false
+    group = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    groupFieldType = "field"
+    groupId = ""
+    instanceTypeCode = ""
+    instanceTypeFieldCode = ""
+    instanceTypeFieldType = "field"
+  }
+  defaultValue = "2"
+  displayOrder = 2
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud"
+  fieldName = "cloud"
+  formField = true
+  helpBlock = "cloud help"
+  refCode = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+  type = "cloud"
+}
