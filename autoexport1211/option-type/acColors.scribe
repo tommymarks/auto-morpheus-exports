@@ -1,0 +1,15 @@
+resource "option-type" "acColors" {
+  code = "acColors"
+  name = "AC Colors"
+  uuid = "5ce2b703-801e-4bfe-94d5-1a1f3010de2e"
+  config = { _multiSelect = "", multiSelect = "on" }
+  displayOrder = 3
+  displayValueOnDetails = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "colors"
+  fieldName = "acColors"
+  noBlank = true
+  optionList = { name = "Approved Colors" }
+  optionSource = "list"
+  type = "typeahead"
+}

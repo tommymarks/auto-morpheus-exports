@@ -1,0 +1,9 @@
+resource "option-type-list" "Yes No" {
+  name = "Yes No"
+  uuid = "b42a61ef-702d-4ef2-b25e-a68cdf502f72"
+  initialDataset = <<EOFSCRIBE
+yes,yes
+no,no
+EOFSCRIBE
+  type = "manual"
+}

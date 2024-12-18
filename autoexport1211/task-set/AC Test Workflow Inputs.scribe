@@ -1,0 +1,14 @@
+resource "task-set" "AC Test Workflow Inputs" {
+  name = "AC Test Workflow Inputs"
+  uuid = "ff3a2b32-63eb-4cbf-9771-5de9e31bbbac"
+  dateCreated = "2023-11-27T17:40:59.000Z"
+  lastUpdated = "2023-12-01T21:43:16.000Z"
+  optionTypes = [
+    { code = "acyesno" },
+    { code = "acrestlist" },
+    { code = "acnumber" },
+    { code = "acColors" }
+  ]
+  taskSetTasks = [ { uuid = "22e8af91-ed0f-46dd-94e2-f37080e6b8d5" } ]
+  taskSetType = "operation"
+}
