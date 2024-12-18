@@ -1,0 +1,11 @@
+resource "compute-type-set" "66f6da20-83ed-43f3-a7d7-d9b304d6d6ab-d0c6f5de-8e7e-487e-970e-5bb62bd9f53c" {
+  code = "66f6da20-83ed-43f3-a7d7-d9b304d6d6ab-d0c6f5de-8e7e-487e-970e-5bb62bd9f53c"
+  name = "Azure Custom Ubuntu 18-worker-d0c6f5de-8e7e-487e-970e-5bb62bd9f53c-set"
+  canAddNodes = true
+  computeServerType = { code = "azureLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  workloadType = { code = "d0c6f5de-8e7e-487e-970e-5bb62bd9f53c" }
+}
