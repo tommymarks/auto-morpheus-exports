@@ -1,0 +1,12 @@
+resource "instance-type-layout" "22356b14-9b11-4546-963b-6447039322f9" {
+  code = "22356b14-9b11-4546-963b-6447039322f9"
+  name = "Ubuntu 22 RC"
+  uuid = "c85495bf-68de-4952-85d4-429272ccf18d"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "RC"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "Installer Release Candidate" } ]
+  workloads = [ { code = "08429b77-dbea-4a61-a0ae-9c6ecbde08a1" } ]
+}
