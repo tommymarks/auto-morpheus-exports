@@ -1,0 +1,8 @@
+resource "task-set" "12345" {
+  name = "12345"
+  uuid = "af93a74d-75d5-41c4-971d-2514f16c5d51"
+  dateCreated = "2023-12-01T21:02:40.000Z"
+  labels = [ "adamcPolicy" ]
+  lastUpdated = "2024-09-25T21:56:40.000Z"
+  taskSetTasks = [ { uuid = "3448c89f-fb17-477d-b461-526701737247" } ]
+}
