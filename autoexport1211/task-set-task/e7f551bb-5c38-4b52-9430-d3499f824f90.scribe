@@ -1,0 +1,5 @@
+resource "task-set-task" "e7f551bb-5c38-4b52-9430-d3499f824f90" {
+  uuid = "e7f551bb-5c38-4b52-9430-d3499f824f90"
+  task = { name = "Installer Enable FIPS AL2" }
+  taskOrder = 1
+}
