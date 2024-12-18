@@ -1,0 +1,14 @@
+resource "instance-type-layout" "7f3c640d-e479-4518-ac99-9d3aefbc5d8b" {
+  code = "7f3c640d-e479-4518-ac99-9d3aefbc5d8b"
+  name = "Nutanix Prism NGINX"
+  uuid = "b5d6e589-6225-4830-b48c-732b004d03c9"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  workloads = [ { code = "dae56064-1398-435f-9ecd-e01fff32d7ca" } ]
+}
