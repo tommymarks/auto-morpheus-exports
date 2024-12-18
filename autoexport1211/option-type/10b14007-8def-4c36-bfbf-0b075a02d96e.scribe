@@ -33,6 +33,7 @@ resource "option-type" "10b14007-8def-4c36-bfbf-0b075a02d96e" {
  }
 ]
 
+
 EOFSCRIBE
     enableIPModeSelection = true
     groupField = "0c10c7e4-2970-4f6d-a9de-104829851290"
