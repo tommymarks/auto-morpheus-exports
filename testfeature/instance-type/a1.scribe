@@ -10,6 +10,7 @@ resource "instance-type" "a1" {
   hasDeployment = true
   hasSettings = true
   labels = [ "qa", "test" ]
+  layouts = [ { code = "69d87a07-9170-44f0-ab01-8d956118bbce" } ]
   optionTypes = [
     { code = "autocheck1" },
     { code = "autohidden1" },
