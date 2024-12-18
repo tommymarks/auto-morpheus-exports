@@ -1,0 +1,14 @@
+resource "file-content" "8aed61fd-4988-487a-bae2-38956e8a9b17" {
+  uuid = "8aed61fd-4988-487a-bae2-38956e8a9b17"
+  content = <<EOFSCRIBE
+com.bertramlabs.plugins.Account.withNewSession { session ->
+
+def account = com.bertramlabs.plugins.Account.get(1l)
+def tmpZone = com.morpheus.ComputeZone.get(2l)
+println grails.util.Holders.applicationContext['loadBalancerService'].listAvailableLoadBalancers(account, [excludeInternal:false, zone: tmpZone])
+}
+return null
+EOFSCRIBE
+  dateCreated = "2024-05-10T00:13:00.000Z"
+  lastUpdated = "2024-05-10T00:14:29.000Z"
+}
