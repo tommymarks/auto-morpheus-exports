@@ -1,0 +1,6 @@
+resource "container-type-set" "olvm-oel-8-set" {
+  code = "olvm-oel-8-set"
+  uuid = "b5cce1de-cddd-4659-9930-dcc44b6b4789"
+  dynamicCount = true
+  workloadType = { code = "olvm-plugin-oel-8" }
+}
