@@ -1,0 +1,20 @@
+resource "file-content" "fe3d5a0b-5254-41bd-b9d3-fc2a0f6c7692" {
+  uuid = "fe3d5a0b-5254-41bd-b9d3-fc2a0f6c7692"
+  content = <<EOFSCRIBE
+import json
+newname = "ac-namechange-python-task"
+configspec = morpheus['spec']
+configspec['name'] = newname
+configspec['hostName'] = newname
+configspec['instance']['name'] = newname
+configspec['instance']['hostName'] = newname
+configspec['volumes'][0]['size'] = 80
+
+newspec = {}
+newspec['spec'] = configspec
+print(json.dumps(newspec))
+print(morpheus['customOptions'])
+EOFSCRIBE
+  dateCreated = "2023-12-05T00:19:42.000Z"
+  lastUpdated = "2023-12-05T00:42:02.000Z"
+}
