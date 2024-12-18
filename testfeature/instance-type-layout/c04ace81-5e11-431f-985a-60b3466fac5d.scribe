@@ -1,0 +1,14 @@
+resource "instance-type-layout" "c04ace81-5e11-431f-985a-60b3466fac5d" {
+  code = "c04ace81-5e11-431f-985a-60b3466fac5d"
+  name = "SCVMM Apache"
+  uuid = "afa1ae6a-a67e-454f-806f-3f2e5534ca06"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm in scvmm"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "scvmm" }
+  workloads = [ { code = "161f5f73-f686-440f-b26f-f884bfb8cb71" } ]
+}
