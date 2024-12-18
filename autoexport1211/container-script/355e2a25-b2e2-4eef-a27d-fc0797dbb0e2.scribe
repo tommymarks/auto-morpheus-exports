@@ -1,0 +1,11 @@
+resource "container-script" "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2" {
+  code = "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2"
+  name = "Apache Start"
+  uuid = "5520d071-b47b-4631-be25-4afabec9f0b5"
+  dateCreated = "2023-03-14T19:31:42.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:06:10.000Z"
+  script = "service apache2 start"
+  scriptPhase = "start"
+  sudoUser = true
+}
