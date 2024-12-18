@@ -1,5 +1,5 @@
 resource "container-type-set" "amazon-centos-7.3" {
   code = "amazon-centos-7.3"
-  uuid = "6bf67b2a-6bc1-4593-bd5d-f0023f1995b2"
+  uuid = "49fbf674-bc1c-4fa7-b043-61e4a778c106"
   workloadType = { code = "amazon-centos-7.3" }
 }

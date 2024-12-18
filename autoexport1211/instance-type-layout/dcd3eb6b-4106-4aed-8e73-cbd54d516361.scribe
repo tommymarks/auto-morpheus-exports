@@ -1,0 +1,14 @@
+resource "instance-type-layout" "dcd3eb6b-4106-4aed-8e73-cbd54d516361" {
+  code = "dcd3eb6b-4106-4aed-8e73-cbd54d516361"
+  name = "CentOS7 Supplemental"
+  uuid = "d814c4f3-e055-46e8-85c6-d970079d65d3"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalCentOS7" } ]
+  workloads = [ { code = "amazon-centos-7.3" } ]
+}
