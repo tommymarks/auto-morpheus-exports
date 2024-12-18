@@ -29,6 +29,7 @@ resource "option-type" "be380246-fc54-4228-a875-cfd4407b7ad2" {
  }
 ]
 
+
 EOFSCRIBE
     enableDatastoreSelection = true
     enableDiskTypeSelection = true
