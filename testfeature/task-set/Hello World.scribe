@@ -1,0 +1,9 @@
+resource "task-set" "Hello World" {
+  name = "Hello World"
+  uuid = "872b9fff-3ae6-4954-a691-7d63e5958a55"
+  dateCreated = "2023-03-16T00:02:21.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-08-31T21:00:07.000Z"
+  taskSetTasks = [ { uuid = "e7b8cc2b-55c5-4d5b-b1c9-8af01dbc32ec" } ]
+  visibility = "public"
+}
