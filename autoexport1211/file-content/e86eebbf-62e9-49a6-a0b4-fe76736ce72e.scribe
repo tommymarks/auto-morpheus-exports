@@ -1,0 +1,10 @@
+resource "file-content" "e86eebbf-62e9-49a6-a0b4-fe76736ce72e" {
+  uuid = "e86eebbf-62e9-49a6-a0b4-fe76736ce72e"
+  content = <<EOFSCRIBE
+Write-Host 'Hello, World!'
+write-host "hello the date is"
+get-date
+EOFSCRIBE
+  dateCreated = "2024-10-29T13:55:24.000Z"
+  lastUpdated = "2024-10-29T13:55:24.000Z"
+}

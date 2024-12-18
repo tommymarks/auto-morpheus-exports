@@ -1,0 +1,18 @@
+resource "task" "a ps task" {
+  name = "a ps task"
+  uuid = "9684feb3-9239-4ee4-8a20-d7e06c486f13"
+  dateCreated = "2024-10-29T13:55:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-10-29T13:55:24.000Z"
+  options = [
+    {
+      content = { uuid = "e86eebbf-62e9-49a6-a0b4-fe76736ce72e" }
+      optionType = { code = "script" }
+    },
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "5.0"
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
