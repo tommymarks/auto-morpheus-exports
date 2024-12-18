@@ -1,0 +1,17 @@
+resource "container-type" "b2604ef3-12ea-44dd-9dcb-75fd468a499c" {
+  code = "b2604ef3-12ea-44dd-9dcb-75fd468a499c"
+  name = "Custom Docker VCD"
+  uuid = "55a6d8ee-94e9-401d-bae1-c72933b2bd11"
+  containerPorts = [ { uuid = "213b60ea-a385-4054-8a02-8485acd7b773" } ]
+  containerVersion = "Ubuntu 20"
+  entryPoint = ""
+  labels = [ "auto", "qa" ]
+  logTypeCode = "vm"
+  provisionType = { code = "vcd" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custdock"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vcd.image.morpheus.ubuntu-20_04.ovf" }
+}

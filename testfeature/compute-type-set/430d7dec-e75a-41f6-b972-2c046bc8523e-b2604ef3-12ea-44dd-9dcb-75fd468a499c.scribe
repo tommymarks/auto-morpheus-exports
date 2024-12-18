@@ -1,0 +1,12 @@
+resource "compute-type-set" "430d7dec-e75a-41f6-b972-2c046bc8523e-b2604ef3-12ea-44dd-9dcb-75fd468a499c" {
+  code = "430d7dec-e75a-41f6-b972-2c046bc8523e-b2604ef3-12ea-44dd-9dcb-75fd468a499c"
+  name = "Custom Docker VCD-worker-b2604ef3-12ea-44dd-9dcb-75fd468a499c-set"
+  canAddNodes = true
+  computeServerType = { code = "vcdLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "b2604ef3-12ea-44dd-9dcb-75fd468a499c" }
+}
