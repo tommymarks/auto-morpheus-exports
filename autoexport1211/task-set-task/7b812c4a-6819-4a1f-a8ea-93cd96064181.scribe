@@ -1,0 +1,4 @@
+resource "task-set-task" "7b812c4a-6819-4a1f-a8ea-93cd96064181" {
+  uuid = "7b812c4a-6819-4a1f-a8ea-93cd96064181"
+  task = { name = "Installer Debian Supplemental wget" }
+}

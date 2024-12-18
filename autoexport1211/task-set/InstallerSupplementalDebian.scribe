@@ -1,0 +1,12 @@
+resource "task-set" "InstallerSupplementalDebian" {
+  name = "InstallerSupplementalDebian"
+  uuid = "2088a430-a4be-4098-9637-9a781802b455"
+  dateCreated = "2023-10-13T21:55:39.000Z"
+  description = "Setup Debian appliance via supplemental installer"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:52:46.000Z"
+  taskSetTasks = [
+    { uuid = "0debef13-b4df-42c3-bab3-2e732428f5bb" },
+    { uuid = "7b812c4a-6819-4a1f-a8ea-93cd96064181" }
+  ]
+}
