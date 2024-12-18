@@ -1,0 +1,5 @@
+resource "task-set-task" "2afc94b9-670e-405f-87e3-540d9c165773" {
+  uuid = "2afc94b9-670e-405f-87e3-540d9c165773"
+  task = { name = "Restart Instance" }
+  taskOrder = 2
+}
