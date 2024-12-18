@@ -1,0 +1,13 @@
+resource "container-template" "c56781e2-0ec1-47f3-829b-9b4166d38cf3" {
+  code = "c56781e2-0ec1-47f3-829b-9b4166d38cf3"
+  name = "QA Test Container"
+  uuid = "e519597c-37a3-45d7-9ebd-d569c6f49786"
+  dateCreated = "2023-04-06T17:03:14.000Z"
+  fileName = "test.txt"
+  filePath = "/config"
+  labels = [ "qa" ]
+  lastUpdated = "2023-04-06T17:03:14.000Z"
+  settingCategory = "nginx"
+  settingName = "testFile"
+  template = "#check out this file template for nginx"
+}

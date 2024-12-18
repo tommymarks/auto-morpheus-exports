@@ -1,0 +1,33 @@
+resource "container-type" "979b60a2-1319-4417-bcd4-38ed66a2996c" {
+  code = "979b60a2-1319-4417-bcd4-38ed66a2996c"
+  name = "Nginx latest"
+  uuid = "3947e3be-1e0f-430d-84b2-91538a721fff"
+  category = "nginx"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "lvmSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  containerPorts = [
+    { uuid = "aa3b7629-f976-4b63-9f76-449bd54f29e9" },
+    { uuid = "2f4a4896-2da3-45f4-92c8-4c16a455dd8c" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  hasSslCert = true
+  labels = [ "qa" ]
+  logTypeCode = "docker"
+  logs = [ { uuid = "014978da-5f33-4a48-9a27-a38ae54c6ed5" } ]
+  mounts = [
+    { code = "template: c56781e2-0ec1-47f3-829b-9b4166d38cf3" },
+    { uuid = "510a8e6e-63a5-409c-8a8f-204a7da73d38" }
+  ]
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "nginx"
+  scripts = [ { code = "0a6ac797-45ec-48b7-aaf7-1bc18c586c33" } ]
+  shortName = "nginx"
+  statTypeCode = "container"
+  templates = [ { code = "c56781e2-0ec1-47f3-829b-9b4166d38cf3" } ]
+}
