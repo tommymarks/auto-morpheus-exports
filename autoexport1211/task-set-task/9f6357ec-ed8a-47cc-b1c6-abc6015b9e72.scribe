@@ -1,0 +1,6 @@
+resource "task-set-task" "9f6357ec-ed8a-47cc-b1c6-abc6015b9e72" {
+  uuid = "9f6357ec-ed8a-47cc-b1c6-abc6015b9e72"
+  task = { name = "Installer Latest Successful Build" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
