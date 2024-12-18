@@ -1,0 +1,17 @@
+resource "compute-type-layout" "96aff707-3b69-44f1-b033-9eb4f7c12914" {
+  code = "96aff707-3b69-44f1-b033-9eb4f7c12914"
+  name = "Amazon Custom SLES 12"
+  computeServers = [
+    {
+      code = "96aff707-3b69-44f1-b033-9eb4f7c12914-9d4ce42b-38b4-4212-86db-ec7fb8d5efc3"
+    }
+  ]
+  computeVersion = "SLES 12"
+  dateCreated = "2023-08-31T19:59:22.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  lastUpdated = "2023-08-31T19:59:27.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  type = { code = "amazonLinux" }
+}
