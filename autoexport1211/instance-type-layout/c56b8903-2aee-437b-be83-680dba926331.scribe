@@ -1,0 +1,14 @@
+resource "instance-type-layout" "c56b8903-2aee-437b-be83-680dba926331" {
+  code = "c56b8903-2aee-437b-be83-680dba926331"
+  name = "CentOS7 FIPS Supplemental"
+  uuid = "c048ff87-a227-4ce3-bf46-90e43faf3406"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalCentOS7FIPS" } ]
+  workloads = [ { code = "amazon-centos-7.3" } ]
+}
