@@ -1,0 +1,15 @@
+resource "task" "Test Failover" {
+  name = "Test Failover"
+  uuid = "6b4dbcef-b2dd-45d1-bbc1-41b6f40c30bc"
+  dateCreated = "2024-03-21T01:25:16.000Z"
+  executeTarget = "local"
+  labels = [ "test" ]
+  lastUpdated = "2024-03-21T01:25:16.000Z"
+  options = [
+    {
+      content = { uuid = "3b992d14-54a6-4ed2-87b2-0f46deefda34" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}

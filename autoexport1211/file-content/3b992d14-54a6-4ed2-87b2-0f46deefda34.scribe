@@ -1,0 +1,41 @@
+resource "file-content" "3b992d14-54a6-4ed2-87b2-0f46deefda34" {
+  uuid = "3b992d14-54a6-4ed2-87b2-0f46deefda34"
+  content = <<EOFSCRIBE
+com.morpheus.ComputeServer.withNewSession {
+def servers = com.morpheus.ComputeServer.withCriteria(readOnly:true) {
+			createAlias('parentServer','parentServer', org.hibernate.criterion.CriteriaSpecification.LEFT_JOIN)
+
+			zone {
+				eq('autoRecoverPowerState', true)
+			}
+			or {
+				eq('powerState', 'off')
+				eq('powerState', 'unknown')
+			}
+			or {
+				and {
+					eq('placementStrategy',com.morpheus.ComputeServer.PlacementStrategy.pinned)
+					ne('parentServer.powerState', 'off')
+					ne('parentServer.powerState', 'unknown')
+				}
+				ne('placementStrategy',com.morpheus.ComputeServer.PlacementStrategy.pinned)
+			}
+			computeServerType {
+				eq('managed', true)
+				eq('guestVm', true)
+				ne('vmHypervisor', true)
+			}
+			eq('status', 'provisioned')
+		}
+        servers?.each { server ->
+println server.name
+}
+}
+
+
+return null
+
+EOFSCRIBE
+  dateCreated = "2024-03-21T01:25:16.000Z"
+  lastUpdated = "2024-03-21T16:30:09.000Z"
+}
