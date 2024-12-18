@@ -1,0 +1,14 @@
+resource "instance-type-layout" "1dc2d088-8e8d-477e-a0e9-9565c4a90033" {
+  code = "1dc2d088-8e8d-477e-a0e9-9565c4a90033"
+  name = "VCD Apache"
+  uuid = "6f182704-f42b-4ae1-943b-8969b0dee084"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "vcd" }
+  workloads = [ { code = "4177eb67-e5b8-4d64-898c-b3011c3d74cf" } ]
+}
