@@ -1,0 +1,96 @@
+resource "catalog-item-type" "installerrc" {
+  code = "installerrc"
+  name = "Installer RC"
+  uuid = "d6bb7554-1b75-40bd-aa91-00faab8870f9"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      backupJob = {
+        retentionCount = "3"
+        scheduleTypeId = "2"
+        syntheticFullEnabled = false
+        syntheticFullSchedule = null
+      }
+      createBackup = true
+      jobAction = "new"
+      providerBackupType = 11
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Amazon", id = 3 }
+    config = {
+      availabilityId = null
+      createUser = true
+      customOptions = {
+        installerLink = "http://pkgrepo.morpheusdata.com/files/morpheus-appliance_8.0.0~rc1-1_amd64.deb"
+        installerPackage = "morpheus-appliance_8.0.0~rc1-1_amd64.deb"
+      }
+      instanceProfile = null
+      isEC2 = "false"
+      isVpcSelectable = true
+      kmsKeyId = null
+      noAgent = true
+      poolProviderType = null
+      publicIpType = "subnet"
+      resourcePoolId = "pool-12284"
+      securityId = null
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "09c1190f-ea1e-4764-83bb-f6af5b363a86", id = 2490 }
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = {
+          hasPool = false
+          id = "network-28"
+          idName = "labs_web_1a (subnet-72b9162b)"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { code = "amazon-t2.xlarge", id = 548 }
+    ports = [
+      {
+        code = "amazonlinux.22"
+        name = "SSH"
+        externalPort = 22
+        id = 10
+        internalPort = 22
+        loadBalance = false
+        loadBalancePort = null
+        loadBalanceProtocol = null
+        shortName = "ssh"
+        sortOrder = 1
+        visible = true
+      }
+    ]
+    securityGroups = [ { id = "sg-4eaf812b" } ]
+    showScale = false
+    type = "morpheusAppliance"
+    version = "FIPS"
+    volumes = [
+      {
+        name = "root"
+        maxIOPS = null
+        maxStorage = 171798691840
+        readonlyName = false
+        rootVolume = true
+        size = 160
+        storageType = 23
+        vId = 57177
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2024-11-08T19:47:34.000Z"
+  labels = [ "installer" ]
+  lastUpdated = "2024-11-08T19:49:57.000Z"
+  refType = "InstanceType"
+}
