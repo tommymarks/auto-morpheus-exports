@@ -1,0 +1,12 @@
+resource "container-template" "d26b11c0-4479-4f05-bba6-00655aa9ff0f" {
+  code = "d26b11c0-4479-4f05-bba6-00655aa9ff0f"
+  name = "phase: pre deploy"
+  uuid = "72afae7d-a447-4f7f-9244-ded656e7305c"
+  dateCreated = "2023-03-17T02:16:50.000Z"
+  fileName = "predeploy.txt"
+  filePath = "/var/tmp/templates"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:16:50.000Z"
+  template = "pre deploy template"
+  templatePhase = "preDeploy"
+}

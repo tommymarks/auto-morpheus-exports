@@ -1,0 +1,15 @@
+resource "container-script" "a67ab8cc-478f-4f33-9693-38e5ca6b8833" {
+  code = "a67ab8cc-478f-4f33-9693-38e5ca6b8833"
+  name = "phase: teardown"
+  uuid = "c21c6702-9490-4d6c-ae4b-7fd256167d1b"
+  dateCreated = "2023-03-17T02:29:15.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:29:15.000Z"
+  script = <<EOFSCRIBE
+echo "$(date) - teardown" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+echo ERROR: Did I do that? 1>&2
+EOFSCRIBE
+  scriptPhase = "teardown"
+  sudoUser = true
+}

@@ -1,0 +1,12 @@
+resource "container-template" "94545f29-bc29-4c53-bb2e-54e2deaee196" {
+  code = "94545f29-bc29-4c53-bb2e-54e2deaee196"
+  name = "phase: pre provision"
+  uuid = "27228d6a-dd70-4082-ac48-80825b541b51"
+  dateCreated = "2023-03-17T02:17:10.000Z"
+  fileName = "preprovision.txt"
+  filePath = "/var/tmp/templates"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:17:10.000Z"
+  template = "pre provision template"
+  templatePhase = "preProvision"
+}

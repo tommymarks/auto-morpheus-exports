@@ -1,0 +1,15 @@
+resource "container-script" "40f50986-16af-45cf-8320-2c0b804b1d69" {
+  code = "40f50986-16af-45cf-8320-2c0b804b1d69"
+  name = "phase: pre provision"
+  uuid = "8a11f18d-dc58-4b1e-a660-f67ddbc8f3f5"
+  dateCreated = "2023-03-17T02:04:00.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:05:49.000Z"
+  script = <<EOFSCRIBE
+echo "$(date) - pre provision" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+echo ERROR: Did I do that? 1>&2
+EOFSCRIBE
+  scriptPhase = "preProvision"
+  sudoUser = true
+}
