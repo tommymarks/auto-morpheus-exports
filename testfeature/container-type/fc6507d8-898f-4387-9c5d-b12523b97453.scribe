@@ -1,0 +1,16 @@
+resource "container-type" "fc6507d8-898f-4387-9c5d-b12523b97453" {
+  code = "fc6507d8-898f-4387-9c5d-b12523b97453"
+  name = "Windows Server"
+  uuid = "d59bf9d5-8a21-4be4-a7c8-fb3b9b199470"
+  checkTypeCode = "vmCheck"
+  containerPorts = [ { uuid = "0442d2a0-bde8-4081-baeb-851fdbcc0ed9" } ]
+  containerVersion = "2022"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "olvm-provision-standard" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "win"
+  statTypeCode = "vm"
+  virtualImage = { uuid = "4022a6e5-3141-49c2-9ce5-9513f51fefef" }
+}
