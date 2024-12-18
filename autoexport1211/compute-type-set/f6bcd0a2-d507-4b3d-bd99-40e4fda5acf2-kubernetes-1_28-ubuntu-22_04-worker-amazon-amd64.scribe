@@ -1,0 +1,12 @@
+resource "compute-type-set" "f6bcd0a2-d507-4b3d-bd99-40e4fda5acf2-kubernetes-1.28-ubuntu-22.04-worker-amazon-amd64" {
+  code = "f6bcd0a2-d507-4b3d-bd99-40e4fda5acf2-kubernetes-1.28-ubuntu-22.04-worker-amazon-amd64"
+  name = "DB MKS Kubernetes 1.28 Cluster on Ubuntu 22.04 - Package-worker-kubernetes-1.28-ubuntu-22.04-worker-amazon-amd64-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonKubeWorker" }
+  dynamicCount = true
+  nameSuffix = "-worker"
+  nodeCount = 3
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "kubernetes-1.28-ubuntu-22.04-worker-amazon-amd64" }
+}
