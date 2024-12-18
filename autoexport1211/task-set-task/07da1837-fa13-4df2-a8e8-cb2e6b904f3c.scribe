@@ -1,0 +1,5 @@
+resource "task-set-task" "07da1837-fa13-4df2-a8e8-cb2e6b904f3c" {
+  uuid = "07da1837-fa13-4df2-a8e8-cb2e6b904f3c"
+  task = { code = "temp2" }
+  taskPhase = "operation"
+}
