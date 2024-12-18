@@ -1,0 +1,12 @@
+resource "task-set" "InstallerDebian" {
+  name = "InstallerDebian"
+  uuid = "55b3a33e-b64f-4210-918f-0425e93c8124"
+  dateCreated = "2023-09-19T14:37:16.000Z"
+  description = "Setup Debian appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:54:31.000Z"
+  taskSetTasks = [
+    { uuid = "2788e776-7ed8-4bfa-ae29-14bf4316b93c" },
+    { uuid = "ab7945e1-b669-4715-b0e8-caf40aca70cc" }
+  ]
+}

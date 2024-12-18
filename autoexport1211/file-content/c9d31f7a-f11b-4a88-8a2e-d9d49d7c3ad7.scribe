@@ -1,0 +1,16 @@
+resource "file-content" "c9d31f7a-f11b-4a88-8a2e-d9d49d7c3ad7" {
+  uuid = "c9d31f7a-f11b-4a88-8a2e-d9d49d7c3ad7"
+  content = <<EOFSCRIBE
+sleep 120
+apt-get update > /dev/null
+sleep 120
+wget --quiet <%=customOptions.installerLink%> &&
+md5sum <%=customOptions.installerPackage%> &&
+dpkg -i <%=customOptions.installerPackage%>  > /dev/null &&
+md5sum /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+
+EOFSCRIBE
+  dateCreated = "2023-09-19T15:04:46.000Z"
+  lastUpdated = "2023-12-12T23:18:31.000Z"
+}

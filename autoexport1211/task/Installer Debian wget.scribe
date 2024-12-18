@@ -1,0 +1,19 @@
+resource "task" "Installer Debian wget" {
+  name = "Installer Debian wget"
+  uuid = "e7be68ea-1f65-4e39-b0f3-193f72b1f1e5"
+  dateCreated = "2023-09-19T15:04:46.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-02-06T17:19:09.000Z"
+  options = [
+    {
+      content = { uuid = "c9d31f7a-f11b-4a88-8a2e-d9d49d7c3ad7" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  retryCount = 2
+  retryDelaySeconds = 30
+  retryable = true
+  taskType = { code = "script" }
+}
