@@ -1,0 +1,14 @@
+resource "instance-type-layout" "087ac37a-f32f-44d7-8823-87b525ae946b" {
+  code = "087ac37a-f32f-44d7-8823-87b525ae946b"
+  name = "RHEL8 FIPS Supplemental"
+  uuid = "2d2ba213-301c-4697-a30b-8899d3b47142"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalRHEL8FIPS" } ]
+  workloads = [ { code = "94f90f61-c669-4f50-b89e-3518be5c848f" } ]
+}
