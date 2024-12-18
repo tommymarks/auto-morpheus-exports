@@ -1,0 +1,34 @@
+resource "container-type" "4a222c2f-ee90-4ab9-ba8e-03fe352c17bd" {
+  code = "4a222c2f-ee90-4ab9-ba8e-03fe352c17bd"
+  name = "Apache latest"
+  uuid = "be82bc5c-ffdc-4c13-a832-49b69def20d0"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "vmCheck"
+  containerPorts = [
+    { uuid = "7ef330f7-7535-41cb-b2e7-b9487bc22e49" },
+    { uuid = "22e7e69f-f65f-412b-85d7-9ea961a9b94c" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "960a7802-11b5-44c3-b98a-a49a5bb27795" } ]
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  mounts = [ { uuid = "f682fe86-6622-4399-8457-aede5beebebf" } ]
+  osType = { code = "ubuntu.20.04.64" }
+  provisionType = { code = "openstack" }
+  repositoryImage = ""
+  scripts = [
+    { code = "1876916a-84c1-408c-9a38-d3301f2a39f9" },
+    { code = "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2" },
+    { code = "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+}
