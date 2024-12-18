@@ -1,0 +1,18 @@
+resource "container-script" "0a6ac797-45ec-48b7-aaf7-1bc18c586c33" {
+  code = "0a6ac797-45ec-48b7-aaf7-1bc18c586c33"
+  name = "Nginx Docker Setup"
+  uuid = "4c57c0a0-6fb8-4972-94d0-2748bee959fb"
+  dateCreated = "2023-03-15T14:45:01.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:06:26.000Z"
+  script = <<EOFSCRIBE
+FILE=/usr/share/nginx/html/index.html
+if [ -f "$FILE" ]; then
+    echo "$FILE already exists."
+else
+	echo "<h1>Welcome to nginx!</h1>" > $FILE
+    echo "$FILE created"
+fi
+EOFSCRIBE
+  scriptPhase = "provision"
+}
