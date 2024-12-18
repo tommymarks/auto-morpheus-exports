@@ -1,0 +1,4 @@
+resource "task-set-task" "bde8c8e7-49e9-426c-8bad-e42d048f550b" {
+  uuid = "bde8c8e7-49e9-426c-8bad-e42d048f550b"
+  task = { name = "Installer OEL8" }
+}
