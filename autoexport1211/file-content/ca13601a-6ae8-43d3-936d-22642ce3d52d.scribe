@@ -1,0 +1,39 @@
+resource "file-content" "ca13601a-6ae8-43d3-936d-22642ce3d52d" {
+  uuid = "ca13601a-6ae8-43d3-936d-22642ce3d52d"
+  content = <<EOFSCRIBE
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+spec:
+  selector:
+    app: hello-world
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer  # Change the type if your cluster supports it
+EOFSCRIBE
+  dateCreated = "2023-10-17T19:08:49.000Z"
+  lastUpdated = "2023-10-17T19:08:49.000Z"
+}
