@@ -1,0 +1,22 @@
+resource "option-type" "40078d48-e3ba-406f-9497-2de8a2314743" {
+  code = "40078d48-e3ba-406f-9497-2de8a2314743"
+  name = "40078d48-e3ba-406f-9497-2de8a2314743"
+  uuid = "1a4d9159-b835-4301-baa2-d62404031b60"
+  config = { addon = "", addonPosition = "right" }
+  defaultValue = "default"
+  displayValueOnDetails = true
+  excludeFromSearch = true
+  exportMeta = true
+  fieldCode = "gomorpheus.label.numFiles"
+  fieldContext = "config.customOptions"
+  fieldLabel = "# Files"
+  fieldName = "LabelA"
+  formField = true
+  helpBlock = "need help?"
+  helpBlockFieldCode = "gomorpheus.label.numInstances"
+  isHidden = true
+  isLocked = true
+  placeHolder = "temp"
+  refCode = "40078d48-e3ba-406f-9497-2de8a2314743"
+  required = true
+}
