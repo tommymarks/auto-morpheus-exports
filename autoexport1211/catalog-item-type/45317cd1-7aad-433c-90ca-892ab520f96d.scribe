@@ -1,0 +1,137 @@
+resource "catalog-item-type" "45317cd1-7aad-433c-90ca-892ab520f96d" {
+  name = "ac-apache-tasks"
+  uuid = "45317cd1-7aad-433c-90ca-892ab520f96d"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      backupJob = {
+        retentionCount = "3"
+        scheduleTypeId = "2"
+        syntheticFullEnabled = false
+        syntheticFullSchedule = null
+      }
+      createBackup = true
+      jobAction = "new"
+      providerBackupType = 11
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Amazon", id = 3 }
+    config = {
+      availabilityId = null
+      createUser = true
+      instanceProfile = null
+      isEC2 = "false"
+      isVpcSelectable = true
+      kmsKeyId = null
+      noAgent = false
+      poolProviderType = null
+      publicIpType = "subnet"
+      resourcePoolId = "pool-12284"
+      securityId = null
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "4753fa9c-dff7-46d7-8483-71c1a1e7e204", id = 1309 }
+    loadBalancer = [
+      {
+        name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 80
+        id = ""
+        internalPort = 80
+        loadBalancePort = null
+        loadBalanceProtocol = "http"
+        protocol = "https"
+        vipHostname = "ac-feat-amzn-apacheweb-1.localdomain"
+        vipName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}-load-balancer"
+        vipPort = 80
+      },
+      {
+        name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 443
+        id = ""
+        internalPort = 443
+        loadBalancePort = null
+        loadBalanceProtocol = "https"
+        protocol = "https"
+        vipHostname = "ac-feat-amzn-apacheweb-1.localdomain"
+        vipName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}-load-balancer"
+        vipPort = 443
+      }
+    ]
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = {
+          hasPool = false
+          id = "network-28"
+          idName = "labs_web_1a (subnet-72b9162b)"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { code = "amazon-t2.micro", id = 453 }
+    ports = [
+      {
+        code = null
+        name = "Http"
+        externalPort = 80
+        id = 3488
+        internalPort = 80
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTP"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      },
+      {
+        code = null
+        name = "Https"
+        externalPort = 443
+        id = 3489
+        internalPort = 443
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTPS"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      }
+    ]
+    securityGroups = [ { id = "sg-fe44ed9a" } ]
+    showScale = false
+    task = {
+      name = [ "Hello World", "Hello World 1" ]
+      taskId = [ 428, 1826 ]
+    }
+    type = "apacheweb"
+    version = "latest"
+    volumes = [
+      {
+        name = "root"
+        maxIOPS = null
+        maxStorage = 21474836480
+        readonlyName = false
+        rootVolume = true
+        size = 20
+        storageType = 23
+        vId = 95453
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2024-11-01T18:54:13.000Z"
+  lastUpdated = "2024-11-01T18:54:13.000Z"
+  refType = "InstanceType"
+}
