@@ -1,0 +1,13 @@
+resource "instance-type-layout" "ef7e5a5c-aa67-4f3a-9053-795bdaf2630b" {
+  code = "ef7e5a5c-aa67-4f3a-9053-795bdaf2630b"
+  name = "CentOS9"
+  uuid = "eeec16db-5a46-4fd2-93c9-1beb2460b6c4"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerCentOS9" } ]
+  workloads = [ { code = "amazon-centos-9-stream" } ]
+}
