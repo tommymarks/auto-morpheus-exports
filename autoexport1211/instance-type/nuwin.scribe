@@ -5,4 +5,5 @@ resource "instance-type" "nuwin" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "NUTANIX-WINDOWS"
+  layouts = [ { code = "3fded810-296b-4072-a14e-4eea5b9167da" } ]
 }
