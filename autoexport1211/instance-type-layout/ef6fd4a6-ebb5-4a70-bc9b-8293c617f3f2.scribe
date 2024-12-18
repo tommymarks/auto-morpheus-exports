@@ -1,0 +1,13 @@
+resource "instance-type-layout" "ef6fd4a6-ebb5-4a70-bc9b-8293c617f3f2" {
+  code = "ef6fd4a6-ebb5-4a70-bc9b-8293c617f3f2"
+  name = "RHEL7 FIPS"
+  uuid = "c34af630-ac4f-475a-a113-2ad5f4809d2e"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "FIPS"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerRHEL7FIPS" } ]
+  workloads = [ { code = "3a198fcb-fbf2-4f24-9e35-15184470b12f" } ]
+}
