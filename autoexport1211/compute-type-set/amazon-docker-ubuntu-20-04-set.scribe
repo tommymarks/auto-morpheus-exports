@@ -1,0 +1,12 @@
+resource "compute-type-set" "amazon-docker-ubuntu-20-04-set" {
+  code = "amazon-docker-ubuntu-20-04-set"
+  name = "docker host"
+  category = "ubuntu"
+  canAddNodes = true
+  computeServerType = { code = "amazon-linux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nodeType = "worker"
+  workloadType = { code = "amazon-docker-ubuntu-20-04" }
+}
