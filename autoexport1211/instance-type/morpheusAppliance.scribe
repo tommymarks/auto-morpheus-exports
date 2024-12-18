@@ -1,0 +1,11 @@
+resource "instance-type" "morpheusAppliance" {
+  code = "morpheusAppliance"
+  name = "Morpheus Appliance"
+  uuid = "0d725e41-c991-4644-a45e-4a8680e4c791"
+  category = "web"
+  deploymentService = ""
+  description = "Used to install fresh morpheus appliances for testing"
+  environmentPrefix = "MORPHEUS_APPLIANCE"
+  labels = [ "installer" ]
+  optionTypes = [ { code = "installerLink" }, { code = "installerPackage" } ]
+}

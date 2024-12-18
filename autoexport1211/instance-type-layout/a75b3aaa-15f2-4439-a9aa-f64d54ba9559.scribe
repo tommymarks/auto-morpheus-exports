@@ -1,0 +1,12 @@
+resource "instance-type-layout" "a75b3aaa-15f2-4439-a9aa-f64d54ba9559" {
+  code = "a75b3aaa-15f2-4439-a9aa-f64d54ba9559"
+  name = "Ubuntu20"
+  uuid = "216f02d6-9b74-46c8-9ef8-4fb0b9d79fc5"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerDebian" } ]
+  workloads = [ { code = "9dc086f8-d8bb-46fa-aff8-6d988f856650" } ]
+}

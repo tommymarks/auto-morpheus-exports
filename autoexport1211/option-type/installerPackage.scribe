@@ -1,0 +1,13 @@
+resource "option-type" "installerPackage" {
+  code = "installerPackage"
+  name = "installer package name"
+  uuid = "c86e7066-1a1c-4a99-a7d4-97301277a061"
+  defaultValue = "morpheus-appliance_7.0.7-1_amd64.deb"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Package name"
+  fieldName = "installerPackage"
+  labels = [ "installer" ]
+  required = true
+}

@@ -1,0 +1,16 @@
+resource "container-type" "9dc086f8-d8bb-46fa-aff8-6d988f856650" {
+  code = "9dc086f8-d8bb-46fa-aff8-6d988f856650"
+  name = "Amazon Ubuntu 20"
+  uuid = "2050c82b-a719-4c87-91a0-478c53f1b558"
+  containerPorts = [ { uuid = "68efbca1-4536-4798-8fac-4610f7bb9034" } ]
+  containerVersion = "Ubuntu 20"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsubu20"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "9be49923-c1fe-43be-9eef-cfbf572fd3ba" }
+}
