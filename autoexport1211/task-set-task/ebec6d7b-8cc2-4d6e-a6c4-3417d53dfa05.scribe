@@ -1,0 +1,6 @@
+resource "task-set-task" "ebec6d7b-8cc2-4d6e-a6c4-3417d53dfa05" {
+  uuid = "ebec6d7b-8cc2-4d6e-a6c4-3417d53dfa05"
+  task = { name = "Installer Enable FIPS SUSE 15" }
+  taskOrder = 2
+  taskPhase = "provision"
+}

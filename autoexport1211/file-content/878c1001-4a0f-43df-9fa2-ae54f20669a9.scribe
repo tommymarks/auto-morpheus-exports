@@ -1,0 +1,12 @@
+resource "file-content" "878c1001-4a0f-43df-9fa2-ae54f20669a9" {
+  uuid = "878c1001-4a0f-43df-9fa2-ae54f20669a9"
+  content = <<EOFSCRIBE
+zypper in -y -t pattern fips && 
+sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 net.ifnames=0 8250.nr_uarts=4 dis_ucode_ldr multipath=off nvme_core.admin_timeout=4294967295 nvme_core.io_timeout=4294967295"/GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 net.ifnames=0 8250.nr_uarts=4 dis_ucode_ldr multipath=off nvme_core.admin_timeout=4294967295 nvme_core.io_timeout=4294967295 fips=1"/' /etc/default/grub &&
+grub2-mkconfig -o /boot/grub2/grub.cfg &&
+zypper install -y dracut-mkinitrd-deprecated &&
+mkinitrd
+EOFSCRIBE
+  dateCreated = "2024-03-12T18:31:24.000Z"
+  lastUpdated = "2024-03-12T19:05:57.000Z"
+}

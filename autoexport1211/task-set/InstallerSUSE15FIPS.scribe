@@ -1,0 +1,16 @@
+resource "task-set" "InstallerSUSE15FIPS" {
+  name = "InstallerSUSE15FIPS"
+  uuid = "7849146d-8f63-42d9-8276-cac8a924ca42"
+  dateCreated = "2024-03-12T19:26:29.000Z"
+  labels = [ "installer" ]
+  lastUpdated = "2024-03-12T19:26:29.000Z"
+  taskSetTasks = [
+    { uuid = "067fce74-9b07-4d51-b546-6a725a603c3e" },
+    { uuid = "0f0ccc2c-3320-413c-8f09-48cf8a06229b" },
+    { uuid = "3efe43f6-bafe-4022-90de-013d4f1eb312" },
+    { uuid = "9bc86a64-49b3-4f55-a121-75ae51a6f383" },
+    { uuid = "e0cb35bd-1e0d-458c-a1e2-18a52c126a1b" },
+    { uuid = "e68becb7-77bf-4e97-a6da-7b0b5c65e858" },
+    { uuid = "ebec6d7b-8cc2-4d6e-a6c4-3417d53dfa05" }
+  ]
+}

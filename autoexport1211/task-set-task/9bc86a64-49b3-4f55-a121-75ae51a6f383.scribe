@@ -1,0 +1,5 @@
+resource "task-set-task" "9bc86a64-49b3-4f55-a121-75ae51a6f383" {
+  uuid = "9bc86a64-49b3-4f55-a121-75ae51a6f383"
+  task = { name = "Installer SUSE" }
+  taskPhase = "provision"
+}
