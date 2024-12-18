@@ -1,0 +1,17 @@
+resource "resource-spec-template" "da50e02f-ff76-4a5d-80ea-6cd068952695" {
+  name = "Auto cant delete"
+  uuid = "da50e02f-ff76-4a5d-80ea-6cd068952695"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+    terraform = { tfVersion = "" }
+  }
+  dateCreated = "2023-10-30T23:06:27.000Z"
+  lastUpdated = "2023-11-09T23:36:46.000Z"
+  template = { uuid = "72ab4fa3-e469-4cf6-8056-2bf884ac1c9d" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
