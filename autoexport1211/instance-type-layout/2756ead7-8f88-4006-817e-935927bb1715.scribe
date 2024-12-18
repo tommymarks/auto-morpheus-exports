@@ -1,0 +1,13 @@
+resource "instance-type-layout" "2756ead7-8f88-4006-817e-935927bb1715" {
+  code = "2756ead7-8f88-4006-817e-935927bb1715"
+  name = "CentOS7"
+  uuid = "00b9196f-24f9-42ad-9221-1f35db020ed2"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerCentOS7" } ]
+  workloads = [ { code = "amazon-centos-7.3" } ]
+}
