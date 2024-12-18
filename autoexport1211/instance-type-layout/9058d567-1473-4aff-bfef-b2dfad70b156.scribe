@@ -1,0 +1,14 @@
+resource "instance-type-layout" "9058d567-1473-4aff-bfef-b2dfad70b156" {
+  code = "9058d567-1473-4aff-bfef-b2dfad70b156"
+  name = "XaaS"
+  uuid = "5e297603-6f84-4c0f-965f-3533db860ee1"
+  hasAutoScale = true
+  instanceType = { code = "xaas" }
+  instanceVersion = "xaas"
+  memoryRequirement = 0
+  optionTypes = [ { code = "xaasColor" } ]
+  provisionType = { code = "workflow" }
+  sortOrder = 5
+  supportsConvertToManaged = true
+  taskSets = [ { name = "XaaS" } ]
+}
