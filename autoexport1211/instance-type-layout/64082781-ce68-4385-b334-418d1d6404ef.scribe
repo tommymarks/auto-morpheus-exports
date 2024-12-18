@@ -1,0 +1,13 @@
+resource "instance-type-layout" "64082781-ce68-4385-b334-418d1d6404ef" {
+  code = "64082781-ce68-4385-b334-418d1d6404ef"
+  name = "Debian10"
+  uuid = "ec012842-d0b2-4d64-ac74-307e8c35250b"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerDebian" } ]
+  workloads = [ { code = "debian-amazon-10" } ]
+}
