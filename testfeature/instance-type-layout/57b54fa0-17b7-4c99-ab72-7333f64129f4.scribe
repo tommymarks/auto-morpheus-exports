@@ -1,0 +1,14 @@
+resource "instance-type-layout" "57b54fa0-17b7-4c99-ab72-7333f64129f4" {
+  code = "57b54fa0-17b7-4c99-ab72-7333f64129f4"
+  name = "Huawei NGINX"
+  uuid = "34e5bce7-1cac-49f4-ba7c-ed53679bfc78"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "huawei" }
+  workloads = [ { code = "0a1e29fb-ecc6-431c-8f26-fed88360a2a1" } ]
+}
