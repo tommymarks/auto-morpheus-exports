@@ -1,0 +1,12 @@
+resource "instance-type-layout" "402a394f-9039-4422-846e-9d1fc2988858" {
+  code = "402a394f-9039-4422-846e-9d1fc2988858"
+  name = "AmazonLinux2"
+  uuid = "37cc2289-8715-4053-8439-ce10f1838501"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerAmazonLinux2" } ]
+  workloads = [ { code = "amazonlinux-amazon-2" } ]
+}
