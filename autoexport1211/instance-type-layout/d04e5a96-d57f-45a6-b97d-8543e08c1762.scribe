@@ -1,0 +1,14 @@
+resource "instance-type-layout" "d04e5a96-d57f-45a6-b97d-8543e08c1762" {
+  code = "d04e5a96-d57f-45a6-b97d-8543e08c1762"
+  name = "Nutanix Prism Apache"
+  uuid = "454e59a4-2fff-4209-9abc-44be4d7639db"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  workloads = [ { code = "1d2b3d90-2b80-44fd-8cf0-20f43b3fbee9" } ]
+}
