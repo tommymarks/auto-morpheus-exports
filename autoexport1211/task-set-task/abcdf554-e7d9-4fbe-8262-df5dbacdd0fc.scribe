@@ -1,0 +1,4 @@
+resource "task-set-task" "abcdf554-e7d9-4fbe-8262-df5dbacdd0fc" {
+  uuid = "abcdf554-e7d9-4fbe-8262-df5dbacdd0fc"
+  task = { name = "Installer CentOS7 vault update" }
+}

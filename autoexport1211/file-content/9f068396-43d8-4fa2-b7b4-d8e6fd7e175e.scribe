@@ -1,0 +1,11 @@
+resource "file-content" "9f068396-43d8-4fa2-b7b4-d8e6fd7e175e" {
+  uuid = "9f068396-43d8-4fa2-b7b4-d8e6fd7e175e"
+  content = <<EOFSCRIBE
+pkill PackageKit
+yum update -y -q > /dev/null
+yum install wget -y -q > /dev/null
+yum install coreutils -y -q > /dev/null
+EOFSCRIBE
+  dateCreated = "2023-11-20T17:14:12.000Z"
+  lastUpdated = "2023-12-13T20:45:26.000Z"
+}
