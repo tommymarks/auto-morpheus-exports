@@ -1,0 +1,19 @@
+resource "file-content" "74c45d2e-da64-43c1-a347-221858e5ead1" {
+  uuid = "74c45d2e-da64-43c1-a347-221858e5ead1"
+  content = <<EOFSCRIBE
+subscription-manager register --username djblankinship --password Pa55w0rdredhat
+subscription-manager attach
+pkill PackageKit
+yum install net-tools -y -q > /dev/null
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y > /dev/null
+/usr/bin/crb enable > /dev/null
+subscription-manager repos --enable codeready-builder-for-rhel-9-x86_64-rpms
+subscription-manager config --rhsm.manage_repos=1
+yum update -y -q > /dev/null
+yum update -y -q > /dev/null
+yum install wget -y -q > /dev/null
+
+EOFSCRIBE
+  dateCreated = "2023-11-14T20:00:57.000Z"
+  lastUpdated = "2024-11-14T20:18:24.000Z"
+}

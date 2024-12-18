@@ -1,0 +1,4 @@
+resource "task-set-task" "42eb2757-9004-41b5-b699-88c997b409df" {
+  uuid = "42eb2757-9004-41b5-b699-88c997b409df"
+  task = { name = "Installer RHEL9" }
+}
