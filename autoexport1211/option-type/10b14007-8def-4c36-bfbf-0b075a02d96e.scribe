@@ -1,0 +1,56 @@
+resource "option-type" "10b14007-8def-4c36-bfbf-0b075a02d96e" {
+  code = "10b14007-8def-4c36-bfbf-0b075a02d96e"
+  name = "10b14007-8def-4c36-bfbf-0b075a02d96e"
+  uuid = "59503f49-cbbd-4a4c-a572-e634ab907f97"
+  config = {
+    cloudField = "251938ca-f0cb-4475-b1ad-34bdc05fd5ef"
+    cloudFieldType = "field"
+    cloudId = ""
+    defaultValue = <<EOFSCRIBE
+[
+ {
+  "primaryInterface": true,
+  "displayOrder": 0,
+  "ipMode": "",
+  "ipAddress": "",
+  "networkInterfaceTypeId": "",
+  "network": {
+   "id": "network-6"
+  }
+ },
+ {
+  "primaryInterface": false,
+  "displayOrder": 1,
+  "ipMode": "",
+  "ipAddress": "",
+  "networkInterfaceTypeId": "",
+  "network": {
+   "id": "network-11",
+   "pool": {
+    "id": ""
+   }
+  }
+ }
+]
+
+EOFSCRIBE
+    enableIPModeSelection = true
+    groupField = "0c10c7e4-2970-4f6d-a9de-104829851290"
+    groupFieldType = "field"
+    groupId = ""
+    layoutField = "89aecea4-0d75-4fa6-b7bc-ee62e4db376b"
+    layoutFieldType = "field"
+    layoutId = ""
+    poolField = "a58f96a1-3a1b-4276-a356-524f79e4641a"
+    poolFieldType = "field"
+    poolId = ""
+    showNetworkTypeSelection = true
+  }
+  displayOrder = 7
+  fieldContext = "config.customOptions"
+  fieldLabel = "Networks"
+  fieldName = "networks"
+  formField = true
+  refCode = "10b14007-8def-4c36-bfbf-0b075a02d96e"
+  type = "networkManager"
+}
