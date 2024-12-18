@@ -1,0 +1,14 @@
+resource "instance-type-layout" "d8a5e8cc-3ac6-44bc-a275-9ce8b7db06c8" {
+  code = "d8a5e8cc-3ac6-44bc-a275-9ce8b7db06c8"
+  name = "Oracle Cloud Apache"
+  uuid = "79d0fb01-8730-4772-82a4-c701bb5c96ff"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "oraclecloud" }
+  workloads = [ { code = "db27c095-0060-4541-a7c0-448ca8404916" } ]
+}
