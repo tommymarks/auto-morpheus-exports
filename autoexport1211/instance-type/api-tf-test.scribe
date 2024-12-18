@@ -5,4 +5,5 @@ resource "instance-type" "api-tf-test" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "API_TF_TEST"
+  layouts = [ { code = "c874f2f5-6538-4faa-ac10-83cc309386a2" } ]
 }
