@@ -1,0 +1,11 @@
+resource "option-type" "awordEdit" {
+  code = "awordEdit"
+  name = "ac text"
+  uuid = "e7eb0cb5-8210-4520-b6ab-5b3685514347"
+  fieldContext = "config.customOptions"
+  fieldLabel = "a word"
+  fieldName = "awordEdit"
+  helpBlock = "5 letter word that starts with 'a'"
+  required = true
+  verifyPattern = "a\\D{4}"
+}
