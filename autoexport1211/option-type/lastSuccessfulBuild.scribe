@@ -1,0 +1,13 @@
+resource "option-type" "lastSuccessfulBuild" {
+  code = "lastSuccessfulBuild"
+  name = "Installer Last Successful Build"
+  uuid = "f5fda1c1-e9b1-40bc-bf8e-d25fad32fff9"
+  defaultValue = "https://jenkins.morpheusdata.com/job/morpheus-ui-7.0/lastSuccessfulBuild/artifact/morpheus-ui/build/libs/morpheus-ui.war"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Last Successful Build"
+  fieldName = "lastSuccessfulBuild"
+  labels = [ "installer" ]
+  required = true
+}

@@ -1,0 +1,13 @@
+resource "instance-type-layout" "32d50f0f-dcde-4497-99f9-f7ea9ba4ee05" {
+  code = "32d50f0f-dcde-4497-99f9-f7ea9ba4ee05"
+  name = "Ubuntu 22"
+  uuid = "5c3226bd-bd00-48f4-89ac-98b78768654a"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "most recent"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "lastSuccessfulBuild" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerMostRecentDebian" } ]
+  workloads = [ { code = "08429b77-dbea-4a61-a0ae-9c6ecbde08a1" } ]
+}
