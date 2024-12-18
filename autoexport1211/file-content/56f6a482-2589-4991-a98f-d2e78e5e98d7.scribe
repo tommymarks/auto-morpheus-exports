@@ -1,0 +1,12 @@
+resource "file-content" "56f6a482-2589-4991-a98f-d2e78e5e98d7" {
+  uuid = "56f6a482-2589-4991-a98f-d2e78e5e98d7"
+  content = <<EOFSCRIBE
+pkill PackageKit
+yum update -y -q > /dev/null
+yum install wget -y -q > /dev/null
+yum-config-manager --enable rhel-7-server-rhui-optional-rpms -y -q > /dev/null
+
+EOFSCRIBE
+  dateCreated = "2023-11-14T19:53:57.000Z"
+  lastUpdated = "2023-12-13T20:48:08.000Z"
+}

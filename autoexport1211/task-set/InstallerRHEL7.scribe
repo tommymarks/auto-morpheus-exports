@@ -1,0 +1,15 @@
+resource "task-set" "InstallerRHEL7" {
+  name = "InstallerRHEL7"
+  uuid = "c75133a9-81c8-4751-9a38-85fbaf03c73c"
+  dateCreated = "2023-11-14T20:03:18.000Z"
+  description = "Setup RHEL 7 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-11-15T16:49:01.000Z"
+  taskSetTasks = [
+    { uuid = "149ea14e-456b-43cc-82e7-94adc44c7bf3" },
+    { uuid = "2e37fbb9-48ca-4434-bbb3-cfa57d255f92" },
+    { uuid = "8026216d-5780-40fd-a820-ee2169b7a7d1" },
+    { uuid = "8c6b57a3-0f15-4203-a811-974735d0908e" },
+    { uuid = "edd43526-bbfb-4b72-9f1c-81304ac9629b" }
+  ]
+}

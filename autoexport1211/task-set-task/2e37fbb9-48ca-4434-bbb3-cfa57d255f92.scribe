@@ -1,0 +1,5 @@
+resource "task-set-task" "2e37fbb9-48ca-4434-bbb3-cfa57d255f92" {
+  uuid = "2e37fbb9-48ca-4434-bbb3-cfa57d255f92"
+  task = { name = "Installer RHEL7" }
+  taskOrder = 1
+}
