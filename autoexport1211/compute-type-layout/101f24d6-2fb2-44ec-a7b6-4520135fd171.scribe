@@ -1,0 +1,19 @@
+resource "compute-type-layout" "101f24d6-2fb2-44ec-a7b6-4520135fd171" {
+  code = "101f24d6-2fb2-44ec-a7b6-4520135fd171"
+  name = "Custom Docker OLVM"
+  computeServers = [
+    {
+      code = "101f24d6-2fb2-44ec-a7b6-4520135fd171-9bee703f-3fdb-4f70-8e5a-f9a4741a61ca"
+    }
+  ]
+  computeVersion = "Ubuntu 20"
+  dateCreated = "2024-04-23T13:58:13.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2024-07-14T19:01:27.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "olvm-provision-standard" }
+  sortOrder = 999
+  type = { code = "olvm-linux" }
+}

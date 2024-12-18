@@ -1,0 +1,12 @@
+resource "compute-type-set" "101f24d6-2fb2-44ec-a7b6-4520135fd171-9bee703f-3fdb-4f70-8e5a-f9a4741a61ca" {
+  code = "101f24d6-2fb2-44ec-a7b6-4520135fd171-9bee703f-3fdb-4f70-8e5a-f9a4741a61ca"
+  name = "Custom Docker OLVM-worker-9bee703f-3fdb-4f70-8e5a-f9a4741a61ca-set"
+  canAddNodes = true
+  computeServerType = { code = "olvm-linux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "9bee703f-3fdb-4f70-8e5a-f9a4741a61ca" }
+}
