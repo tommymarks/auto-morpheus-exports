@@ -1,0 +1,10 @@
+resource "container-type-mount" "ba783a7d-626c-4309-9250-21d957e4b905" {
+  name = "data"
+  uuid = "ba783a7d-626c-4309-9250-21d957e4b905"
+  canPersist = true
+  containerPath = "/usr/local/apache2/htdocs"
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "data"
+  volumeName = "data"
+}
