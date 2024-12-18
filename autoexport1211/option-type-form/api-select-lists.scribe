@@ -1,0 +1,49 @@
+resource "option-type-form" "api-select-lists" {
+  code = "api-select-lists"
+  name = "legacy api select fields"
+  uuid = "037de858-e92f-468f-8c6b-744d8d4a73de"
+  options = [
+    {
+      code = "morphgroup"
+      name = "API Groups"
+      uuid = "4c77b644-904e-49e7-8d89-7ba3a7b17743"
+      fieldContext = "config.customOptions"
+      fieldGetName = "morphgroup"
+      fieldLabel = "Group"
+      fieldName = "morphgroup"
+      fieldSetName = "morphgroup"
+      labels = [ "auto", "keep" ]
+      optionList = { name = "API Groups" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "morphcloud"
+      name = "API Clouds"
+      uuid = "c340bc07-96cd-4d4e-9736-6acc3248a55f"
+      dependsOnCode = "morphgroup"
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "Cloud"
+      fieldName = "morphcloud"
+      helpBlock = "Select a Cloud"
+      labels = [ "auto", "qa" ]
+      optionList = { name = "API Clouds" }
+      optionSource = "list"
+      type = "select"
+    },
+    {
+      code = "c7f20af1-5708-4089-bf81-2e458dc15a9a"
+      name = "c7f20af1-5708-4089-bf81-2e458dc15a9a"
+      uuid = "da09e3aa-b9e0-4e9f-91d7-2eb6fb232dfc"
+      config = { multiSelect = false }
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "Input 3"
+      fieldName = "input3"
+      formField = true
+      optionList = { name = "API Environments" }
+      type = "select"
+    }
+  ]
+}
