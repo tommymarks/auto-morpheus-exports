@@ -1,0 +1,13 @@
+resource "instance-type-layout" "c5308703-d22d-456b-b38c-8cbcda1123f1" {
+  code = "c5308703-d22d-456b-b38c-8cbcda1123f1"
+  name = "SUSE12"
+  uuid = "eccf9653-f1ee-41f6-b7a9-f470c6707924"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSUSE12" } ]
+  workloads = [ { code = "9d4ce42b-38b4-4212-86db-ec7fb8d5efc3" } ]
+}

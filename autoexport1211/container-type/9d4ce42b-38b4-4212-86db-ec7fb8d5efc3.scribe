@@ -1,0 +1,16 @@
+resource "container-type" "9d4ce42b-38b4-4212-86db-ec7fb8d5efc3" {
+  code = "9d4ce42b-38b4-4212-86db-ec7fb8d5efc3"
+  name = "Amazon SLES 12"
+  uuid = "705f668b-6901-4aee-8e63-d70ce60ffe8b"
+  containerPorts = [ { uuid = "cd4cd0cb-c044-44fb-a392-ee2817ce33c1" } ]
+  containerVersion = "SLES 12"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awssles12"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "f65762f8-d798-4138-b555-b1b89ef08063" }
+}
