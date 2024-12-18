@@ -1,0 +1,14 @@
+resource "container-type" "77832fa1-5d9f-4d31-ae47-65e8dfa79855" {
+  code = "77832fa1-5d9f-4d31-ae47-65e8dfa79855"
+  name = "AAA"
+  uuid = "80a88326-20cb-4fc3-b854-6f0075bb5d5d"
+  checkTypeCode = "vmCheck"
+  containerVersion = "aaa"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "olvm-provision-standard" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "aaa"
+  statTypeCode = "vm"
+}
