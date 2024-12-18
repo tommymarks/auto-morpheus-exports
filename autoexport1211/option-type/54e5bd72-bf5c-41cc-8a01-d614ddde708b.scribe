@@ -1,0 +1,25 @@
+resource "option-type" "54e5bd72-bf5c-41cc-8a01-d614ddde708b" {
+  code = "54e5bd72-bf5c-41cc-8a01-d614ddde708b"
+  name = "54e5bd72-bf5c-41cc-8a01-d614ddde708b"
+  uuid = "7398ebc2-69b8-48d2-91b1-743280472aa0"
+  config = {
+    cloudField = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+    cloudFieldType = "field"
+    cloudId = ""
+    groupField = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    groupFieldType = "field"
+    groupId = ""
+    planField = "2e0455dc-d8ae-4e7b-88ed-e2d4d0bc0f21"
+    planFieldType = "field"
+    planId = ""
+  }
+  defaultValue = "group-v80"
+  displayOrder = 8
+  fieldContext = "config.customOptions"
+  fieldLabel = "VMware Folder"
+  fieldName = "vmwareFolder"
+  formField = true
+  helpBlock = "vmw folder help"
+  refCode = "54e5bd72-bf5c-41cc-8a01-d614ddde708b"
+  type = "vmwFolders"
+}
