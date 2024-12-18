@@ -1,0 +1,6 @@
+resource "file-content" "13c3b116-9b41-404a-942c-1552632d64c7" {
+  uuid = "13c3b116-9b41-404a-942c-1552632d64c7"
+  content = "sysctl crypto.fips_enabled"
+  dateCreated = "2023-11-15T20:53:21.000Z"
+  lastUpdated = "2023-11-15T20:53:21.000Z"
+}
