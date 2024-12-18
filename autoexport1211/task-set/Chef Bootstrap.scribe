@@ -1,0 +1,8 @@
+resource "task-set" "Chef Bootstrap" {
+  name = "Chef Bootstrap"
+  uuid = "3eb180e4-da31-45cb-ad13-fb5c49c6ed7f"
+  dateCreated = "2023-03-20T22:35:20.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-20T22:35:31.000Z"
+  taskSetTasks = [ { uuid = "739e973b-8c00-4d79-82a0-b2e2ec0aafa6" } ]
+}
