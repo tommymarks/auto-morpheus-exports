@@ -1,0 +1,4 @@
+resource "task-set-task" "cdb0e08f-8da3-4f37-8b35-8231367dec31" {
+  uuid = "cdb0e08f-8da3-4f37-8b35-8231367dec31"
+  task = { name = "Phase: Post Provision" }
+}
