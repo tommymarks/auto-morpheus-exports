@@ -1,0 +1,10 @@
+resource "file-content" "e08794c3-c953-4441-84a6-07db36ff9d1a" {
+  uuid = "e08794c3-c953-4441-84a6-07db36ff9d1a"
+  content = <<EOFSCRIBE
+sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo
+sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo
+sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo
+EOFSCRIBE
+  dateCreated = "2024-11-15T16:36:00.000Z"
+  lastUpdated = "2024-11-15T16:36:00.000Z"
+}

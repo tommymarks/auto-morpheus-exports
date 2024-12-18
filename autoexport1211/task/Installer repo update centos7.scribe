@@ -1,0 +1,16 @@
+resource "task" "Installer repo update centos7" {
+  name = "Installer repo update centos7"
+  uuid = "2b8383f7-3277-4a2b-8986-310d6b26f7eb"
+  dateCreated = "2024-11-15T16:36:00.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-11-15T16:36:52.000Z"
+  options = [
+    {
+      content = { uuid = "e08794c3-c953-4441-84a6-07db36ff9d1a" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
