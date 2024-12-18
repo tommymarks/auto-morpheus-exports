@@ -1,0 +1,9 @@
+resource "file-content" "37d001b9-f572-4390-b19b-7de4000fa230" {
+  uuid = "37d001b9-f572-4390-b19b-7de4000fa230"
+  contentPath = "./scripts/hello.rb"
+  contentRef = "auto"
+  dateCreated = "2023-07-20T21:58:19.000Z"
+  lastUpdated = "2023-07-20T21:58:19.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}

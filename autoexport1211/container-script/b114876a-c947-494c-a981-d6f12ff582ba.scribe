@@ -1,0 +1,11 @@
+resource "container-script" "b114876a-c947-494c-a981-d6f12ff582ba" {
+  code = "b114876a-c947-494c-a981-d6f12ff582ba"
+  name = "temp script"
+  uuid = "fa16dfac-eb5d-4fc6-acca-5bad55e85b8c"
+  dateCreated = "2023-07-20T21:58:19.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-07-20T21:58:19.000Z"
+  script = "echo \"library script\" | tee -a /var/tmp/task.txt"
+  scriptPhase = "provision"
+  sudoUser = true
+}

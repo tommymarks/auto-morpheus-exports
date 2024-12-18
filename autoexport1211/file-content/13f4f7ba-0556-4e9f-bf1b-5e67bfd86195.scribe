@@ -1,0 +1,9 @@
+resource "file-content" "13f4f7ba-0556-4e9f-bf1b-5e67bfd86195" {
+  uuid = "13f4f7ba-0556-4e9f-bf1b-5e67bfd86195"
+  contentPath = "./scripts/hello.sh"
+  contentRef = "auto"
+  dateCreated = "2023-07-20T21:58:19.000Z"
+  lastUpdated = "2023-07-20T21:58:19.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}
