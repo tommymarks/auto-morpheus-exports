@@ -1,0 +1,11 @@
+resource "option-type" "1c10edbf-9fd1-47a7-bf9a-4e22b8a251bb" {
+  code = "1c10edbf-9fd1-47a7-bf9a-4e22b8a251bb"
+  name = "1c10edbf-9fd1-47a7-bf9a-4e22b8a251bb"
+  uuid = "bf163906-abbd-4f94-921a-02d5cec53a00"
+  config = { addon = "", addonPosition = "right" }
+  fieldContext = "config.customOptions"
+  fieldLabel = "Label B"
+  fieldName = "LabelB"
+  formField = true
+  refCode = "1c10edbf-9fd1-47a7-bf9a-4e22b8a251bb"
+}
