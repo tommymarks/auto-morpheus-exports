@@ -1,0 +1,15 @@
+resource "task" "Instance Config" {
+  name = "Instance Config"
+  uuid = "aacddd64-4890-4674-9c54-25079c7ab84b"
+  dateCreated = "2023-03-15T23:58:02.000Z"
+  executeTarget = "local"
+  labels = [ "auto", "qa", "utility" ]
+  lastUpdated = "2023-03-17T02:07:27.000Z"
+  options = [
+    {
+      content = { uuid = "324c2571-915c-4d5e-8e2e-46a886927e48" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
