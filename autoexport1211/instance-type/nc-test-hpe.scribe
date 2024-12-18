@@ -6,4 +6,5 @@ resource "instance-type" "nc-test-hpe" {
   deploymentService = ""
   environmentPrefix = "NC-TEST-HPE"
   labels = [ "deleteok" ]
+  layouts = [ { code = "2bf8cec2-2f2c-4571-8405-f5b6ac75ecd1" } ]
 }
