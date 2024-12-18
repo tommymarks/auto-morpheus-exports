@@ -1,0 +1,34 @@
+resource "container-type" "281fe3e6-b300-41ea-ba9f-e44917f77e8f" {
+  code = "281fe3e6-b300-41ea-ba9f-e44917f77e8f"
+  name = "Apache latest"
+  uuid = "451797c7-8451-4a06-8781-f4620f55e2a5"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "vmCheck"
+  containerPorts = [
+    { uuid = "70c3a52d-bf52-4c73-9aec-ccc15dcc2cae" },
+    { uuid = "57bbb7d2-68af-45f5-a840-95ef8385424b" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "59817ca8-2453-46c7-857b-e3682e0f9fdc" } ]
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  mounts = [ { uuid = "c50ce5ae-c306-42f0-9bae-6b723b7146ad" } ]
+  osType = { code = "ubuntu.20.04.64" }
+  provisionType = { code = "huawei" }
+  repositoryImage = ""
+  scripts = [
+    { code = "1876916a-84c1-408c-9a38-d3301f2a39f9" },
+    { code = "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2" },
+    { code = "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+}
