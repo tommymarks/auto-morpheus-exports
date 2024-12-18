@@ -1,9 +1,0 @@
-resource "instance-type" "jkCustomAzure" {
-  code = "jkCustomAzure"
-  name = "JK Custom Azure"
-  uuid = "8432014a-4742-409c-922c-232bee4fd9ea"
-  category = "web"
-  deploymentService = ""
-  environmentPrefix = "JK_CUSTOM_AZURE"
-  layouts = [ { code = "dbdd7bc3-60b7-4371-9b35-2d8500ad8297" } ]
-}

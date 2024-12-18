@@ -1,6 +1,0 @@
-resource "file-content" "30e0b563-1ee2-49d2-b8f6-8b7c82f061ec" {
-  uuid = "30e0b563-1ee2-49d2-b8f6-8b7c82f061ec"
-  content = "return \"Output GROOVY\""
-  dateCreated = "2024-02-20T16:49:41.000Z"
-  lastUpdated = "2024-02-20T16:49:41.000Z"
-}

@@ -1,6 +1,0 @@
-resource "file-content" "f2ed2460-3ec0-4ba0-8856-0371442a7981" {
-  uuid = "f2ed2460-3ec0-4ba0-8856-0371442a7981"
-  content = "echo customOptions = <%=customOptions%>"
-  dateCreated = "2023-10-02T14:30:02.000Z"
-  lastUpdated = "2023-10-02T14:30:02.000Z"
-}

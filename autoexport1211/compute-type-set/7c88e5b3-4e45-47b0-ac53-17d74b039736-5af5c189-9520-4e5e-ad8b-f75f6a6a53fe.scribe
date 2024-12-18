@@ -1,8 +1,0 @@
-resource "compute-type-set" "7c88e5b3-4e45-47b0-ac53-17d74b039736-5af5c189-9520-4e5e-ad8b-f75f6a6a53fe" {
-  code = "7c88e5b3-4e45-47b0-ac53-17d74b039736-5af5c189-9520-4e5e-ad8b-f75f6a6a53fe"
-  name = "db-kubecluster-1218-master-5af5c189-9520-4e5e-ad8b-f75f6a6a53fe-set"
-  computeServerType = { code = "vmwareKubeMaster" }
-  nameSuffix = "-master"
-  nodeType = "master"
-  workloadType = { code = "5af5c189-9520-4e5e-ad8b-f75f6a6a53fe" }
-}

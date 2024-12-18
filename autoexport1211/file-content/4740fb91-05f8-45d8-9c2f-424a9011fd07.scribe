@@ -1,9 +1,0 @@
-resource "file-content" "4740fb91-05f8-45d8-9c2f-424a9011fd07" {
-  uuid = "4740fb91-05f8-45d8-9c2f-424a9011fd07"
-  contentPath = "/autoexport0301/account-integration/Auto Export 0301.scribe"
-  contentRef = ""
-  dateCreated = "2024-03-05T19:57:18.000Z"
-  lastUpdated = "2024-04-25T15:08:18.000Z"
-  repository = { name = "auto-morpheus-exports" }
-  sourceType = "repository"
-}

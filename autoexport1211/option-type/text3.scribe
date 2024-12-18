@@ -1,8 +1,0 @@
-resource "option-type" "text3" {
-  code = "text3"
-  name = "ac-text3"
-  uuid = "5a7502ff-1652-45b3-8fbf-ac21f4a0cf95"
-  fieldContext = "config.customOptions"
-  fieldLabel = "text3"
-  fieldName = "text3"
-}

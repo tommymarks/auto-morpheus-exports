@@ -1,9 +1,0 @@
-resource "container-type-port" "b1547a23-7ee0-45ad-afc6-d2d392cfbd73" {
-  name = "Awesome"
-  uuid = "b1547a23-7ee0-45ad-afc6-d2d392cfbd73"
-  export = true
-  exportName = "AWESOME"
-  externalPort = 1337
-  internalPort = 1337
-  visible = true
-}

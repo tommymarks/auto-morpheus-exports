@@ -1,6 +1,0 @@
-resource "container-type-log" "22dda9a5-5a67-4458-aba7-5f0a35061c5f" {
-  name = "logs"
-  uuid = "22dda9a5-5a67-4458-aba7-5f0a35061c5f"
-  containerPath = "/var/log/apache2"
-  hostPath = "/var/log/apache2"
-}

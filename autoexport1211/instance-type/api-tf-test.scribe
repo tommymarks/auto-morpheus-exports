@@ -1,9 +1,0 @@
-resource "instance-type" "api-tf-test" {
-  code = "api-tf-test"
-  name = "api-tf-test"
-  uuid = "a1fd5d0c-522e-41c0-b7d9-b84931547d5c"
-  category = "web"
-  deploymentService = ""
-  environmentPrefix = "API_TF_TEST"
-  layouts = [ { code = "c874f2f5-6538-4faa-ac10-83cc309386a2" } ]
-}

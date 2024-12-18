@@ -1,7 +1,0 @@
-resource "file-content" "72ab4fa3-e469-4cf6-8056-2bf884ac1c9d" {
-  uuid = "72ab4fa3-e469-4cf6-8056-2bf884ac1c9d"
-  contentPath = "https://raw.githubusercontent.com/tommymarks/terraform-samples/auto/specs/cloudformation.json"
-  dateCreated = "2023-10-30T23:06:27.000Z"
-  lastUpdated = "2023-10-30T23:06:27.000Z"
-  sourceType = "url"
-}

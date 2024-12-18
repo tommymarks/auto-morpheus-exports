@@ -1,9 +1,0 @@
-resource "option-type" "RAM_Count" {
-  code = "RAM_Count"
-  name = "Enter RAM Value"
-  uuid = "4d8b246e-ae46-4b49-b047-3aeb10aa1d0c"
-  displayOrder = 1
-  fieldContext = "config.customOptions"
-  fieldLabel = "Customized RAM"
-  fieldName = "RAM_Count"
-}

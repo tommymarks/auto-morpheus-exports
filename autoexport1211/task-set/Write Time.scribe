@@ -1,7 +1,0 @@
-resource "task-set" "Write Time" {
-  name = "Write Time"
-  uuid = "4dbf2c1e-3ec5-4ee3-a48b-dc7aaaf6ddc8"
-  dateCreated = "2024-10-22T15:41:19.000Z"
-  lastUpdated = "2024-10-22T15:41:19.000Z"
-  taskSetTasks = [ { uuid = "3bb3ab61-d87b-4010-bc5d-a854ed487cc3" } ]
-}

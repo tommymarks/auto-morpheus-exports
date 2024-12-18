@@ -1,9 +1,0 @@
-resource "task-set" "jk-powershell-task" {
-  name = "jk-powershell-task"
-  uuid = "fd365f9f-9a57-439e-a877-adb58a02ef25"
-  dateCreated = "2024-11-22T18:57:37.000Z"
-  lastUpdated = "2024-11-22T18:57:37.000Z"
-  platform = "windows"
-  taskSetTasks = [ { uuid = "190a02cb-3ff0-4e01-95c1-348fd9fffe61" } ]
-  taskSetType = "operation"
-}

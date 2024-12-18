@@ -1,6 +1,0 @@
-resource "option-type-list" "Manage Backup" {
-  name = "Manage Backup"
-  uuid = "2664fb83-fd0f-441e-b21b-efd9a6e9f5cf"
-  initialDataset = "'manage backup','Manage Backup'"
-  type = "manual"
-}

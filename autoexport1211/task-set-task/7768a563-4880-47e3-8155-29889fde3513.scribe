@@ -1,5 +1,0 @@
-resource "task-set-task" "7768a563-4880-47e3-8155-29889fde3513" {
-  uuid = "7768a563-4880-47e3-8155-29889fde3513"
-  task = { name = "Hello World Local" }
-  taskPhase = "provision"
-}

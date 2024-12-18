@@ -1,9 +1,0 @@
-resource "file-content" "216bb215-10e7-4914-a3aa-f240e02003e3" {
-  uuid = "216bb215-10e7-4914-a3aa-f240e02003e3"
-  content = <<EOFSCRIBE
-echo "Hello World"
-echo $HOSTNAME
-EOFSCRIBE
-  dateCreated = "2024-11-22T18:54:44.000Z"
-  lastUpdated = "2024-11-22T18:54:44.000Z"
-}

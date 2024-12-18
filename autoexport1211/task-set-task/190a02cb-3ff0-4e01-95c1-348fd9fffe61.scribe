@@ -1,5 +1,0 @@
-resource "task-set-task" "190a02cb-3ff0-4e01-95c1-348fd9fffe61" {
-  uuid = "190a02cb-3ff0-4e01-95c1-348fd9fffe61"
-  task = { code = "jkPowershellTask" }
-  taskPhase = "operation"
-}

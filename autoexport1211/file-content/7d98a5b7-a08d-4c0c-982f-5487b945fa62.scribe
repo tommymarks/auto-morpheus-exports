@@ -1,6 +1,0 @@
-resource "file-content" "7d98a5b7-a08d-4c0c-982f-5487b945fa62" {
-  uuid = "7d98a5b7-a08d-4c0c-982f-5487b945fa62"
-  content = "echo \"<%=customOptions.plan.code%>\""
-  dateCreated = "2024-10-25T20:38:51.000Z"
-  lastUpdated = "2024-10-25T20:38:51.000Z"
-}

@@ -1,8 +1,0 @@
-resource "container-type-mount" "59340e93-21e1-4d05-ac5a-4c12c568eb40" {
-  name = "data"
-  uuid = "59340e93-21e1-4d05-ac5a-4c12c568eb40"
-  canPersist = true
-  containerPath = "/usr/src/redmine/files"
-  deployable = true
-  hostPath = "/usr/src/redmine/files"
-}

@@ -1,6 +1,0 @@
-resource "container-type-set" "olvm-ubuntu-22.04-set" {
-  code = "olvm-ubuntu-22.04-set"
-  uuid = "983094f0-9f9b-45be-a432-ecc15d880f1e"
-  dynamicCount = true
-  workloadType = { code = "olvm-ubuntu-22.04" }
-}

@@ -1,7 +1,0 @@
-resource "task-set" "a ps workflow" {
-  name = "a ps workflow"
-  uuid = "9258614a-15f8-40d0-94af-16a170eeae63"
-  dateCreated = "2024-10-29T13:55:35.000Z"
-  lastUpdated = "2024-10-29T13:55:35.000Z"
-  taskSetTasks = [ { uuid = "55354c6f-0f40-4e21-86b7-f90815bcf372" } ]
-}

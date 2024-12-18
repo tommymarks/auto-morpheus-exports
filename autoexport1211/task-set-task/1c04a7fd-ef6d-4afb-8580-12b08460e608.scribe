@@ -1,5 +1,0 @@
-resource "task-set-task" "1c04a7fd-ef6d-4afb-8580-12b08460e608" {
-  uuid = "1c04a7fd-ef6d-4afb-8580-12b08460e608"
-  task = { name = "echo customOptions" }
-  taskPhase = "operation"
-}

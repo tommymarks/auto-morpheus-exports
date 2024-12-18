@@ -1,4 +1,0 @@
-resource "task-set-task" "83f7d4ce-04d8-4882-8627-b99e370abbec" {
-  uuid = "83f7d4ce-04d8-4882-8627-b99e370abbec"
-  task = { name = "mvmConsoleNetplan" }
-}

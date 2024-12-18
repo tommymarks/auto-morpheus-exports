@@ -1,7 +1,0 @@
-resource "task-set" "Ansible Tower Webserver" {
-  name = "Ansible Tower Webserver"
-  uuid = "de6c72e4-88e7-4359-aabf-0484e1fe9469"
-  dateCreated = "2023-12-16T19:21:40.000Z"
-  lastUpdated = "2023-12-16T19:21:40.000Z"
-  taskSetTasks = [ { uuid = "4e78310d-3654-4147-9be3-163615fecc9f" } ]
-}

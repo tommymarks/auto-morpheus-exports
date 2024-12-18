@@ -1,9 +1,0 @@
-resource "compute-type-set" "kubernetes-1.26.1-ubuntu-20.04-nutanix-prism-set" {
-  code = "kubernetes-1.26.1-ubuntu-20.04-nutanix-prism-set"
-  name = "kubernetes master"
-  category = "ubuntu"
-  computeServerType = { code = "nutanix-prism-kube-master" }
-  nameSuffix = "-master"
-  nodeType = "master"
-  workloadType = { code = "kubernetes-1.26.1-ubuntu-20.04-nutanix-prism" }
-}

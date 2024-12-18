@@ -1,9 +1,0 @@
-resource "file-content" "967bf6ec-111a-4292-a494-15fdd3ecc3f8" {
-  uuid = "967bf6ec-111a-4292-a494-15fdd3ecc3f8"
-  content = <<EOFSCRIBE
-echo `TZ=America/Los_Angeles date` > /var/tmp/timestamp.txt
-cat /var/tmp/timestamp.txt
-EOFSCRIBE
-  dateCreated = "2024-10-08T23:51:46.000Z"
-  lastUpdated = "2024-10-25T18:31:26.000Z"
-}

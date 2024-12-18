@@ -1,9 +1,0 @@
-resource "container-script" "317e992f-ee0b-4430-8842-3a043a310e03" {
-  code = "317e992f-ee0b-4430-8842-3a043a310e03"
-  name = "Who Am I - User"
-  uuid = "89f58df1-2a94-426b-a651-5c50f5234a41"
-  dateCreated = "2023-06-30T22:16:15.000Z"
-  lastUpdated = "2023-06-30T22:16:15.000Z"
-  script = "echo whoami | tee -a ~/whoami_user.txt"
-  scriptPhase = "provision"
-}

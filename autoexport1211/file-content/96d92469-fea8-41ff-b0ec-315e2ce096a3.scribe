@@ -1,9 +1,0 @@
-resource "file-content" "96d92469-fea8-41ff-b0ec-315e2ce096a3" {
-  uuid = "96d92469-fea8-41ff-b0ec-315e2ce096a3"
-  content = <<EOFSCRIBE
-echo "$(date) - wf2" | tee -a /var/tmp/wf2.txt
-echo wf2
-EOFSCRIBE
-  dateCreated = "2024-08-06T18:24:42.000Z"
-  lastUpdated = "2024-08-06T18:38:37.000Z"
-}

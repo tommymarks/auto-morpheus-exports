@@ -1,6 +1,0 @@
-resource "file-content" "ad489b47-37c6-4f95-95b9-1684b8c40a36" {
-  uuid = "ad489b47-37c6-4f95-95b9-1684b8c40a36"
-  content = "sleep 900"
-  dateCreated = "2024-08-26T21:11:16.000Z"
-  lastUpdated = "2024-08-26T21:11:16.000Z"
-}

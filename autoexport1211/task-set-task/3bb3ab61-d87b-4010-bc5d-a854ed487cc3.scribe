@@ -1,5 +1,0 @@
-resource "task-set-task" "3bb3ab61-d87b-4010-bc5d-a854ed487cc3" {
-  uuid = "3bb3ab61-d87b-4010-bc5d-a854ed487cc3"
-  task = { name = "Write Time" }
-  taskPhase = "provision"
-}

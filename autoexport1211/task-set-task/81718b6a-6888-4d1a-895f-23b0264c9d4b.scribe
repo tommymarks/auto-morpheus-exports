@@ -1,5 +1,0 @@
-resource "task-set-task" "81718b6a-6888-4d1a-895f-23b0264c9d4b" {
-  uuid = "81718b6a-6888-4d1a-895f-23b0264c9d4b"
-  task = { name = "mvmConsoleWget" }
-  taskOrder = 1
-}

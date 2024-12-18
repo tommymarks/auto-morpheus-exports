@@ -1,9 +1,0 @@
-resource "file-content" "ccaeae35-3954-4f3d-852f-48c194d7585e" {
-  uuid = "ccaeae35-3954-4f3d-852f-48c194d7585e"
-  content = <<EOFSCRIBE
-println ProxySelector.getDefault()
-return null
-EOFSCRIBE
-  dateCreated = "2024-06-14T12:39:53.000Z"
-  lastUpdated = "2024-06-14T12:39:53.000Z"
-}

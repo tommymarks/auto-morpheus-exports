@@ -1,6 +1,0 @@
-resource "file-content" "08594944-18d1-490e-9887-527f08dccd62" {
-  uuid = "08594944-18d1-490e-9887-527f08dccd62"
-  content = "echo '<%=cypher.read(\"password/15/\" + \"/\" + \":msplocadm\", true)%>'"
-  dateCreated = "2023-06-30T22:50:12.000Z"
-  lastUpdated = "2023-06-30T22:50:12.000Z"
-}

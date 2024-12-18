@@ -1,8 +1,0 @@
-resource "task-set" "Fail Teardown" {
-  name = "Fail Teardown"
-  uuid = "bf050301-ee28-4d6d-b928-c868d1485662"
-  dateCreated = "2023-08-29T20:03:05.000Z"
-  labels = [ "auto", "keep" ]
-  lastUpdated = "2023-11-03T22:49:25.000Z"
-  taskSetTasks = [ { uuid = "aa5ecb50-653c-4819-b74c-542e8c8e81de" } ]
-}

@@ -1,9 +1,0 @@
-resource "container-type-port" "ab0dda11-82a7-42ef-90a9-553cce059e8b" {
-  name = "SSH"
-  uuid = "ab0dda11-82a7-42ef-90a9-553cce059e8b"
-  export = true
-  exportName = "SSH"
-  externalPort = 22
-  internalPort = 22
-  visible = true
-}

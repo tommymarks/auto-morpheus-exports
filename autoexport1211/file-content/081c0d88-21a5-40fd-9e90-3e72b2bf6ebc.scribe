@@ -1,6 +1,0 @@
-resource "file-content" "081c0d88-21a5-40fd-9e90-3e72b2bf6ebc" {
-  uuid = "081c0d88-21a5-40fd-9e90-3e72b2bf6ebc"
-  content = "exit 1"
-  dateCreated = "2023-11-03T22:48:20.000Z"
-  lastUpdated = "2023-11-03T22:48:20.000Z"
-}

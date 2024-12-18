@@ -1,9 +1,0 @@
-resource "file-content" "afdeb28a-3c7a-476c-be49-8196d41037a4" {
-  uuid = "afdeb28a-3c7a-476c-be49-8196d41037a4"
-  content = <<EOFSCRIBE
-import json
-print(json.dumps(morpheus))
-EOFSCRIBE
-  dateCreated = "2023-12-04T19:59:35.000Z"
-  lastUpdated = "2023-12-04T19:59:35.000Z"
-}

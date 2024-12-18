@@ -1,5 +1,0 @@
-resource "task-set-task" "5a6bc9a3-e9d7-4a2b-84ec-3b4e644a0187" {
-  uuid = "5a6bc9a3-e9d7-4a2b-84ec-3b4e644a0187"
-  task = { name = "mvmConsoleInstall" }
-  taskOrder = 2
-}

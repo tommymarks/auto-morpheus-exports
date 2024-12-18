@@ -1,9 +1,0 @@
-resource "instance-action" "ubuntu-add-node" {
-  code = "ubuntu-add-node"
-  name = "Add Node"
-  uuid = "7936fff5-6850-49f0-9a94-6d4c51198b7c"
-  actionCode = "scaleInstance"
-  countEnabled = true
-  description = "This will add an additional ubuntu node"
-  provisionSelectType = "zone"
-}

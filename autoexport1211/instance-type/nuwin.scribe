@@ -1,9 +1,0 @@
-resource "instance-type" "nuwin" {
-  code = "nuwin"
-  name = "Nutanix-Windows"
-  uuid = "8f443f40-5079-40c6-9efd-613c9aaf4aff"
-  category = "os"
-  deploymentService = ""
-  environmentPrefix = "NUTANIX-WINDOWS"
-  layouts = [ { code = "3fded810-296b-4072-a14e-4eea5b9167da" } ]
-}

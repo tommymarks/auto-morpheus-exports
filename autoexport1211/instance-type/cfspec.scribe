@@ -1,8 +1,0 @@
-resource "instance-type" "cfspec" {
-  code = "cfspec"
-  name = "CF Specs"
-  uuid = "9af81590-4f78-4759-ba82-4752ea5bcdb9"
-  category = "web"
-  deploymentService = ""
-  environmentPrefix = "CF_SPECS"
-}

@@ -1,5 +1,0 @@
-resource "task-set-task" "af1ae628-8281-41cb-9619-92ba2f727ac0" {
-  uuid = "af1ae628-8281-41cb-9619-92ba2f727ac0"
-  task = { name = "db-listvariables" }
-  taskPhase = "provision"
-}

@@ -1,9 +1,0 @@
-resource "resource-spec-template" "9d2e06b7-ee34-4449-bd57-a7a28a6e6f6b" {
-  name = "ac tf spec 2"
-  uuid = "9d2e06b7-ee34-4449-bd57-a7a28a6e6f6b"
-  dateCreated = "2024-07-24T21:04:03.000Z"
-  lastUpdated = "2024-07-24T21:04:03.000Z"
-  template = { uuid = "e712f5ed-fc7b-438d-9640-c3f9fd0d19df" }
-  templateType = "Terraform"
-  type = { code = "terraform" }
-}

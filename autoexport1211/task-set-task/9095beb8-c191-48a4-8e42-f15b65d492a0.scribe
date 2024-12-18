@@ -1,5 +1,0 @@
-resource "task-set-task" "9095beb8-c191-48a4-8e42-f15b65d492a0" {
-  uuid = "9095beb8-c191-48a4-8e42-f15b65d492a0"
-  task = { name = "Domain Config" }
-  taskPhase = "provision"
-}

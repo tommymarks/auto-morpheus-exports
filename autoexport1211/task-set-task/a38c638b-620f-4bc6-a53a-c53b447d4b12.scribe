@@ -1,5 +1,0 @@
-resource "task-set-task" "a38c638b-620f-4bc6-a53a-c53b447d4b12" {
-  uuid = "a38c638b-620f-4bc6-a53a-c53b447d4b12"
-  task = { name = "ac print server data" }
-  taskPhase = "operation"
-}

@@ -1,5 +1,0 @@
-resource "task-set-task" "85c4c38e-e621-4120-86e2-755636ea937c" {
-  uuid = "85c4c38e-e621-4120-86e2-755636ea937c"
-  task = { name = "Phase: Post Provision" }
-  taskOrder = 2
-}

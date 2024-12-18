@@ -1,6 +1,0 @@
-resource "file-content" "451e6e4b-c99e-4d20-8973-bf2a19927210" {
-  uuid = "451e6e4b-c99e-4d20-8973-bf2a19927210"
-  content = "wget --auth-no-challenge --user=svc.morpheus-qa@morpheusdata.com --password=<%=cypher.read('password/svcmorpheusqa')%> https://jenkins.morpheusdata.com/job/morpheus-mvm-console/lastSuccessfulBuild/artifact/hpe-vm/build/distributions/hpe-vm_1.0.2-1_amd64.deb"
-  dateCreated = "2024-10-23T18:56:19.000Z"
-  lastUpdated = "2024-12-05T18:28:46.000Z"
-}

@@ -1,9 +1,0 @@
-resource "task-set" "Job: Workflow" {
-  name = "Job: Workflow"
-  uuid = "fc0c8a4b-4a23-4db1-9ad9-67e25511da1f"
-  dateCreated = "2023-03-18T19:51:36.000Z"
-  labels = [ "auto", "qa" ]
-  lastUpdated = "2023-03-20T22:35:40.000Z"
-  taskSetTasks = [ { uuid = "59ab4c63-3a80-47c6-887f-62384d86943c" } ]
-  taskSetType = "operation"
-}

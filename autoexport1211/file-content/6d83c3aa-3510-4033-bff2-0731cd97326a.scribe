@@ -1,6 +1,0 @@
-resource "file-content" "6d83c3aa-3510-4033-bff2-0731cd97326a" {
-  uuid = "6d83c3aa-3510-4033-bff2-0731cd97326a"
-  content = "sleep 30"
-  dateCreated = "2023-11-27T16:24:34.000Z"
-  lastUpdated = "2023-11-27T16:24:34.000Z"
-}
