@@ -6,5 +6,6 @@ resource "instance-type" "xaas" {
   deploymentService = ""
   environmentPrefix = "XAAS"
   hasSettings = true
+  layouts = [ { code = "9058d567-1473-4aff-bfef-b2dfad70b156" } ]
   visibility = "public"
 }
