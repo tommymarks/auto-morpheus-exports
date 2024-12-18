@@ -1,0 +1,5 @@
+resource "container-type-set" "amazon-centos-8-stream" {
+  code = "amazon-centos-8-stream"
+  uuid = "fc5a2d08-a8b2-44df-b245-0006e02b6f11"
+  workloadType = { code = "amazon-centos-8-stream" }
+}

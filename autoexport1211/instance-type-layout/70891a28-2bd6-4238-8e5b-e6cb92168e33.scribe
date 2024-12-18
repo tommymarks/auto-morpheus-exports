@@ -1,0 +1,14 @@
+resource "instance-type-layout" "70891a28-2bd6-4238-8e5b-e6cb92168e33" {
+  code = "70891a28-2bd6-4238-8e5b-e6cb92168e33"
+  name = "CentOS8 Supplemental"
+  uuid = "17611395-b5b5-4589-b378-84c60403ad45"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalCentOS8" } ]
+  workloads = [ { code = "amazon-centos-8-stream" } ]
+}
