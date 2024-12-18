@@ -1,0 +1,35 @@
+resource "file-content" "f99160f8-b493-4a2e-8913-64a6e4b08baf" {
+  uuid = "f99160f8-b493-4a2e-8913-64a6e4b08baf"
+  content = <<EOFSCRIBE
+external_ip=<%=server.externalIp%>
+mac_address=$(grep 'macaddress:' /etc/netplan/50-cloud-init.yaml | awk '{print $2}')
+echo $external_ip
+echo $mac_address
+new_config=$(cat <<EOF
+network:
+    version: 2
+    ethernets:
+        eth0:
+            dhcp4: false
+            addresses:
+            - $external_ip/22
+            routes:
+            - to: default
+              via: 10.32.148.1
+            nameservers:
+              addresses: [10.32.21.8,10.32.21.9]
+            match:
+                macaddress: $mac_address
+            set-name: eth0
+EOF
+)
+
+# Overwrite the file with the new configuration
+echo "$new_config" > /etc/netplan/50-cloud-init.yaml
+
+cat /etc/netplan/50-cloud-init.yaml 
+echo "Netplan configuration updated"
+EOFSCRIBE
+  dateCreated = "2024-10-23T20:54:39.000Z"
+  lastUpdated = "2024-10-23T21:07:41.000Z"
+}

@@ -1,0 +1,16 @@
+resource "task" "mvmConsoleInstall" {
+  name = "mvmConsoleInstall"
+  uuid = "7d7c8dc4-93f4-4845-b05c-922001cd8c6d"
+  dateCreated = "2024-10-23T20:32:55.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-23T20:32:55.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "8cb471e9-ea65-40f6-8d51-1e7cd94b521f" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

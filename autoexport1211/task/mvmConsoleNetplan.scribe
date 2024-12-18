@@ -1,0 +1,16 @@
+resource "task" "mvmConsoleNetplan" {
+  name = "mvmConsoleNetplan"
+  uuid = "df4c0717-e655-49e1-9edf-9dcfe9a7efb7"
+  dateCreated = "2024-10-23T20:54:39.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-23T20:57:02.000Z"
+  options = [
+    {
+      content = { uuid = "f99160f8-b493-4a2e-8913-64a6e4b08baf" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

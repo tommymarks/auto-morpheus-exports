@@ -1,0 +1,6 @@
+resource "file-content" "8cb471e9-ea65-40f6-8d51-1e7cd94b521f" {
+  uuid = "8cb471e9-ea65-40f6-8d51-1e7cd94b521f"
+  content = "apt install -f ./hpe-vm_1.0.2-1_amd64.deb -y"
+  dateCreated = "2024-10-23T20:32:55.000Z"
+  lastUpdated = "2024-12-05T17:19:03.000Z"
+}
