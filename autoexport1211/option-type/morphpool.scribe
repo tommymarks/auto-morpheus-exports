@@ -1,0 +1,13 @@
+resource "option-type" "morphpool" {
+  code = "morphpool"
+  name = "API Resource Pools"
+  uuid = "464d5110-fa37-40f9-b7bb-ea4087cad13d"
+  dependsOnCode = "matchAny::morphgroup,morphcloud"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Resource Pool"
+  fieldName = "morphpool"
+  labels = [ "auto", "qa" ]
+  optionList = { name = "API Resource Pool" }
+  optionSource = "list"
+  type = "select"
+}
