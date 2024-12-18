@@ -1,0 +1,9 @@
+resource "option-type" "text4" {
+  code = "text4"
+  name = "ac-text4"
+  uuid = "463e29e2-4e24-4bcd-92b7-81dcf7435936"
+  fieldContext = "config.customOptions"
+  fieldLabel = "text4"
+  fieldName = "text4"
+  requireOnCode = "text1"
+}
