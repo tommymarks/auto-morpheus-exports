@@ -1,7 +1,7 @@
 resource "container-type-mount" "template: kubernetes-etcd-encrypt-install-master" {
   code = "template: kubernetes-etcd-encrypt-install-master"
   name = "etcd encrypt install script template"
-  uuid = "63957f5b-48a1-40e0-be86-a47269f91933"
+  uuid = "4079f8a0-ef61-4109-a4dd-00d44a2eef2d"
   containerPath = "/opt/morpheus-node/kube/"
   hostPath = "/opt/morpheus-node/kube/"
   mountType = "config"
