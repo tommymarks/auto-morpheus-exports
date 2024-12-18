@@ -1,0 +1,12 @@
+resource "instance-type-layout" "5c330c66-23aa-4902-b7d4-f0085e352916" {
+  code = "5c330c66-23aa-4902-b7d4-f0085e352916"
+  name = "RHEL7"
+  uuid = "96a5498e-6a68-4e32-8de2-225b23fba165"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerRHEL7" } ]
+  workloads = [ { code = "3a198fcb-fbf2-4f24-9e35-15184470b12f" } ]
+}

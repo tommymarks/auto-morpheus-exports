@@ -1,0 +1,16 @@
+resource "container-type" "3a198fcb-fbf2-4f24-9e35-15184470b12f" {
+  code = "3a198fcb-fbf2-4f24-9e35-15184470b12f"
+  name = "Amazon RHEL 7"
+  uuid = "c3507959-e9a7-4a82-bbce-4c03fa75fd8e"
+  containerPorts = [ { uuid = "8c25ded1-5430-446e-99c0-699a35a080df" } ]
+  containerVersion = "RHEL 7"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsrhel7"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "d66fd4b2-9b8f-4a2a-abc2-e140879f2dc5" }
+}
