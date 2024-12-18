@@ -1,0 +1,14 @@
+resource "instance-type-layout" "a8a78df7-46ec-480e-8cbd-22438c5f5667" {
+  code = "a8a78df7-46ec-480e-8cbd-22438c5f5667"
+  name = "Xen Apache"
+  uuid = "fbde7568-f7ae-4108-87bc-f6c9af96d0a6"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "xen" }
+  workloads = [ { code = "5c6675c9-0cdd-4f50-b511-9b40dceb5ea2" } ]
+}
