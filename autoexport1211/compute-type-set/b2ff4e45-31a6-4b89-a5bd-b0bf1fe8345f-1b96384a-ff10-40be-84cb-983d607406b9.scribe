@@ -1,0 +1,12 @@
+resource "compute-type-set" "b2ff4e45-31a6-4b89-a5bd-b0bf1fe8345f-1b96384a-ff10-40be-84cb-983d607406b9" {
+  code = "b2ff4e45-31a6-4b89-a5bd-b0bf1fe8345f-1b96384a-ff10-40be-84cb-983d607406b9"
+  name = "Custom Docker Xen-worker-1b96384a-ff10-40be-84cb-983d607406b9-set"
+  canAddNodes = true
+  computeServerType = { code = "xenserverLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "1b96384a-ff10-40be-84cb-983d607406b9" }
+}
