@@ -1,0 +1,6 @@
+resource "file-content" "758cce94-ed84-4776-a946-6b82e3fa27d2" {
+  uuid = "758cce94-ed84-4776-a946-6b82e3fa27d2"
+  content = "cypher.write('secret/phTokenLastCallTime', \"SomeString\", true, 0)"
+  dateCreated = "2023-06-30T22:48:42.000Z"
+  lastUpdated = "2023-06-30T22:48:42.000Z"
+}
