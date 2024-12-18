@@ -1,0 +1,11 @@
+resource "option-type" "createBackup" {
+  code = "createBackup"
+  name = "Create Backup"
+  uuid = "72137c22-8fca-4c6d-a47b-bb4797204720"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Create Backup?"
+  fieldName = "createBackup"
+  optionList = { name = "Create Backup" }
+  optionSource = "list"
+  type = "select"
+}
