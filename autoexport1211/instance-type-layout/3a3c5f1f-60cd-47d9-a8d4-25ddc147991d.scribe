@@ -1,0 +1,14 @@
+resource "instance-type-layout" "3a3c5f1f-60cd-47d9-a8d4-25ddc147991d" {
+  code = "3a3c5f1f-60cd-47d9-a8d4-25ddc147991d"
+  name = "UpCloud Apache"
+  uuid = "470f232c-b248-423b-bcfe-c0e00fc64e4a"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "upcloud" }
+  workloads = [ { code = "2866d649-8acb-4f7f-b308-4c84eb82a5c2" } ]
+}
