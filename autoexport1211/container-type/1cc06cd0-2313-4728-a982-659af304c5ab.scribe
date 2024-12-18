@@ -1,0 +1,15 @@
+resource "container-type" "1cc06cd0-2313-4728-a982-659af304c5ab" {
+  code = "1cc06cd0-2313-4728-a982-659af304c5ab"
+  name = "jk custom instance"
+  uuid = "3d6c11c0-a47c-4b55-8ff2-3b63ba3807d2"
+  containerVersion = "18"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "jkCustomInstance"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "db265863-f9aa-4e36-81ed-79e95399d294" }
+}

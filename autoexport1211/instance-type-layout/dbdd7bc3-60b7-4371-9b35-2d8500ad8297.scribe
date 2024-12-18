@@ -1,0 +1,10 @@
+resource "instance-type-layout" "dbdd7bc3-60b7-4371-9b35-2d8500ad8297" {
+  code = "dbdd7bc3-60b7-4371-9b35-2d8500ad8297"
+  name = "jk ubuntu layout"
+  uuid = "f2135b19-f7d6-4cfa-8364-e82028b83ccb"
+  instanceType = { code = "jkCustomAzure" }
+  instanceVersion = "Production"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "1cc06cd0-2313-4728-a982-659af304c5ab" } ]
+}
