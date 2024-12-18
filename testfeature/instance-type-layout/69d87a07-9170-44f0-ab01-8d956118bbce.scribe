@@ -1,0 +1,23 @@
+resource "instance-type-layout" "69d87a07-9170-44f0-ab01-8d956118bbce" {
+  code = "69d87a07-9170-44f0-ab01-8d956118bbce"
+  name = "A1"
+  uuid = "c77579fd-665d-4768-a8ef-a77a9cd5cf2d"
+  actions = [ { code = "generic-add-node" } ]
+  description = "description"
+  hasAutoScale = true
+  instanceType = { code = "a1" }
+  instanceVersion = "a1version"
+  labels = [ "qa", "test" ]
+  memoryRequirement = 1073741824
+  optionTypes = [
+    { code = "autocheck1" },
+    { code = "autohidden1" },
+    { code = "autohidegroup" },
+    { code = "hideselect" }
+  ]
+  provisionType = { code = "vmware" }
+  sortOrder = 5
+  supportsConvertToManaged = true
+  taskSets = [ { name = "Variable Test" } ]
+  workloads = [ { code = "11af1e23-9138-4451-a6e3-d1bb6fe7730d" } ]
+}

@@ -1,0 +1,13 @@
+resource "option-type" "autocheck2" {
+  code = "autocheck2"
+  name = "Auto Checkbox 2"
+  uuid = "d2be35bf-6e16-449f-af63-2d5f7fa7512f"
+  description = "don't delete"
+  displayOrder = 10
+  fieldContext = "config.customOptions"
+  fieldLabel = "Check 2"
+  fieldName = "autocheck2"
+  labels = [ "auto", "keep" ]
+  showOnEdit = false
+  type = "checkbox"
+}

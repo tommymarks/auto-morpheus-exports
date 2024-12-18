@@ -1,0 +1,16 @@
+resource "option-type" "hideselect" {
+  code = "hideselect"
+  name = "Auto Hide Select"
+  uuid = "cda35a57-35b3-422e-83e3-bbf06de701e2"
+  defaultValue = "Blue"
+  description = "don't delete"
+  displayOrder = 27
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hide Select"
+  fieldName = "hideselect"
+  isHidden = true
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Colors csv" }
+  optionSource = "list"
+  type = "select"
+}

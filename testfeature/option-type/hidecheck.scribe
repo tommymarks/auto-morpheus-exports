@@ -1,0 +1,14 @@
+resource "option-type" "hidecheck" {
+  code = "hidecheck"
+  name = "Auto Hide Checkbox"
+  uuid = "80480cb2-9afd-404a-9b7e-30b4d5addb22"
+  defaultValue = "on"
+  description = "don't delete"
+  displayOrder = 26
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hide Check"
+  fieldName = "hidecheck"
+  isHidden = true
+  labels = [ "auto", "keep" ]
+  type = "checkbox"
+}
