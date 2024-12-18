@@ -16,6 +16,7 @@ resource "option-type" "a91e5bac-e8ff-49f4-b963-b6afc71b0243" {
  }
 ]
 
+
 EOFSCRIBE
     resourcePoolField = ""
   }
