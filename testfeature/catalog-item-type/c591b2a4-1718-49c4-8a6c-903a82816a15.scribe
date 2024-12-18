@@ -1,0 +1,45 @@
+resource "catalog-item-type" "c591b2a4-1718-49c4-8a6c-903a82816a15" {
+  name = "Simple Blueprint"
+  uuid = "c591b2a4-1718-49c4-8a6c-903a82816a15"
+  category = "simple"
+  config = {
+    appSpec = <<EOFSCRIBE
+name: '${userInitials}-${groupCode}-blueprint-${sequence}'
+group:
+  name: QA Docker
+environment: Test
+tiers:
+  Web:
+    instances:
+      - instance:
+          type: nginxweb
+          cloud: QA Docker
+  App:
+    instances:
+      - instance:
+          type: apacheweb
+          cloud: QA Docker
+EOFSCRIBE
+    templateId = "1"
+  }
+  content = <<EOFSCRIBE
+# App - Apache & Nginx
+This is a sample catalog item that provisions an app. The app is made up of nginx and apache docker containers.
+Enjoy!
+EOFSCRIBE
+  contentFormatted = <<EOFSCRIBE
+<h1>App - Apache &amp; Nginx</h1>
+<p>This is a sample catalog item that provisions an app. The app is made up of nginx and apache docker containers.<br />
+Enjoy!</p>
+
+EOFSCRIBE
+  darkIconPath = "/assets/branding/140x40/docker.svg"
+  dateCreated = "2023-03-19T21:44:32.000Z"
+  description = "don't delete"
+  featured = true
+  formType = "optionTypes"
+  iconPath = "/assets/branding/140x40/docker.svg"
+  labels = [ "auto", "qa", "simple" ]
+  lastUpdated = "2024-08-16T14:07:48.000Z"
+  refType = "AppTemplate"
+}
