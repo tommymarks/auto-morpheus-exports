@@ -1,0 +1,10 @@
+resource "instance-type" "autotests" {
+  code = "autotests"
+  name = "Auto Tests"
+  uuid = "93ff7d09-7ad2-406f-8c13-f459a55009cc"
+  category = "web"
+  deploymentService = ""
+  description = "collection of various provision types used by auto tests"
+  environmentPrefix = "AUTO"
+  labels = [ "auto", "keep" ]
+}
