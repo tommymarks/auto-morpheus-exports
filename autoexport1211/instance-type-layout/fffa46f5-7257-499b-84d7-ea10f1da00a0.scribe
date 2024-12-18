@@ -1,0 +1,18 @@
+resource "instance-type-layout" "fffa46f5-7257-499b-84d7-ea10f1da00a0" {
+  code = "fffa46f5-7257-499b-84d7-ea10f1da00a0"
+  name = "Docker Nginx"
+  uuid = "c13f689c-74c1-478f-8aa2-3e2bc386e8de"
+  actions = [
+    { code = "fffa46f5-7257-499b-84d7-ea10f1da00a0" },
+    { code = "generic-add-node" }
+  ]
+  description = "nginx docker container"
+  hasAutoScale = true
+  instanceType = { code = "dkrnginx" }
+  instanceVersion = "1.11"
+  labels = [ "auto", "keep" ]
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  taskSets = [ { name = "Price" } ]
+  workloads = [ { code = "83c60515-0451-4b34-a060-697b70c7999f" } ]
+}
