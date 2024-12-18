@@ -1,0 +1,10 @@
+resource "resource-spec-template" "512e13a6-e302-4546-b5a8-d14af888556d" {
+  name = "Test Terraform Spec"
+  uuid = "512e13a6-e302-4546-b5a8-d14af888556d"
+  config = { terraform = { tfVersion = ">= 0.12" } }
+  dateCreated = "2023-08-28T22:37:21.000Z"
+  lastUpdated = "2023-08-28T22:37:21.000Z"
+  template = { uuid = "e042dcf9-3bb8-481b-9b22-a391a104bc23" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
