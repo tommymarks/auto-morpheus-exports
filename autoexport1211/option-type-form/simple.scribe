@@ -1,0 +1,26 @@
+resource "option-type-form" "simple" {
+  code = "simple"
+  name = "simple form"
+  uuid = "ac797356-c9b7-4847-b4bb-c79b0617bad8"
+  config = {
+    enableVar = ""
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = ""
+  }
+  description = "needed a form for auto tests"
+  labels = [ "auto", "keep" ]
+  options = [
+    {
+      code = "feb78cb2-8d48-4d22-996f-36eb36bb03fa"
+      name = "feb78cb2-8d48-4d22-996f-36eb36bb03fa"
+      uuid = "c28af66f-eb94-409c-9347-513c812d6711"
+      config = { addon = "", addonPosition = "" }
+      fieldContext = "config.customOptions"
+      fieldLabel = "text input"
+      fieldName = "textInput"
+      formField = true
+    }
+  ]
+}
