@@ -1,0 +1,12 @@
+resource "task-set" "InstallerMostRecentDebian" {
+  name = "InstallerMostRecentDebian"
+  uuid = "8068b7ac-1504-44f5-acf6-d35bdc6fa4d1"
+  dateCreated = "2023-11-16T15:15:56.000Z"
+  description = "Setup Debian latest successful build from Jenkins"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:52:56.000Z"
+  taskSetTasks = [
+    { uuid = "08a96a81-b4f3-471f-a07b-4e5824aa5c82" },
+    { uuid = "4dd0243f-34e2-4560-8ba2-1d5d2b4d4278" }
+  ]
+}

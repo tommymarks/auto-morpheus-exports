@@ -1,0 +1,16 @@
+resource "task" "Installer Latest Successful Build" {
+  name = "Installer Latest Successful Build"
+  uuid = "49c3b1f1-b2e9-497e-bc9b-90985656e214"
+  dateCreated = "2023-11-16T15:30:48.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T21:11:45.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "0e253ee7-4690-4e65-b320-4ec10a02512b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

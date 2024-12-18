@@ -1,0 +1,12 @@
+resource "file-content" "0e253ee7-4690-4e65-b320-4ec10a02512b" {
+  uuid = "0e253ee7-4690-4e65-b320-4ec10a02512b"
+  content = <<EOFSCRIBE
+cd /opt/morpheus/lib/morpheus &&
+rm morpheus-ui.war &&
+wget --auth-no-challenge --user=svc.morpheus-qa@morpheusdata.com --password=<%=cypher.read('secret/LatestBuild')%> <%=customOptions.lastSuccessfulBuild%> > /dev/null &&
+chmod 600 /opt/morpheus/lib/morpheus/morpheus-ui.war &&
+morpheus-ctl reconfigure
+EOFSCRIBE
+  dateCreated = "2023-11-16T15:30:48.000Z"
+  lastUpdated = "2024-07-08T16:37:21.000Z"
+}
