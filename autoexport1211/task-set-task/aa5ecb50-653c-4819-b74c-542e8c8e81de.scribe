@@ -1,0 +1,5 @@
+resource "task-set-task" "aa5ecb50-653c-4819-b74c-542e8c8e81de" {
+  uuid = "aa5ecb50-653c-4819-b74c-542e8c8e81de"
+  task = { name = "Exit 1" }
+  taskPhase = "teardown"
+}
