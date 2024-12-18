@@ -1,0 +1,13 @@
+resource "catalog-item-type" "373f875d-7042-4c45-9b01-268fe77c4428" {
+  name = "case_204487"
+  uuid = "373f875d-7042-4c45-9b01-268fe77c4428"
+  config = { config = "", workflowUuid = "5ba03d04-7de5-49f8-a6aa-2e6ea885d12c" }
+  content = "hello this is a test"
+  contentFormatted = <<EOFSCRIBE
+<p>hello this is a test</p>
+
+EOFSCRIBE
+  dateCreated = "2023-11-07T22:06:46.000Z"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  refType = "OperationalWorkflow"
+}
