@@ -1,0 +1,15 @@
+resource "task-set" "InstallerRHEL8" {
+  name = "InstallerRHEL8"
+  uuid = "8996e72a-3fc8-490f-9e84-6e1781f84c5c"
+  dateCreated = "2023-11-14T20:04:12.000Z"
+  description = "Setup RHEL 8 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "48e795e1-40ba-46f1-ad23-9f531fa07610" },
+    { uuid = "6c9f5bf7-83bd-40ba-9d5d-117e42f27416" },
+    { uuid = "9ba91281-dbf0-477a-a19a-766ef70508d1" },
+    { uuid = "a7abc65b-3728-4545-955b-f06e492a1dbf" },
+    { uuid = "fcfea7b5-2ffb-4d9e-9b6b-2f9cff7af562" }
+  ]
+}

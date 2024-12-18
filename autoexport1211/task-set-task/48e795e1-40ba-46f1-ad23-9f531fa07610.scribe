@@ -1,0 +1,4 @@
+resource "task-set-task" "48e795e1-40ba-46f1-ad23-9f531fa07610" {
+  uuid = "48e795e1-40ba-46f1-ad23-9f531fa07610"
+  task = { name = "Installer RHEL8" }
+}

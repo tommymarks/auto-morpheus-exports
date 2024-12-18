@@ -1,0 +1,16 @@
+resource "file-content" "c738f212-26c4-44a8-8064-3cf31f7b9374" {
+  uuid = "c738f212-26c4-44a8-8064-3cf31f7b9374"
+  content = <<EOFSCRIBE
+subscription-manager register --username djblankinship --password Pa55w0rdredhat
+subscription-manager attach
+pkill PackageKit
+yum install net-tools -y -q > /dev/null
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y > /dev/null
+/usr/bin/crb enable > /dev/null
+subscription-manager config --rhsm.manage_repos=1
+
+
+EOFSCRIBE
+  dateCreated = "2023-11-14T19:56:50.000Z"
+  lastUpdated = "2024-04-24T21:01:44.000Z"
+}

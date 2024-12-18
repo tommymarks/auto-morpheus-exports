@@ -1,0 +1,10 @@
+resource "file-content" "c8638086-b8b5-48f9-bbe3-71f245c2b756" {
+  uuid = "c8638086-b8b5-48f9-bbe3-71f245c2b756"
+  content = <<EOFSCRIBE
+subscription-manager remove --all
+subscription-manager unregister
+subscription-manager clean
+EOFSCRIBE
+  dateCreated = "2023-12-13T05:31:05.000Z"
+  lastUpdated = "2023-12-13T17:26:32.000Z"
+}

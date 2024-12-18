@@ -1,0 +1,19 @@
+resource "task" "Installer RHEL8" {
+  name = "Installer RHEL8"
+  uuid = "6882b875-d207-4834-8340-22e2603b6c7b"
+  dateCreated = "2023-11-14T19:56:50.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "c738f212-26c4-44a8-8064-3cf31f7b9374" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}
