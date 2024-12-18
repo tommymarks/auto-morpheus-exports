@@ -1,0 +1,138 @@
+resource "catalog-item-type" "provision" {
+  code = "provision"
+  name = "Provision Form"
+  uuid = "94b5129c-6937-4f57-95a4-fda9df834693"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      createBackup = true
+      jobAction = "new"
+      jobRetentionCount = "3"
+      jobSchedule = 2
+      providerBackupType = 13
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA VMware", id = 2 }
+    config = {
+      createUser = true
+      hostId = null
+      isEC2 = false
+      isVpcSelectable = true
+      nestedVirtualization = null
+      noAgent = false
+      poolProviderType = null
+      resourcePoolId = "pool-6"
+      smbiosAssetTag = null
+      vmwareFolderId = "group-v80"
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "vmware-ubuntu-22.04-single", id = 1108 }
+    networkInterfaces = [
+      {
+        ipMode = "dhcp"
+        network = {
+          id = "network-3"
+          idName = "VLAN0002 - Internal Server"
+          pool = { name = "10.32.20.0 /22", id = 10 }
+        }
+        networkInterfaceTypeId = 4
+        networkInterfaceTypeIdName = "VMXNET 3"
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { code = "vm-1024", id = 241 }
+    showScale = false
+    storageControllers = [
+      {
+        name = "IDE 1"
+        category = "ide"
+        active = true
+        busNumber = "1"
+        displayOrder = 0
+        editable = false
+        id = 18
+        maxDevices = 2
+        removable = false
+        reservedUnitNumber = -1
+        typeId = 2
+        typeName = "IDE"
+        unitNumber = null
+      },
+      {
+        name = "IDE 0"
+        category = "ide"
+        active = true
+        busNumber = "0"
+        displayOrder = 1
+        editable = false
+        id = 17
+        maxDevices = 2
+        removable = false
+        reservedUnitNumber = -1
+        typeId = 2
+        typeName = "IDE"
+        unitNumber = null
+      },
+      {
+        name = "SCSI 0"
+        category = "scsi"
+        active = true
+        busNumber = "0"
+        displayOrder = 2
+        editable = false
+        id = 16
+        maxDevices = 16
+        removable = false
+        reservedUnitNumber = 7
+        typeId = 4
+        typeName = "SCSI LSI Logic Parallel"
+        unitNumber = null
+      }
+    ]
+    templateParameter = null
+    type = "ubuntu"
+    version = "18.04"
+    volumes = [
+      {
+        name = "root"
+        uuid = "46c0b08b-4792-40ab-b10b-6ec66a1a6003"
+        configurableIOPS = false
+        controllerId = 99136
+        controllerMountPoint = "99136:0:4:0"
+        datastoreId = "autoCluster"
+        displayOrder = 0
+        externalId = "2000"
+        id = 278881
+        internalId = "[ESXi-DC2-QA-LUN01] Morpheus Ubuntu 22.04 20230918/Morpheus Ubuntu 22.04 20230918.vmdk"
+        maxIOPS = null
+        maxStorage = 5368709120
+        minStorage = 5368709120
+        planResizable = true
+        readonlyName = false
+        resizeable = true
+        rootVolume = true
+        size = 10
+        storageType = 1
+        typeId = 1
+        uniqueId = null
+        unitNumber = "0"
+        vId = 33771
+        virtualImageId = 33771
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2023-12-14T21:33:01.000Z"
+  form = { code = "provision" }
+  formType = "form"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  refType = "InstanceType"
+}
