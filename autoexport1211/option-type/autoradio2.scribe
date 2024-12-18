@@ -1,7 +1,7 @@
 resource "option-type" "autoradio2" {
   code = "autoradio2"
   name = "Auto Radio 2"
-  uuid = "89641a2b-d0e3-40a1-976d-ac35cf54c626"
+  uuid = "ea4de9ca-e71b-41bf-a456-dc1575270cf1"
   defaultValue = "Blue"
   description = "don't delete"
   displayOrder = 14
