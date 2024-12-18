@@ -1,0 +1,18 @@
+resource "compute-type-layout" "7635ef5a-d465-4579-afeb-e43469e14859" {
+  code = "7635ef5a-d465-4579-afeb-e43469e14859"
+  name = "Amazon Custom Rocky 8"
+  computeServers = [
+    {
+      code = "7635ef5a-d465-4579-afeb-e43469e14859-094d335d-b28a-4623-a628-141a01b193a3"
+    }
+  ]
+  computeVersion = "Rocky 8"
+  dateCreated = "2024-06-21T23:25:48.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  lastUpdated = "2024-06-21T23:25:48.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  sortOrder = 999
+  type = { code = "amazonLinux" }
+}
