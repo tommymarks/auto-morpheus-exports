@@ -1,0 +1,14 @@
+resource "instance-type-layout" "46ba24f1-a061-4ec0-b5d8-acf562eeb4fc" {
+  code = "46ba24f1-a061-4ec0-b5d8-acf562eeb4fc"
+  name = "Ubuntu FIPS Supplemental"
+  uuid = "149dbcde-b352-4d77-a532-8f58a6754a15"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalUbuntuFIPS" } ]
+  workloads = [ { code = "fbc399a4-b320-4f4d-8595-4b455d5b8482" } ]
+}
