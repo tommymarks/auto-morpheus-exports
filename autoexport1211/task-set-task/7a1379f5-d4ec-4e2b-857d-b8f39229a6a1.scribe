@@ -1,0 +1,5 @@
+resource "task-set-task" "7a1379f5-d4ec-4e2b-857d-b8f39229a6a1" {
+  uuid = "7a1379f5-d4ec-4e2b-857d-b8f39229a6a1"
+  task = { name = "Installer rpm wget supplemental" }
+  taskOrder = 5
+}

@@ -1,0 +1,5 @@
+resource "task-set-task" "721a62ef-b4e8-4ed2-a7cf-fc38afa3003e" {
+  uuid = "721a62ef-b4e8-4ed2-a7cf-fc38afa3003e"
+  task = { name = "Installer yum update" }
+  taskOrder = 1
+}

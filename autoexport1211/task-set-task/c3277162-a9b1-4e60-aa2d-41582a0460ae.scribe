@@ -1,0 +1,6 @@
+resource "task-set-task" "c3277162-a9b1-4e60-aa2d-41582a0460ae" {
+  uuid = "c3277162-a9b1-4e60-aa2d-41582a0460ae"
+  task = { name = "Unregister Red Hat" }
+  taskOrder = 7
+  taskPhase = "teardown"
+}

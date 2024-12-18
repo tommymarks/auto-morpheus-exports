@@ -1,0 +1,5 @@
+resource "task-set-task" "761c3e80-7fe1-46a7-b951-a8ff76a11229" {
+  uuid = "761c3e80-7fe1-46a7-b951-a8ff76a11229"
+  task = { name = "Installer Enable FIPS RHEL8" }
+  taskOrder = 2
+}
