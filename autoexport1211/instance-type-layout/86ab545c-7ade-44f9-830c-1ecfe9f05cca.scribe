@@ -1,0 +1,15 @@
+resource "instance-type-layout" "86ab545c-7ade-44f9-830c-1ecfe9f05cca" {
+  code = "86ab545c-7ade-44f9-830c-1ecfe9f05cca"
+  name = "Ubuntu 16"
+  uuid = "c9964631-8132-464e-a8d3-00293508082a"
+  actions = [
+    { code = "86ab545c-7ade-44f9-830c-1ecfe9f05cca" },
+    { code = "generic-add-node" }
+  ]
+  hasAutoScale = true
+  instanceType = { code = "ubuntuscale" }
+  instanceVersion = "16"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "5b0bcbc3-3cbf-49d5-83a3-ec252ad00f39" } ]
+}
