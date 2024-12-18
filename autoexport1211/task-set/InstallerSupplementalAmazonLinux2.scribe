@@ -1,0 +1,13 @@
+resource "task-set" "InstallerSupplementalAmazonLinux2" {
+  name = "InstallerSupplementalAmazonLinux2"
+  uuid = "718b30c7-aa7b-485e-8097-5c541c05346f"
+  dateCreated = "2023-11-21T21:16:12.000Z"
+  description = "Setup Amazon Linux 2 appliance via supplemental installer"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "547ac071-90d2-476c-810f-b899c3c40caf" },
+    { uuid = "bd2712ef-43f4-4d3d-9c14-da4d02f7223b" },
+    { uuid = "c82e0190-fd17-4364-9288-4910e4e47d71" }
+  ]
+}
