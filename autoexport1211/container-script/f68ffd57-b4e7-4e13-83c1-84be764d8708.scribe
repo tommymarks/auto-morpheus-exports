@@ -1,0 +1,11 @@
+resource "container-script" "f68ffd57-b4e7-4e13-83c1-84be764d8708" {
+  code = "f68ffd57-b4e7-4e13-83c1-84be764d8708"
+  name = "db-k8sjoin"
+  uuid = "dda8def7-54bb-4dce-bf2f-8d6c150e7d16"
+  dateCreated = "2023-12-18T21:50:27.000Z"
+  lastUpdated = "2023-12-18T21:50:27.000Z"
+  runAsUser = "root"
+  script = "sudo <%=morpheus.kubernetes.joinCommand%>"
+  scriptPhase = "postProvision"
+  sudoUser = true
+}
