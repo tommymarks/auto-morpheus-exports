@@ -1,0 +1,14 @@
+resource "instance-type-layout" "e1edb7b8-a006-4c4f-b416-341179e82226" {
+  code = "e1edb7b8-a006-4c4f-b416-341179e82226"
+  name = "OpenStack NGINX"
+  uuid = "d1f986a8-5ea1-467c-bd02-963694798851"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "openstack" }
+  workloads = [ { code = "05aabccd-ddf4-4016-9e41-90cf4ed9d3e6" } ]
+}
