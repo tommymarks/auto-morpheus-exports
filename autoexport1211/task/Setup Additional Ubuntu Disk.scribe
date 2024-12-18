@@ -1,0 +1,16 @@
+resource "task" "Setup Additional Ubuntu Disk" {
+  name = "Setup Additional Ubuntu Disk"
+  uuid = "518647e1-82f2-4938-be23-18aadf3b0d8c"
+  dateCreated = "2023-03-15T23:58:22.000Z"
+  executeTarget = "resource"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:08:46.000Z"
+  options = [
+    {
+      content = { uuid = "433d9b36-190a-4806-9f08-29c01384521a" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
