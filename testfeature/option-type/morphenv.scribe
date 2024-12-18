@@ -1,0 +1,15 @@
+resource "option-type" "morphenv" {
+  code = "morphenv"
+  name = "API Environments"
+  uuid = "eba9a335-95b3-485c-bf9d-279550a91ee7"
+  displayOrder = 25
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphenv"
+  fieldLabel = "Environment"
+  fieldName = "morphenv"
+  fieldSetName = "morphenv"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "API Environments" }
+  optionSource = "list"
+  type = "select"
+}

@@ -1,0 +1,13 @@
+resource "option-type" "morphnetwork" {
+  code = "morphnetwork"
+  name = "API Networks"
+  uuid = "ab9bbc8c-e4e3-47ad-9373-ae7cb4d175c5"
+  dependsOnCode = "morphcloud"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Network"
+  fieldName = "morphnetwork"
+  labels = [ "auto", "qa" ]
+  optionList = { name = "API Networks" }
+  optionSource = "list"
+  type = "select"
+}

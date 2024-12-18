@@ -1,0 +1,12 @@
+resource "option-type" "name" {
+  code = "name"
+  name = "Name"
+  uuid = "d0552331-2972-4755-bec9-64001027e423"
+  description = "Option type for catalog item"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Name"
+  fieldName = "name"
+  labels = [ "auto", "qa" ]
+  required = true
+}

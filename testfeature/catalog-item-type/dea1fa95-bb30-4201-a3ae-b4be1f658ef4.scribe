@@ -1,0 +1,109 @@
+resource "catalog-item-type" "dea1fa95-bb30-4201-a3ae-b4be1f658ef4" {
+  name = "Amazon Options"
+  uuid = "dea1fa95-bb30-4201-a3ae-b4be1f658ef4"
+  category = "test"
+  config = {
+    name = "<%=customOptions.name%>"
+    backup = {
+      backupRepository = 1
+      createBackup = true
+      jobAction = "new"
+      jobRetentionCount = "3"
+      jobSchedule = 2
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { id = "<%= customOptions.morphcloud %>" }
+    config = {
+      availabilityId = null
+      createUser = true
+      instanceProfile = null
+      isEC2 = false
+      isVpcSelectable = true
+      noAgent = null
+      poolProviderType = null
+      publicIpType = "subnet"
+      resourcePoolId = "<%=customOptions.morphpool%>"
+      securityId = null
+    }
+    copies = 1
+    environment = "<%= customOptions.morphenv %>"
+    group = { id = "<%= customOptions.morphgroup %>" }
+    hasNetworks = true
+    hideLock = true
+    hostName = "<%= customOptions.name %>"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "ubuntu-amazon-20.04", id = 1079 }
+    networkInterfaces = [
+      {
+        ipMode = ""
+        network = {
+          hasPool = false
+          id = "<%= customOptions.morphnetwork %>"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { id = "<%= customOptions.morphplan %>" }
+    securityGroups = [ { id = "<%= customOptions.morphsecgroup %>" } ]
+    showScale = false
+    type = "ubuntu"
+    version = "22.04"
+    volumes = [
+      {
+        name = "root"
+        maxIOPS = null
+        maxStorage = 0
+        readonlyName = false
+        rootVolume = true
+        size = 10
+        storageType = 23
+        volumeCustomizable = true
+      }
+    ]
+    volumesDisplay = [
+      {
+        name = "root"
+        controller = null
+        datastore = null
+        displayOrder = null
+        mountPoint = null
+        size = 10
+        storage = "gp2"
+      }
+    ]
+  }
+  content = <<EOFSCRIBE
+# Amazon Apache
+This is a sample catalog item that provisions a single amazon apache VM.
+Enjoy!
+EOFSCRIBE
+  contentFormatted = <<EOFSCRIBE
+<h1>Amazon Apache</h1>
+<p>This is a sample catalog item that provisions a single amazon apache VM.<br />
+Enjoy!</p>
+
+EOFSCRIBE
+  darkIconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/98/logo/apache_original.svg"
+  dateCreated = "2023-03-13T17:23:12.000Z"
+  description = "api options"
+  formType = "optionTypes"
+  iconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/98/logo/apache_original.svg"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2024-06-20T16:06:05.000Z"
+  layoutCode = "catalog-item-wide-form"
+  optionTypes = [
+    { code = "morphgroup" },
+    { code = "morphenv" },
+    { code = "morphcloud" },
+    { code = "morphpool" },
+    { code = "morphplan" },
+    { code = "morphnetwork" },
+    { code = "morphsecgroup" },
+    { code = "name" }
+  ]
+  refType = "InstanceType"
+  visibility = "public"
+}

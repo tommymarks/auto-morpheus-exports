@@ -1,0 +1,15 @@
+resource "option-type" "morphcloud" {
+  code = "morphcloud"
+  name = "API Clouds"
+  uuid = "c340bc07-96cd-4d4e-9736-6acc3248a55f"
+  dependsOnCode = "morphgroup"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud"
+  fieldName = "morphcloud"
+  helpBlock = "Select a Cloud"
+  labels = [ "auto", "qa" ]
+  optionList = { name = "API Clouds" }
+  optionSource = "list"
+  type = "select"
+}
