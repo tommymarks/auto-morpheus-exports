@@ -1,0 +1,9 @@
+resource "instance-type" "nc-test-hpe" {
+  code = "nc-test-hpe"
+  name = "nc-test-hpe"
+  uuid = "d993a0e4-b0f5-4c7f-a858-3ae1a645beb7"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "NC-TEST-HPE"
+  labels = [ "deleteok" ]
+}

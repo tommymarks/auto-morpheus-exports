@@ -1,0 +1,11 @@
+resource "instance-type-layout" "2bf8cec2-2f2c-4571-8405-f5b6ac75ecd1" {
+  code = "2bf8cec2-2f2c-4571-8405-f5b6ac75ecd1"
+  name = "nc test hpe hard u22"
+  uuid = "cc70ffb7-82d6-4ad9-8e64-813d8ec6f4b4"
+  instanceType = { code = "nc-test-hpe" }
+  instanceVersion = "22"
+  labels = [ "deleteok" ]
+  memoryRequirement = 0
+  provisionType = { code = "kvm" }
+  workloads = [ { code = "85dc8119-93f9-4eca-aeee-704d03de9749" } ]
+}

@@ -1,0 +1,5 @@
+resource "container-type-set" "85dc8119-93f9-4eca-aeee-704d03de9749" {
+  code = "85dc8119-93f9-4eca-aeee-704d03de9749"
+  uuid = "c56536bc-2def-43bd-a248-40fc3286994d"
+  workloadType = { code = "85dc8119-93f9-4eca-aeee-704d03de9749" }
+}
