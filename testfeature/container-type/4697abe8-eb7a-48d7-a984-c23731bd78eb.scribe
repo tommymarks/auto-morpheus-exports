@@ -1,0 +1,19 @@
+resource "container-type" "4697abe8-eb7a-48d7-a984-c23731bd78eb" {
+  code = "4697abe8-eb7a-48d7-a984-c23731bd78eb"
+  name = "Windows Server"
+  uuid = "1659ef0b-eac1-4390-bc37-7b26b4e0acf2"
+  category = "windows"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [ { uuid = "0cbb4e09-e388-4d29-baf4-2642c7d03d76" } ]
+  containerVersion = "2016"
+  entryPoint = ""
+  labels = [ "auto", "qa" ]
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "win"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vmware.vsphere.image.2.954da742-9790-4319-b21b-33fb832133b1" }
+}
