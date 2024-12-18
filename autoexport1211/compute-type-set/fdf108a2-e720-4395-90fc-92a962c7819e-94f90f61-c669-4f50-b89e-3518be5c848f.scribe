@@ -1,0 +1,13 @@
+resource "compute-type-set" "fdf108a2-e720-4395-90fc-92a962c7819e-94f90f61-c669-4f50-b89e-3518be5c848f" {
+  code = "fdf108a2-e720-4395-90fc-92a962c7819e-94f90f61-c669-4f50-b89e-3518be5c848f"
+  name = "Amazon Custom RHEL 8-worker-94f90f61-c669-4f50-b89e-3518be5c848f-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "94f90f61-c669-4f50-b89e-3518be5c848f" }
+}
