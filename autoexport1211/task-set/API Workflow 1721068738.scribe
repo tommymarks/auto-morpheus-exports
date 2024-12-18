@@ -1,0 +1,9 @@
+resource "task-set" "API Workflow 1721068738" {
+  name = "API Workflow 1721068738"
+  uuid = "206b996c-ddfa-42cb-9666-c8279e6c531b"
+  dateCreated = "2024-07-15T18:38:58.000Z"
+  description = "API Workflow Description 1721068738"
+  lastUpdated = "2024-07-15T18:38:58.000Z"
+  taskSetTasks = [ { uuid = "8dfc7d1f-a218-44df-9f0d-600e01650530" } ]
+  taskSetType = "operation"
+}
