@@ -1,0 +1,23 @@
+resource "container-type" "kubernetes-1.26_.1-ubuntu-20.04-worker-nutanix-prism" {
+  code = "kubernetes-1.26_.1-ubuntu-20.04-worker-nutanix-prism"
+  name = "Kubernetes 1.26 Worker on Ubuntu 20.04"
+  uuid = "97828442-386b-492b-9416-5c98d88e242d"
+  category = "kubernetes"
+  checkTypeCode = "vmCheck"
+  cloneType = "ubuntu"
+  containerPorts = [ { code = "ubuntu.22" } ]
+  containerVersion = "1.26.1"
+  imageCode = "morpheus Kubernetes 1.26.1 on Ubuntu 20.04"
+  logTypeCode = "ubuntu"
+  mountLogs = "/var/log"
+  providerType = "nutanix-prism"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  scripts = [
+    { code = "kubernetes-1-26-ubuntu-install-v1" },
+    { code = "kubernetes-1-26-kubeadm-worker-join-v1" }
+  ]
+  serverType = "vm"
+  shortName = "kubernetes-worker-ubuntu"
+  showServerLogs = true
+  statTypeCode = "ubuntu"
+}
