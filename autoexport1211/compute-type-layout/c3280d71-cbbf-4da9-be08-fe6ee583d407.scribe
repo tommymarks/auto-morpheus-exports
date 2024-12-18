@@ -1,0 +1,19 @@
+resource "compute-type-layout" "c3280d71-cbbf-4da9-be08-fe6ee583d407" {
+  code = "c3280d71-cbbf-4da9-be08-fe6ee583d407"
+  name = "Custom Docker Nutanix Central"
+  computeServers = [
+    {
+      code = "c3280d71-cbbf-4da9-be08-fe6ee583d407-ec3937c2-8719-4d1a-84d7-2fca08531b01"
+    }
+  ]
+  computeVersion = "Ubuntu 20"
+  dateCreated = "2024-07-10T21:45:15.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2024-07-14T19:01:19.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  sortOrder = 999
+  type = { code = "nutanix-prism-linux" }
+}
