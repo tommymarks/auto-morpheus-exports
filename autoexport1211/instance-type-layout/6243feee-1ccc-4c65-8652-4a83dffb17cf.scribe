@@ -1,0 +1,14 @@
+resource "instance-type-layout" "6243feee-1ccc-4c65-8652-4a83dffb17cf" {
+  code = "6243feee-1ccc-4c65-8652-4a83dffb17cf"
+  name = "Ubuntu22 Supplemental"
+  uuid = "dc830227-f1d2-4d65-8acd-8bc75d7866e4"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalDebian" } ]
+  workloads = [ { code = "08429b77-dbea-4a61-a0ae-9c6ecbde08a1" } ]
+}
