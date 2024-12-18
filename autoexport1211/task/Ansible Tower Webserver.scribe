@@ -1,0 +1,27 @@
+resource "task" "Ansible Tower Webserver" {
+  name = "Ansible Tower Webserver"
+  uuid = "4dcf0c56-1543-4c12-a5e7-2dbfa2494d1e"
+  dateCreated = "2023-12-16T19:20:02.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-12-16T19:20:02.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Labs Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = { code = "ansibleTower.jobTemplate.1104.11" }
+    },
+    {
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "395"
+    },
+    {
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    },
+    { optionType = { code = "ansibleGroup" }, value = "qa-tenant" }
+  ]
+  taskType = { code = "ansibleTowerTask" }
+}
