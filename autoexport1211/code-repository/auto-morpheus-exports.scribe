@@ -1,0 +1,18 @@
+resource "code-repository" "auto-morpheus-exports" {
+  name = "auto-morpheus-exports"
+  uuid = "3f99cd48-d364-44aa-854d-614417b1b8e3"
+  dateCreated = "2023-08-15T03:57:53.000Z"
+  defaultBranch = "main"
+  description = "auto test"
+  displayName = "tommymarks/auto-morpheus-exports"
+  externalId = "678656969"
+  integration = { name = "Github - TM" }
+  lastUpdated = "2024-12-18T00:18:24.000Z"
+  orgId = "1141849"
+  orgName = "tommymarks"
+  privateRepo = false
+  repoSize = 0
+  scribeMode = "export"
+  scribePath = "autoexport1211"
+  serviceUrl = "https://github.com/tommymarks/auto-morpheus-exports"
+}

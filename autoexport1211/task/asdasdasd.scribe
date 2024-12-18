@@ -1,0 +1,18 @@
+resource "task" "asdasdasd" {
+  name = "asdasdasd"
+  uuid = "a0afd0dc-e447-4677-a92a-9f00f8ceff1e"
+  dateCreated = "2024-03-05T19:57:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-04-25T15:08:18.000Z"
+  options = [
+    {
+      content = { uuid = "4740fb91-05f8-45d8-9c2f-424a9011fd07" }
+      optionType = { code = "script" }
+    },
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "5.0"
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
