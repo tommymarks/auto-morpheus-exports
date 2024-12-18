@@ -1,0 +1,14 @@
+resource "instance-type-layout" "d0786cc6-6c88-408a-9611-c3e2459822e2" {
+  code = "d0786cc6-6c88-408a-9611-c3e2459822e2"
+  name = "Open Telekom NGINX"
+  uuid = "fabcb28c-98da-4cdc-8b09-354f5e571bc5"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginxweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "opentelekom" }
+  workloads = [ { code = "518fd890-6a71-4f6f-939f-f65ca4d43fa4" } ]
+}
