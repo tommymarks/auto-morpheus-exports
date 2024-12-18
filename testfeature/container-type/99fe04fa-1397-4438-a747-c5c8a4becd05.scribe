@@ -1,0 +1,39 @@
+resource "container-type" "99fe04fa-1397-4438-a747-c5c8a4becd05" {
+  code = "99fe04fa-1397-4438-a747-c5c8a4becd05"
+  name = "NGINX latest"
+  uuid = "9b853e87-53fe-4b4e-9c53-194b5e6325a6"
+  category = "nginx"
+  actions = [ { code = "generic-remove-node" } ]
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "vmCheck"
+  containerPorts = [
+    { uuid = "cc2d0233-38a5-404a-a0fe-6696a6ca8771" },
+    { uuid = "9858d329-5b77-4c42-b061-3009fd0d73d8" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  hasSslCert = true
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "955b3417-872c-47a1-a25f-43411e9e60a3" } ]
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html/"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  mounts = [ { uuid = "aed23cc8-a584-4506-a30a-efcdd081d3a3" } ]
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  scripts = [
+    { code = "6764c99d-735b-4ac4-9dcf-e2058ef95293" },
+    { code = "a0387b80-b362-4f16-81e5-50b3c3066b7c" },
+    { code = "7cb10f27-8a54-408d-98a1-5711c0ab32d4" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "azure.image.morpheus.ubuntu.20.04" }
+}
