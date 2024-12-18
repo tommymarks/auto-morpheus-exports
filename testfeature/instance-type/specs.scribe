@@ -1,0 +1,14 @@
+resource "instance-type" "specs" {
+  code = "specs"
+  name = "Spec Templates"
+  uuid = "8d681bcb-d404-427e-8875-aea9ef0723fb"
+  category = "web"
+  deploymentService = ""
+  description = "spec template tests"
+  environmentPrefix = "SPEC"
+  labels = [ "auto", "qa" ]
+  layouts = [
+    { code = "052e43b6-3d02-42de-b859-df245db59cd9" },
+    { code = "7791b18d-dbfe-4bf1-a135-545ae29fa483" }
+  ]
+}
