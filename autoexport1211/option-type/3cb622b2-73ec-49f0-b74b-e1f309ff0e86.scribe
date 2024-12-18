@@ -1,0 +1,27 @@
+resource "option-type" "3cb622b2-73ec-49f0-b74b-e1f309ff0e86" {
+  code = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+  name = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+  uuid = "c8a27a98-bd7d-47b1-8208-99214504f742"
+  config = {
+    addon = ""
+    addonPosition = ""
+    cloudField = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+    cloudFieldType = "field"
+    cloudId = ""
+    groupField = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    groupFieldType = "field"
+    groupId = ""
+    instanceTypeCode = "ubuntu"
+    instanceTypeFieldCode = ""
+    instanceTypeFieldType = "value"
+  }
+  defaultValue = "1069"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "Layout"
+  fieldName = "layout"
+  formField = true
+  helpBlock = "layout help"
+  refCode = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+  type = "layout"
+}
