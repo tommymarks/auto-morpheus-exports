@@ -1,0 +1,19 @@
+resource "compute-type-layout" "66f6da20-83ed-43f3-a7d7-d9b304d6d6ab" {
+  code = "66f6da20-83ed-43f3-a7d7-d9b304d6d6ab"
+  name = "Custom Docker Azure"
+  computeServers = [
+    {
+      code = "66f6da20-83ed-43f3-a7d7-d9b304d6d6ab-d0c6f5de-8e7e-487e-970e-5bb62bd9f53c"
+    }
+  ]
+  computeVersion = "Ubuntu 18"
+  dateCreated = "2023-10-23T20:20:59.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2024-07-14T18:58:41.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  sortOrder = 999
+  type = { code = "azureLinux" }
+}
