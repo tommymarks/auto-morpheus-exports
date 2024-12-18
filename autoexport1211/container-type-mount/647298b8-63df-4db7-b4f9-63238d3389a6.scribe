@@ -1,0 +1,10 @@
+resource "container-type-mount" "647298b8-63df-4db7-b4f9-63238d3389a6" {
+  name = "data"
+  uuid = "647298b8-63df-4db7-b4f9-63238d3389a6"
+  canPersist = true
+  containerPath = "/usr/src/redmine/files"
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "data"
+  volumeName = "data"
+}

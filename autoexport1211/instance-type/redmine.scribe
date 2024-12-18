@@ -1,0 +1,10 @@
+resource "instance-type" "redmine" {
+  code = "redmine"
+  name = "Redmine"
+  uuid = "0602c13e-1d86-47f4-bcab-745713188d6c"
+  category = "apps"
+  deploymentService = ""
+  description = "A great project management system built on top of ruby on rails."
+  environmentPrefix = "REDMINE"
+  hasAutoScale = true
+}
