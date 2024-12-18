@@ -1,0 +1,5 @@
+resource "task-set-task" "9c676ce7-1145-41a5-93a0-1cfb0c0758a9" {
+  uuid = "9c676ce7-1145-41a5-93a0-1cfb0c0758a9"
+  task = { name = "ac wf1" }
+  taskOrder = 2
+}
