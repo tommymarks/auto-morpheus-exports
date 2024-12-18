@@ -1,0 +1,15 @@
+resource "task" "Test SSH Connectivity" {
+  name = "Test SSH Connectivity"
+  uuid = "4682916f-f9cf-43ff-a1f6-1fd8696245bf"
+  allowCustomConfig = true
+  dateCreated = "2024-08-26T16:42:06.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-08-26T16:42:06.000Z"
+  options = [
+    {
+      content = { uuid = "276276bb-69b2-4492-b1b8-b3f38b3d1213" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
