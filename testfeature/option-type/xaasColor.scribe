@@ -1,0 +1,14 @@
+resource "option-type" "xaasColor" {
+  code = "xaasColor"
+  name = "Xaas Color"
+  uuid = "c5e4c97b-5352-4048-a1e4-6004cf2ad009"
+  config = { _multiSelect = "" }
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Color"
+  fieldName = "xaasColor"
+  labels = [ "qa", "tests" ]
+  optionList = { name = "Approved Colors" }
+  optionSource = "list"
+  type = "typeahead"
+}
