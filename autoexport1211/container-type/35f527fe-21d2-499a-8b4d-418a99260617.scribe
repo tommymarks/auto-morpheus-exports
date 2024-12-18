@@ -1,0 +1,14 @@
+resource "container-type" "35f527fe-21d2-499a-8b4d-418a99260617" {
+  code = "35f527fe-21d2-499a-8b4d-418a99260617"
+  name = "nutanix-windows"
+  uuid = "f171a4ba-3c33-4b46-a274-e5b5408bef4d"
+  checkTypeCode = "vmCheck"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionService = "nutanix-prism-provision-provider"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  repositoryImage = ""
+  shortName = "nuwin"
+  statTypeCode = "vm"
+}

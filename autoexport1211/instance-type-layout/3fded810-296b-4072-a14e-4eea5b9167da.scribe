@@ -1,0 +1,10 @@
+resource "instance-type-layout" "3fded810-296b-4072-a14e-4eea5b9167da" {
+  code = "3fded810-296b-4072-a14e-4eea5b9167da"
+  name = "windows"
+  uuid = "91a1b6b5-b1b0-48bf-a5d4-2646462638d1"
+  instanceType = { code = "nuwin" }
+  instanceVersion = "2022"
+  memoryRequirement = 0
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  workloads = [ { code = "35f527fe-21d2-499a-8b4d-418a99260617" } ]
+}
