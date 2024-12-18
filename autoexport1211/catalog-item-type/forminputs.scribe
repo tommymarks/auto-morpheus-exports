@@ -1,0 +1,16 @@
+resource "catalog-item-type" "forminputs" {
+  code = "forminputs"
+  name = "Form Inputs"
+  uuid = "e7c707d2-7609-4cfb-af3d-87601c1c42e8"
+  config = {
+    config = ""
+    context = ""
+    workflowUuid = "8528e981-b3b7-498a-8260-55311ecf28df"
+  }
+  dateCreated = "2024-04-29T16:01:16.000Z"
+  description = "don't delete"
+  form = { code = "autoinputs" }
+  formType = "form"
+  lastUpdated = "2024-04-29T16:01:16.000Z"
+  refType = "OperationalWorkflow"
+}
