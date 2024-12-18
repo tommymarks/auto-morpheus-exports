@@ -1,0 +1,13 @@
+resource "task-set" "InstallerCentOS9" {
+  name = "InstallerCentOS9"
+  uuid = "4d579373-7960-45dd-96b7-025f212104c0"
+  dateCreated = "2023-11-13T21:22:11.000Z"
+  description = "Setup CentOS 9 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "114589c0-f3db-43c6-bc6c-4e6be3849225" },
+    { uuid = "13a20542-516e-4bcf-9c18-57631e5107dc" },
+    { uuid = "172365f9-5914-4bcc-917c-788281bb259a" }
+  ]
+}

@@ -1,0 +1,19 @@
+resource "task" "Installer CentOS9" {
+  name = "Installer CentOS9"
+  uuid = "f6192b89-19fe-480c-b7d8-b235987f9f19"
+  dateCreated = "2023-11-13T21:20:15.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "47ffcbcb-91f2-48f3-aeb3-a2d78383ce81" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}
