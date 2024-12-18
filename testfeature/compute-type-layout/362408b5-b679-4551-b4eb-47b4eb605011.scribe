@@ -1,0 +1,19 @@
+resource "compute-type-layout" "362408b5-b679-4551-b4eb-47b4eb605011" {
+  code = "362408b5-b679-4551-b4eb-47b4eb605011"
+  name = "Custom Docker OpenStack"
+  computeServers = [
+    {
+      code = "362408b5-b679-4551-b4eb-47b4eb605011-9af61947-f740-488f-bad8-1930b533dec5"
+    }
+  ]
+  computeVersion = "Ubuntu 20"
+  dateCreated = "2023-08-31T19:23:06.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2024-07-14T19:01:32.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "openstack" }
+  sortOrder = 999
+  type = { code = "openstackLinux" }
+}
