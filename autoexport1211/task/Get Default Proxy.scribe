@@ -1,0 +1,15 @@
+resource "task" "Get Default Proxy" {
+  name = "Get Default Proxy"
+  uuid = "026af0b5-3821-4d13-9bcb-d554384b925e"
+  dateCreated = "2024-06-14T12:39:53.000Z"
+  executeTarget = "local"
+  labels = [ "test", "utility" ]
+  lastUpdated = "2024-06-14T12:39:53.000Z"
+  options = [
+    {
+      content = { uuid = "ccaeae35-3954-4f3d-852f-48c194d7585e" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
