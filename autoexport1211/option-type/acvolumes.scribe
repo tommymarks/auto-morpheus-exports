@@ -1,0 +1,10 @@
+resource "option-type" "acvolumes" {
+  code = "acvolumes"
+  name = "acVolumes"
+  uuid = "85b53567-5943-45a4-95d8-c906ad9d495b"
+  fieldContext = "config.customOptions"
+  fieldLabel = "size"
+  fieldName = "acvolumes"
+  type = "number"
+  visibleOnCode = "acyesno:yes"
+}
