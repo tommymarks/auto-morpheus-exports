@@ -1,0 +1,16 @@
+resource "file-content" "kubernetes-nginx-config-1-9-4" {
+  code = "kubernetes-nginx-config-1-9-4"
+  uuid = "422b5c89-a49b-4660-b51f-6c2a5cc6e4bf"
+  content = <<EOFSCRIBE
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+  namespace: nginx-ingress
+data:
+  strict-validate-path-type: "true"
+
+EOFSCRIBE
+  dateCreated = "2023-11-01T03:46:40.000Z"
+  lastUpdated = "2023-11-01T03:46:40.000Z"
+}
