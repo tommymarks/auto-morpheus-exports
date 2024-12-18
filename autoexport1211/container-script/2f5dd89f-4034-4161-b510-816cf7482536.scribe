@@ -1,0 +1,14 @@
+resource "container-script" "2f5dd89f-4034-4161-b510-816cf7482536" {
+  code = "2f5dd89f-4034-4161-b510-816cf7482536"
+  name = "phase: stop service"
+  uuid = "7f2c3cc3-4f91-48d8-9beb-0b50b2e47544"
+  dateCreated = "2023-08-22T19:07:11.000Z"
+  lastUpdated = "2023-08-22T19:14:15.000Z"
+  script = <<EOFSCRIBE
+echo "$(date) - stop service" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+#echo ERROR: Did I do that? 1>&2
+EOFSCRIBE
+  scriptPhase = "stop"
+  sudoUser = true
+}

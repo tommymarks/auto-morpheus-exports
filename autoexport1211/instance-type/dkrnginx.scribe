@@ -1,0 +1,13 @@
+resource "instance-type" "dkrnginx" {
+  code = "dkrnginx"
+  name = "Custom Nginx"
+  uuid = "9937af44-db11-41b3-a2e1-50093935d0e8"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "Nginx docker instance"
+  environmentPrefix = "NGINX"
+  hasAutoScale = true
+  hasDeployment = true
+  labels = [ "auto", "keep" ]
+  visibility = "public"
+}

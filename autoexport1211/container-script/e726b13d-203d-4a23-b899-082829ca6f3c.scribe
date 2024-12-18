@@ -1,0 +1,14 @@
+resource "container-script" "e726b13d-203d-4a23-b899-082829ca6f3c" {
+  code = "e726b13d-203d-4a23-b899-082829ca6f3c"
+  name = "phase: pre deploy"
+  uuid = "d1b333c1-a025-494f-8fad-fec4889a3f4e"
+  dateCreated = "2023-08-22T19:07:11.000Z"
+  lastUpdated = "2023-08-22T19:14:15.000Z"
+  script = <<EOFSCRIBE
+echo "$(date) - pre deploy" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+echo ERROR: Did I do that? 1>&2
+EOFSCRIBE
+  scriptPhase = "preDeploy"
+  sudoUser = true
+}

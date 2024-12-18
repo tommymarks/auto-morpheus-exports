@@ -1,0 +1,10 @@
+resource "container-type-mount" "c9fcd831-c140-4b3a-81cd-5ee3bb48d1bc" {
+  name = "data"
+  uuid = "c9fcd831-c140-4b3a-81cd-5ee3bb48d1bc"
+  canPersist = true
+  containerPath = "/usr/share/nginx/html"
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "data"
+  volumeName = "data"
+}

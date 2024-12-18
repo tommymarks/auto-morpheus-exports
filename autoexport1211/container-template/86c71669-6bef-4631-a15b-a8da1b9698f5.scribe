@@ -1,0 +1,11 @@
+resource "container-template" "86c71669-6bef-4631-a15b-a8da1b9698f5" {
+  code = "86c71669-6bef-4631-a15b-a8da1b9698f5"
+  name = "phase: provision"
+  uuid = "2b8dcb9e-6f62-471e-8d78-991f1ce05c56"
+  dateCreated = "2023-08-22T19:07:11.000Z"
+  fileName = "provision.txt"
+  filePath = "/var/tmp/templates"
+  lastUpdated = "2023-08-22T19:14:15.000Z"
+  settingName = "Prov"
+  template = "provision template"
+}
