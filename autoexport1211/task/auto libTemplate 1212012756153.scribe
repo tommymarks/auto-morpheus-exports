@@ -1,0 +1,15 @@
+resource "task" "auto libTemplate 1212012756153" {
+  name = "auto libTemplate 1212012756153"
+  uuid = "be4518e0-c027-4af6-b869-89c6c1118623"
+  dateCreated = "2024-12-12T09:32:37.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-12-12T09:32:37.000Z"
+  options = [
+    { optionType = { code = "containerTemplateId" }, value = "827" },
+    {
+      optionType = { code = "containerTemplate" }
+      value = "auto template 1212012756458"
+    }
+  ]
+  taskType = { code = "containerTemplate" }
+}
