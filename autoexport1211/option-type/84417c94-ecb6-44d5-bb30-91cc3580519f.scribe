@@ -1,0 +1,47 @@
+resource "option-type" "84417c94-ecb6-44d5-bb30-91cc3580519f" {
+  code = "84417c94-ecb6-44d5-bb30-91cc3580519f"
+  name = "84417c94-ecb6-44d5-bb30-91cc3580519f"
+  uuid = "6d3033f2-a9a7-4db5-b0bc-5806646139fb"
+  config = {
+    addon = ""
+    addonPosition = ""
+    cloudField = "37c7a5ff-1196-4857-8463-292be3a8a6d8"
+    cloudFieldType = "field"
+    cloudId = ""
+    defaultValue = <<EOFSCRIBE
+[
+ {
+  "rootVolume": true,
+  "name": "root",
+  "size": 30,
+  "minStorage": 0,
+  "displayOrder": 0,
+  "sizeBytes": 32212254720,
+  "storageType": 23
+ }
+]
+EOFSCRIBE
+    enableDatastoreSelection = true
+    enableDiskTypeSelection = true
+    enableStorageTypeSelection = true
+    groupField = "612a9af0-5373-4956-9a93-2684591b1ea4"
+    groupFieldType = "field"
+    groupId = ""
+    layoutField = "f31a36f5-6af4-4322-9d3c-b56f376a2feb"
+    layoutFieldType = "field"
+    layoutId = ""
+    planField = "a209d181-33ca-4a01-a86a-2cc1663d036b"
+    planFieldType = "field"
+    planId = ""
+    poolField = "f8d21168-1f1e-4f5f-a91e-ec18464fd3ed"
+    poolFieldType = "field"
+    poolId = ""
+  }
+  displayOrder = 5
+  fieldContext = "config.customOptions"
+  fieldLabel = "Volumes"
+  fieldName = "volumes"
+  formField = true
+  refCode = "84417c94-ecb6-44d5-bb30-91cc3580519f"
+  type = "diskManager"
+}
