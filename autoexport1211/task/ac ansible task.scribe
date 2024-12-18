@@ -1,0 +1,20 @@
+resource "task" "ac ansible task" {
+  name = "ac ansible task"
+  uuid = "159a2dc6-2844-4711-b174-8c49ff0f1117"
+  dateCreated = "2024-09-19T21:12:36.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-09-19T21:12:36.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleOptions" }
+      value = "-e \"fruit=<%=cypher.read('secret/hello')%>\""
+    },
+    { optionType = { code = "ansibleGitId" }, value = "3488" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "fruitplaybook"
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
