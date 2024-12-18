@@ -1,0 +1,40 @@
+resource "container-type" "11af1e23-9138-4451-a6e3-d1bb6fe7730d" {
+  code = "11af1e23-9138-4451-a6e3-d1bb6fe7730d"
+  name = "A1"
+  uuid = "93e7bca2-576f-4f26-b658-e9b16473d7fb"
+  category = "Cat5"
+  containerPorts = [
+    { uuid = "dde2116d-2a9f-4887-8795-81b702392a9a" },
+    { uuid = "3c4eb7c8-6334-454e-b765-e433e21fe97c" },
+    { uuid = "301924e1-cb30-40be-be6c-d275f16b2207" }
+  ]
+  containerVersion = "a1version"
+  entryPoint = ""
+  labels = [ "qa", "test" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "22dda9a5-5a67-4458-aba7-5f0a35061c5f" } ]
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mounts = [
+    { code = "template: 3d015860-47cd-47e9-b83d-01e3f46406db" },
+    { code = "template: c56781e2-0ec1-47f3-829b-9b4166d38cf3" },
+    { uuid = "fb4be13a-22be-42af-b694-6c6c2950d16f" }
+  ]
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  scripts = [
+    { code = "1876916a-84c1-408c-9a38-d3301f2a39f9" },
+    { code = "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2" },
+    { code = "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc" }
+  ]
+  serverType = "vm"
+  shortName = "aone"
+  showServerLogs = true
+  statTypeCode = "vm"
+  templates = [
+    { code = "3d015860-47cd-47e9-b83d-01e3f46406db" },
+    { code = "c56781e2-0ec1-47f3-829b-9b4166d38cf3" }
+  ]
+  virtualImage = { uuid = "e6a6dd11-d444-456e-a39a-350c9e19f9ed" }
+}

@@ -1,0 +1,11 @@
+resource "container-type-mount" "template: 3d015860-47cd-47e9-b83d-01e3f46406db" {
+  code = "template: 3d015860-47cd-47e9-b83d-01e3f46406db"
+  name = "QA Test VM"
+  uuid = "86d6b00e-181d-458a-93c7-855c48984f18"
+  containerPath = "/etc/nginx"
+  hostPath = "/etc/nginx"
+  mountType = "config"
+  shortName = "qa-test-vm"
+  template = { code = "3d015860-47cd-47e9-b83d-01e3f46406db" }
+  volumeName = "qa-test-vm"
+}
