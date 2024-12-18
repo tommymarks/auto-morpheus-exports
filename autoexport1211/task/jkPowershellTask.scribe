@@ -1,0 +1,19 @@
+resource "task" "jkPowershellTask" {
+  code = "jkPowershellTask"
+  name = "jk-powershell-task"
+  uuid = "1abbe4db-55a6-462e-8653-21e584a7386b"
+  dateCreated = "2024-11-22T18:56:02.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-11-22T18:56:02.000Z"
+  options = [
+    {
+      content = { uuid = "ad7c2ee3-5b62-42ea-bdb0-768eea0a48e7" }
+      optionType = { code = "script" }
+    },
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "5.0"
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
