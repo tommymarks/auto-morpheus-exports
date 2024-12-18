@@ -1,0 +1,100 @@
+resource "option-type-form" "acquicktest" {
+  code = "acquicktest"
+  name = "ac quick test"
+  uuid = "625609fc-fca4-43b2-bc9d-416f2a69ed3b"
+  config = {
+    enableVar = false
+    form = ""
+    formField = ""
+    formOptions = ""
+    formType = "static"
+  }
+  options = [
+    {
+      code = "9d1fffbc-ca73-4bbb-9992-57f68e51e7c2"
+      name = "9d1fffbc-ca73-4bbb-9992-57f68e51e7c2"
+      uuid = "0e84fc4c-13ca-43a2-b268-f5b72844ced9"
+      config = {
+        addon = ""
+        addonPosition = ""
+        retainDefault = false
+      }
+      fieldContext = "config.customOptions"
+      fieldLabel = "group1"
+      fieldName = "gropu1"
+      formField = true
+      type = "group"
+    },
+    {
+      code = "0c22c69f-861f-4975-ad18-c4595d91bb21"
+      name = "0c22c69f-861f-4975-ad18-c4595d91bb21"
+      uuid = "169d3391-cd41-4cd9-8925-a075a0a591d9"
+      config = {
+        cloudType = ""
+        filterResource = false
+        group = "9d1fffbc-ca73-4bbb-9992-57f68e51e7c2"
+        groupFieldType = "field"
+        groupId = ""
+        instanceTypeCode = ""
+        instanceTypeFieldCode = ""
+        instanceTypeFieldType = "field"
+      }
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "cloud"
+      fieldName = "cloud"
+      formField = true
+      type = "cloud"
+    },
+    {
+      code = "60b23415-f82b-4934-ab85-be7aaf4fd205"
+      name = "60b23415-f82b-4934-ab85-be7aaf4fd205"
+      uuid = "fd04c110-e194-4810-96f7-c5d5eabd6e1d"
+      config = {
+        cloudField = "0c22c69f-861f-4975-ad18-c4595d91bb21"
+        cloudFieldType = "field"
+        cloudId = ""
+        groupField = "9d1fffbc-ca73-4bbb-9992-57f68e51e7c2"
+        groupFieldType = "field"
+        groupId = ""
+        instanceTypeCode = ""
+        instanceTypeFieldCode = ""
+        instanceTypeFieldType = "field"
+      }
+      displayOrder = 2
+      fieldContext = "config.customOptions"
+      fieldLabel = "layout1"
+      fieldName = "layout1"
+      formField = true
+      type = "layout"
+    },
+    {
+      code = "24ed165c-b497-4700-9018-f9070839fb92"
+      name = "24ed165c-b497-4700-9018-f9070839fb92"
+      uuid = "ffb4238e-5127-4a23-9d6c-8c07d13d33d1"
+      config = {
+        cloudField = "0c22c69f-861f-4975-ad18-c4595d91bb21"
+        cloudFieldType = "field"
+        cloudId = ""
+        defaultValue = ""
+        diskField = ""
+        groupField = "9d1fffbc-ca73-4bbb-9992-57f68e51e7c2"
+        groupFieldType = "field"
+        groupId = ""
+        layoutField = "60b23415-f82b-4934-ab85-be7aaf4fd205"
+        layoutFieldType = "field"
+        layoutId = ""
+        poolField = ""
+        poolFieldType = "field"
+        poolId = ""
+        showPricing = false
+      }
+      displayOrder = 3
+      fieldContext = "config.customOptions"
+      fieldLabel = "plan"
+      fieldName = "plan"
+      formField = true
+      type = "plan"
+    }
+  ]
+}
