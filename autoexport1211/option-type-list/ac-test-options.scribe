@@ -1,0 +1,10 @@
+resource "option-type-list" "ac-test-options" {
+  name = "ac-test-options"
+  uuid = "ab238be2-26e6-4846-ad11-a35d26819537"
+  initialDataset = <<EOFSCRIBE
+[{"name":"App Server", "value":"as|app"},
+{"name":"App Apache", "value":"aa|app"},
+{"name":"App IIS", "value":"ai|app"}]
+EOFSCRIBE
+  type = "manual"
+}

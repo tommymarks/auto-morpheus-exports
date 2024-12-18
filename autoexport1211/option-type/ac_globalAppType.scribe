@@ -1,0 +1,11 @@
+resource "option-type" "ac_globalAppType" {
+  code = "ac_globalAppType"
+  name = "ac_globalAppType"
+  uuid = "4027cf54-fd15-49bc-b112-14d08463058f"
+  fieldContext = "config.customOptions"
+  fieldLabel = "ac_globalAppType"
+  fieldName = "ac_globalAppType"
+  optionList = { name = "ac-test-options" }
+  optionSource = "list"
+  type = "select"
+}
