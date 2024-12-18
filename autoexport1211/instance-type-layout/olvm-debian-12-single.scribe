@@ -1,0 +1,15 @@
+resource "instance-type-layout" "olvm-debian-12-single" {
+  code = "olvm-debian-12-single"
+  name = "Debian 12 VM"
+  uuid = "66d012af-699e-4442-a0d0-dfe53cf6f504"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "debian" }
+  instanceVersion = "12"
+  provisionType = { code = "olvm-provision-standard" }
+  serverType = "vm"
+  sortOrder = 19
+  supportsConvertToManaged = true
+  workloads = [ { code = "olvm-debian-12-set" } ]
+}
