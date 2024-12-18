@@ -1,0 +1,12 @@
+resource "option-type" "ac-typeahead" {
+  code = "ac-typeahead"
+  name = "ac typeahead"
+  uuid = "4b26c53f-fb81-4cd4-9c20-26a9e078f9e2"
+  config = { _multiSelect = "" }
+  fieldContext = "config.customOptions"
+  fieldLabel = "API GROUPS"
+  fieldName = "ac-typeahead"
+  optionList = { name = "API Groups" }
+  optionSource = "list"
+  type = "typeahead"
+}
