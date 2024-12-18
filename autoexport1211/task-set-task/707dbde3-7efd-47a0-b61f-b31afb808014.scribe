@@ -1,0 +1,5 @@
+resource "task-set-task" "707dbde3-7efd-47a0-b61f-b31afb808014" {
+  uuid = "707dbde3-7efd-47a0-b61f-b31afb808014"
+  task = { name = "Installer Release Candidate" }
+  taskOrder = 1
+}

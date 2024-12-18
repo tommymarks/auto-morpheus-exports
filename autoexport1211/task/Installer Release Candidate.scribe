@@ -1,0 +1,16 @@
+resource "task" "Installer Release Candidate" {
+  name = "Installer Release Candidate"
+  uuid = "619a5746-fbbc-4ae5-a203-9516eb054d69"
+  dateCreated = "2023-12-07T16:22:53.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-07T16:26:16.000Z"
+  options = [
+    {
+      content = { uuid = "ae8846ac-1d18-4097-ae63-8338ce43a5b0" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

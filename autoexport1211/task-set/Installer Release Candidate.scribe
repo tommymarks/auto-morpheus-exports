@@ -1,0 +1,12 @@
+resource "task-set" "Installer Release Candidate" {
+  name = "Installer Release Candidate"
+  uuid = "c34c88d5-ffb2-4cda-bca2-714ccfe86f54"
+  dateCreated = "2023-12-07T16:28:09.000Z"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-07T16:28:09.000Z"
+  taskSetTasks = [
+    { uuid = "1a27eddf-0e88-4e90-9da1-2e6e95bafeb6" },
+    { uuid = "40d310b4-a1f2-4106-bfc5-2bd5ada4c0c5" },
+    { uuid = "707dbde3-7efd-47a0-b61f-b31afb808014" }
+  ]
+}

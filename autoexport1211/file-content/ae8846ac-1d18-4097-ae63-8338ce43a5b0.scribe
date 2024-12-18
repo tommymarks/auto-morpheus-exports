@@ -1,0 +1,6 @@
+resource "file-content" "ae8846ac-1d18-4097-ae63-8338ce43a5b0" {
+  uuid = "ae8846ac-1d18-4097-ae63-8338ce43a5b0"
+  content = "echo \"repo['repo_host_url'] = 'http://pkgrepo.morpheusdata.com'\" >> /etc/morpheus/morpheus.rb"
+  dateCreated = "2023-12-07T16:22:53.000Z"
+  lastUpdated = "2023-12-07T16:22:53.000Z"
+}
