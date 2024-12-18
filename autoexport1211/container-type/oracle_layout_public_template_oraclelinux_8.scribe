@@ -1,7 +1,7 @@
 resource "container-type" "oracle.layout.public.template.oraclelinux.8" {
   code = "oracle.layout.public.template.oraclelinux.8"
   name = "Oracle Cloud Oracle Linux 8.3"
-  uuid = "d522ab68-0e4e-44c9-9a3a-e92c36c0bff6"
+  uuid = "607d6970-4031-481c-a95b-73271c27e5c1"
   category = "oraclelinux"
   checkTypeCode = "vmCheck"
   commEnabled = true
@@ -14,5 +14,4 @@ resource "container-type" "oracle.layout.public.template.oraclelinux.8" {
   repositoryImage = "image"
   shortName = "oraclelinux"
   statTypeCode = "oraclelinux"
-  virtualImage = { uuid = "5eafa5c4-7bba-4349-9534-5dbc0f2021e6" }
 }

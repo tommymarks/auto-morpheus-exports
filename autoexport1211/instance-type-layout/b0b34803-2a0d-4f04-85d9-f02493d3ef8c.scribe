@@ -1,0 +1,13 @@
+resource "instance-type-layout" "b0b34803-2a0d-4f04-85d9-f02493d3ef8c" {
+  code = "b0b34803-2a0d-4f04-85d9-f02493d3ef8c"
+  name = "OracleEnterpriseLinux8 Supplemental"
+  uuid = "f6f81f98-e8aa-48a4-a886-eb433b28fabb"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "oraclecloud" }
+  taskSets = [ { name = "InstallerSupplementalOEL8" } ]
+  workloads = [ { code = "oracle.layout.public.template.oraclelinux.8" } ]
+}

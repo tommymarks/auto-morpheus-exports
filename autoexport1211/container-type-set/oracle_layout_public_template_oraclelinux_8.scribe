@@ -1,5 +1,5 @@
 resource "container-type-set" "oracle.layout.public.template.oraclelinux.8" {
   code = "oracle.layout.public.template.oraclelinux.8"
-  uuid = "b469b5d5-62f4-4f78-af79-ae9fdf20f079"
+  uuid = "2bafe92d-3850-478c-8797-cef8d11d39ef"
   workloadType = { code = "oracle.layout.public.template.oraclelinux.8" }
 }
