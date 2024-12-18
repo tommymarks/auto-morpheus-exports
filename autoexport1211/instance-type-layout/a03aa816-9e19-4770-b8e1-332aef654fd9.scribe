@@ -1,0 +1,13 @@
+resource "instance-type-layout" "a03aa816-9e19-4770-b8e1-332aef654fd9" {
+  code = "a03aa816-9e19-4770-b8e1-332aef654fd9"
+  name = "Ubuntu18 Supplemental"
+  uuid = "bf8171fe-7302-4d0b-b35d-50b9df0d56c7"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalDebian" } ]
+  workloads = [ { code = "48b3f9d9-c09e-4520-bfc0-dd09b3aef95d" } ]
+}
