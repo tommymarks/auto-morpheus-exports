@@ -1,0 +1,5 @@
+resource "task-set-task" "25839187-4f34-4f34-9e32-8219777cd4b0" {
+  uuid = "25839187-4f34-4f34-9e32-8219777cd4b0"
+  task = { name = "XaaS: Pre Provision" }
+  taskPhase = "preProvision"
+}

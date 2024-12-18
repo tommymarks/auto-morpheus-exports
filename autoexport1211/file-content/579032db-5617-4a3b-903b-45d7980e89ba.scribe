@@ -1,0 +1,9 @@
+resource "file-content" "579032db-5617-4a3b-903b-45d7980e89ba" {
+  uuid = "579032db-5617-4a3b-903b-45d7980e89ba"
+  content = <<EOFSCRIBE
+echo "$(date) - post provision" | tee -a /var/tmp/xaas.txt
+echo whaddup
+EOFSCRIBE
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+}

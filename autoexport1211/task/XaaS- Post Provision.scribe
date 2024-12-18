@@ -1,0 +1,14 @@
+resource "task" "XaaS: Post Provision" {
+  name = "XaaS: Post Provision"
+  uuid = "74e74731-1854-4777-be10-1ea7ed474dd0"
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+  options = [
+    {
+      content = { uuid = "579032db-5617-4a3b-903b-45d7980e89ba" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

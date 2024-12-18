@@ -1,0 +1,6 @@
+resource "task-set-task" "8fe27967-9ea6-40ec-b41c-a43708a7a553" {
+  uuid = "8fe27967-9ea6-40ec-b41c-a43708a7a553"
+  task = { name = "XaaS: Provision" }
+  taskOrder = 1
+  taskPhase = "provision"
+}

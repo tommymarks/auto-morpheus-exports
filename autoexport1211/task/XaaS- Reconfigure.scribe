@@ -1,0 +1,14 @@
+resource "task" "XaaS: Reconfigure" {
+  name = "XaaS: Reconfigure"
+  uuid = "98276a91-4037-4206-9545-2371225f0ed8"
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+  options = [
+    {
+      content = { uuid = "5d6634e4-5fcd-493e-9046-b6d5a7459f44" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

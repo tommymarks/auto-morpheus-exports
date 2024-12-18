@@ -1,0 +1,14 @@
+resource "task" "XaaS: Provision" {
+  name = "XaaS: Provision"
+  uuid = "0863c9cc-331c-4776-b0af-359fe2c094f6"
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+  options = [
+    {
+      content = { uuid = "efdd7cd2-874a-443f-887c-a1bc78956308" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

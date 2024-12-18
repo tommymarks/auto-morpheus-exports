@@ -1,0 +1,14 @@
+resource "task" "XaaS: Teardown" {
+  name = "XaaS: Teardown"
+  uuid = "a6668515-a6bc-4e61-81c7-63db45f6c4c6"
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+  options = [
+    {
+      content = { uuid = "55f6127a-5b3d-44dc-97b3-b8fcf6040687" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

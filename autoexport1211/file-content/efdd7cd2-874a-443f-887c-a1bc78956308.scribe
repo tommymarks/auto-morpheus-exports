@@ -1,0 +1,9 @@
+resource "file-content" "efdd7cd2-874a-443f-887c-a1bc78956308" {
+  uuid = "efdd7cd2-874a-443f-887c-a1bc78956308"
+  content = <<EOFSCRIBE
+echo "$(date) - provision" | tee -a /var/tmp/xaas.txt
+echo whaddup
+EOFSCRIBE
+  dateCreated = "2023-09-08T17:44:39.000Z"
+  lastUpdated = "2023-09-08T17:44:39.000Z"
+}
