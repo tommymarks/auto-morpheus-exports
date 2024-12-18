@@ -1,0 +1,13 @@
+resource "instance-type-layout" "cee05f0b-27b3-4a38-a8fd-881029ee4eb3" {
+  code = "cee05f0b-27b3-4a38-a8fd-881029ee4eb3"
+  name = "CentOS9"
+  uuid = "2444d2f3-265f-4f97-9217-0798de68a6cc"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "most recent"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "lastSuccessfulBuild" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerMostRecentRPM" } ]
+  workloads = [ { code = "amazon-centos-9-stream" } ]
+}
