@@ -1,0 +1,12 @@
+resource "option-type" "serviceCidr" {
+  code = "serviceCidr"
+  name = "Service CIDR"
+  uuid = "af11759d-70ff-435d-83dd-a8a436fd2014"
+  defaultValue = "172.30.0.0/16"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Service CIDR"
+  fieldName = "serviceCidr"
+  labels = [ "Cluster", "K8s" ]
+  placeHolder = "172.30.0.0/16"
+  required = true
+}

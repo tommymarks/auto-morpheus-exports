@@ -1,0 +1,25 @@
+resource "compute-type-package" "kubernetes-nginx-ingress-operator-0-30-package" {
+  code = "kubernetes-nginx-ingress-operator-0-30-package"
+  name = "nginx ingress operator 0.30 package"
+  category = "kubernetes.ingress"
+  dateCreated = "2023-01-17T23:21:13.000Z"
+  description = "install nnginx ingress controllers"
+  lastUpdated = "2023-10-11T15:06:32.000Z"
+  packageType = "nginx"
+  packageVersion = "0.30"
+  providerType = "kubernetes"
+  sortOrder = 30
+  specTemplates = [
+    { code = "kubernetes-nginx-operator-0-30-manager-config-v1" },
+    { code = "kubernetes-nginx-operator-0-30-metrics-reader-role-v1" },
+    {
+      code = "kubernetes-nginx-operator-0-30-controller-metrics-service-v1"
+    },
+    {
+      code = "kubernetes-nginx-operator-0-30-controller-manager-service-account-v1"
+    },
+    { code = "kubernetes-nginx-operator-0-30-ingress-controllers-v1" },
+    { code = "kubernetes-nginx-operator-0-30-ingress-operator-v1" }
+  ]
+  type = "ingress"
+}

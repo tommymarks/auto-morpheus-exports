@@ -1,0 +1,21 @@
+resource "compute-type-package" "kubernetes-rook-1-7-1-package" {
+  code = "kubernetes-rook-1-7-1-package"
+  name = "rook 1.7.1 package"
+  category = "kubernetes.storage"
+  dateCreated = "2023-01-17T23:21:13.000Z"
+  description = "install rook storage"
+  lastUpdated = "2023-10-11T15:06:32.000Z"
+  packageType = "rook"
+  packageVersion = "1.7.1"
+  providerType = "kubernetes"
+  sortOrder = 20
+  specTemplates = [
+    { code = "kubernetes-rook-1-7-1-resources-v1" },
+    { code = "kubernetes-rook-1-7-1-common-v1" },
+    { code = "kubernetes-rook-1-7-1-operator-v1" },
+    { code = "kubernetes-rook-1-7-1-cluster-v1" },
+    { code = "kubernetes-rook-1-7-1-storage-v1" }
+  ]
+  storageRuntime = "rook"
+  type = "storage"
+}

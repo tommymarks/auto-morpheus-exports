@@ -1,0 +1,17 @@
+resource "container-type" "fef816c9-92c8-47c8-945e-b8dc0e7767dd" {
+  code = "fef816c9-92c8-47c8-945e-b8dc0e7767dd"
+  name = "Worker K8s"
+  uuid = "3841ab56-ab95-4b63-a527-8c693360e77c"
+  category = "vmwareKubeWorker"
+  containerVersion = "Worker"
+  entryPoint = ""
+  labels = [ "K8s", "Worker" ]
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "worker"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.ubuntu.22.04.20230918.amd64" }
+}
