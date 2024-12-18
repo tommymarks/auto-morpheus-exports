@@ -1,0 +1,16 @@
+resource "instance-type-layout" "olvm-debian-10-single" {
+  code = "olvm-debian-10-single"
+  name = "Debian 10 VM"
+  uuid = "ad11b37b-20bd-4272-b274-0a2ecbe529aa"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  enabled = false
+  hasAutoScale = true
+  instanceType = { code = "debian" }
+  instanceVersion = "10"
+  provisionType = { code = "olvm-provision-standard" }
+  serverType = "vm"
+  sortOrder = 21
+  supportsConvertToManaged = true
+  workloads = [ { code = "olvm-debian-10-set" } ]
+}
