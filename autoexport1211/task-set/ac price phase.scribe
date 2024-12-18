@@ -1,0 +1,7 @@
+resource "task-set" "ac price phase" {
+  name = "ac price phase"
+  uuid = "3e9814f2-d2ec-4440-bf28-e162e37b95db"
+  dateCreated = "2024-09-05T14:51:20.000Z"
+  lastUpdated = "2024-09-05T14:51:20.000Z"
+  taskSetTasks = [ { uuid = "d248c4f0-5a66-4b88-8e31-54eeb2c26910" } ]
+}
