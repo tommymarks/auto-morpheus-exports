@@ -1,0 +1,15 @@
+resource "task" "api-test-shelltask" {
+  name = "api-test-shelltask"
+  uuid = "a1cc3248-3ecd-4761-8856-92795d73c74a"
+  dateCreated = "2023-06-30T22:50:12.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    {
+      content = { uuid = "08594944-18d1-490e-9887-527f08dccd62" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
