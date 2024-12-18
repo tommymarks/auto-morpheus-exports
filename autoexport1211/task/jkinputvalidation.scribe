@@ -1,0 +1,15 @@
+resource "task" "jkinputvalidation" {
+  code = "jkinputvalidation"
+  name = "jk input validation"
+  uuid = "55cdc7b4-2cd5-4e07-93d4-b3b5e84e74e8"
+  dateCreated = "2024-10-25T20:38:51.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-10-25T20:38:51.000Z"
+  options = [
+    {
+      content = { uuid = "7d98a5b7-a08d-4c0c-982f-5487b945fa62" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
