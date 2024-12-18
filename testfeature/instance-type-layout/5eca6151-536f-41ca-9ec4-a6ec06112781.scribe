@@ -1,0 +1,14 @@
+resource "instance-type-layout" "5eca6151-536f-41ca-9ec4-a6ec06112781" {
+  code = "5eca6151-536f-41ca-9ec4-a6ec06112781"
+  name = "VMware Apache"
+  uuid = "a182b4a0-2f23-4ce8-952e-00b8dec27b64"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "575e61e5-83b0-492e-9364-9b38653de110" } ]
+}
