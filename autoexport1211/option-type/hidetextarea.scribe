@@ -1,0 +1,15 @@
+resource "option-type" "hidetextarea" {
+  code = "hidetextarea"
+  name = "Auto Hide Textarea"
+  uuid = "26cb852f-7415-4214-914c-15b6c52a2f35"
+  config = { rows = "1" }
+  defaultValue = "hiddentextarea"
+  description = "don't delete"
+  displayOrder = 29
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hide Textarea"
+  fieldName = "hidetextarea"
+  isHidden = true
+  labels = [ "auto", "keep" ]
+  type = "textarea"
+}

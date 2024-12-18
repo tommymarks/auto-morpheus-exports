@@ -1,0 +1,18 @@
+resource "option-type" "aduser" {
+  code = "aduser"
+  name = "Auto LDAP 1"
+  uuid = "669cef0f-a6bd-4136-8e3f-0a65724458cc"
+  config = { _multiSelect = "" }
+  description = "don't delete"
+  displayOrder = 22
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "aduser"
+  fieldName = "aduser"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "ActiveDirectory Users" }
+  optionSource = "list"
+  type = "typeahead"
+}

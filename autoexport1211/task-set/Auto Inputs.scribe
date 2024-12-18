@@ -1,0 +1,43 @@
+resource "task-set" "Auto Inputs" {
+  name = "Auto Inputs"
+  uuid = "d93ca9a9-ae1f-48f0-9fc6-4ec98fd93291"
+  dateCreated = "2024-01-06T13:55:52.000Z"
+  description = "safe to delete"
+  labels = [ "auto" ]
+  lastUpdated = "2024-01-06T13:55:52.000Z"
+  optionTypes = [
+    { code = "autocheck1" },
+    { code = "autohidden1" },
+    { code = "autonum1" },
+    { code = "autopass1" },
+    { code = "autoradio1" },
+    { code = "autoselect1" },
+    { code = "autotext1" },
+    { code = "autotextarea1" },
+    { code = "autotypeahead1" },
+    { code = "automulti1" },
+    { code = "autocheck2" },
+    { code = "autohidden2" },
+    { code = "autonum2" },
+    { code = "autopass2" },
+    { code = "autoradio2" },
+    { code = "autoselect2" },
+    { code = "autotext2" },
+    { code = "autotextarea2" },
+    { code = "autotypeahead2" },
+    { code = "automulti2" },
+    { code = "autorest1" },
+    { code = "autorest2" },
+    { code = "aduser" },
+    { code = "adlist" },
+    { code = "morphgroup" },
+    { code = "morphenv" },
+    { code = "hidecheck" },
+    { code = "hideselect" },
+    { code = "hidetext" },
+    { code = "hidetextarea" },
+    { code = "autohidegroup" }
+  ]
+  taskSetTasks = [ { uuid = "1c04a7fd-ef6d-4afb-8580-12b08460e608" } ]
+  taskSetType = "operation"
+}

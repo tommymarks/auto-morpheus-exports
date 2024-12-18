@@ -1,0 +1,16 @@
+resource "option-type" "autoselect2" {
+  code = "autoselect2"
+  name = "Auto Select 2"
+  uuid = "bd62ff00-9423-42ef-b63b-05316138f125"
+  description = "don't delete"
+  displayOrder = 15
+  fieldContext = "config.customOptions"
+  fieldLabel = "Select 2"
+  fieldName = "autoselect2"
+  labels = [ "auto", "keep" ]
+  noBlank = true
+  optionList = { name = "Colors json" }
+  optionSource = "list"
+  showOnEdit = false
+  type = "select"
+}

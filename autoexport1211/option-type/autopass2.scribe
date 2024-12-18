@@ -1,0 +1,14 @@
+resource "option-type" "autopass2" {
+  code = "autopass2"
+  name = "Auto Password 2"
+  uuid = "7885836a-7384-4aea-a76b-2d0fa41e1981"
+  description = "don't delete"
+  displayOrder = 13
+  fieldContext = "config.customOptions"
+  fieldLabel = "Password 2"
+  fieldName = "autopass2"
+  labels = [ "auto", "keep" ]
+  placeHolder = "tell me your secret"
+  showOnEdit = false
+  type = "password"
+}

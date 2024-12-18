@@ -1,0 +1,15 @@
+resource "task" "echo customOptions" {
+  name = "echo customOptions"
+  uuid = "adb1cd16-6bd9-405f-b0f0-9405febc1c2c"
+  dateCreated = "2023-12-16T00:59:37.000Z"
+  executeTarget = "local"
+  labels = [ "auto", "keep" ]
+  lastUpdated = "2023-12-16T01:05:18.000Z"
+  options = [
+    {
+      content = { uuid = "13c37d44-fb31-4a43-9080-44dec851ec08" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

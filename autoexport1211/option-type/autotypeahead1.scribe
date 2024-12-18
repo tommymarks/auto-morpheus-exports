@@ -1,0 +1,21 @@
+resource "option-type" "autotypeahead1" {
+  code = "autotypeahead1"
+  name = "Auto Typeahead 1"
+  uuid = "36411da3-0342-4efa-a418-0754f95331cb"
+  config = { _multiSelect = "" }
+  defaultValue = "Blue"
+  description = "don't delete"
+  displayOrder = 7
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Typeahead 1"
+  fieldName = "autotypeahead1"
+  helpBlock = "only pick 1"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Colors csv" }
+  optionSource = "list"
+  required = true
+  type = "typeahead"
+}

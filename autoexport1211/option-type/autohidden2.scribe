@@ -1,0 +1,13 @@
+resource "option-type" "autohidden2" {
+  code = "autohidden2"
+  name = "Auto Hidden 2"
+  uuid = "4893d51d-1f9d-49b2-be0d-80202c212574"
+  defaultValue = "hidevalue2"
+  description = "don't delete"
+  displayOrder = 11
+  fieldContext = "config.customOptions"
+  fieldName = "autohidden2"
+  labels = [ "auto", "keep" ]
+  showOnEdit = false
+  type = "hidden"
+}

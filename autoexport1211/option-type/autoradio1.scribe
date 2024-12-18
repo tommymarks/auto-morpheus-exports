@@ -1,0 +1,19 @@
+resource "option-type" "autoradio1" {
+  code = "autoradio1"
+  name = "Auto Radio 1"
+  uuid = "43a03e1a-47dc-4589-9f0f-39cde9e5d641"
+  description = "don't delete"
+  displayOrder = 4
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Radio 1"
+  fieldName = "autoradio1"
+  helpBlock = "choose wisely"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Approved Colors" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}

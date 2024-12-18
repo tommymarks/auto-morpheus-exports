@@ -1,0 +1,13 @@
+resource "option-type" "hidetext" {
+  code = "hidetext"
+  name = "Auto Hide Text"
+  uuid = "e1e23bd9-bca1-4c63-8da1-59be76e548ea"
+  defaultValue = "hiddentext"
+  description = "don't delete"
+  displayOrder = 28
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hide Text"
+  fieldName = "hidetext"
+  isHidden = true
+  labels = [ "auto", "keep" ]
+}
