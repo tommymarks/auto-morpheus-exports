@@ -1,0 +1,9 @@
+resource "file-content" "0d91c1ce-43ea-4926-8e1e-7304066c6d38" {
+  uuid = "0d91c1ce-43ea-4926-8e1e-7304066c6d38"
+  content = <<EOFSCRIBE
+pro enable fips --assume-yes || true
+
+EOFSCRIBE
+  dateCreated = "2023-11-15T19:59:23.000Z"
+  lastUpdated = "2023-12-13T15:59:06.000Z"
+}

@@ -1,0 +1,14 @@
+resource "file-content" "1c5af473-fcf4-4298-83d6-a7c5bc74cb41" {
+  uuid = "1c5af473-fcf4-4298-83d6-a7c5bc74cb41"
+  content = <<EOFSCRIBE
+sleep 120
+apt-get update
+sleep 120
+apt-get install wget --assume-yes
+apt-get install ubuntu-advantage-tools --assume-yes
+apt-get install crypto-policies --assume-yes
+
+EOFSCRIBE
+  dateCreated = "2023-11-20T19:48:33.000Z"
+  lastUpdated = "2023-12-12T23:18:11.000Z"
+}

@@ -1,0 +1,18 @@
+resource "task" "Installer Enable FIPS Ubuntu" {
+  name = "Installer Enable FIPS Ubuntu"
+  uuid = "355596e3-c1c6-4ff0-9da6-db547f5d39c7"
+  dateCreated = "2023-11-15T19:59:23.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "0d91c1ce-43ea-4926-8e1e-7304066c6d38" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  taskType = { code = "script" }
+}

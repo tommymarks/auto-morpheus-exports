@@ -1,0 +1,15 @@
+resource "task-set" "InstallerUbuntuFIPS" {
+  name = "InstallerUbuntuFIPS"
+  uuid = "d14c3c2f-9c78-4382-9111-6245824ea205"
+  dateCreated = "2023-11-15T20:03:49.000Z"
+  description = "Setup Ubuntu FIPS appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "01243fe8-4a2d-4100-b623-7c2455f3a31f" },
+    { uuid = "07d4565e-a74c-42ec-adab-db9951340c34" },
+    { uuid = "197a58a6-2270-40d6-9052-ec951c702aba" },
+    { uuid = "b969b9c6-b20c-4836-add5-7ae7fa24345f" },
+    { uuid = "d9dc373d-a6bb-48a4-903f-a9baa8f63f7b" }
+  ]
+}

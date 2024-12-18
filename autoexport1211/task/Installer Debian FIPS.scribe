@@ -1,0 +1,16 @@
+resource "task" "Installer Debian FIPS" {
+  name = "Installer Debian FIPS"
+  uuid = "5a0c6d07-fde1-4f32-89b2-18724d1483ac"
+  dateCreated = "2023-11-20T19:48:33.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    {
+      content = { uuid = "1c5af473-fcf4-4298-83d6-a7c5bc74cb41" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
