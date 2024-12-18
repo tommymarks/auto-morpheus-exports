@@ -1,0 +1,4 @@
+resource "task-set-task" "9ac79b7c-9766-427c-954d-569ed833561c" {
+  uuid = "9ac79b7c-9766-427c-954d-569ed833561c"
+  task = { name = "Installer rpm update RHEL7" }
+}
