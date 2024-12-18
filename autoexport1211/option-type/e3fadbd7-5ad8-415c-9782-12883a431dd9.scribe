@@ -1,0 +1,28 @@
+resource "option-type" "e3fadbd7-5ad8-415c-9782-12883a431dd9" {
+  code = "e3fadbd7-5ad8-415c-9782-12883a431dd9"
+  name = "e3fadbd7-5ad8-415c-9782-12883a431dd9"
+  uuid = "a4898630-5429-47f1-874d-b13755cc1b16"
+  config = {
+    cloudField = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+    cloudFieldType = "field"
+    cloudId = ""
+    groupField = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    groupFieldType = "field"
+    groupId = ""
+    layoutField = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+    layoutFieldType = "field"
+    layoutId = ""
+    planField = "2e0455dc-d8ae-4e7b-88ed-e2d4d0bc0f21"
+    planFieldType = "field"
+    planId = ""
+  }
+  defaultValue = "pool-6"
+  displayOrder = 5
+  fieldContext = "config.customOptions"
+  fieldLabel = "Resource Pool"
+  fieldName = "resourcePool"
+  formField = true
+  helpBlock = "resource pool help"
+  refCode = "e3fadbd7-5ad8-415c-9782-12883a431dd9"
+  type = "resourcePool"
+}
