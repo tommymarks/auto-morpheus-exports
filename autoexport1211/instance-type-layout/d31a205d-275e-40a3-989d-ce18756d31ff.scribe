@@ -1,0 +1,12 @@
+resource "instance-type-layout" "d31a205d-275e-40a3-989d-ce18756d31ff" {
+  code = "d31a205d-275e-40a3-989d-ce18756d31ff"
+  name = "Ubuntu22"
+  uuid = "162d2dc9-3ecb-4c38-9fc9-f098a4cc1c08"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerDebian" } ]
+  workloads = [ { code = "08429b77-dbea-4a61-a0ae-9c6ecbde08a1" } ]
+}

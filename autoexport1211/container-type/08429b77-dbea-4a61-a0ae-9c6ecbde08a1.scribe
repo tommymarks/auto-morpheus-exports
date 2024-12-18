@@ -1,0 +1,16 @@
+resource "container-type" "08429b77-dbea-4a61-a0ae-9c6ecbde08a1" {
+  code = "08429b77-dbea-4a61-a0ae-9c6ecbde08a1"
+  name = "Amazon Ubuntu 22"
+  uuid = "5c5d3984-f1a0-43e4-97a6-bfd9de8d3206"
+  containerPorts = [ { uuid = "72996c0c-be86-49b6-9ddf-07c63cec69ea" } ]
+  containerVersion = "Ubuntu 22"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsubu22"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "15124ae5-7ac4-4c9b-84d8-ade2df53d23a" }
+}
