@@ -1,0 +1,13 @@
+resource "file-content" "b7782778-b048-4a2d-827a-e6c939a191f9" {
+  uuid = "b7782778-b048-4a2d-827a-e6c939a191f9"
+  content = <<EOFSCRIBE
+sudo -i
+wget -q http://downloads.morpheusdata.com/files/morpheus-cypher_0.8.0-1_amd64.deb
+dpkg -i morpheus-cypher_0.8.0-1_amd64.deb
+morpheus-cypher-ctl reconfigure
+sleep 10
+cat /var/log/morpheus-cypher/cypher/current | sed -nE 's/^.*Initialized Root Token: (\S+) .*$/\1/p'
+EOFSCRIBE
+  dateCreated = "2023-03-15T23:58:39.000Z"
+  lastUpdated = "2023-03-15T23:58:39.000Z"
+}
