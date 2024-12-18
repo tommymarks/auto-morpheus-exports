@@ -9,5 +9,9 @@ resource "instance-type" "custom-img" {
   hasAutoScale = true
   hasDeployment = true
   labels = [ "auto", "qa" ]
+  layouts = [
+    { code = "747e0a61-3e7d-4d27-9849-8950f1d99182" },
+    { code = "b4f05e39-8019-4acd-aeea-681454b915b6" }
+  ]
   visibility = "public"
 }
