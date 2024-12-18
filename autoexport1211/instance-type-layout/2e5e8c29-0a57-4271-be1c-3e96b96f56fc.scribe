@@ -1,0 +1,14 @@
+resource "instance-type-layout" "2e5e8c29-0a57-4271-be1c-3e96b96f56fc" {
+  code = "2e5e8c29-0a57-4271-be1c-3e96b96f56fc"
+  name = "ESXi Apache"
+  uuid = "85dfa9b3-213b-4588-9b7b-a1dcd95f8f01"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "esxi" }
+  workloads = [ { code = "5b3f7d59-db59-417a-b41c-b06d82d57c9a" } ]
+}
