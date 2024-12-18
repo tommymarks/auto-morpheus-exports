@@ -1,0 +1,12 @@
+resource "instance-type-layout" "09c1190f-ea1e-4764-83bb-f6af5b363a86" {
+  code = "09c1190f-ea1e-4764-83bb-f6af5b363a86"
+  name = "AmazonLinux2 FIPS"
+  uuid = "13d417fe-64f0-4951-aec1-9fdc5699ed4c"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "FIPS"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerAmazonLinux2FIPS" } ]
+  workloads = [ { code = "amazonlinux-amazon-2" } ]
+}
