@@ -1,0 +1,8 @@
+resource "compute-type-set" "a94bffcd-82d3-488e-a708-cce136a244ba-kubernetes-1.28-ubuntu-22.04-vmware-amd64" {
+  code = "a94bffcd-82d3-488e-a708-cce136a244ba-kubernetes-1.28-ubuntu-22.04-vmware-amd64"
+  name = "JC MKS Kubernetes 1.28 Cluster on Ubuntu 22.04-master-kubernetes-1.28-ubuntu-22.04-vmware-amd64-set"
+  computeServerType = { code = "vmwareKubeMaster" }
+  nameSuffix = "-master"
+  nodeType = "master"
+  workloadType = { code = "kubernetes-1.28-ubuntu-22.04-vmware-amd64" }
+}
