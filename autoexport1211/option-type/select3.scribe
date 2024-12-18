@@ -1,0 +1,13 @@
+resource "option-type" "select3" {
+  code = "select3"
+  name = "config.customOptions.select3"
+  uuid = "64ad7022-422f-44c2-8a27-e67c59cabece"
+  description = "sample select field"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Select 3"
+  fieldName = "select3"
+  optionList = { name = "rest get initial" }
+  optionSource = "list"
+  showOnEdit = false
+  type = "select"
+}
