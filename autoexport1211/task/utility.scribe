@@ -1,0 +1,15 @@
+resource "task" "utility" {
+  code = "utility"
+  name = "Get Server Cluster Config"
+  uuid = "bd2146ab-6bbe-4c0c-b9bf-473c06c473a0"
+  dateCreated = "2023-10-24T20:42:23.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-10-24T21:46:23.000Z"
+  options = [
+    {
+      content = { uuid = "052103e9-5081-47ec-b951-5a8c7a9d91c9" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
