@@ -1,0 +1,43 @@
+resource "container-type" "1d279037-560e-415c-823e-910073c6d853" {
+  code = "1d279037-560e-415c-823e-910073c6d853"
+  name = "NGINX latest"
+  uuid = "662304b3-b814-4944-a174-8d71a1193a95"
+  category = "nginx"
+  actions = [ { code = "generic-remove-node" } ]
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "vmCheck"
+  containerPorts = [
+    { uuid = "77aa1052-4454-4904-be88-bef2b1b943b8" },
+    { uuid = "dc864b83-10c3-4ee5-9592-8855708db697" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  hasSslCert = true
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "08d78d09-0008-42b9-bdd2-45987f2f4f6a" } ]
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html/"
+  mountLogs = "/var/log/nginx"
+  mountPoint = "/data"
+  mounts = [
+    { uuid = "6b4bf181-9093-4e6b-8b53-21fa773b9541" },
+    { code = "template: 3d015860-47cd-47e9-b83d-01e3f46406db" }
+  ]
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  scripts = [
+    { code = "6764c99d-735b-4ac4-9dcf-e2058ef95293" },
+    { code = "a0387b80-b362-4f16-81e5-50b3c3066b7c" },
+    { code = "7cb10f27-8a54-408d-98a1-5711c0ab32d4" }
+  ]
+  serverType = "vm"
+  shortName = "nginx"
+  showServerLogs = true
+  statTypeCode = "vm"
+  templates = [ { code = "3d015860-47cd-47e9-b83d-01e3f46406db" } ]
+  virtualImage = { code = "amazon.ec2.image.morpheus.ubuntu.20.04.20240531.amd64" }
+}
