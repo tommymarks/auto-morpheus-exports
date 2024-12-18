@@ -1,5 +1,5 @@
 resource "container-type-set" "amazon-centos-9-stream" {
   code = "amazon-centos-9-stream"
-  uuid = "c824c506-d494-48e6-a62f-0ac741b59de2"
+  uuid = "3ef0c5db-1876-4443-80b5-8067076a3844"
   workloadType = { code = "amazon-centos-9-stream" }
 }

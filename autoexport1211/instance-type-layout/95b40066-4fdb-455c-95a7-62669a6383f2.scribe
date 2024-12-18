@@ -1,0 +1,13 @@
+resource "instance-type-layout" "95b40066-4fdb-455c-95a7-62669a6383f2" {
+  code = "95b40066-4fdb-455c-95a7-62669a6383f2"
+  name = "CentOS9 Supplemental"
+  uuid = "a47995fa-4441-4a7a-88f1-45c02ebdd011"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalCentOS9" } ]
+  workloads = [ { code = "amazon-centos-9-stream" } ]
+}
