@@ -1,0 +1,14 @@
+resource "instance-type-layout" "321f3107-de7f-472d-a60e-54b438aefd06" {
+  code = "321f3107-de7f-472d-a60e-54b438aefd06"
+  name = "IBM Cloud Apache"
+  uuid = "aacdddea-aa7c-4098-bcc5-31ee50a8579a"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apacheweb" }
+  instanceVersion = "latest"
+  labels = [ "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "bluemix" }
+  workloads = [ { code = "bca737d6-d378-4ef2-b9d9-26d0d3cb1677" } ]
+}
