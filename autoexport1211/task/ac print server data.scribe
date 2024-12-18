@@ -1,0 +1,14 @@
+resource "task" "ac print server data" {
+  name = "ac print server data"
+  uuid = "b9122dcc-1089-418f-bf34-42a4532a3136"
+  dateCreated = "2023-12-01T20:58:34.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-11-21T22:26:21.000Z"
+  options = [
+    {
+      content = { uuid = "089ecb56-faa9-4d4c-8f3e-4bf7686228bc" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}

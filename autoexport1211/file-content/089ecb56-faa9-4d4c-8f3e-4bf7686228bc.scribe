@@ -1,0 +1,10 @@
+resource "file-content" "089ecb56-faa9-4d4c-8f3e-4bf7686228bc" {
+  uuid = "089ecb56-faa9-4d4c-8f3e-4bf7686228bc"
+  content = <<EOFSCRIBE
+println("server data: ${server}")
+println("Instance Data: ${instance}")
+
+EOFSCRIBE
+  dateCreated = "2023-12-01T20:58:34.000Z"
+  lastUpdated = "2024-11-21T22:26:21.000Z"
+}
