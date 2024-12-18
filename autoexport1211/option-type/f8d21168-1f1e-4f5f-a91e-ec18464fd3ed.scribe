@@ -1,0 +1,29 @@
+resource "option-type" "f8d21168-1f1e-4f5f-a91e-ec18464fd3ed" {
+  code = "f8d21168-1f1e-4f5f-a91e-ec18464fd3ed"
+  name = "f8d21168-1f1e-4f5f-a91e-ec18464fd3ed"
+  uuid = "4c05bafe-f7ae-4ff4-8110-e6db49a2b4ae"
+  config = {
+    addon = ""
+    addonPosition = ""
+    cloudField = "37c7a5ff-1196-4857-8463-292be3a8a6d8"
+    cloudFieldType = "field"
+    cloudId = ""
+    groupField = "612a9af0-5373-4956-9a93-2684591b1ea4"
+    groupFieldType = "field"
+    groupId = ""
+    layoutField = "f31a36f5-6af4-4322-9d3c-b56f376a2feb"
+    layoutFieldType = "field"
+    layoutId = ""
+    planField = "a209d181-33ca-4a01-a86a-2cc1663d036b"
+    planFieldType = "field"
+    planId = ""
+  }
+  defaultValue = "pool-12284"
+  displayOrder = 4
+  fieldContext = "config.customOptions"
+  fieldLabel = "Resource Pool"
+  fieldName = "resourcePool"
+  formField = true
+  refCode = "f8d21168-1f1e-4f5f-a91e-ec18464fd3ed"
+  type = "resourcePool"
+}
