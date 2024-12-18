@@ -1,0 +1,5 @@
+resource "task-set-task" "8d35dea6-d8cb-4e81-ba7f-e250e4d7e030" {
+  uuid = "8d35dea6-d8cb-4e81-ba7f-e250e4d7e030"
+  task = { name = "Ansible Tower" }
+  taskPhase = "provision"
+}
