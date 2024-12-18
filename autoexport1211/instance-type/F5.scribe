@@ -1,0 +1,9 @@
+resource "instance-type" "F5" {
+  code = "F5"
+  name = "F5-OVF"
+  uuid = "29b4a023-8b9c-4f56-80ee-db4146027d52"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "F5-OVF"
+  optionTypes = [ { code = "f5Pass" } ]
+}

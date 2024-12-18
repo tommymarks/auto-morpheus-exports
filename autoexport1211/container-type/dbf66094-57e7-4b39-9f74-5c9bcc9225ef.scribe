@@ -1,0 +1,15 @@
+resource "container-type" "dbf66094-57e7-4b39-9f74-5c9bcc9225ef" {
+  code = "dbf66094-57e7-4b39-9f74-5c9bcc9225ef"
+  name = "F5"
+  uuid = "8ae584f1-8000-43bc-a3ec-ae10bff2830d"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "F5"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "c52344cb-8ad9-4694-9bcd-a7acff282234" }
+}
