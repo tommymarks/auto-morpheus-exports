@@ -1,0 +1,14 @@
+resource "instance-type-layout" "a40c1851-0b25-4709-a7c4-875fc915fe82" {
+  code = "a40c1851-0b25-4709-a7c4-875fc915fe82"
+  name = "Debian11 Supplemental"
+  uuid = "dc806145-f0c9-453b-9ae1-ef99f28926d6"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalDebian" } ]
+  workloads = [ { code = "debian-amazon-11" } ]
+}
