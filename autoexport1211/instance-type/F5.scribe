@@ -5,5 +5,6 @@ resource "instance-type" "F5" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "F5-OVF"
+  layouts = [ { code = "405f7723-031e-4a17-b6ee-40a9392b4b14" } ]
   optionTypes = [ { code = "f5Pass" } ]
 }
