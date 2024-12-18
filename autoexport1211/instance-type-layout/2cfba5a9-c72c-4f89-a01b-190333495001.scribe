@@ -1,0 +1,14 @@
+resource "instance-type-layout" "2cfba5a9-c72c-4f89-a01b-190333495001" {
+  code = "2cfba5a9-c72c-4f89-a01b-190333495001"
+  name = "Windows Server"
+  uuid = "b18feb80-7e9c-4b32-936c-28feb169fef5"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "win" }
+  instanceVersion = "2022"
+  labels = [ "auto", "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "olvm-provision-standard" }
+  supportsConvertToManaged = true
+  workloads = [ { code = "fc6507d8-898f-4387-9c5d-b12523b97453" } ]
+}
