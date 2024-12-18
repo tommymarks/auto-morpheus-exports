@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b4f05e39-8019-4acd-aeea-681454b915b6" {
+  code = "b4f05e39-8019-4acd-aeea-681454b915b6"
+  name = "Custom Docker"
+  uuid = "90f6deb0-c502-40ac-baf1-6429a5496b17"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "docker"
+  labels = [ "auto", "qa" ]
+  memoryRequirement = 0
+  provisionType = { code = "docker" }
+  workloads = [ { code = "d6fd30f7-8b78-47d6-a422-4a8d560d9f73" } ]
+}
