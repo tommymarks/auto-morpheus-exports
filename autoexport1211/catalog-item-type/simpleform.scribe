@@ -1,0 +1,115 @@
+resource "catalog-item-type" "simpleform" {
+  code = "simpleform"
+  name = "Simple Form"
+  uuid = "36b6f15c-ce72-4b20-ac01-386c8a7a641e"
+  category = "simple"
+  config = {
+    name = "$${userInitials}-simpleform-$${sequence}"
+    backup = {
+      createBackup = true
+      jobAction = "new"
+      jobRetentionCount = "3"
+      jobSchedule = 2
+      providerBackupType = 42
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Docker", id = 5 }
+    config = {
+      createUser = true
+      isEC2 = false
+      isVpcSelectable = true
+      poolProviderType = null
+      provisionServerId = null
+      resourcePoolId = "pool-223"
+    }
+    defaultExpandAdvanced = false
+    environment = "2"
+    group = { name = "QA Docker", id = "6" }
+    hideLock = true
+    hostName = "$${userInitials}-simpleform-$${sequence}"
+    layout = { code = "524f1d9f-959b-4ad9-983e-802311c2bbff", id = 1332 }
+    loadBalancer = [
+      {
+        name = "$${userInitials}-simpleform-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 80
+        id = ""
+        internalPort = 80
+        loadBalancePort = null
+        loadBalanceProtocol = "http"
+        protocol = "https"
+        vipHostname = "$${userInitials}-simpleform-$${sequence}.localdomain"
+        vipName = "$${userInitials}-simpleform-$${sequence}-load-balancer"
+        vipPort = 80
+      },
+      {
+        name = "$${userInitials}-simpleform-$${sequence}"
+        balanceMode = "leastconnections"
+        externalAddressCheck = false
+        externalPort = 443
+        id = ""
+        internalPort = 443
+        loadBalancePort = null
+        loadBalanceProtocol = "https"
+        protocol = "https"
+        vipHostname = "$${userInitials}-simpleform-$${sequence}.localdomain"
+        vipName = "$${userInitials}-simpleform-$${sequence}-load-balancer"
+        vipPort = 443
+      }
+    ]
+    plan = { code = "container-128", id = 101 }
+    ports = [
+      {
+        code = null
+        name = "Http"
+        externalPort = 80
+        id = 327
+        internalPort = 80
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTP"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      },
+      {
+        code = null
+        name = "Https"
+        externalPort = 443
+        id = 328
+        internalPort = 443
+        loadBalance = true
+        loadBalancePort = null
+        loadBalanceProtocol = "HTTPS"
+        shortName = null
+        sortOrder = 0
+        visible = true
+      }
+    ]
+    showScale = false
+    type = "nginxweb"
+    version = "latest"
+    volumes = [
+      {
+        name = "data"
+        customMaxStorage = false
+        hasDatastore = false
+        index = 0
+        maxStorage = 1073741824
+        readonlyName = false
+        rootVolume = true
+        size = 1
+        volumeCustomizable = false
+      }
+    ]
+  }
+  darkIconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/99/logo/nginx_original.svg"
+  dateCreated = "2023-12-18T05:09:36.000Z"
+  description = "don't delete"
+  iconPath = "https://feature.morpheusdata.com/storage/logos/uploads/InstanceType/99/logo/nginx_original.svg"
+  labels = [ "auto", "keep", "simple" ]
+  lastUpdated = "2024-08-16T14:07:57.000Z"
+  refType = "InstanceType"
+}
