@@ -1,0 +1,81 @@
+resource "catalog-item-type" "installermostrecent" {
+  code = "installermostrecent"
+  name = "Installer most recent"
+  uuid = "7f27d4ba-4752-4abd-b8db-9f09024fbd72"
+  config = {
+    name = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    backup = {
+      backupJob = {
+        retentionCount = "3"
+        scheduleTypeId = "2"
+        syntheticFullEnabled = false
+        syntheticFullSchedule = null
+      }
+      createBackup = true
+      jobAction = "new"
+      providerBackupType = 11
+      target = 194
+      veeamManagedServer = ""
+    }
+    cloud = { name = "QA Amazon", id = 3 }
+    config = {
+      availabilityId = null
+      createUser = true
+      customOptions = {
+        installerLink = "https://downloads.morpheusdata.com/files/morpheus-appliance_7.0.7-1_amd64.deb"
+        installerPackage = "morpheus-appliance_7.0.7-1_amd64.deb"
+        lastSuccessfulBuild = "https://jenkins.morpheusdata.com/job/morpheus-ui-8.0.0-core/lastSuccessfulBuild/artifact/morpheus-ui/build/libs/morpheus-ui.war"
+      }
+      instanceProfile = null
+      isEC2 = "false"
+      isVpcSelectable = true
+      kmsKeyId = null
+      noAgent = true
+      poolProviderType = null
+      publicIpType = "subnet"
+      resourcePoolId = "pool-12284"
+      securityId = null
+    }
+    copies = 1
+    defaultExpandAdvanced = false
+    group = { name = "All Clouds", id = "1" }
+    hideLock = true
+    hostName = "$${userInitials}-feat-$${cloudCode}-$${type}-$${sequence}"
+    instance = { userGroup = { id = "" } }
+    layout = { code = "32d50f0f-dcde-4497-99f9-f7ea9ba4ee05", id = 2877 }
+    networkInterfaces = [
+      {
+        network = {
+          id = "network-28"
+          idName = "labs_web_1a (subnet-72b9162b)"
+        }
+        primaryInterface = true
+        showNetworkDhcpLabel = true
+        showNetworkPoolLabel = false
+      }
+    ]
+    plan = { code = "amazon-t2.xlarge", id = 548 }
+    securityGroups = [ { id = "sg-4eaf812b" } ]
+    showScale = false
+    templateParameter = null
+    type = "morpheusAppliance"
+    version = "most recent"
+    volumes = [
+      {
+        name = "root"
+        maxIOPS = null
+        maxStorage = 171798691840
+        readonlyName = false
+        rootVolume = true
+        size = 160
+        storageType = 23
+        vId = 32818
+        volumeCustomizable = true
+      }
+    ]
+  }
+  dateCreated = "2024-11-08T19:49:41.000Z"
+  labels = [ "installer" ]
+  lastUpdated = "2024-11-13T22:05:56.000Z"
+  refType = "InstanceType"
+}
