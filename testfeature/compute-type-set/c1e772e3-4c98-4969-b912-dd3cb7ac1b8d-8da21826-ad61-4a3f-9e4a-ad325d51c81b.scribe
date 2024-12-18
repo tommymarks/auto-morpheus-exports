@@ -1,0 +1,12 @@
+resource "compute-type-set" "c1e772e3-4c98-4969-b912-dd3cb7ac1b8d-8da21826-ad61-4a3f-9e4a-ad325d51c81b" {
+  code = "c1e772e3-4c98-4969-b912-dd3cb7ac1b8d-8da21826-ad61-4a3f-9e4a-ad325d51c81b"
+  name = "Google Custom Ubuntu 16-worker-8da21826-ad61-4a3f-9e4a-ad325d51c81b-set"
+  canAddNodes = true
+  computeServerType = { code = "googleLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "8da21826-ad61-4a3f-9e4a-ad325d51c81b" }
+}
