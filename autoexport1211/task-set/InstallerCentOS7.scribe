@@ -1,0 +1,14 @@
+resource "task-set" "InstallerCentOS7" {
+  name = "InstallerCentOS7"
+  uuid = "f9800437-0fa9-4051-98f1-7159559fda00"
+  dateCreated = "2024-07-03T14:24:18.000Z"
+  description = "Setup CentOS 7 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2024-07-03T14:24:18.000Z"
+  taskSetTasks = [
+    { uuid = "169d0dc5-6537-4bdf-9e14-8c3d802281d4" },
+    { uuid = "45561871-5884-49b2-9203-e275363b3a58" },
+    { uuid = "551b0dc6-9810-47e2-88dd-370468cbe1a5" },
+    { uuid = "f616d754-fa6f-403d-9bf6-a3b352d60444" }
+  ]
+}
