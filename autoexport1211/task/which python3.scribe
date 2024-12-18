@@ -1,0 +1,14 @@
+resource "task" "which python3" {
+  name = "which python3"
+  uuid = "51b2389b-2b77-4f7d-be7d-0fcd2a81819a"
+  dateCreated = "2024-03-29T13:30:05.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-03-29T13:30:05.000Z"
+  options = [
+    {
+      content = { uuid = "3c0a07cc-108e-4c1a-9eab-e1c82bca102c" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

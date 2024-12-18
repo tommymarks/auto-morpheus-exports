@@ -1,0 +1,6 @@
+resource "file-content" "3c0a07cc-108e-4c1a-9eab-e1c82bca102c" {
+  uuid = "3c0a07cc-108e-4c1a-9eab-e1c82bca102c"
+  content = "which python3"
+  dateCreated = "2024-03-29T13:30:05.000Z"
+  lastUpdated = "2024-03-29T13:30:05.000Z"
+}
