@@ -1,0 +1,15 @@
+resource "instance-type-layout" "olvm-rocky-9-single" {
+  code = "olvm-rocky-9-single"
+  name = "Rocky Linux 9 VM"
+  uuid = "119f7d30-098c-427d-b7e7-b2dbdd89948a"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "rocky" }
+  instanceVersion = "9"
+  provisionType = { code = "olvm-provision-standard" }
+  serverType = "vm"
+  sortOrder = 18
+  supportsConvertToManaged = true
+  workloads = [ { code = "olvm-rocky-9-set" } ]
+}
