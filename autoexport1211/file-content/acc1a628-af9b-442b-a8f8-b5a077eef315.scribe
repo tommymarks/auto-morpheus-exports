@@ -1,0 +1,6 @@
+resource "file-content" "acc1a628-af9b-442b-a8f8-b5a077eef315" {
+  uuid = "acc1a628-af9b-442b-a8f8-b5a077eef315"
+  content = "echo 'shared hello world!'"
+  dateCreated = "2024-01-31T19:50:31.000Z"
+  lastUpdated = "2024-03-29T18:32:17.000Z"
+}
