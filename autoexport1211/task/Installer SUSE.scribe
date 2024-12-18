@@ -1,0 +1,19 @@
+resource "task" "Installer SUSE" {
+  name = "Installer SUSE"
+  uuid = "8a229db1-45ba-4977-909a-bbbbb71cbd70"
+  dateCreated = "2023-10-10T19:11:14.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-13T21:07:54.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "beca985a-0e89-4c69-9426-289939243464" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}

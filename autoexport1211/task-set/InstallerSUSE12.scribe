@@ -1,0 +1,15 @@
+resource "task-set" "InstallerSUSE12" {
+  name = "InstallerSUSE12"
+  uuid = "adcbfc71-b405-40f4-90f5-d0f5b47376ee"
+  dateCreated = "2023-10-10T19:11:14.000Z"
+  description = "Setup SUSE 12 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:54:44.000Z"
+  taskSetTasks = [
+    { uuid = "210b890a-7b61-4875-a8c6-200792a6dc92" },
+    { uuid = "35555c52-009f-47a9-b5bd-f18b4b5016e4" },
+    { uuid = "3cd38cd2-68bd-4e9a-a476-e22123d772e6" },
+    { uuid = "a61c9b99-d05d-4d54-87a0-a78f4409263d" },
+    { uuid = "c3cb33bd-aed8-4615-8e0d-cc02eeda3992" }
+  ]
+}

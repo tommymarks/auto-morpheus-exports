@@ -1,0 +1,5 @@
+resource "task-set-task" "c3cb33bd-aed8-4615-8e0d-cc02eeda3992" {
+  uuid = "c3cb33bd-aed8-4615-8e0d-cc02eeda3992"
+  task = { name = "Installer rpm wget" }
+  taskOrder = 3
+}
