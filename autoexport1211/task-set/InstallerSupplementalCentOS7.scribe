@@ -1,0 +1,13 @@
+resource "task-set" "InstallerSupplementalCentOS7" {
+  name = "InstallerSupplementalCentOS7"
+  uuid = "4198cb42-86da-4231-97e3-311de5c23da6"
+  dateCreated = "2024-07-03T16:51:00.000Z"
+  labels = [ "installer" ]
+  lastUpdated = "2024-07-03T16:51:00.000Z"
+  taskSetTasks = [
+    { uuid = "4f1a5d1e-bd5c-436e-aec4-35d4c39f197a" },
+    { uuid = "ab6610e1-e526-41cd-97dc-f06cb05562b5" },
+    { uuid = "ab6ced57-b08c-4c92-b630-7e425c6769d1" },
+    { uuid = "d5acebb0-4c8a-4b31-ac07-8b0acc2f069f" }
+  ]
+}
