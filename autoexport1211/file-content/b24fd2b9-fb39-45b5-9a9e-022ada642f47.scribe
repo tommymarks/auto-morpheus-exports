@@ -1,0 +1,9 @@
+resource "file-content" "b24fd2b9-fb39-45b5-9a9e-022ada642f47" {
+  uuid = "b24fd2b9-fb39-45b5-9a9e-022ada642f47"
+  content = <<EOFSCRIBE
+echo "$(date) - job task" | tee -a /tmp/job_task.txt
+echo "here is some output"
+EOFSCRIBE
+  dateCreated = "2023-03-18T19:50:53.000Z"
+  lastUpdated = "2023-03-18T19:50:53.000Z"
+}

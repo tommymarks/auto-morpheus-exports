@@ -1,0 +1,15 @@
+resource "task" "Job: Task" {
+  name = "Job: Task"
+  uuid = "440cb70e-c610-4904-b76b-20362e134973"
+  dateCreated = "2023-03-18T19:50:53.000Z"
+  executeTarget = "local"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-18T19:50:53.000Z"
+  options = [
+    {
+      content = { uuid = "b24fd2b9-fb39-45b5-9a9e-022ada642f47" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
