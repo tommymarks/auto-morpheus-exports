@@ -1,0 +1,16 @@
+resource "container-type" "94f90f61-c669-4f50-b89e-3518be5c848f" {
+  code = "94f90f61-c669-4f50-b89e-3518be5c848f"
+  name = "Amazon RHEL 8"
+  uuid = "1adf0aa9-f377-41b5-8a73-22987744bfc6"
+  containerPorts = [ { uuid = "1fbdf353-d5e8-4dd0-9a25-f63c6a042958" } ]
+  containerVersion = "RHEL 8"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsrhel8"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "0cb634e3-ad77-45d5-ba2a-07d5241f3d8e" }
+}
