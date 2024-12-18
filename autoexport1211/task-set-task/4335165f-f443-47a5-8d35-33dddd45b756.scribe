@@ -1,0 +1,6 @@
+resource "task-set-task" "4335165f-f443-47a5-8d35-33dddd45b756" {
+  uuid = "4335165f-f443-47a5-8d35-33dddd45b756"
+  task = { name = "ac wf 3" }
+  taskOrder = 1
+  taskPhase = "reconfigure"
+}

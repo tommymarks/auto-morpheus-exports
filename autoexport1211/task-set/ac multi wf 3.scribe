@@ -1,0 +1,11 @@
+resource "task-set" "ac multi wf 3" {
+  name = "ac multi wf 3"
+  uuid = "907d2426-e22c-4395-91c5-c4b8b0612cf2"
+  dateCreated = "2024-08-06T18:26:59.000Z"
+  lastUpdated = "2024-08-06T18:40:52.000Z"
+  taskSetTasks = [
+    { uuid = "4335165f-f443-47a5-8d35-33dddd45b756" },
+    { uuid = "be8ccbc7-f440-4a39-a755-9e49fab03d52" },
+    { uuid = "e547f3a1-25e8-4e71-83a8-537310763c9b" }
+  ]
+}

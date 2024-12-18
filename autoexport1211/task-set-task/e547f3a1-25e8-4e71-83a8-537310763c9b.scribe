@@ -1,0 +1,5 @@
+resource "task-set-task" "e547f3a1-25e8-4e71-83a8-537310763c9b" {
+  uuid = "e547f3a1-25e8-4e71-83a8-537310763c9b"
+  task = { name = "ac wf 3" }
+  taskPhase = "provision"
+}
