@@ -1,0 +1,9 @@
+resource "file-content" "9d305c42-07f8-44e6-912f-424260262afa" {
+  uuid = "9d305c42-07f8-44e6-912f-424260262afa"
+  contentPath = "./specs/armspec.json"
+  contentRef = "auto"
+  dateCreated = "2023-07-19T16:06:50.000Z"
+  lastUpdated = "2023-07-19T16:06:50.000Z"
+  repository = { name = "terraform-samples" }
+  sourceType = "repository"
+}
