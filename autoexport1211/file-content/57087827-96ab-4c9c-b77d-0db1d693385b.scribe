@@ -1,0 +1,13 @@
+resource "file-content" "57087827-96ab-4c9c-b77d-0db1d693385b" {
+  uuid = "57087827-96ab-4c9c-b77d-0db1d693385b"
+  content = <<EOFSCRIBE
+com.morpheus.Instance.withNewSession {
+def instance = com.morpheus.Instance.get(46326l)
+instance.setConfigProperty('brownfield',true)
+instance.save(flush:true)
+}
+return null
+EOFSCRIBE
+  dateCreated = "2024-10-30T00:59:39.000Z"
+  lastUpdated = "2024-10-30T01:00:03.000Z"
+}
