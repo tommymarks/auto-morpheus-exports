@@ -1,0 +1,22 @@
+resource "file-content" "6b14974e-cb34-41ff-9e93-cb4668497835" {
+  uuid = "6b14974e-cb34-41ff-9e93-cb4668497835"
+  content = <<EOFSCRIBE
+cd /opt/morpheus/lib/morpheus
+
+rm morpheus-ui.war
+
+wget --auth-no-challenge --user=svc.morpheus-hpe --password=4dSxqPmfcFrK https://jenkins.morpheusdata.com/job/morpheus-ui-8.0.1-core/lastSuccessfulBuild/artifact/morpheus-ui/build/libs/morpheus-ui.war
+
+chown morpheus-app.morpheus-app /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+chmod 600 /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+morpheus-ctl graceful-kill morpheus-ui
+
+morpheus-ctl start morpheus-ui
+
+exit 0
+EOFSCRIBE
+  dateCreated = "2024-12-04T17:15:15.000Z"
+  lastUpdated = "2024-12-04T17:16:14.000Z"
+}
