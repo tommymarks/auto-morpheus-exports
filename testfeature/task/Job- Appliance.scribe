@@ -1,0 +1,15 @@
+resource "task" "Job: Appliance" {
+  name = "Job: Appliance"
+  uuid = "0775bfa0-6ff1-48ff-acac-149d5e30fce1"
+  dateCreated = "2023-03-18T19:49:52.000Z"
+  executeTarget = "local"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-18T19:49:52.000Z"
+  options = [
+    {
+      content = { uuid = "fb9e28c1-9470-4cb3-a4ec-569534ccaf28" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,6 @@
+resource "file-content" "fb9e28c1-9470-4cb3-a4ec-569534ccaf28" {
+  uuid = "fb9e28c1-9470-4cb3-a4ec-569534ccaf28"
+  content = "echo \"$(date) - appliance\" | tee -a /opt/morpheus/.local/job_appliance.txt"
+  dateCreated = "2023-03-18T19:49:52.000Z"
+  lastUpdated = "2023-03-18T19:49:52.000Z"
+}
