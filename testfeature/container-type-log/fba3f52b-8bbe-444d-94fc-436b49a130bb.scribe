@@ -1,6 +1,0 @@
-resource "container-type-log" "fba3f52b-8bbe-444d-94fc-436b49a130bb" {
-  name = "logs"
-  uuid = "fba3f52b-8bbe-444d-94fc-436b49a130bb"
-  containerPath = "/var/log/apache2"
-  hostPath = "/var/log/apache2"
-}

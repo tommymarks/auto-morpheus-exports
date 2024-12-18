@@ -1,8 +1,0 @@
-resource "option-type-list" "API Server" {
-  name = "API Server"
-  uuid = "85ea7a91-a48d-4d92-b722-9c688909a1fd"
-  apiType = "servers"
-  labels = [ "auto", "qa" ]
-  realTime = true
-  type = "api"
-}

@@ -1,9 +1,0 @@
-resource "task-set" "Job: Appliance" {
-  name = "Job: Appliance"
-  uuid = "11214c90-1948-452d-8eaa-33f986e5210c"
-  dateCreated = "2023-03-18T19:51:18.000Z"
-  labels = [ "auto", "qa" ]
-  lastUpdated = "2023-03-18T19:51:18.000Z"
-  taskSetTasks = [ { uuid = "7cf16bfc-7196-41db-9996-b587843ebf4c" } ]
-  taskSetType = "operation"
-}

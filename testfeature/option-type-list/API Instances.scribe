@@ -1,8 +1,0 @@
-resource "option-type-list" "API Instances" {
-  name = "API Instances"
-  uuid = "fae6f5f7-637b-4ae8-9819-c39427e07af9"
-  apiType = "instances"
-  labels = [ "auto", "qa" ]
-  realTime = true
-  type = "api"
-}

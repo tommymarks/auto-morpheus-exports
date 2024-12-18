@@ -1,9 +1,0 @@
-resource "file-content" "7a5e2a34-d029-46e7-86ab-504c48c01b40" {
-  uuid = "7a5e2a34-d029-46e7-86ab-504c48c01b40"
-  content = <<EOFSCRIBE
-echo "$(date) - job workflow" | tee -a /tmp/job_workflow.txt
-echo "here is some output"
-EOFSCRIBE
-  dateCreated = "2023-03-18T19:50:24.000Z"
-  lastUpdated = "2023-03-18T19:50:24.000Z"
-}

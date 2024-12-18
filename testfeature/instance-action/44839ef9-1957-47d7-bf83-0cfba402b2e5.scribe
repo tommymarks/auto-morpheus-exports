@@ -1,9 +1,0 @@
-resource "instance-action" "44839ef9-1957-47d7-bf83-0cfba402b2e5" {
-  code = "44839ef9-1957-47d7-bf83-0cfba402b2e5"
-  name = "Add Node"
-  uuid = "547a8b04-818f-443b-bb1c-d945a1f5d743"
-  actionCode = "scaleInstance"
-  countEnabled = true
-  description = "This will add an additional node"
-  provisionSelectType = "zone"
-}
