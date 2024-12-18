@@ -18,6 +18,7 @@ resource "option-type" "16823a1a-d8be-49dd-b82b-580d5b911dc0" {
  "maxCoresPerSocket": null
 }
 
+
 EOFSCRIBE
     diskField = "be380246-fc54-4228-a875-cfd4407b7ad2"
     groupField = "0c10c7e4-2970-4f6d-a9de-104829851290"
