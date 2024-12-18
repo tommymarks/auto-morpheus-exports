@@ -1,0 +1,13 @@
+resource "instance-type-layout" "cc88fe67-ffc4-40a4-a420-00458dc5c4e9" {
+  code = "cc88fe67-ffc4-40a4-a420-00458dc5c4e9"
+  name = "Ubuntu18"
+  uuid = "bde60792-89a6-4b82-b5ce-063b61213179"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerDebian" } ]
+  workloads = [ { code = "48b3f9d9-c09e-4520-bfc0-dd09b3aef95d" } ]
+}
