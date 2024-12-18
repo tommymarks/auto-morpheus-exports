@@ -1,0 +1,12 @@
+resource "compute-type-set" "275e24bb-9997-4d30-90f4-9dcb70e8d92c-43111993-0565-48c6-9e32-d1dfd1770f96" {
+  code = "275e24bb-9997-4d30-90f4-9dcb70e8d92c-43111993-0565-48c6-9e32-d1dfd1770f96"
+  name = "Custom Docker Nutanix Element-worker-43111993-0565-48c6-9e32-d1dfd1770f96-set"
+  canAddNodes = true
+  computeServerType = { code = "nutanixLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "43111993-0565-48c6-9e32-d1dfd1770f96" }
+}

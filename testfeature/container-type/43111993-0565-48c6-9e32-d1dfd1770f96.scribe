@@ -1,0 +1,19 @@
+resource "container-type" "43111993-0565-48c6-9e32-d1dfd1770f96" {
+  code = "43111993-0565-48c6-9e32-d1dfd1770f96"
+  name = "Custom Docker Nutanix Element"
+  uuid = "9cca090d-6d95-49df-92a0-895e5ab1cbe6"
+  containerPorts = [ { uuid = "df2d3581-6fed-4c4f-90cc-ea7a56aeb191" } ]
+  containerVersion = "Ubuntu 20"
+  entryPoint = ""
+  labels = [ "auto", "qa" ]
+  logTypeCode = "vm"
+  provisionType = { code = "nutanix" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custdock"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "nutanix.prism.image.morpheus.ubuntu.20.04.20240604.ubuntu.20.04"
+  }
+}
