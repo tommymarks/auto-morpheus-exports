@@ -1,0 +1,15 @@
+resource "task" "Sleep Test 1" {
+  name = "Sleep Test 1"
+  uuid = "414dbf99-248e-4bfd-b25e-585bb15fb1da"
+  dateCreated = "2023-07-21T20:01:23.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "efe03e05-dc4e-49f9-9a29-31c26107b967" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

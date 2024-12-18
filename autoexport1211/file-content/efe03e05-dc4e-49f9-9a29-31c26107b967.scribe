@@ -1,0 +1,6 @@
+resource "file-content" "efe03e05-dc4e-49f9-9a29-31c26107b967" {
+  uuid = "efe03e05-dc4e-49f9-9a29-31c26107b967"
+  content = "sleep 3600"
+  dateCreated = "2023-07-21T20:01:23.000Z"
+  lastUpdated = "2023-07-21T20:01:23.000Z"
+}
