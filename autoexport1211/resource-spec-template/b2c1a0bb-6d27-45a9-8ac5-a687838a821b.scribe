@@ -1,0 +1,10 @@
+resource "resource-spec-template" "b2c1a0bb-6d27-45a9-8ac5-a687838a821b" {
+  name = "api-test-kube-spectemplate"
+  uuid = "b2c1a0bb-6d27-45a9-8ac5-a687838a821b"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-06-28T19:57:59.000Z"
+  lastUpdated = "2023-07-19T19:30:35.000Z"
+  template = { uuid = "1aa239c8-a5fc-46c9-ab79-d05dc5a910a4" }
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}

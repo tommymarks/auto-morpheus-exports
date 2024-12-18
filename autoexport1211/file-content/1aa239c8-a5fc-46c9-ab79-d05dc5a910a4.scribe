@@ -1,0 +1,38 @@
+resource "file-content" "1aa239c8-a5fc-46c9-ab79-d05dc5a910a4" {
+  uuid = "1aa239c8-a5fc-46c9-ab79-d05dc5a910a4"
+  content = <<EOFSCRIBE
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          requests:
+            memory: 800Mi
+            cpu: 100m
+          limits:
+            memory: 800Mi
+            cpu: 1200m
+        ports:
+        - containerPort: 80
+
+EOFSCRIBE
+  dateCreated = "2023-06-28T19:57:59.000Z"
+  lastUpdated = "2023-06-28T19:57:59.000Z"
+}
