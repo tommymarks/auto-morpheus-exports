@@ -1,0 +1,12 @@
+resource "compute-type-set" "41d4c973-55c0-4b28-8b87-73efcf8650c5-95eeb45a-64c5-4c7d-8b3c-15190a9377f2" {
+  code = "41d4c973-55c0-4b28-8b87-73efcf8650c5-95eeb45a-64c5-4c7d-8b3c-15190a9377f2"
+  name = "UpCloud Custom Centos 7-worker-95eeb45a-64c5-4c7d-8b3c-15190a9377f2-set"
+  canAddNodes = true
+  computeServerType = { code = "upcloudLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "95eeb45a-64c5-4c7d-8b3c-15190a9377f2" }
+}

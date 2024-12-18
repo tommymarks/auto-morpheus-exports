@@ -1,0 +1,19 @@
+resource "container-type" "95eeb45a-64c5-4c7d-8b3c-15190a9377f2" {
+  code = "95eeb45a-64c5-4c7d-8b3c-15190a9377f2"
+  name = "Custom Docker UpCloud"
+  uuid = "1fd91d46-0f23-4958-a566-c8218c028904"
+  containerPorts = [ { uuid = "5abd2591-84c8-485d-a4b2-dbaf9bd7433e" } ]
+  containerVersion = "Ubuntu 20"
+  entryPoint = ""
+  labels = [ "auto", "qa" ]
+  logTypeCode = "vm"
+  provisionType = { code = "upcloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custdock"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "upcloud.image.public.template.01000000-0000-4000-8000-000030200200"
+  }
+}
