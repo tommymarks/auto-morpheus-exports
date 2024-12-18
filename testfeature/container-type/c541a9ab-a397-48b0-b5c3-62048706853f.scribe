@@ -1,0 +1,56 @@
+resource "container-type" "c541a9ab-a397-48b0-b5c3-62048706853f" {
+  code = "c541a9ab-a397-48b0-b5c3-62048706853f"
+  name = "Custom VMware"
+  uuid = "221021a5-c6f0-4b93-a2fb-c4166be0c9c2"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [
+    { uuid = "048e76eb-7c63-47a8-b0d5-bfdf46556d38" },
+    { uuid = "cc3d830d-ee65-4d06-9364-4b286771cba1" },
+    { uuid = "ae30c89f-cbc6-443f-9518-85a9f13fef9d" }
+  ]
+  containerVersion = "vmdk"
+  entryPoint = ""
+  labels = [ "auto", "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "da27f0d4-f2ed-45f5-803d-48be749e769d" } ]
+  mountConfig = "/morpheus/config"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mounts = [
+    { uuid = "762dbf43-1822-4f06-82ab-b6879e2095f5" },
+    { code = "template: 94545f29-bc29-4c53-bb2e-54e2deaee196" },
+    { code = "template: 1a332c3c-a874-4df0-aedc-c501069f3d1b" },
+    { code = "template: 8b49da3b-d176-4e8d-9315-fe9b69581b35" },
+    { code = "template: d26b11c0-4479-4f05-bba6-00655aa9ff0f" },
+    { code = "template: fb12dacc-3c17-4287-b52f-b96a78061eaa" }
+  ]
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  scripts = [
+    { code = "dce1f760-e25f-4f4b-b7b7-abd4117b9461" },
+    { code = "efd42c6d-9f6c-42d8-83a8-22695737a0a3" },
+    { code = "230a6ef2-24c0-4f8a-ad98-1a06a57035bb" },
+    { code = "40f50986-16af-45cf-8320-2c0b804b1d69" },
+    { code = "92a43997-988e-4fce-8a92-970b4c806064" },
+    { code = "35077983-a66d-4e6c-9850-1919fbda6afe" },
+    { code = "1ce8e94f-9e01-430c-b207-73d6fc79ba23" },
+    { code = "81b41d52-0c25-4a7d-9276-f8f26d11b315" },
+    { code = "640796fd-73be-4fa7-aed2-df4cd19fdd9f" },
+    { code = "13bd53a2-8f0b-4ac8-8c11-4f93e85c3639" },
+    { code = "a6e14b50-1e30-4655-bd4c-6fd57a0dbed3" },
+    { code = "a67ab8cc-478f-4f33-9693-38e5ca6b8833" }
+  ]
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  statTypeCode = "vm"
+  templates = [
+    { code = "fb12dacc-3c17-4287-b52f-b96a78061eaa" },
+    { code = "94545f29-bc29-4c53-bb2e-54e2deaee196" },
+    { code = "8b49da3b-d176-4e8d-9315-fe9b69581b35" },
+    { code = "1a332c3c-a874-4df0-aedc-c501069f3d1b" },
+    { code = "d26b11c0-4479-4f05-bba6-00655aa9ff0f" }
+  ]
+  virtualImage = { code = "vmware.vsphere.image.morpheus.apache.2.4-1" }
+}

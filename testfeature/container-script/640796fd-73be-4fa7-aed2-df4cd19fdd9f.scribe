@@ -1,0 +1,15 @@
+resource "container-script" "640796fd-73be-4fa7-aed2-df4cd19fdd9f" {
+  code = "640796fd-73be-4fa7-aed2-df4cd19fdd9f"
+  name = "phase: post provision"
+  uuid = "0ba259fe-0764-43e2-a181-af6ebb947198"
+  dateCreated = "2023-03-17T02:03:22.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:05:42.000Z"
+  script = <<EOFSCRIBE
+echo "$(date) - post provision" | tee -a /var/tmp/phase_script.txt
+echo whaddup
+echo ERROR: Did I do that? 1>&2
+EOFSCRIBE
+  scriptPhase = "postProvision"
+  sudoUser = true
+}
