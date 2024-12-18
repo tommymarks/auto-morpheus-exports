@@ -1,0 +1,4 @@
+resource "task-set-task" "34eed5e4-e82f-480e-9d75-a28f2276a90a" {
+  uuid = "34eed5e4-e82f-480e-9d75-a28f2276a90a"
+  task = { name = "Installer CentOS9" }
+}

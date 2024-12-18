@@ -1,0 +1,13 @@
+resource "task-set" "InstallerSupplementalCentOS9" {
+  name = "InstallerSupplementalCentOS9"
+  uuid = "943ff7f5-b7a3-49de-b63d-842b541a4898"
+  dateCreated = "2023-11-13T21:24:44.000Z"
+  description = "Setup CentOS 9 appliance via supplemental installer"
+  labels = [ "installer" ]
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  taskSetTasks = [
+    { uuid = "1b019a12-f462-4b2b-b03c-526a57b13b75" },
+    { uuid = "34eed5e4-e82f-480e-9d75-a28f2276a90a" },
+    { uuid = "42adcbc4-c758-41b3-a341-1d62d07084e4" }
+  ]
+}
