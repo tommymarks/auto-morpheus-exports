@@ -1,0 +1,15 @@
+resource "container-script" "39814d34-a154-46c6-8606-c3592977b747" {
+  code = "39814d34-a154-46c6-8606-c3592977b747"
+  name = "db-prepk8sconfig"
+  uuid = "2f76645c-ad31-4084-84ce-1fc27ec47ca0"
+  dateCreated = "2023-12-18T21:51:51.000Z"
+  lastUpdated = "2023-12-18T21:51:51.000Z"
+  runAsUser = "root"
+  script = <<EOFSCRIBE
+mkdir -p <%=morpheus.morpheusHome%>/.kube
+sudo cp -i /etc/kubernetes/admin.conf <%=morpheus.morpheusHome%>/.kube/config &&
+sudo chown <%=morpheus.morpheusUser%>:<%=morpheus.morpheusUser%> <%=morpheus.morpheusHome%>/.kube/config
+EOFSCRIBE
+  scriptPhase = "preProvision"
+  sudoUser = true
+}
