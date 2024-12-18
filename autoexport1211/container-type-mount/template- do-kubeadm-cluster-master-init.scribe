@@ -1,7 +1,7 @@
 resource "container-type-mount" "template: do-kubeadm-cluster-master-init" {
   code = "template: do-kubeadm-cluster-master-init"
   name = "digitalocean kubernetes adm cluster master init"
-  uuid = "30ad10f6-94fb-4ef0-8561-4da047db62e5"
+  uuid = "eb37cf47-b9e7-49ca-b981-e2959f68e98a"
   containerPath = "/opt/morpheus-node/bin"
   hostPath = "/opt/morpheus-node/bin"
   mountType = "config"
