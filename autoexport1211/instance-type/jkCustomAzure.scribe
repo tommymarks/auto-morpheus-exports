@@ -5,4 +5,5 @@ resource "instance-type" "jkCustomAzure" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "JK_CUSTOM_AZURE"
+  layouts = [ { code = "dbdd7bc3-60b7-4371-9b35-2d8500ad8297" } ]
 }
