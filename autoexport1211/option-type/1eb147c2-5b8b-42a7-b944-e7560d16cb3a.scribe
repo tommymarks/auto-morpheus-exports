@@ -1,0 +1,33 @@
+resource "option-type" "1eb147c2-5b8b-42a7-b944-e7560d16cb3a" {
+  code = "1eb147c2-5b8b-42a7-b944-e7560d16cb3a"
+  name = "1eb147c2-5b8b-42a7-b944-e7560d16cb3a"
+  uuid = "9c2b5f70-fba2-43ae-acaf-3209ead8c421"
+  config = {
+    cloudField = "8bdd8792-5240-4d53-b250-3a1d19c63d97"
+    defaultValue = <<EOFSCRIBE
+[
+ {
+  "name": "HTTP",
+  "externalPort": "80",
+  "loadBalanceProtocol": "HTTP"
+ },
+ {
+  "name": "HTTPS",
+  "externalPort": "443",
+  "loadBalanceProtocol": "HTTPS"
+ }
+]
+
+EOFSCRIBE
+    groupField = "2ec898c7-f79e-42a7-a9aa-158816114d84"
+    layoutField = "3cb622b2-73ec-49f0-b74b-e1f309ff0e86"
+  }
+  displayOrder = 9
+  fieldContext = "config.customOptions"
+  fieldLabel = "Ports"
+  fieldName = "ports"
+  formField = true
+  helpBlock = "ports help"
+  refCode = "1eb147c2-5b8b-42a7-b944-e7560d16cb3a"
+  type = "ports"
+}
