@@ -1,0 +1,9 @@
+resource "task-set" "Hello World Operational" {
+  name = "Hello World Operational"
+  uuid = "8528e981-b3b7-498a-8260-55311ecf28df"
+  dateCreated = "2023-03-16T00:04:17.000Z"
+  labels = [ "auto", "qa" ]
+  lastUpdated = "2023-03-17T02:09:08.000Z"
+  taskSetType = "operation"
+  visibility = "public"
+}
