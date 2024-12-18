@@ -1,0 +1,12 @@
+resource "instance-type-layout" "4a9d32d1-ea5c-4829-be42-3c0a5b727055" {
+  code = "4a9d32d1-ea5c-4829-be42-3c0a5b727055"
+  name = "OracleEnterpriseLinux7"
+  uuid = "f92ecd44-7585-442c-9aa5-783ae4dd4ebe"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "regular"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "oraclecloud" }
+  taskSets = [ { name = "InstallerOEL7" } ]
+  workloads = [ { code = "8f67c4cf-005e-4bc5-aacc-98d7c91f8f3e" } ]
+}
