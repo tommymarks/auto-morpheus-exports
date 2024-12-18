@@ -1,0 +1,13 @@
+resource "instance-type-layout" "403b2704-e4a9-4146-86bb-faccd9488809" {
+  code = "403b2704-e4a9-4146-86bb-faccd9488809"
+  name = "OracleEnterpriseLinux7 Supplemental"
+  uuid = "8aa13689-fb2a-47e3-94ff-7bb0f372c2bd"
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "oraclecloud" }
+  taskSets = [ { name = "InstallerSupplementalOEL7" } ]
+  workloads = [ { code = "oracle.layout.public.template.oraclelinux.7.9" } ]
+}
