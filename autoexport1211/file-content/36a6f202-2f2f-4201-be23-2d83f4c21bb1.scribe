@@ -1,0 +1,10 @@
+resource "file-content" "36a6f202-2f2f-4201-be23-2d83f4c21bb1" {
+  uuid = "36a6f202-2f2f-4201-be23-2d83f4c21bb1"
+  content = <<EOFSCRIBE
+sleep 30
+md5sum /opt/morpheus/lib/morpheus/morpheus-ui.war
+morpheus-ctl reconfigure
+EOFSCRIBE
+  dateCreated = "2023-10-16T23:20:53.000Z"
+  lastUpdated = "2023-12-13T17:13:02.000Z"
+}

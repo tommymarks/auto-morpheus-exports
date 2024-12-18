@@ -1,0 +1,19 @@
+resource "task" "Installer CentOS8" {
+  name = "Installer CentOS8"
+  uuid = "bd483e05-455f-43e0-bff1-35ee472cd1c1"
+  dateCreated = "2023-09-19T14:37:16.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-12-13T20:45:53.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "cc240075-27b8-4308-b264-be31d70d19f2" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+}

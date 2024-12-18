@@ -1,0 +1,13 @@
+resource "task-set" "InstallerCentOS8" {
+  name = "InstallerCentOS8"
+  uuid = "8693d6d5-9a6a-4fa7-9c97-6d6f45031615"
+  dateCreated = "2023-09-19T14:37:16.000Z"
+  description = "Setup CentOS 8 appliance"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:53:58.000Z"
+  taskSetTasks = [
+    { uuid = "7aba5323-32ac-4c24-94ea-d1dd1693409a" },
+    { uuid = "caa543a6-512e-4166-b031-d50f7941d7e6" },
+    { uuid = "df2a1661-9a50-4c10-b064-c53a1294d83f" }
+  ]
+}

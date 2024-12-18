@@ -1,0 +1,4 @@
+resource "task-set-task" "7aba5323-32ac-4c24-94ea-d1dd1693409a" {
+  uuid = "7aba5323-32ac-4c24-94ea-d1dd1693409a"
+  task = { name = "Installer CentOS8" }
+}

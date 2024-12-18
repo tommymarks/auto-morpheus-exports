@@ -1,0 +1,13 @@
+resource "file-content" "cc240075-27b8-4308-b264-be31d70d19f2" {
+  uuid = "cc240075-27b8-4308-b264-be31d70d19f2"
+  content = <<EOFSCRIBE
+pkill PackageKit
+yum update -y -q > /dev/null
+yum install wget -y -q > /dev/null
+yum install net-tools -y -q > /dev/null
+yum install dnf-plugins-core -y -q > /dev/null
+yum config-manager --set-enabled powertools > /dev/null
+EOFSCRIBE
+  dateCreated = "2023-09-19T14:37:16.000Z"
+  lastUpdated = "2023-12-13T20:45:53.000Z"
+}
