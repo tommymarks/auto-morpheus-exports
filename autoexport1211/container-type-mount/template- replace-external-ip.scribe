@@ -1,0 +1,11 @@
+resource "container-type-mount" "template: replace-external-ip" {
+  code = "template: replace-external-ip"
+  name = "replace external ip"
+  uuid = "3e668918-3457-46cd-9519-5cd2a0e4e5b6"
+  containerPath = "/opt/morpheus-node/bin"
+  hostPath = "/opt/morpheus-node/bin"
+  mountType = "config"
+  shortName = "replace-external-ip"
+  template = { code = "replace-external-ip" }
+  volumeName = "replace-external-ip"
+}
