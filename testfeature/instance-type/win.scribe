@@ -8,5 +8,11 @@ resource "instance-type" "win" {
   environmentPrefix = "WIN"
   hasAutoScale = true
   labels = [ "auto", "qa" ]
+  layouts = [
+    { code = "2cfba5a9-c72c-4f89-a01b-190333495001" },
+    { code = "84683a25-73e0-42ec-98fb-c94149d8541a" },
+    { code = "8a81c670-c352-4dec-b90e-0ef95ec74359" },
+    { code = "e30f1822-b87f-42e5-99c2-b6ade72b2c3a" }
+  ]
   visibility = "public"
 }
