@@ -1,0 +1,15 @@
+resource "task" "Phase: Configuration" {
+  name = "Phase: Configuration"
+  uuid = "31100628-22be-4f63-a02b-3e3df79ff396"
+  dateCreated = "2023-07-11T19:37:37.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-07-20T21:58:19.000Z"
+  options = [
+    {
+      content = { uuid = "d1546917-37db-4569-a919-13c05141239e" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "groovyTask" }
+}
