@@ -9,5 +9,11 @@ resource "instance-type" "dkrnginx" {
   hasAutoScale = true
   hasDeployment = true
   labels = [ "auto", "keep" ]
+  layouts = [
+    { code = "5c8506ee-a563-4133-8073-dcaf8ee2f564" },
+    { code = "d73a988b-49cc-4403-ab97-e77a6e1e047b" },
+    { code = "e58ac12b-cc4b-4fe1-9dd0-a1bb3a464564" },
+    { code = "fffa46f5-7257-499b-84d7-ea10f1da00a0" }
+  ]
   visibility = "public"
 }
