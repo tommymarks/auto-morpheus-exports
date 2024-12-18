@@ -1,0 +1,35 @@
+resource "container-type" "dae56064-1398-435f-9ecd-e01fff32d7ca" {
+  code = "dae56064-1398-435f-9ecd-e01fff32d7ca"
+  name = "NGINX latest"
+  uuid = "bbadb8dd-3221-4b48-a625-81d6863e660e"
+  category = "nginx"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "vmCheck"
+  containerPorts = [
+    { uuid = "97557af4-f094-4eca-a29c-1cda5b4fa3b8" },
+    { uuid = "ce66ab73-ff20-4e74-a2d6-9cce2f21f448" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  logs = [ { uuid = "60098357-be41-4c5d-af51-0a09ef137602" } ]
+  mountConfig = "/etc/nginx"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/nginx"
+  mounts = [ { uuid = "1c04ae5f-048e-48d6-83fb-9d9c32968345" } ]
+  provisionService = "nutanix-prism-provision-provider"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  repositoryImage = ""
+  scripts = [
+    { code = "6764c99d-735b-4ac4-9dcf-e2058ef95293" },
+    { code = "a0387b80-b362-4f16-81e5-50b3c3066b7c" },
+    { code = "7cb10f27-8a54-408d-98a1-5711c0ab32d4" }
+  ]
+  shortName = "nginx"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "nutanix.prism.image.morpheus.ubuntu.20.04.20240604.ubuntu.20.04"
+  }
+}
