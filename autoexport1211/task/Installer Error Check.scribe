@@ -1,0 +1,16 @@
+resource "task" "Installer Error Check" {
+  name = "Installer Error Check"
+  uuid = "7991fd74-405f-44a0-a6fd-fc1afb711a4f"
+  dateCreated = "2023-10-09T19:50:19.000Z"
+  executeTarget = "resource"
+  labels = [ "installer" ]
+  lastUpdated = "2023-10-16T23:24:00.000Z"
+  options = [
+    {
+      content = { uuid = "9c4f7831-c545-47eb-9748-55fa99bde26b" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
