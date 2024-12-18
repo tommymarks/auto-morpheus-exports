@@ -1,0 +1,32 @@
+resource "file-content" "a5662855-eb47-4a55-b8ed-d8391339c3ed" {
+  uuid = "a5662855-eb47-4a55-b8ed-d8391339c3ed"
+  content = <<EOFSCRIBE
+wget --quiet <%=customOptions.installerLink%> &&
+md5sum <%=customOptions.installerPackage%>
+
+wget --quiet <%=customOptions.supInstallerLink%> &&
+md5sum <%=customOptions.supInstallerPackage%>
+
+tee -a /etc/hosts <<EOF
+99.99.99.99 morpheusdata.com
+99.99.99.99 www.morpheusdata.com
+99.99.99.99 download.morpheusdata.com
+99.99.99.99 downloads.morpheusdata.com
+99.99.99.99 gomorpheus.com
+99.99.99.99 www.gomorpheus.com
+99.99.99.99 download.gomorpheus.com
+99.99.99.99 downloads.gomorpheus.com
+99.99.99.99 morpheushub.com
+99.99.99.99 www.morpheushub.com
+99.99.99.99 download.morpheushub.com
+99.99.99.99 downloads.morpheushub.com
+99.99.99.99 share.morpheusdata.com
+EOF
+
+rpm -ihv --quiet <%=customOptions.installerPackage%> > /dev/null
+rpm -ihv --quiet <%=customOptions.supInstallerPackage%> > /dev/null
+
+EOFSCRIBE
+  dateCreated = "2023-10-13T22:07:22.000Z"
+  lastUpdated = "2023-12-13T03:43:58.000Z"
+}

@@ -1,0 +1,13 @@
+resource "task-set" "InstallerSupplementalCentOS8" {
+  name = "InstallerSupplementalCentOS8"
+  uuid = "a4c55662-64bc-4970-9701-bad51eddccdd"
+  dateCreated = "2023-10-13T22:11:16.000Z"
+  description = "Setup CentOS 8 appliance via supplemental installer"
+  labels = [ "installer" ]
+  lastUpdated = "2023-11-21T22:47:36.000Z"
+  taskSetTasks = [
+    { uuid = "274e562b-a935-4bf9-ace1-63e30cfdf55a" },
+    { uuid = "6c38b9e1-839d-41c4-8f78-eb2e67ce7a4c" },
+    { uuid = "a00fbc54-6b69-4cae-a609-2a1219349575" }
+  ]
+}
