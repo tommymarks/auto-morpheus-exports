@@ -1,0 +1,16 @@
+resource "task" "jkSimpleTask" {
+  code = "jkSimpleTask"
+  name = "jk-simple-task"
+  uuid = "26df50e2-d21d-42ef-844d-28cf94332dfe"
+  dateCreated = "2024-11-22T18:54:44.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-11-22T18:54:44.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "216bb215-10e7-4914-a3aa-f240e02003e3" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

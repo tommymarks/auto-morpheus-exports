@@ -1,0 +1,9 @@
+resource "task-set" "jk-test-simple-task" {
+  name = "jk-test-simple-task"
+  uuid = "40909040-feac-457e-9a4d-e8be8496493c"
+  dateCreated = "2024-11-22T18:57:08.000Z"
+  lastUpdated = "2024-11-22T18:57:08.000Z"
+  platform = "linux"
+  taskSetTasks = [ { uuid = "4014c26a-62e8-4da1-87e9-f3d07ba4706b" } ]
+  taskSetType = "operation"
+}

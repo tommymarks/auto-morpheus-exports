@@ -1,0 +1,5 @@
+resource "task-set-task" "4014c26a-62e8-4da1-87e9-f3d07ba4706b" {
+  uuid = "4014c26a-62e8-4da1-87e9-f3d07ba4706b"
+  task = { code = "jkSimpleTask" }
+  taskPhase = "operation"
+}
