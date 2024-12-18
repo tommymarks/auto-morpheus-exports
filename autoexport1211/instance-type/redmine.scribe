@@ -7,4 +7,5 @@ resource "instance-type" "redmine" {
   description = "A great project management system built on top of ruby on rails."
   environmentPrefix = "REDMINE"
   hasAutoScale = true
+  layouts = [ { code = "a7c784fb-fcfa-44a7-93b2-088869a1e1f3" } ]
 }
