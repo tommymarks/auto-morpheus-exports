@@ -1,0 +1,5 @@
+resource "container-type-set" "debian-amazon-11" {
+  code = "debian-amazon-11"
+  uuid = "2c78dd00-10d2-408d-b5a2-68d44f5c140e"
+  workloadType = { code = "debian-amazon-11" }
+}
