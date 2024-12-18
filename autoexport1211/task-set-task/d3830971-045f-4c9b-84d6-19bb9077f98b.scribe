@@ -1,0 +1,5 @@
+resource "task-set-task" "d3830971-045f-4c9b-84d6-19bb9077f98b" {
+  uuid = "d3830971-045f-4c9b-84d6-19bb9077f98b"
+  task = { name = "Installer Enable FIPS CentOS7/RHEL7" }
+  taskOrder = 2
+}
