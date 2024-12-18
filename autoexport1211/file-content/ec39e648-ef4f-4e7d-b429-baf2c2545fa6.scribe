@@ -1,0 +1,6 @@
+resource "file-content" "ec39e648-ef4f-4e7d-b429-baf2c2545fa6" {
+  uuid = "ec39e648-ef4f-4e7d-b429-baf2c2545fa6"
+  content = "\"<%=results.approvals%>\""
+  dateCreated = "2024-06-11T15:45:58.000Z"
+  lastUpdated = "2024-06-11T15:45:58.000Z"
+}
