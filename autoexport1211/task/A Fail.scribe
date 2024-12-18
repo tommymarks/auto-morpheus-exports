@@ -1,0 +1,14 @@
+resource "task" "A Fail" {
+  name = "A Fail"
+  uuid = "ceec4027-b675-434d-82d7-c9d7dd350dc1"
+  dateCreated = "2023-07-05T21:34:40.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-10-29T05:10:08.000Z"
+  options = [
+    {
+      content = { uuid = "d0c90fde-fc8f-452b-9d46-a885407d3b90" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
