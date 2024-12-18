@@ -1,0 +1,15 @@
+resource "instance-type-layout" "olvm-oel-7.9-single" {
+  code = "olvm-oel-7.9-single"
+  name = "Oracle Linux 7.9 VM"
+  uuid = "81877a96-3515-40d8-b762-60c3339bbd44"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "oraclelinux" }
+  instanceVersion = "7.9"
+  provisionType = { code = "olvm-provision-standard" }
+  serverType = "vm"
+  sortOrder = 20
+  supportsConvertToManaged = true
+  workloads = [ { code = "olvm-oel-7.9-set" } ]
+}
