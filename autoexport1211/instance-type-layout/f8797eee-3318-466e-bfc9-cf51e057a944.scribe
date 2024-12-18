@@ -1,0 +1,13 @@
+resource "instance-type-layout" "f8797eee-3318-466e-bfc9-cf51e057a944" {
+  code = "f8797eee-3318-466e-bfc9-cf51e057a944"
+  name = "Ubuntu FIPS"
+  uuid = "e6eb2238-cc50-44ee-bd11-d8de837f3516"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "FIPS"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerUbuntuFIPS" } ]
+  workloads = [ { code = "fbc399a4-b320-4f4d-8595-4b455d5b8482" } ]
+}

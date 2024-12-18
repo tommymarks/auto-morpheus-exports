@@ -1,0 +1,18 @@
+resource "container-type" "fbc399a4-b320-4f4d-8595-4b455d5b8482" {
+  code = "fbc399a4-b320-4f4d-8595-4b455d5b8482"
+  name = "Amazon Ubuntu 20 FIPS"
+  uuid = "b6ca3477-dd4e-4b65-a6ba-392dd0ac1da5"
+  checkTypeCode = "vmCheck"
+  containerPorts = [ { uuid = "372d6af9-2790-4e57-9128-3d8bf1701e23" } ]
+  containerVersion = "Ubuntu 20 FIPS"
+  entryPoint = ""
+  labels = [ "installer" ]
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "amazonubuntu20fips"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "26fc16f0-865b-41f8-8cce-0fcd893ae26f" }
+}
