@@ -1,0 +1,14 @@
+resource "instance-type-layout" "b6750720-0bbf-470c-8640-80e69b077d67" {
+  code = "b6750720-0bbf-470c-8640-80e69b077d67"
+  name = "RHEL7 Supplemental"
+  uuid = "c96ed121-6c9f-4ee9-9f71-25c8e762df87"
+  hasAutoScale = false
+  instanceType = { code = "morpheusAppliance" }
+  instanceVersion = "supplemental"
+  labels = [ "installer" ]
+  memoryRequirement = 0
+  optionTypes = [ { code = "supInstallerLink" }, { code = "supInstallerPackage" } ]
+  provisionType = { code = "amazon" }
+  taskSets = [ { name = "InstallerSupplementalRHEL7" } ]
+  workloads = [ { code = "3a198fcb-fbf2-4f24-9e35-15184470b12f" } ]
+}
