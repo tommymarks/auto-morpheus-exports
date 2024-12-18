@@ -1,0 +1,15 @@
+resource "task" "Fix AWS Zone Pools" {
+  name = "Fix AWS Zone Pools"
+  uuid = "4370b659-ff34-4bc2-ac3d-1aca51163bf5"
+  dateCreated = "2023-11-08T02:31:59.000Z"
+  executeTarget = "local"
+  labels = [ "utility" ]
+  lastUpdated = "2023-11-08T02:31:59.000Z"
+  options = [
+    {
+      content = { uuid = "e7443bf4-6eff-45a1-b99f-359424c36564" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
