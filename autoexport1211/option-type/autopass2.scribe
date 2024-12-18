@@ -1,7 +1,7 @@
 resource "option-type" "autopass2" {
   code = "autopass2"
   name = "Auto Password 2"
-  uuid = "7885836a-7384-4aea-a76b-2d0fa41e1981"
+  uuid = "63e60fd2-06d2-46a2-a4eb-20010014e6eb"
   description = "don't delete"
   displayOrder = 13
   fieldContext = "config.customOptions"
