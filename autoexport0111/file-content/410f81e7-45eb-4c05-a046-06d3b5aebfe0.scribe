@@ -1,9 +1,0 @@
-resource "file-content" "410f81e7-45eb-4c05-a046-06d3b5aebfe0" {
-  uuid = "410f81e7-45eb-4c05-a046-06d3b5aebfe0"
-  content = <<EOFSCRIBE
-Hello
-World
-EOFSCRIBE
-  dateCreated = "2025-01-11T20:55:23.000Z"
-  lastUpdated = "2025-01-11T20:55:23.000Z"
-}
