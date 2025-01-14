@@ -1,10 +1,10 @@
 resource "task" "aaaaa" {
   name = "aaaaa"
   uuid = "c000e082-46e9-422e-bda5-f152b9cde9d3"
-  dateCreated = "2025-01-12T05:39:51.000Z"
+  dateCreated = "2025-01-13T21:30:57.000Z"
   executeTarget = "resource"
   labels = [ "autoexport0111" ]
-  lastUpdated = "2025-01-12T05:39:51.000Z"
+  lastUpdated = "2025-01-13T21:30:57.000Z"
   options = [
     {
       content = { uuid = "fe4bfd11-d39c-455f-954b-5d7a698f2587" }

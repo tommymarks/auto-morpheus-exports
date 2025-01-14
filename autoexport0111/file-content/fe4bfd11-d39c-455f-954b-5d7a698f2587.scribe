@@ -1,6 +1,6 @@
 resource "file-content" "fe4bfd11-d39c-455f-954b-5d7a698f2587" {
   uuid = "fe4bfd11-d39c-455f-954b-5d7a698f2587"
   content = "echo hello"
-  dateCreated = "2025-01-12T05:39:51.000Z"
-  lastUpdated = "2025-01-12T05:39:51.000Z"
+  dateCreated = "2025-01-13T21:30:57.000Z"
+  lastUpdated = "2025-01-13T21:30:57.000Z"
 }
