@@ -1,7 +1,0 @@
-resource "option-type-list" "Auto Export 0115" {
-  name = "Auto Export 0115"
-  uuid = "a3508928-50f9-419a-9bdc-3930e830e7e3"
-  description = "auto export list"
-  labels = [ "autoexport0115" ]
-  type = "manual"
-}
