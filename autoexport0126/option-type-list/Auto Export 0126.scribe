@@ -1,0 +1,7 @@
+resource "option-type-list" "Auto Export 0126" {
+  name = "Auto Export 0126"
+  uuid = "408ef294-db97-40b6-8bdc-bd34912ef720"
+  description = "auto export list"
+  labels = [ "autoexport0126" ]
+  type = "manual"
+}
