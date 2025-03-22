@@ -1,0 +1,6 @@
+resource "container-type-set" "6de47cc8-5cba-4329-acff-bcef0e095dae" {
+  code = "6de47cc8-5cba-4329-acff-bcef0e095dae"
+  uuid = "683dfbc7-edc0-4ffe-99e2-fdfc81e85655"
+  dynamicCount = true
+  workloadType = { code = "6de47cc8-5cba-4329-acff-bcef0e095dae" }
+}
