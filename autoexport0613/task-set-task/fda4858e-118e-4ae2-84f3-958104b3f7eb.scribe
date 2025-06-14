@@ -1,0 +1,5 @@
+resource "task-set-task" "fda4858e-118e-4ae2-84f3-958104b3f7eb" {
+  uuid = "fda4858e-118e-4ae2-84f3-958104b3f7eb"
+  task = { name = "Auto Export 0613" }
+  taskPhase = "provision"
+}
