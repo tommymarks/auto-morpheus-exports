@@ -1,0 +1,14 @@
+resource "instance-type" "autoexport0613" {
+  code = "autoexport0613"
+  name = "Auto Export 0613"
+  uuid = "a0214b65-17a0-4ebe-83a3-b572aab803c9"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "nginx"
+  environmentPrefix = "AUTO"
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+  labels = [ "autoexport0613" ]
+  optionTypes = [ { code = "auto1" } ]
+}
