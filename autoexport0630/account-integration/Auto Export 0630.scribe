@@ -14,5 +14,6 @@ resource "account-integration" "Auto Export 0630" {
   }
   integrationType = { code = "ansible" }
   serviceUrl = "git@github.com:bertramdev/morpheus-ansible.git"
+  statusMessage = "Failed to connect to host, verify credentials"
   type = "ansible"
 }
