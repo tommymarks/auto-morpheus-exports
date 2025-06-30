@@ -11,7 +11,6 @@ resource "option-type" "auto1" {
   fieldName = "auto1"
   helpBlock = "example help block"
   labels = [ "autoexport0630" ]
-  optionList = { name = "Auto Export 0630" }
   optionSource = "list"
   required = true
   type = "select"
