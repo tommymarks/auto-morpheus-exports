@@ -1,0 +1,18 @@
+resource "option-type" "auto1" {
+  code = "auto1"
+  name = "Auto Export 0724"
+  uuid = "bbe41b81-24fe-4bd1-adc0-10fb91b0bd18"
+  defaultValue = "green"
+  description = "auto export input"
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Auto 1"
+  fieldName = "auto1"
+  helpBlock = "example help block"
+  labels = [ "autoexport0724" ]
+  optionList = { name = "Auto Export 0724" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
