@@ -1,0 +1,11 @@
+resource "container-type-mount" "template: 17b40ecc-42b4-48a8-b6a8-97a4c4dc5ac9" {
+  code = "template: 17b40ecc-42b4-48a8-b6a8-97a4c4dc5ac9"
+  name = "Auto Export 0726"
+  uuid = "f6caee0e-f2d2-4d3b-b348-286bfe2e780a"
+  containerPath = "/var/tmp"
+  hostPath = "/var/tmp"
+  mountType = "config"
+  shortName = "auto-export-0726"
+  template = { code = "17b40ecc-42b4-48a8-b6a8-97a4c4dc5ac9" }
+  volumeName = "auto-export-0726"
+}
