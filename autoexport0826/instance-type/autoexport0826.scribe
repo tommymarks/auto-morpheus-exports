@@ -1,7 +1,7 @@
 resource "instance-type" "autoexport0826" {
   code = "autoexport0826"
   name = "Auto Export 0826"
-  uuid = "27f9c3d9-d84a-47a5-84fb-543497ffc1d9"
+  uuid = "d69f04a1-f746-4c52-bfd5-81bc6f202bcc"
   category = "web"
   deploymentService = "defaultDeployService"
   description = "nginx"
@@ -10,6 +10,5 @@ resource "instance-type" "autoexport0826" {
   hasDeployment = true
   hasSettings = true
   labels = [ "autoexport0826" ]
-  layouts = [ { code = "af2fb5db-042e-4a0f-b300-b43b14569c17" } ]
   optionTypes = [ { code = "auto1" } ]
 }
